@@ -11,13 +11,13 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T12:53:29+00:00",
+    "generated_at": "2026-10-22T13:18:10+00:00",
     "state_revision": 6,
-    "workflow_revision": 22,
-    "state_sha256": "c4a11315f620e955b289a962d174905186fb7bbbcc10258136bfed2ccc1bdf2f",
-    "workflow_sha256": "a7b216a96cdca360d4a1a3874a481df07d2a4b64e103fdcd25d2d52bdf8b0856",
+    "workflow_revision": 23,
+    "state_sha256": "c606d980ea823f27f281edc891bd3924db83a7070057c93b0f3d883d3302c044",
+    "workflow_sha256": "8859190431c809555243607f4ad8ffd9b20f8037135dc0c9fa3214c74d4edae1",
     "manuscript_storage": "encrypted_book_v1",
-    "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17"
+    "vault_sha256": "b0ea13cf0e2c508ead7807238cf45fd15385b45042d822ee32b48be32354f953"
   },
   "progress": {
     "target_chapters": 100,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 4,
-    "detail": "作者已授权下一步，正在恢复三章私密正式稿并创作第四章《不在那边的刀痕》；当前正式采用3章25362汉字。",
-    "next_action": "读取上章全文和实际记忆，完成本章、集中检查后加密保存并更新阅读目录。",
-    "updated_at": "2026-10-22T12:53:28+00:00"
+    "detail": "第四章《不在那边的刀痕》完整候选8550汉字，已全文检查并完成1轮局部修订；正在整理章后记录，当前正式采用仍为3章。",
+    "next_action": "核对记录与上章来源，check-record通过后采用并加密同步第四章。",
+    "updated_at": "2026-10-22T13:18:10+00:00"
   },
   "chapters": [
     {
@@ -48,8 +48,8 @@
       "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17.json",
-      "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17",
+      "vault_path": "vault/book_b0ea13cf0e2c508ead7807238cf45fd15385b45042d822ee32b48be32354f953.json",
+      "vault_sha256": "b0ea13cf0e2c508ead7807238cf45fd15385b45042d822ee32b48be32354f953",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     },
@@ -62,8 +62,8 @@
       "sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17.json",
-      "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17",
+      "vault_path": "vault/book_b0ea13cf0e2c508ead7807238cf45fd15385b45042d822ee32b48be32354f953.json",
+      "vault_sha256": "b0ea13cf0e2c508ead7807238cf45fd15385b45042d822ee32b48be32354f953",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     },
@@ -76,8 +76,8 @@
       "sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17.json",
-      "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17",
+      "vault_path": "vault/book_b0ea13cf0e2c508ead7807238cf45fd15385b45042d822ee32b48be32354f953.json",
+      "vault_sha256": "b0ea13cf0e2c508ead7807238cf45fd15385b45042d822ee32b48be32354f953",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     }
@@ -1043,12 +1043,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T09:50:18+00:00",
-      "phase": "PLANNING",
-      "label": "长篇规划",
-      "detail": "已选定《我还没死，三千年后的盗墓贼先找上门了》，准备长篇规划。"
-    },
-    {
       "at": "2026-10-22T10:29:53+00:00",
       "phase": "PLANNING",
       "label": "长篇规划",
@@ -1131,6 +1125,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已授权下一步，正在恢复三章私密正式稿并创作第四章《不在那边的刀痕》；当前正式采用3章25362汉字。"
+    },
+    {
+      "at": "2026-10-22T13:18:10+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第四章《不在那边的刀痕》完整候选8550汉字，已全文检查并完成1轮局部修订；正在整理章后记录，当前正式采用仍为3章。"
     }
   ]
 }
