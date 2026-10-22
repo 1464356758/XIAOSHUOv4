@@ -11,19 +11,19 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T12:37:07+00:00",
-    "state_revision": 5,
-    "workflow_revision": 19,
-    "state_sha256": "c744acfb965867ec974655327133c837413db2db685c1567b37197a3ee89e244",
-    "workflow_sha256": "70a8851809bf09647ba26cdd90004d8204906b09e2eb1d658c8085d51865681a",
+    "generated_at": "2026-10-22T12:43:05+00:00",
+    "state_revision": 6,
+    "workflow_revision": 21,
+    "state_sha256": "c4a11315f620e955b289a962d174905186fb7bbbcc10258136bfed2ccc1bdf2f",
+    "workflow_sha256": "dd0bdc67ead039eabaca02510e67d78c255236a2a2e600721ace4f66cb997bf3",
     "manuscript_storage": "encrypted_book_v1",
-    "vault_sha256": "2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532"
+    "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17"
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 2,
+    "adopted_chapters": 3,
     "target_han": 900000,
-    "actual_han": 17078,
+    "actual_han": 25362,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 0,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
-    "chapter": 3,
-    "detail": "第三章《一片不值钱的铜》完整候选8284汉字，已全文检查并完成2轮局部修订；正在登记章后记录，当前正式采用仍为2章。",
-    "next_action": "核对记录引用与当前版本，check-record通过后采用第三章并加密同步阅读目录。",
-    "updated_at": "2026-10-22T12:37:06+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 4,
+    "detail": "第三章《一片不值钱的铜》已完成并采用：8284汉字，2轮局部修订。正式稿共3章25362汉字；正文、章后记录与候选历史加密保存。当前停在第3章，等待下一次创作指令。",
+    "next_action": "接到继续指令后恢复最新私密正式稿，读取第三章全文、记录和现行设定，处理已约事项，再创作第四章《不在那边的刀痕》。",
+    "updated_at": "2026-10-22T12:43:04+00:00"
   },
   "chapters": [
     {
@@ -48,8 +48,8 @@
       "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532.json",
-      "vault_sha256": "2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532",
+      "vault_path": "vault/book_bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17.json",
+      "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     },
@@ -62,8 +62,22 @@
       "sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532.json",
-      "vault_sha256": "2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532",
+      "vault_path": "vault/book_bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17.json",
+      "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17",
+      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
+      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+    },
+    {
+      "number": 3,
+      "title": "一片不值钱的铜",
+      "stage": "S01",
+      "han_count": 8284,
+      "text_path": "book/chapters/CH003_50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a.txt",
+      "sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
+      "needs_revalidation": false,
+      "storage": "encrypted_book_v1",
+      "vault_path": "vault/book_bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17.json",
+      "vault_sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     }
@@ -1029,18 +1043,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T08:36:43+00:00",
-      "phase": "WAITING_TOPIC",
-      "label": "等待选择题材",
-      "detail": "作者要求构思更离奇的题材，正在准备第二批；第一批候选保留，尚未选题。"
-    },
-    {
-      "at": "2026-10-22T08:41:38+00:00",
-      "phase": "WAITING_TOPIC",
-      "label": "等待选择题材",
-      "detail": "已准备8个原创选题，等待作者选择。"
-    },
-    {
       "at": "2026-10-22T08:41:38+00:00",
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
@@ -1117,6 +1119,18 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第三章《一片不值钱的铜》完整候选8284汉字，已全文检查并完成2轮局部修订；正在登记章后记录，当前正式采用仍为2章。"
+    },
+    {
+      "at": "2026-10-22T12:43:04+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第三章《一片不值钱的铜》已采用：8284汉字、2轮局部修订；正式稿共3章25362汉字，正在保存正文与章后记录并核对私密阅读和导出。"
+    },
+    {
+      "at": "2026-10-22T12:43:04+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第三章《一片不值钱的铜》已完成并采用：8284汉字，2轮局部修订。正式稿共3章25362汉字；正文、章后记录与候选历史加密保存。当前停在第3章，等待下一次创作指令。"
     }
   ]
 }

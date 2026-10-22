@@ -1,8 +1,8 @@
 {
   "format": "xiaoshuo-private-book-v1",
-  "path": "vault/book_2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532.json",
-  "sha256": "2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532",
+  "path": "vault/book_bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17.json",
+  "sha256": "bb420cb02a79c1b96022790df74cdabf447135cd7f56673c4c2d31227bf12f17",
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "revision": 5,
+  "revision": 6,
   "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
 }
