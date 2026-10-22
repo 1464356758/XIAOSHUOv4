@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T16:38:08+00:00",
+    "generated_at": "2026-10-22T16:47:52+00:00",
     "state_revision": 10,
-    "workflow_revision": 32,
-    "state_sha256": "23ab229ed923576484e03a2b0113f013ffa3181d3b40db432048e693db7e77e0",
-    "workflow_sha256": "7b1350701b253524acc39d70165883627ca199b240a9e81c1df9f8f8e28dba0a",
+    "workflow_revision": 33,
+    "state_sha256": "7408eff6a5ac8e91c3a8bf53d954fb6e6aa271d44b2d1daab24afd51e05537ec",
+    "workflow_sha256": "8cb5eb591e137260a9b4f57a48bbdb2bd5720242ae8681f5f509ee43d5f0fcd7",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 6,
-    "detail": "作者已授权下一章。已核对公开仓库最新5章42205汉字、第五章全文与路线V2；正在创作第六章《旧图不是路》，本章落实初七约定与灰室实走。",
-    "next_action": "完成第六章全文，集中检查人物知情、初八联络安排和实际撤路，再登记记录采用。",
-    "updated_at": "2026-10-22T16:38:08+00:00"
+    "detail": "第六章《旧图不是路》完整初稿已登记8246汉字，正在全文检查原页声像、师徒披露、初八缺席约定和灰室过口返回；当前正式采用仍为5章。",
+    "next_action": "依据本章实际正文完成集中审阅和章后记录，通过检查后采用并同步阅读器。",
+    "updated_at": "2026-10-22T16:47:52+00:00"
   },
   "chapters": [
     {
@@ -1046,12 +1046,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T12:17:32+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者已授权继续下一步。正在恢复两章私密正式稿，创作第三章《一片不值钱的铜》；当前正式采用2章17078汉字。"
-    },
-    {
       "at": "2026-10-22T12:37:06+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1134,6 +1128,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已授权下一章。已核对公开仓库最新5章42205汉字、第五章全文与路线V2；正在创作第六章《旧图不是路》，本章落实初七约定与灰室实走。"
+    },
+    {
+      "at": "2026-10-22T16:47:52+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第六章《旧图不是路》完整初稿已登记8246汉字，正在全文检查原页声像、师徒披露、初八缺席约定和灰室过口返回；当前正式采用仍为5章。"
     }
   ]
 }

@@ -410,6 +410,27 @@
       ],
       "candidate_sha256": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
       "candidate_path": "candidates/CH005_313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83.txt"
+    },
+    "6": {
+      "task_id": "0ecd83ed-43b1-4d49-ba23-601d6ff86837",
+      "chapter": 6,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 1,
+      "history": [
+        {
+          "sha256": "b56da232c9dbddd2e573df37daa8a065da755dfd19ff78d048f52e83d476febd",
+          "reason": "初稿",
+          "repairs": 0
+        },
+        {
+          "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+          "reason": "全文回读集中修复：A误把昨日得知浅阶写成昨日才露；移动碗后未明确平放；未确认伤者却在内心当已有人受伤；随车副签缺交接来源；梁首次走路误称第二次。并明示铜页试口后接回灰室、首包实际送达岔口和车时口述来源，澄清余页无事故经过。",
+          "repairs": 1
+        }
+      ],
+      "candidate_sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+      "candidate_path": "candidates/CH006_b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439.txt"
     }
   },
   "completion": null
