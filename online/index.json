@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T19:35:31+00:00",
+    "generated_at": "2026-10-22T19:38:50+00:00",
     "state_revision": 14,
-    "workflow_revision": 46,
+    "workflow_revision": 47,
     "state_sha256": "688020a554946b8b8950b5dffa942ace5ada675b8d799ba405c0e612fbe54d91",
-    "workflow_sha256": "7b5885303563b0539c9677d16a0f47c6c584514abeeee875ea8da07e43ded9dd",
+    "workflow_sha256": "2416a433a323ba16ffd0af0a737e7ae7bd236528742b65f73ae1c399a730dcab",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "SAVING",
-    "label": "保存进度",
-    "chapter": 9,
-    "detail": "第九章《第一道出口》已检查采用8183汉字，1轮局部修订；共9章75362汉字。F三人真正出陵返城、50条章后记录已整理，正在保存并核对阅读与导出。",
-    "next_action": "同步第九章正文、记录、状态及接管，核对原件与整本导出，完成后等待第十章授权。",
-    "updated_at": "2026-10-22T19:35:31+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 10,
+    "detail": "第九章《第一道出口》已完成采用8183汉字，1轮局部修订；共9章75362汉字。F已真正出陵返城住脚店、等午后约见，A已查到旧料簿并挂牌；第十章未生成。",
+    "next_action": "作者继续授权后写第十章《不能白收的东西》：接初九后半，醒后会见掌事谈尾款/旧图/原物与再入边界，A落实新修工及乔合作对价；采用十章后实际全文回看S01，未回看不转阶段或自动开11。",
+    "updated_at": "2026-10-22T19:38:49+00:00"
   },
   "chapters": [
     {
@@ -1082,12 +1082,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T16:38:08+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者已授权下一章。已核对公开仓库最新5章42205汉字、第五章全文与路线V2；正在创作第六章《旧图不是路》，本章落实初七约定与灰室实走。"
-    },
-    {
       "at": "2026-10-22T16:47:52+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1170,6 +1164,12 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第九章《第一道出口》已检查采用8183汉字，1轮局部修订；共9章75362汉字。F三人真正出陵返城、50条章后记录已整理，正在保存并核对阅读与导出。"
+    },
+    {
+      "at": "2026-10-22T19:38:49+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第九章《第一道出口》已完成采用8183汉字，1轮局部修订；共9章75362汉字。F已真正出陵返城住脚店、等午后约见，A已查到旧料簿并挂牌；第十章未生成。"
     }
   ]
 }
