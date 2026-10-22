@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T18:35:41+00:00",
+    "generated_at": "2026-10-22T18:48:29+00:00",
     "state_revision": 12,
-    "workflow_revision": 40,
-    "state_sha256": "219d733c225eee07ba20f626a9937b6399fec2f09e344b02b96b0f84f28e899e",
-    "workflow_sha256": "033900bb2a8983a74c26a37bad25087356942b53df386f352377485536017a80",
+    "workflow_revision": 41,
+    "state_sha256": "0787c90ca1b9dc4108f8dbf8c2734d2f822e45908021ed0e5a3a101fd27f4b66",
+    "workflow_sha256": "dc007136f62d30611062cf5a7cf4b7fd41b0a729cf3035e58ad2b1c1a47ebb80",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 8,
-    "detail": "作者已授权继续。已核对7章58847汉字、第七章实际全文和路线V2；正在创作第八章《他们的昨天》，接初八返坊、初九重联与F外闸侧路。",
-    "next_action": "完成第八章全文，核对旧事新增来源、两岸各自知情、初九15分钟窗口和可撤路线，再记录采用。",
-    "updated_at": "2026-10-22T18:35:39+00:00"
+    "detail": "第八章《他们的昨天》完整初稿已登记，正在全文检查旧料来源及交存代价、初九通话的知情和时限、F侧路验走及人器转运；正式采用仍7章。",
+    "next_action": "完成实际全文审查；同任务内集中局部修订，生成有正文引文的章后记录后采用。",
+    "updated_at": "2026-10-22T18:48:29+00:00"
   },
   "chapters": [
     {
@@ -1064,12 +1064,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T13:45:27+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者已授权继续，正在恢复4章33912汉字私密正式稿并创作第五章《师父的名字》；本章后执行首次五章全文回看。"
-    },
-    {
       "at": "2026-10-22T15:30:59+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1152,6 +1146,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已授权继续。已核对7章58847汉字、第七章实际全文和路线V2；正在创作第八章《他们的昨天》，接初八返坊、初九重联与F外闸侧路。"
+    },
+    {
+      "at": "2026-10-22T18:48:29+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第八章《他们的昨天》完整初稿已登记，正在全文检查旧料来源及交存代价、初九通话的知情和时限、F侧路验走及人器转运；正式采用仍7章。"
     }
   ]
 }
