@@ -54,7 +54,14 @@ async function getBytes(url,{fetcher=fetch,signal,maxBytes=3000000}={}){
 }
 
 export async function fetchManifest(repo,options={}){
-  const text=await getBytes(rawURL(repo,'online/index.json',{fresh:true}),options);
+  let text;
+  if(options.forceFresh){
+    // 手动刷新和首次连接使用Contents接口，避开raw默认分支缓存。
+    const url=`https://api.github.com/repos/${encodeURIComponent(repo.owner)}/${encodeURIComponent(repo.name)}/contents/online/index.json?_refresh=${Date.now()}`;
+    const encoded=await getBytes(url,options);
+    let resource;try{resource=JSON.parse(encoded);if(resource.encoding!=='base64'||typeof resource.content!=='string')throw new Error();text=new TextDecoder('utf-8',{fatal:true,ignoreBOM:true}).decode(from64(resource.content.replace(/\s/g,''))).replace(/\r\n?/g,'\n');}
+    catch{throw new ReaderError('GitHub最新索引无法解析，请稍后刷新。','invalid_manifest');}
+  }else text=await getBytes(rawURL(repo,'online/index.json',{fresh:true}),options);
   let data;try{data=JSON.parse(text.replace(/^\uFEFF/,''));}catch{throw new ReaderError('阅读索引无法解析，请让 GPT 重新生成。','invalid_manifest');}
   return validateManifest(data,repo);
 }

@@ -36,12 +36,13 @@ async function selectBook(book,preloaded=null){
   syncGate.cancel();chapterGate.cancel();exportGate.cancel();state.active=book;state.manifest=null;state.chapter=null;state.text=null;state.lastChecked=null;state.cooldownUntil=0;setError('');resetBook();persist();renderShelf();setTab('dashboard');
   $('repoLink').href=book.url;$('repoName').textContent=book.owner+' / '+book.name;
   if(preloaded){applyManifest(preloaded);setConnection('已连接');return;}
-  await refresh();
+  await refresh(true);
 }
-async function refresh(){
+async function refresh(forceFresh=false){
   if(!state.active)return;const repo=state.active;const ticket=syncGate.start();$('refresh').disabled=true;$('refresh').classList.add('spin');setConnection('同步中');
   try{
-    const data=await fetchManifest(repo,{signal:ticket.signal});if(!ticket.current()||state.active?.key!==repo.key)return;
+    const data=await fetchManifest(repo,{signal:ticket.signal,forceFresh});if(!ticket.current()||state.active?.key!==repo.key)return;
+    if(state.manifest && (data.source.state_revision<state.manifest.source.state_revision||(data.source.state_revision===state.manifest.source.state_revision&&data.source.workflow_revision<state.manifest.source.workflow_revision))){setConnection('已连接 · 保留较新进度');return;}
     const oldHash=state.chapter?.sha256;const currentNumber=state.chapter?.number;applyManifest(data);setError('');setConnection('已连接');state.cooldownUntil=0;
     if(currentNumber){const updated=data.chapters.find(x=>x.number===currentNumber);if(!updated){state.chapter=null;state.text=null;$('readerEmpty').hidden=false;$('readerContent').hidden=true;}else if(updated.sha256!==oldHash)await openChapter(updated);else{state.chapter=updated;$('pendingNotice').hidden=!updated.needs_revalidation;}}
   }catch(error){if(!ticket.current()||error.name==='AbortError')return;setConnection(state.manifest?'同步失败 · 保留上次数据':'连接失败',true);setError(error.message||'网络连接失败，请稍后刷新。');if(error.code==='rate_limit')state.cooldownUntil=Date.now()+300000;}
@@ -109,7 +110,7 @@ $('repoForm').addEventListener('submit',async event=>{event.preventDefault();$('
   finally{if(ticket.current())$('connectButton').disabled=false;}
 });
 $('addBook').addEventListener('click',showDialog);$('mobileAdd').addEventListener('click',showDialog);$('closeDialog').addEventListener('click',closeDialog);$('repoDialog').addEventListener('cancel',()=>formGate.cancel());$('mobileBooks').addEventListener('change',event=>{const b=state.shelf.find(x=>x.key===event.target.value);if(b)selectBook(b);});
-$('refresh').addEventListener('click',refresh);$('exportAll').addEventListener('click',exportAll);document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));$('goTopics').addEventListener('click',()=>setTab('topics'));$('chapterSearch').addEventListener('input',renderChapters);$('backToContents').addEventListener('click',()=>$('chapterList').scrollIntoView({behavior:'smooth',block:'start'}));
+$('refresh').addEventListener('click',()=>refresh(true));$('exportAll').addEventListener('click',exportAll);document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));$('goTopics').addEventListener('click',()=>setTab('topics'));$('chapterSearch').addEventListener('input',renderChapters);$('backToContents').addEventListener('click',()=>$('chapterList').scrollIntoView({behavior:'smooth',block:'start'}));
 $('importKey').addEventListener('click',()=>$('keyFile').click());
 $('keyFile').addEventListener('change',async event=>{
   const file=event.target.files?.[0];event.target.value='';if(!file||!state.manifest)return;
