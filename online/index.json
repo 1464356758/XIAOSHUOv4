@@ -11,19 +11,19 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T16:47:52+00:00",
-    "state_revision": 10,
-    "workflow_revision": 33,
-    "state_sha256": "7408eff6a5ac8e91c3a8bf53d954fb6e6aa271d44b2d1daab24afd51e05537ec",
-    "workflow_sha256": "8cb5eb591e137260a9b4f57a48bbdb2bd5720242ae8681f5f509ee43d5f0fcd7",
+    "generated_at": "2026-10-22T16:57:38+00:00",
+    "state_revision": 11,
+    "workflow_revision": 35,
+    "state_sha256": "0825c972dfe1914ce87bc3927d148c2dc3f4407cfe8d9237112c7b2cf7f6d63b",
+    "workflow_sha256": "fffb8ce2351cc44bc2dd6d480314629bb59ff3fbb3282ae98e77d8d4d3ee1b94",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 5,
+    "adopted_chapters": 6,
     "target_han": 900000,
-    "actual_han": 42205,
+    "actual_han": 50578,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 5,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
-    "chapter": 6,
-    "detail": "第六章《旧图不是路》完整初稿已登记8246汉字，正在全文检查原页声像、师徒披露、初八缺席约定和灰室过口返回；当前正式采用仍为5章。",
-    "next_action": "依据本章实际正文完成集中审阅和章后记录，通过检查后采用并同步阅读器。",
-    "updated_at": "2026-10-22T16:47:52+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 7,
+    "detail": "第六章《旧图不是路》已完成并采用8373汉字，1轮局部修订；正式稿共6章50578汉字。初七三项约定已给结果，F已实走三丈六尺并运到首包；第七章未生成。",
+    "next_action": "收到继续指令后直接读最新state、第六章全文与记录和路线V2，创作第七章《空着的那一格》：初八冷检、真实陪检人和F续走右坡；初八N01已约不守。",
+    "updated_at": "2026-10-22T16:57:38+00:00"
   },
   "chapters": [
     {
@@ -82,6 +82,15 @@
       "han_count": 8293,
       "text_path": "book/chapters/CH005_313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83.txt",
       "sha256": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
+      "needs_revalidation": false
+    },
+    {
+      "number": 6,
+      "title": "旧图不是路",
+      "stage": "S01",
+      "han_count": 8373,
+      "text_path": "book/chapters/CH006_b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439.txt",
+      "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
       "needs_revalidation": false
     }
   ],
@@ -1046,18 +1055,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T12:37:06+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第三章《一片不值钱的铜》完整候选8284汉字，已全文检查并完成2轮局部修订；正在登记章后记录，当前正式采用仍为2章。"
-    },
-    {
-      "at": "2026-10-22T12:43:04+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第三章《一片不值钱的铜》已采用：8284汉字、2轮局部修订；正式稿共3章25362汉字，正在保存正文与章后记录并核对私密阅读和导出。"
-    },
-    {
       "at": "2026-10-22T12:43:04+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1134,6 +1131,18 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第六章《旧图不是路》完整初稿已登记8246汉字，正在全文检查原页声像、师徒披露、初八缺席约定和灰室过口返回；当前正式采用仍为5章。"
+    },
+    {
+      "at": "2026-10-22T16:57:38+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第六章《旧图不是路》已检查采用：8373汉字，1轮局部修订；共6章50578汉字。44条章后记录与初八空窗/冷检安排已整理，正在核对线上正文与整本导出。"
+    },
+    {
+      "at": "2026-10-22T16:57:38+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第六章《旧图不是路》已完成并采用8373汉字，1轮局部修订；正式稿共6章50578汉字。初七三项约定已给结果，F已实走三丈六尺并运到首包；第七章未生成。"
     }
   ]
 }

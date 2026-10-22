@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 10,
+  "revision": 11,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -59,6 +59,15 @@
       "record_path": "records/CH005_90fd1b456cc1a0fdcc9e2e871d6f906e13b5a9e1749f52cbabd3509170ffe4f9.json",
       "record_sha256": "90fd1b456cc1a0fdcc9e2e871d6f906e13b5a9e1749f52cbabd3509170ffe4f9",
       "han_count": 8293
+    },
+    "6": {
+      "title": "旧图不是路",
+      "stage": "S01",
+      "text_path": "chapters/CH006_b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439.txt",
+      "text_sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+      "record_path": "records/CH006_7be66c90b3b8cf178b6173c150d096b506564931c202776346b463bdb3b419ed.json",
+      "record_sha256": "7be66c90b3b8cf178b6173c150d096b506564931c202776346b463bdb3b419ed",
+      "han_count": 8373
     }
   },
   "checkpoints": [
@@ -415,7 +424,7 @@
       "task_id": "0ecd83ed-43b1-4d49-ba23-601d6ff86837",
       "chapter": 6,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 1,
       "history": [
         {
