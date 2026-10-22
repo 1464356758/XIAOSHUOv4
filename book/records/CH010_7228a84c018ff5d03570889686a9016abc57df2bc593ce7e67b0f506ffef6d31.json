@@ -1,0 +1,594 @@
+{
+  "chapter": 10,
+  "title": "不能白收的东西",
+  "stage": "S01",
+  "base_revision": 14,
+  "canon_sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+  "text_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+  "complete": true,
+  "story_time_end": 9420,
+  "summary": "初九午后，梁先告知醒来的闻溪与曹砚生掌事约见，三人吃到订好的午饭。邵恒到脚店，按旧数结清此次雇约，未来再入另谈；三片原铜分号交社收存，曹留全套可辨描本及凭条，旧碗另订三日代存仍留曹包，雇主未获跨时知情。闻与曹各只约次日一天旧档点工，梁拒续并考虑回家；曹称尾款足续本月息，抵押本金未清。A接胡氏小烫斗新修工，按五钱含火收费，自付乔麦一钱买自有炭柴、一钱本次守火，申后验交再收三钱；买两新饼并吃完后余三钱。乔明确未来代守逐次答应，听到午前旧料簿内容。师徒保留旧责与待回信。入夜F仍城中自由可退，A尚不知F已出陵，无新联络、传物或端变化。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 9,
+        "sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+        "quote": "“邵掌事午后过来。话带到了，人、图和你们说的三片铜，一起见。”"
+      },
+      {
+        "chapter": 9,
+        "sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+        "quote": "聘书写了所获旧物由社验录，通路要交，不得私售。"
+      },
+      {
+        "chapter": 9,
+        "sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+        "quote": "等她过去，两人已腾开一张干燥的方桌。铜托在上头，曹砚生的包在靠墙处，包内的旧碗仍由软衣护着，没有拿来盛洗脚水。"
+      },
+      {
+        "chapter": 1,
+        "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
+        "quote": "奉陵社的人说，第一层多半藏着帝君早年的旧物，辨清来历，画出通路，便给他们结清余款。"
+      },
+      {
+        "chapter": 2,
+        "sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
+        "quote": "“他知道重修过么？”\n\n“出去问他。”"
+      },
+      {
+        "chapter": 3,
+        "sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
+        "quote": "上面写着旧灶交岑照使用，修工自接，坊料另领；留宿禁条仍在。"
+      },
+      {
+        "chapter": 3,
+        "sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
+        "quote": "“灶若验过，我得回九只风嘴。你替我守这一批火，最多半个时辰。两枚钱，今日结。”"
+      }
+    ],
+    "conclusion": "实际逐段读完10308字符初稿后，一轮局部修订并逐项回读差异，修复木托重复取出，澄清续夜分摊及未展示用薄规的暗示。已核CH009全文、全部事实字段及CH001—004相关全文：本章承接初九午后、梁先告约、午饭实际送达与付款，原铜新去向和碗代存都有交接；A现金2+5-1-1-2=3，旧九件/两钳/三灵石未重复结账。新点工与回信均只作约定，未把廿一或旧案写成已解决。尚需采用后完成S01十章实际全文回看，程序通过不替代该回看或文学判断。"
+  },
+  "facts": [
+    {
+      "kind": "fact",
+      "key": "F:meeting:Liang_informs_awake_team",
+      "value": "梁在闻醒后实际告知罗午前带来的午后约见，曹也出房；闻曹未在睡中无来源预知。",
+      "holder": "",
+      "valid_from": 8970,
+      "valid_until": null,
+      "quote": "“饭到了。邵掌事午后过来，罗申午前带的话，说人、图、三片铜一起见。我没叫醒你们。”"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:afternoon_meal_order",
+      "value": "CH009梁订的三份午饭已送、三人实际吃完；先记其房账，领尾款后梁当面付清。非免费社外棚粥重复领。",
+      "holder": "",
+      "valid_from": 9185,
+      "valid_until": null,
+      "quote": "梁九川把店家叫来，当面结了三人的午饭，再把合住的半日房补作过夜。"
+    },
+    {
+      "kind": "fact",
+      "key": "F:meeting:Shao_arrival",
+      "value": "邵恒与罗申实际到西驿公共脚店会面；邵不是先前外棚经手罗申。",
+      "holder": "",
+      "valid_from": 9000,
+      "valid_until": null,
+      "quote": "罗申跟在他后头，抱着旧图封袋和一本账。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F04:actual_route_report",
+      "value": "邵从实走图及曹报告获知两闸间落差、填砖拆两块而承梁未卸、可接旧踏步；未亲自走内路。",
+      "holder": "C-F04",
+      "valid_from": 9005,
+      "valid_until": null,
+      "quote": "“是。上方补砖拆过两块，承梁没卸。再往外的踏步，原先就有。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F04:old_map_dates_report",
+      "value": "邵听曹报3122校印/3149重修，后者本章非首次发现；邵令调旧库封图及改建簿，尚无查复，谁知情/动机不明。",
+      "holder": "C-F04",
+      "valid_from": 9010,
+      "valid_until": null,
+      "quote": "“三千一百二十二年。”曹砚生没去接，“灰室重修记在三千一百四十九年。两处我们早对过。今天不是来请人认这两个数的。”"
+    },
+    {
+      "kind": "state",
+      "key": "F:employment:old_map_inquiry",
+      "value": "邵实际令罗调封袋与改建簿且勿拆散换袋；答应查复送脚店，未得到结果，不认定阴谋。",
+      "holder": "",
+      "valid_from": 9010,
+      "valid_until": null,
+      "quote": "“那就调。原袋别拆散另换。”"
+    },
+    {
+      "kind": "state",
+      "key": "F:employment:old_contract_closed",
+      "value": "邵同意第一段按旧数结清，此次外雇结束；未来再入庭另雇，不用尾钱续强制任务。签条后各人实际点收余款，未写金额/货币单位。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "“第一段按旧数结清。你们把实走的交来，没走的写明。以后再进庭，是另一份雇约，不在这张上接着算。”"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:cash_settlement",
+      "value": "三份原雇尾款各自实际点收，定钱另算；外棚水粥/返城水车记社杂支未扣。不能以本章推导未写明的余额金额。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "三份旧雇结算各自点过，定钱与尾款没有混在一处。罗申将外棚给的水、粥和返城水车另记社杂支，没从他们这一份里扣。"
+    },
+    {
+      "kind": "state",
+      "key": "F:C-F01:cash",
+      "value": "闻实际收尾款后续付自己的过夜房；原定钱前章已支付两间半日房，仍不编余额数。本章新点工未预支。",
+      "holder": "",
+      "valid_from": 9185,
+      "valid_until": null,
+      "quote": "闻溪也续了自己的房，曹砚生将合住这一夜应摊的房钱付给梁，没让刚领的钱绕过自己，直接变成他欠同伴的一笔。"
+    },
+    {
+      "kind": "state",
+      "key": "F:city_west_inn:lodging",
+      "value": "两间房已续夜，闻一间/曹梁合一间；梁先补合住房、曹付本夜应摊部分。前章闻已付的两间半日房不重复当梁付款。",
+      "holder": "",
+      "valid_from": 9185,
+      "valid_until": null,
+      "quote": "梁九川把店家叫来，当面结了三人的午饭，再把合住的半日房补作过夜。闻溪也续了自己的房，曹砚生将合住这一夜应摊的房钱付给梁，没让刚领的钱绕过自己，直接变成他欠同伴的一笔。"
+    },
+    {
+      "kind": "state",
+      "key": "F:route_records:copy_progress",
+      "value": "实走抄图已交邵，曹原测稿、闻旧簿及另份路抄留队，未到断渠庭留白；没有虚填第一层全图。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "邵恒拿走那份实走抄图。曹砚生的原测稿、闻溪的旧簿和另一份路抄留下，旧聘书与三份结清条各归各人。"
+    },
+    {
+      "kind": "state",
+      "key": "F:employment:route_copy_terms",
+      "value": "达成底稿/旧字描本自留、路抄不得外售；以后带同行者勘验须先议路引，不构成再入义务。实际有自主但未脱社路引控制。",
+      "holder": "",
+      "valid_from": 9040,
+      "valid_until": null,
+      "quote": "“带同行者勘验，也要先议。不是你在图角写个名字，谁都算自己人。”邵恒说。"
+    },
+    {
+      "kind": "state",
+      "key": "F:P-B06:read_extent",
+      "value": "曹当面将原三片可辨字逐处抄全，各锈遮仍空；类别/旧名日期未增死因，B死亡旧字没被A行动改写。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "曹砚生在日光里把能认的三片字逐处抄完，锈遮处照留空。"
+    },
+    {
+      "kind": "state",
+      "key": "F:P-B06:holder_location",
+      "value": "三片原铜已分号封装交奉陵社收存，凭条指定旧物柜乙二、旧托隔布随存。正文写收存约定及离队交接，不声称叙述者跟入社亲见入柜。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "三片分号，入奉陵社旧物柜乙二，旧托、隔布随存；"
+    },
+    {
+      "kind": "state",
+      "key": "F:copper_copies_and_receipt:holder",
+      "value": "曹保有三张可辨旧字描本和原铜收存凭条；原铜不再在脚店桌上或曹包中。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "她将凭条拿在手里，确认自己能凭它查到原件，再交给曹砚生收好。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F04:old_copper_seen",
+      "value": "邵实际看原铜，读青崖旧役单并见桑见石姓名/年月/殁；未由此知道另端活桑或少年。",
+      "holder": "C-F04",
+      "valid_from": 9030,
+      "valid_until": null,
+      "quote": "他看见桑见石的名字，看见年月，也看见那个“殁”字，没有回头问闻溪为什么要带一页死人旧账出来。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F04:bowl_observed",
+      "value": "邵实际翻干碗、看底细纹；曹称未读明/残过一处，罗记缺口釉点底纹。邵仅知古器观察，不知通信、九肋预算或A活人。",
+      "holder": "C-F04",
+      "valid_from": 9050,
+      "valid_until": null,
+      "quote": "“底下有细纹？”邵恒问。\n\n“有。没读明白，残过一处。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F05:bowl_and_copper_limits",
+      "value": "罗现已在场见三片原铜摆出，记录干碗缺口/釉点/底纹与代存；不沿用前章只见布下圆弧的当前限制。未见声像，也未获活少年、活桑或全网预算信息；在场不等于已读懂全部古字。",
+      "holder": "C-F05",
+      "valid_from": 9050,
+      "valid_until": null,
+      "quote": "邵恒将碗放回布上，问罗申有没有记缺口、釉点和底纹。\n\n罗申又添了几字。"
+    },
+    {
+      "kind": "state",
+      "key": "F:P-B01:custody_terms",
+      "value": "旧碗订三日由队代存，社可约当面验；若收回须队到场，不可径从店房拎走。三日未到期，未写永久所有权或已续期。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "它的代存条写了三日，也写了当面交验。"
+    },
+    {
+      "kind": "state",
+      "key": "F:P-B01:holder_location",
+      "value": "干碗仍由曹保有，软衣重裹放回包顶；夜间房内软衣包着，未加水、未离队、未恢复新肋。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "曹砚生看完两份，自己留下副条，将空碗重新裹进软衣，放回包顶。"
+    },
+    {
+      "kind": "state",
+      "key": "F:employment:Cao_daywork_agreement",
+      "value": "曹只答应明日一天读档点工，约日落按实际工作结，后两日明晚再议；这是约定不是已上工/已领新工钱，也无再入承诺。",
+      "holder": "",
+      "valid_from": 9060,
+      "valid_until": null,
+      "quote": "曹砚生问清工钱何时领、什么算做过，最后只答应先做一日，明晚再议后两日。"
+    },
+    {
+      "kind": "state",
+      "key": "F:employment:Wen_daywork_agreement",
+      "value": "闻答应明日去一次看封袋/改建簿，新工另列未预支，再入须重谈风险人选；次日尚未发生。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "她看见罗申抱着的旧图袋，答应明日去一次，先看封袋与改建簿，工钱另列，不在今天的尾款里预支。"
+    },
+    {
+      "kind": "state",
+      "key": "F:C-F03:current_boundary",
+      "value": "梁没有接新点工，明确不以原尾款要求再入；拟城歇两日后托口信回家，尚未离城，后续护送需先知目的/风险。",
+      "holder": "",
+      "valid_from": 9190,
+      "valid_until": null,
+      "quote": "“我得知道自己去做什么。别进去才说，还有一道门。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F01:Cao_interest_due",
+      "value": "闻听曹称本次尾款足月底续息，知道不是清本金/抵押；未亲自到债权人处证实付款，实际只是曹已隔款。",
+      "holder": "C-F01",
+      "valid_from": 9190,
+      "valid_until": null,
+      "quote": "“这回的尾钱，月底续息够。”他主动道，“不是清掉抵押。先别替我想着一次都还了。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F03:Cao_interest_due",
+      "value": "梁同场听曹足续息但未清抵押；梁留自己的返家钱，没有替曹偿债。",
+      "holder": "C-F03",
+      "valid_from": 9190,
+      "valid_until": null,
+      "quote": "“这回的尾钱，月底续息够。”他主动道，“不是清掉抵押。先别替我想着一次都还了。”"
+    },
+    {
+      "kind": "state",
+      "key": "F:C-F02:interest_reserve",
+      "value": "曹已将尾款中一部分另用纸卷起留续息，自称足本月息；未实际付债权人，不推导抵押清偿或金额。",
+      "holder": "",
+      "valid_from": 9190,
+      "valid_until": null,
+      "quote": "曹砚生将钱袋解开，隔出一部分，另用纸卷好。"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:location",
+      "value": "三人仍照河城西驿公共脚店续夜；闻夜独自走到可见驿口灯处并返回、梁曹房内，不被圈回灰室或禁止自由离店。",
+      "holder": "",
+      "valid_from": 9420,
+      "valid_until": null,
+      "quote": "她走到能看见驿口灯火的地方，停了一会儿，自己转回来。"
+    },
+    {
+      "kind": "state",
+      "key": "F:personal_sling:holder",
+      "value": "闻醒后解索卷枕边，夜出门已重系腰间，非梁私索/灰室承重粗绳挪用。",
+      "holder": "",
+      "valid_from": 9420,
+      "valid_until": null,
+      "quote": "挽索重新系在腰间，掌心包布收着，碰到硬处仍疼。"
+    },
+    {
+      "kind": "state",
+      "key": "F:C-F01:hand_pain",
+      "value": "闻掌布洗脸湿边后换角，夜仍痛，未瞬愈。",
+      "holder": "",
+      "valid_from": 9420,
+      "valid_until": null,
+      "quote": "挽索重新系在腰间，掌心包布收着，碰到硬处仍疼。"
+    },
+    {
+      "kind": "state",
+      "key": "F:C-F03:minor_foot_abrasion",
+      "value": "梁脚后跟仍痛、步有跛，鞋袜脱晾可歇；没有重伤或已痊愈。",
+      "holder": "",
+      "valid_from": 9180,
+      "valid_until": null,
+      "quote": "走动时，他仍有一点跛，脸上却不像先前那样紧。"
+    },
+    {
+      "kind": "state",
+      "key": "F:communication:next_report_prepared",
+      "value": "夜闻写三人已出/城里住店，准备明晨告诉A；本章非已发送，A仍不知CH009出陵与城内会面。",
+      "holder": "",
+      "valid_from": 9420,
+      "valid_until": null,
+      "quote": "她先写：三人已出。\n\n停了一会儿，又在后面添上：在城里，住店。"
+    },
+    {
+      "kind": "fact",
+      "key": "A:C-A09:introduced",
+      "value": "本章新客胡氏，自述镇西胡家裁衣铺，持母亲用过的小烫斗；年龄修为未写，不补姓名关系史。",
+      "holder": "",
+      "valid_from": 9000,
+      "valid_until": null,
+      "quote": "“镇西胡家的裁衣铺。”她说，“我姓胡。"
+    },
+    {
+      "kind": "fact",
+      "key": "A:new_repair:customer_material_source",
+      "value": "胡氏自带旧斗、新木柄与铜条；岑以客户料配新箍，旧件/余料归还，没擅拿坊料或拆新案。",
+      "holder": "",
+      "valid_from": 9000,
+      "valid_until": null,
+      "quote": "袋底还包着一截新木柄和一条铜料，铜料已经裁过，边口有毛。"
+    },
+    {
+      "kind": "fact",
+      "key": "A:new_repair:completed",
+      "value": "岑清铁根无裂、短配新柄按胡氏握位、退软铜另收箍、师徒冷试；申后客户自带试炭冷热试用，稳定后交还。新活不是旧筛/九风嘴/两旧钳再次结款。",
+      "holder": "",
+      "valid_from": 9210,
+      "valid_until": null,
+      "quote": "新柄还稳着，木头没有冒烟，铜箍的边也没往外张。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A01:repair_income_delta",
+      "value": "本新修工总收五枚，定二/交后三实际到账。火炭柴与守火各支一，总净三，之后晚饼花二；不是旧九件/两钳收入。",
+      "holder": "",
+      "valid_from": 9210,
+      "valid_until": null,
+      "quote": "三枚尾钱放在案上。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A01:copper_cash",
+      "value": "初九新活前两枚，加定钱二再收尾三共七，向乔买炭柴一和守火一后五，购两饼二后现余三。原三灵石未重追，也无新碎灵石入账。",
+      "holder": "",
+      "valid_from": 9360,
+      "valid_until": null,
+      "quote": "饼吃完，岑照把三枚余钱收好，回小灶屋检查火闩。"
+    },
+    {
+      "kind": "fact",
+      "key": "A:charcoal:purchase_source",
+      "value": "乔声明今晨卸前分出可自拿份，此包干燥细碎炭加起火细柴，一钱实际成交；非坊配大灶余炭，未抵掉旧潮炭争议。",
+      "holder": "",
+      "valid_from": 9060,
+      "valid_until": null,
+      "quote": "“今早新到的。我在卸车前分了自己能拿的那份。细碎的这一小包，添点起火细柴，一枚。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A02:fire_work_paid",
+      "value": "本次守火约一刻、一钱，乔当时有空而接，实际守到退火并收钱，两项共收二；不把CH003旧守火报酬重领。",
+      "holder": "",
+      "valid_from": 9120,
+      "valid_until": null,
+      "quote": "岑照把留着的一枚钱给她。\n\n她收下，解开束袖的布带，将手腕上那一点炭灰抹掉。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A02:future_contact_work_boundary",
+      "value": "逐次有空且同意才代辰初一刻，报价一钱；须先知联络约定，窑/大灶排工优先，顺路自愿不排班。明早尚未应、未买常驻。",
+      "holder": "",
+      "valid_from": 9120,
+      "valid_until": null,
+      "quote": "“明早我还没应。你别见我收了今天的，就把人排上。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A01:Qiao_current_lot_claim",
+      "value": "岑听乔称新批不潮、家中想以新抵旧而乔未应；未把旧潮炭原因/窑份写成已查明获权。",
+      "holder": "C-A01",
+      "valid_from": 9060,
+      "valid_until": null,
+      "quote": "“还没说清。袋签在我手里。家里要我拿新一批抵过去，别再翻旧的，我没应。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A02:own_work_goal",
+      "value": "乔仍争原潮炭责任与家窑权，袋签自持；本次有偿售私炭不等于全窑份额已到手。",
+      "holder": "",
+      "valid_from": 9060,
+      "valid_until": null,
+      "quote": "“还没说清。袋签在我手里。家里要我拿新一批抵过去，别再翻旧的，我没应。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A02:old_iron_register_report",
+      "value": "乔在本章退火后才听岑转述午前簿上北回风口卸压铁/桑验厚薄未验补肩适性，桑现场认可；不是乔上午随去亲见总簿，不从原铜获全死因。",
+      "holder": "C-A02",
+      "valid_from": 9125,
+      "valid_until": null,
+      "quote": "他说北回风口那件卸压铁，又说桑见石当时验过厚薄，却没验清拿去补肩是否合适。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A02:heat_hold_report",
+      "value": "乔听岑说新肩未装、热未起；不因此确定廿一已取消或桑已救。",
+      "holder": "C-A02",
+      "valid_from": 9125,
+      "valid_until": null,
+      "quote": "“没装。热也没起。”岑照答。"
+    },
+    {
+      "kind": "state",
+      "key": "A:old_case:north_return_slip_inquiry",
+      "value": "北口回信本章仍未到；师徒约到后共同再查，旧验工副联/伤者受益者未补出，旧案不完结。",
+      "holder": "",
+      "valid_from": 9125,
+      "valid_until": null,
+      "quote": "没有把北口未到的回信也说成证据，没有说找着一行字便能救谁。"
+    },
+    {
+      "kind": "state",
+      "key": "A:old_case:Sang_written_admission",
+      "value": "桑在岑上午笔记添卸压铁/未验材性；不是另获原始退料单或新签旧领条。师徒当晚约不抹已做也不认无据旧事。",
+      "holder": "",
+      "valid_from": 9300,
+      "valid_until": null,
+      "quote": "卸压铁，未验材性。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A03:departure",
+      "value": "桑初九下午帮助旁看新活、夜与岑在库门外分饼，人仍器坊；未去矿/未亡。",
+      "holder": "",
+      "valid_from": 9300,
+      "valid_until": null,
+      "quote": "师徒坐在废器库门外吃饼。"
+    },
+    {
+      "kind": "state",
+      "key": "A:food:inventory",
+      "value": "新买两张饼师徒当晚吃完，不是CH003/CH008旧存回生；未另获免费饭或写新存粮。",
+      "holder": "",
+      "valid_from": 9360,
+      "valid_until": null,
+      "quote": "饼吃完，岑照把三枚余钱收好，回小灶屋检查火闩。"
+    },
+    {
+      "kind": "state",
+      "key": "A:small_stove:repair_notice",
+      "value": "新小木牌描粗修与先看件，已有胡氏这一笔验交和可能转介；不等于未来订单已接。旧正式使用签/禁宿未改。",
+      "holder": "",
+      "valid_from": 9290,
+      "valid_until": null,
+      "quote": "岑照提笔，先描了那个“修”，添粗一横，又将“先看件”三个字写得更清楚。"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A05:use_status",
+      "value": "灶完成一炉新私活后收火检查闩；坊料另领/禁留宿仍在，床在废器库未移回。",
+      "holder": "",
+      "valid_from": 9300,
+      "valid_until": null,
+      "quote": "小灶不能留宿，床还在库里。"
+    },
+    {
+      "kind": "state",
+      "key": "A:private_charcoal:remainder",
+      "value": "乔售包烧短火后余一小把未烧炭，归岑纸包干处保有，不把胡氏试炭或乔另袋算进去。",
+      "holder": "",
+      "valid_from": 9360,
+      "valid_until": null,
+      "quote": "新木柄的细屑已经扫净，剩下的一小把炭包好，搁在干处。"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-F05:retention",
+      "value": "曹制七阶薄规仍A原纸/袖内保有，夜取出察看平直擦净重包；未用于本章斗柄尺寸、未还送、无新肋消耗。",
+      "holder": "",
+      "valid_from": 9360,
+      "valid_until": null,
+      "quote": "七级小阶没有缺，最薄的一角也仍平直。"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A01:holder_location",
+      "value": "A碗仍小灶新案远火处，干布覆盖安静，未带出门/入火/刻新痕；初九午后无新窗口。",
+      "holder": "",
+      "valid_from": 9360,
+      "valid_until": null,
+      "quote": "案上没有别人等着验的东西，青口碗盖在干净布下，安安静静。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A01:shoulder_abrasion",
+      "value": "旧肩不能吃重，修小件垫手布且不肩顶案，未新增重创或无代价治愈。",
+      "holder": "",
+      "valid_from": 9080,
+      "valid_until": null,
+      "quote": "如今肩头仍不能吃重，手里的铜料却只需架在钳上。"
+    }
+  ],
+  "progression": {
+    "goal": "在出陵和挂牌后真正取得收入、确定原物及工作边界，为调查师父保留独立行动条件。",
+    "obstacle": "旧聘书验录/交路条款、未走完整第一层的履约分歧、雇主路引控制；初客不信少年，私接修工缺炭，乔有自己的窑务与排工。",
+    "method": "以实走图留白与旧图误差当面议价，分开旧雇结款/物件收存/新点工；岑先看件留握位、报价、买私炭雇短时守火，客户亲自冷热试用。",
+    "choice": "原铜交存而保留描本凭条，碗限时代存；闻曹只约一天点工、梁不续；岑拒自贴成本换低价，承担自己接活的责任，乔保逐次拒绝权，师徒既查旧责也不认无据指控。",
+    "result": "旧雇真实结款，原铜离队而可查，旧碗仍在曹包；三人自由住宿与分摊，曹暂能续息。小烫斗新活交付，乔两项合两钱已收，A吃两新饼后余三钱。",
+    "consequence": "脱困不等于摆脱路引控制，正式铜件证据转移需靠凭条；旧图查复与三日代存有期限。小灶有首位新客与可能转介，乔未成常驻，师徒的支持包含追责。",
+    "next_options": "下次授权进入S02前先完成首十章全文回看。次日辰初须实际把F已返城消息说给A，回应A本端后续；落实闻曹一天点工与旧图查复、A北口原退料/伤者线。不可又首次读同一铜页、再还原三灵石、重困灰室或把冷检当廿一已救。",
+    "scene_function": "午饭与睡痕保留脱困后的身体和同伴温度；会面让邵的让步与控制同时可见；首客以旧物感情回应报价与手艺而非打脸；乔买炭/守火有对价和拒绝权；分饼、自由出门与报平安准备收束第一阶段。"
+  },
+  "thread_events": [
+    {
+      "id": "Q09",
+      "action": "develop",
+      "description": "F已脱困后继续实际自由选择、会雇主和离店；与CH009真实出陵兑现相连，不再重困等A变门。",
+      "quote": "她笑了笑，点头：“能走。”"
+    },
+    {
+      "id": "Q07",
+      "action": "develop",
+      "description": "雇主结清旧款但保留路引条件，原铜交存/碗限代存；查图已开未有结论，不预判阴谋或全善。",
+      "quote": "“带同行者勘验，也要先议。不是你在图角写个名字，谁都算自己人。”邵恒说。"
+    },
+    {
+      "id": "Q07-map-source",
+      "action": "develop",
+      "description": "CH002出去问旧图的承诺实际向掌事提出，已令调袋簿，封图人与改图原因仍待查复。",
+      "quote": "“那就调。原袋别拆散另换。”"
+    },
+    {
+      "id": "Q04",
+      "action": "develop",
+      "description": "原死亡单未改且原铜交社，曹留描本凭条；A师徒承担旧责任、等北口来源，廿一风险仍开。",
+      "quote": "字没有少，日子也没有变。三个人出了陵，并不能把那一行旧事带着一起放下。"
+    },
+    {
+      "id": "Q-Jo-charcoal",
+      "action": "develop",
+      "description": "新批干炭可独立售一包，乔拒以新抵旧，袋签自持；旧湿料全因与窑权尚未解决。",
+      "quote": "“还没说清。袋签在我手里。家里要我拿新一批抵过去，别再翻旧的，我没应。”"
+    },
+    {
+      "id": "Q01-local-livelihood",
+      "action": "partial",
+      "description": "保住小灶后的首笔新修工从报价到交验收款，扣成本和两饼后余三钱，生活略进步而非重置三灵石。",
+      "quote": "“明日未必还有。”桑见石说。\n\n“今日有。”"
+    },
+    {
+      "id": "Q01-next-safety-report",
+      "action": "plant",
+      "description": "F准备次晨真实告A三人已出城内住店；本章无额外窗口，CH011需实际兑现。",
+      "quote": "她先写：三人已出。\n\n停了一会儿，又在后面添上：在城里，住店。"
+    },
+    {
+      "id": "Q07-bowl-custody",
+      "action": "plant",
+      "description": "旧碗三日代存有期限，后续到期前实际交验/续约/改变需写，不悄悄改成永久自有。",
+      "quote": "它的代存条写了三日，也写了当面交验。"
+    }
+  ],
+  "measured_han": 8137
+}

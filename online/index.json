@@ -11,32 +11,32 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T20:01:33+00:00",
-    "state_revision": 14,
-    "workflow_revision": 49,
-    "state_sha256": "769585cc253d4d52b61723f7f382654d465fd5ca4100bb0bb9b01c3ba6455be3",
-    "workflow_sha256": "0c28b85056166247dd99b8631b1494bceac53de6523cd153db8afcc6c895028f",
+    "generated_at": "2026-10-22T20:08:33+00:00",
+    "state_revision": 15,
+    "workflow_revision": 50,
+    "state_sha256": "a3d3fef29303c19c6f250f1dbed82e59553c0e763dbbdefa005f747032dbc48a",
+    "workflow_sha256": "2e2ad402024a3da23153931de3c9722f27c8d7ac901c1e772b009a681816cdb6",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 9,
+    "adopted_chapters": 10,
     "target_han": 900000,
-    "actual_han": 75362,
+    "actual_han": 83499,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 5,
-    "window_review_due": false,
+    "window_review_due": true,
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "CHECKPOINT",
+    "label": "阶段回看",
     "chapter": 10,
-    "detail": "第十章《不能白收的东西》完整初稿已登记8127汉字；正在逐段全文检查旧雇结算、原铜收存与碗代存、A新修工现金和乔麦合作边界，随后实际全文回看首十章。",
-    "next_action": "完成本章检查与记录后采用；十章全文回看完成才转下一阶段，不自动写十一章。",
-    "updated_at": "2026-10-22T20:01:31+00:00"
+    "detail": "第十章《不能白收的东西》已检查采用8137汉字、1轮局部修订；正式稿10章83499汉字。正在累计真实读取CH001—010全文及记录执行S01阶段回看，目前未标完成，不转S02或开十一章。",
+    "next_action": "继续全文读取未覆盖章并登记阶段回看，落实未来反重复调整后保存、核对阅读导出；不自动写第十一章。",
+    "updated_at": "2026-10-22T20:08:32+00:00"
   },
   "chapters": [
     {
@@ -118,6 +118,15 @@
       "han_count": 8183,
       "text_path": "book/chapters/CH009_0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804.txt",
       "sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+      "needs_revalidation": false
+    },
+    {
+      "number": 10,
+      "title": "不能白收的东西",
+      "stage": "S01",
+      "han_count": 8137,
+      "text_path": "book/chapters/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt",
+      "sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
       "needs_revalidation": false
     }
   ],
@@ -1082,12 +1091,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T16:57:38+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第六章《旧图不是路》已完成并采用8373汉字，1轮局部修订；正式稿共6章50578汉字。初七三项约定已给结果，F已实走三丈六尺并运到首包；第七章未生成。"
-    },
-    {
       "at": "2026-10-22T17:18:23+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1170,6 +1173,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第十章《不能白收的东西》完整初稿已登记8127汉字；正在逐段全文检查旧雇结算、原铜收存与碗代存、A新修工现金和乔麦合作边界，随后实际全文回看首十章。"
+    },
+    {
+      "at": "2026-10-22T20:08:32+00:00",
+      "phase": "CHECKPOINT",
+      "label": "阶段回看",
+      "detail": "第十章《不能白收的东西》已检查采用8137汉字、1轮局部修订；正式稿10章83499汉字。正在累计真实读取CH001—010全文及记录执行S01阶段回看，目前未标完成，不转S02或开十一章。"
     }
   ]
 }

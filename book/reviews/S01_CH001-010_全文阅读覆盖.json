@@ -1,0 +1,108 @@
+{
+  "purpose": "S01全文回看，逐项记录真实已读，不以摘要代全文",
+  "source_head": "13482bf19630553c53cacf7e31267a24aa7b0667",
+  "chapters": {
+    "9": {
+      "text_sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+      "record_sha256": "fe22c8f1092c4bcfdca9a843c58b2e2e7d5baba2e9df585315c3baa5c0206d73",
+      "characters": 10335,
+      "read_ranges": [
+        [
+          0,
+          5200
+        ],
+        [
+          5200,
+          10335
+        ]
+      ],
+      "record_fields_read": "摘要、推进、全部50条kind/key/holder/value及线索；引文从全文核，不重复打印review旧声明",
+      "notes": "真实出口兑现：梁先地面后全队，补给与返城实际发生，公共脚店自由可退。原件仍三人；罗只知旧碗不知跨时，未有新窗。月底息期限首报，闻支定钱两间半日，午饭订未送。旧总簿已到并见压铁来源链，非事故全因；A牌仅挂未赚。后续勿再退回灰室闭门循环。"
+    },
+    "1": {
+      "text_sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
+      "record_sha256": "907af07a6f871e6288ed36f56a7e01ac6d8de2d31bd7dbc23f4868f27359455f",
+      "characters": 11053,
+      "read_ranges": [
+        [
+          0,
+          11053
+        ]
+      ],
+      "record_fields_read": "摘要、推进、全部kind/key/holder/value及线索；引文从全文核；未把旧review声明作为本轮阅读",
+      "notes": "全文核实开场借支、迟试火真实损失与F只恢复通气；原聘约辨清第一层旧物来历/画通路结余款。场景行动带出问照同名，不是全知答案。早期引风问题虽解决通气，撤路到CH009才闭合。"
+    },
+    "3": {
+      "text_sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
+      "record_sha256": "9931249ffb862d09759b13137a964d033c1ee20f601c3b49a611762b493ce0bf",
+      "characters": 10387,
+      "read_ranges": [
+        [
+          0,
+          10387
+        ]
+      ],
+      "record_fields_read": "摘要、推进、全部kind/key/holder/value及线索；引文从全文核；未把旧review声明作为本轮阅读",
+      "notes": "全文核实十二克连纸薄规实际送达及九减八，小灶使用签/原三灵石抵清/四枚余钱/坊余炭全退。守火半时辰两钱真实付清，乔没有永久免费义务。新工具不能代替工序，后续新修工不可重复九件与两钳结款。"
+    },
+    "2": {
+      "text_sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
+      "record_sha256": "d898c6deba3780bd75957778a1914d42f45fdb1f222cdbdb9791bedfa962a0b5",
+      "characters": 10917,
+      "read_ranges": [
+        [
+          0,
+          10917
+        ]
+      ],
+      "record_fields_read": "摘要、推进、全部kind/key/holder/value及线索；不以旧review为当前阅读",
+      "notes": "实际全文及全部记录字段读毕。四钱补筛、两钱西棚位与一筐柴工各独立；发现27年旧图差距且约出去问账房，非CH010新发现。九肋铭文和曹独制凡铜有源，章末尚未递，次章接同窗。"
+    },
+    "4": {
+      "text_sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
+      "record_sha256": "f412c9347fac83eb92f38eaef96afbc6239c73a3383e052549a722d6a886c4ab",
+      "characters": 10769,
+      "read_ranges": [
+        [
+          0,
+          10769
+        ]
+      ],
+      "record_fields_read": "摘要、推进、全部kind/key/holder/value及线索；不以旧review为当前阅读",
+      "notes": "聚合首次截断后单独重读10769字符完整正文，再读全部记录字段。已兑乔夜谈、报修灶与初五新痕未复制，F实移护板仅窄阶，未出口；A自搭稳案留限定图、桑返坊验工具但未见声像。乔次晨不可默认在场。"
+    },
+    "10": {
+      "text_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+      "record_sha256": "7228a84c018ff5d03570889686a9016abc57df2bc593ce7e67b0f506ffef6d31",
+      "characters": 10320,
+      "read_ranges": [
+        [
+          0,
+          10308
+        ]
+      ],
+      "repair_diff_reviewed": true,
+      "record_fields_read": "本任务实际创作后集中全文审阅、53条实际记录完整生成并检查，1轮全部差异另读",
+      "notes": "完整读初稿及修订差异，版本未再变。旧雇结清/原铜离队与三日碗代存落地，A新五钱修工净收三再支两饼现余三，无新窗。"
+    }
+  },
+  "chapter10_draft_review": {
+    "read_initial_sha256": "1a758048247db4a2373db47eafb2d69e4fcf12bc11df2306645e1a9f34d1454d",
+    "read_ranges": [
+      [
+        0,
+        10308
+      ]
+    ],
+    "reviewed_repair_diff_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+    "repairs": 1,
+    "notes": "初稿全部逐段读毕，修订差异另完整读毕。原铜从房取托改为仅一次，续夜付款明确，去未展示用规暗示。原铜离队/碗三日代存/旧雇结清是实质新状态；新活五钱/成本二/晚饭二/净留三；无新窗。"
+  },
+  "status": "IN_PROGRESS",
+  "pending_chapters": [
+    5,
+    6,
+    7,
+    8
+  ]
+}

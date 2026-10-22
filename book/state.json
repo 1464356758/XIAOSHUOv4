@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 14,
+  "revision": 15,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -95,6 +95,15 @@
       "record_path": "records/CH009_fe22c8f1092c4bcfdca9a843c58b2e2e7d5baba2e9df585315c3baa5c0206d73.json",
       "record_sha256": "fe22c8f1092c4bcfdca9a843c58b2e2e7d5baba2e9df585315c3baa5c0206d73",
       "han_count": 8183
+    },
+    "10": {
+      "title": "不能白收的东西",
+      "stage": "S01",
+      "text_path": "chapters/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt",
+      "text_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+      "record_path": "records/CH010_7228a84c018ff5d03570889686a9016abc57df2bc593ce7e67b0f506ffef6d31.json",
+      "record_sha256": "7228a84c018ff5d03570889686a9016abc57df2bc593ce7e67b0f506ffef6d31",
+      "han_count": 8137
     }
   },
   "checkpoints": [
@@ -540,17 +549,22 @@
       "task_id": "ab1b56b6-12df-4a48-ad34-9037a36e28c8",
       "chapter": 10,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "1a758048247db4a2373db47eafb2d69e4fcf12bc11df2306645e1a9f34d1454d",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+          "reason": "全文回读发现铜页木托先被合上又从房内重新取出，调为先比空套、再从房中取原托后比套；明确曹梁分摊的是合住续夜房钱，避免混同前章闻已付的半日房；删去未展示本章用薄规修烫斗的暗示。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "1a758048247db4a2373db47eafb2d69e4fcf12bc11df2306645e1a9f34d1454d",
-      "candidate_path": "candidates/CH010_1a758048247db4a2373db47eafb2d69e4fcf12bc11df2306645e1a9f34d1454d.txt"
+      "candidate_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+      "candidate_path": "candidates/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt"
     }
   },
   "completion": null
