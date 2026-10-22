@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {webcrypto} from 'node:crypto';
+import {webcrypto,createHash,randomBytes} from 'node:crypto';
 import {gzipSync} from 'node:zlib';
-import {canonicalJSON,decryptPrivateBook,validateReaderKey} from '../dist/core.mjs';
+import {canonicalJSON,decryptPrivateBook,validateReaderKey,portableSha256} from '../dist/core.mjs';
 import {parseRepository,rawURL,validateManifest,fetchManifest,fetchChapter,sha256,exportBook,readShelf,RequestGate,researchPrompt,startupPrompt,continuationPrompt,safeFilename} from '../dist/core.mjs';
 if(!globalThis.crypto)globalThis.crypto=webcrypto;
 const repo=parseRepository('https://github.com/example/novel');
@@ -27,6 +27,7 @@ test('rate limits are explicit and never appear as empty success',async()=>{awai
 test('malformed JSON is rejected',async()=>{await assert.rejects(fetchManifest(repo,{fetcher:async()=>response('<html>bad</html>')}),error=>error.code==='invalid_manifest');});
 test('oversized response is rejected',async()=>{await assert.rejects(fetchManifest(repo,{maxBytes:5,fetcher:async()=>response('123456789')}),error=>error.code==='too_large');});
 test('chapter text must match adopted SHA-256',async()=>{const {text,data}=await fixture();assert.equal(await fetchChapter(repo,data.chapters[0],{fetcher:async()=>response(text)}),text);});
+test('portable SHA-256 matches native SHA on Unicode, padding boundaries and chapter-sized content',()=>{for(const data of [Buffer.from(''),Buffer.from('abc'),Buffer.from('中文正文🌙\n换行'),...Array.from([1,55,56,63,64,65,119,120,127,128,129,32768],n=>randomBytes(n)),Buffer.from('验'.repeat(9000))])assert.equal(portableSha256(data),createHash('sha256').update(data).digest('hex'));});
 test('chapter tampering stops reading and export',async()=>{const {data}=await fixture();await assert.rejects(fetchChapter(repo,data.chapters[0],{fetcher:async()=>response('被改过的文字')}),error=>error.code==='hash_mismatch');});
 test('CRLF normalizes the same way as the Python state tool',async()=>{const text='第一段\n第二段';const hash=await sha256(text);const {data}=await fixture();const chapter={...data.chapters[0],sha256:hash,text_path:`book/chapters/CH001_${hash}.txt`};assert.equal(await fetchChapter(repo,chapter,{fetcher:async()=>response('第一段\r\n第二段')}),text);});
 test('full export preserves chapter order while loading at most three at once',async()=>{const {text,data}=await fixture(8);let active=0,max=0;const done=[];const result=await exportBook(repo,data,{fetcher:async()=>{active++;max=Math.max(max,active);await new Promise(resolve=>setTimeout(resolve,2));active--;return response(text);},onProgress:n=>done.push(n)});assert.equal(result.chapters,8);assert.ok(max<=3);assert.equal(done.length,8);assert.ok(result.text.indexOf('第1章')<result.text.indexOf('第8章'));});
