@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 12,
+  "revision": 13,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -77,6 +77,15 @@
       "record_path": "records/CH007_1c5aee288dacdd60eee2578acc70c8c787162b0d49950ac2ff3fd3ab54fb972d.json",
       "record_sha256": "1c5aee288dacdd60eee2578acc70c8c787162b0d49950ac2ff3fd3ab54fb972d",
       "han_count": 8269
+    },
+    "8": {
+      "title": "他们的昨天",
+      "stage": "S01",
+      "text_path": "chapters/CH008_ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c.txt",
+      "text_sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+      "record_path": "records/CH008_2c5881151445388eda8948d8f51bdc436562842ade441e942a87ed1fc81e0c5d.json",
+      "record_sha256": "2c5881151445388eda8948d8f51bdc436562842ade441e942a87ed1fc81e0c5d",
+      "han_count": 8332
     }
   },
   "checkpoints": [
@@ -475,17 +484,27 @@
       "task_id": "418aa663-f953-4b0b-a7a0-177438bb4c9d",
       "chapter": 8,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 2,
       "history": [
         {
           "sha256": "dcce7644e8de762c864075d88e993f77fe83dd2a66b4f5a58a73ec07d0e15697",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "f9f3364c766b8271e07dc65b43c7fd1f494220631c7721a980262664c2b449bb",
+          "reason": "全文回读集中修复：初九转述鲁平应绳误写今日，乔麦曾在第四章见过闻溪却被写成首次照面；补A清水与F实际触碗，纠正铜页托持者；旧领条原纸已交严后误随岑、挽索原属闻却误作梁私物、未设旧锈环和末人回收索；理顺湿纸随包、三包与干碗先后，保留局部纸棍动作与报刻时限。",
+          "repairs": 1
+        },
+        {
+          "sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+          "reason": "复核第六章实际旧册查阅段落：严已亲自翻到七支，不应本章无缘故重演找错三本；改为取回已翻旧册，以新增戊三领条对号为进展。修正人物未登案却写下案的动作。",
+          "repairs": 2
         }
       ],
-      "candidate_sha256": "dcce7644e8de762c864075d88e993f77fe83dd2a66b4f5a58a73ec07d0e15697",
-      "candidate_path": "candidates/CH008_dcce7644e8de762c864075d88e993f77fe83dd2a66b4f5a58a73ec07d0e15697.txt"
+      "candidate_sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+      "candidate_path": "candidates/CH008_ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c.txt"
     }
   },
   "completion": null

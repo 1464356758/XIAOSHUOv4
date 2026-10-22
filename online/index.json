@@ -11,19 +11,19 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T18:48:29+00:00",
-    "state_revision": 12,
-    "workflow_revision": 41,
-    "state_sha256": "0787c90ca1b9dc4108f8dbf8c2734d2f822e45908021ed0e5a3a101fd27f4b66",
-    "workflow_sha256": "dc007136f62d30611062cf5a7cf4b7fd41b0a729cf3035e58ad2b1c1a47ebb80",
+    "generated_at": "2026-10-22T18:58:07+00:00",
+    "state_revision": 13,
+    "workflow_revision": 42,
+    "state_sha256": "da479c8d0ff12ccd30507407c7a4dd1004d66076f467d49a3fcf56311aa4c2e9",
+    "workflow_sha256": "8e659918e23a4090e5dc1da1522ce62626489b012232376ae20200b20b317277",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 7,
+    "adopted_chapters": 8,
     "target_han": 900000,
-    "actual_han": 58847,
+    "actual_han": 67179,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 5,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 8,
-    "detail": "第八章《他们的昨天》完整初稿已登记，正在全文检查旧料来源及交存代价、初九通话的知情和时限、F侧路验走及人器转运；正式采用仍7章。",
-    "next_action": "完成实际全文审查；同任务内集中局部修订，生成有正文引文的章后记录后采用。",
-    "updated_at": "2026-10-22T18:48:29+00:00"
+    "detail": "第八章《他们的昨天》已检查采用8332汉字，2轮局部修订；共8章67179汉字。51条章后记录和初九转运现状已整理，正在保存并核对在线阅读及整本导出。",
+    "next_action": "同步正文、章后记录、状态和接管记录，核对回读与导出；完成后停在第九章授权前。",
+    "updated_at": "2026-10-22T18:58:06+00:00"
   },
   "chapters": [
     {
@@ -100,6 +100,15 @@
       "han_count": 8269,
       "text_path": "book/chapters/CH007_85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738.txt",
       "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+      "needs_revalidation": false
+    },
+    {
+      "number": 8,
+      "title": "他们的昨天",
+      "stage": "S01",
+      "han_count": 8332,
+      "text_path": "book/chapters/CH008_ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c.txt",
+      "sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
       "needs_revalidation": false
     }
   ],
@@ -1064,12 +1073,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T15:30:59+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第五章完整候选已登记并完成全文检查、1轮局部修订；正在整理章后记录与首次五章全文回看。当前正式采用仍为4章。"
-    },
-    {
       "at": "2026-10-22T15:39:06+00:00",
       "phase": "CHECKPOINT",
       "label": "阶段回看",
@@ -1152,6 +1155,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第八章《他们的昨天》完整初稿已登记，正在全文检查旧料来源及交存代价、初九通话的知情和时限、F侧路验走及人器转运；正式采用仍7章。"
+    },
+    {
+      "at": "2026-10-22T18:58:06+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第八章《他们的昨天》已检查采用8332汉字，2轮局部修订；共8章67179汉字。51条章后记录和初九转运现状已整理，正在保存并核对在线阅读及整本导出。"
     }
   ]
 }
