@@ -1,0 +1,25 @@
+{
+  "system_version": "4.1-online",
+  "project_name": "未命名小说",
+  "book_root": "book",
+  "authority": {
+    "mode": "github",
+    "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
+    "branch": "main"
+  },
+  "reader_url": "https://xiaoshuo-v4-reader-7d26.qq1464356758.chatgpt.site",
+  "writing": {
+    "entry": "single_gpt",
+    "chapter_order": "serial",
+    "route_window_min": 3,
+    "route_window_max": 5,
+    "platform": null,
+    "genre": null
+  },
+  "execution": {
+    "context_character_budget": 40000,
+    "background_unattended": false,
+    "api_adapter_installed": false,
+    "note": "GPT在授权的聊天任务中创作，网页负责读取仓库。"
+  }
+}

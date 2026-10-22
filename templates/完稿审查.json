@@ -1,0 +1,18 @@
+{
+  "base_revision": 0,
+  "decision": "pending",
+  "blocking_issues": [
+    "尚未完成最终审查"
+  ],
+  "main_conflict": "根据采用正文填写",
+  "character_choice": "根据采用正文填写",
+  "promise_payoffs": "主要承诺的实际兑现",
+  "remaining_open_questions": "有意保留的问题与理由，没有则写无",
+  "evidence": [
+    {
+      "chapter": 100,
+      "sha256": "实际采用正文哈希",
+      "quote": "准确正文引文"
+    }
+  ]
+}

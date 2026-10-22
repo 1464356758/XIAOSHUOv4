@@ -1,0 +1,23 @@
+{
+  "base_revision": 0,
+  "canon_sha256": "从当前state.json读取",
+  "from": 1,
+  "to": 5,
+  "kind": "window",
+  "read_mode": "尚未阅读全文",
+  "decision": "pending",
+  "coverage": {
+    "1": "实际正文哈希，完整覆盖声明范围"
+  },
+  "record_coverage": {
+    "1": "实际记录哈希，完整覆盖声明范围"
+  },
+  "findings": [],
+  "conclusion": "待实际阅读全文",
+  "causal_progress": "待核对",
+  "repetition_comparison": "比较本段与历史相似桥段",
+  "character_changes": "实际选择与行为变化",
+  "promise_payoffs": "实际兑现、部分兑现和未兑现",
+  "ending_runway": "剩余篇幅与结局条件",
+  "next_action": "具体动作"
+}

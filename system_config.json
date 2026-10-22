@@ -1,0 +1,11 @@
+{
+  "target_chapters": 100,
+  "target_han": 900000,
+  "chapter_han_min": 8000,
+  "chapter_han_max": 10000,
+  "book_han_min": 880000,
+  "book_han_max": 920000,
+  "strict_length": true,
+  "review_interval": 5,
+  "max_local_repairs": 3
+}

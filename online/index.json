@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "system_version": "4.1-online",
+  "initialized": true,
+  "book": {
+    "id": "f3626289-6903-436a-a009-eeee8a209510",
+    "title": "未命名小说",
+    "platform": null,
+    "selected_topic_id": null
+  },
+  "source": {
+    "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
+    "branch": "main",
+    "generated_at": "2026-10-22T01:32:46+00:00",
+    "state_revision": 0,
+    "workflow_revision": 0,
+    "state_sha256": "bf7c63aca896065b05e1256f65e499011491176ac6c17ad349076098e145cd68",
+    "workflow_sha256": "9c0d4087d352101c6aecb4017af3d99dcd948a915883d8da8c92ddffb52189bc"
+  },
+  "progress": {
+    "target_chapters": 100,
+    "adopted_chapters": 0,
+    "target_han": 900000,
+    "actual_han": 0,
+    "completed": false,
+    "needs_revalidation": [],
+    "reviewed_until": 0,
+    "window_review_due": false,
+    "unresolved_reviews": []
+  },
+  "task": {
+    "phase": "WAITING_PLATFORM",
+    "label": "等待选择平台",
+    "chapter": 1,
+    "detail": "系统已准备好，请先选择创作平台。",
+    "next_action": "在起点、番茄、七猫、晋江中选择一个平台，或指定其他平台。",
+    "updated_at": "2026-10-22T01:32:46+00:00"
+  },
+  "chapters": [],
+  "topics": [],
+  "research": null,
+  "history": [
+    {
+      "at": "2026-10-22T01:32:46+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    }
+  ]
+}

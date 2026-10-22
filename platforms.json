@@ -1,0 +1,10 @@
+{
+  "catalog_version": 1,
+  "note": "以下是研究入口，不是已经完成的现行规则核查。选定平台后由GPT重新查询、记录来源与时间。",
+  "platforms": [
+    {"id":"qidian","name":"起点中文网","official_domains":["qidian.com","qq.com","yuewen.com"],"writer_url":"https://write.qq.com/","ranking_url":"https://www.qidian.com/rank/"},
+    {"id":"fanqie","name":"番茄小说","official_domains":["fanqienovel.com"],"writer_url":"https://fanqienovel.com/writer/zone/","ranking_url":"https://fanqienovel.com/"},
+    {"id":"qimao","name":"七猫中文网","official_domains":["qimao.com"],"writer_url":"https://zuozhe.qimao.com/","ranking_url":"https://www.qimao.com/"},
+    {"id":"jinjiang","name":"晋江文学城","official_domains":["jjwxc.net","jjwxc.com"],"writer_url":"https://www.jjwxc.net/","ranking_url":"https://www.jjwxc.net/"}
+  ]
+}

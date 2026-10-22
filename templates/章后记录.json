@@ -1,0 +1,42 @@
+{
+  "chapter": 1,
+  "title": "待填写本章标题",
+  "stage": "S01",
+  "base_revision": 0,
+  "canon_sha256": "从当前state.json读取",
+  "text_sha256": "从count命令读取",
+  "complete": false,
+  "story_time_end": 0,
+  "summary": "根据当前正文填写，不能用计划代替",
+  "review": {
+    "read_full_text": false,
+    "decision": "pending",
+    "blocking_issues": [
+      "实际检查后填写"
+    ],
+    "sources_checked": [],
+    "conclusion": "实际检查后填写"
+  },
+  "facts": [
+    {
+      "kind": "state",
+      "key": "entity:property",
+      "value": "依据正文填写",
+      "holder": "",
+      "valid_from": 0,
+      "valid_until": null,
+      "quote": "复制当前正文中的准确引文"
+    }
+  ],
+  "progression": {
+    "goal": "实际目标",
+    "obstacle": "实际障碍",
+    "method": "实际办法",
+    "choice": "实际选择",
+    "result": "实际结果",
+    "consequence": "实际后果",
+    "next_options": "后续可选行动",
+    "scene_function": "场景实际作用"
+  },
+  "thread_events": []
+}

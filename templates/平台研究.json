@@ -1,0 +1,18 @@
+{
+  "platform": "待选择平台编号",
+  "checked_at": "实际核查时间ISO8601",
+  "coverage_status": "partial",
+  "sources": [],
+  "rules": [
+    {
+      "topic": "投稿、更新、签约、原创与AI辅助要求",
+      "status": "unknown",
+      "source_id": null,
+      "conclusion": "根据实际官方来源分别填写"
+    }
+  ],
+  "rank_samples": [],
+  "gaps": [
+    "此为模板，不是已完成研究"
+  ]
+}

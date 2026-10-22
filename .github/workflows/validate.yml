@@ -1,0 +1,31 @@
+name: Validate novel workspace
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python3 -m unittest discover -s tests -v
+      - name: Validate published index when initialized
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import sys
+          sys.path.insert(0, 'tools')
+          import online_state
+          if Path('book/state.json').exists():
+              print(online_state.validate_index('.'))
+          else:
+              print('Empty initialization template; no book data yet.')
+          PY
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+      - name: Test reader when included
+        run: |
+          node -e "if(require('fs').existsSync('web/tests/core.test.mjs'))require('child_process').execFileSync(process.execPath,['--test','web/tests/core.test.mjs'],{stdio:'inherit'})"

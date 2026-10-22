@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#193c39"><meta name="description" content="连接你的GitHub小说仓库，阅读章节、查看创作进度，复制与导出正文。">
+  <title>小说书架 · V4</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml"><link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<svg aria-hidden="true" class="svg-defs"><defs>
+ <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 5c-3-2-7-2-10-1v15c4-1 7-1 10 1 3-2 6-2 10-1V4c-3-1-7-1-10 1Zm0 0v15"/></symbol>
+ <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+ <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 8a9 9 0 1 0 0 8M20 3v6h-6"/></symbol>
+ <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+ <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+ <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+ <symbol id="i-link" viewBox="0 0 24 24"><path d="m9 15 6-6m-7 8-1 1a4 4 0 0 1-6-6l5-5a4 4 0 0 1 6 0m0 10a4 4 0 0 0 6 0l5-5a4 4 0 0 0-6-6l-1 1" transform="translate(1 0) scale(.9)"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+ <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+</defs></svg>
+<div class="app-shell">
+ <aside class="sidebar" aria-label="作品书架">
+  <a class="brand" href="./"><span class="brand-mark"><svg><use href="#i-book"/></svg></span><span>小说书架<small>给故事一个安放之处</small></span></a>
+  <div class="shelf-heading"><span>我的作品</span><span id="shelfCount">0</span></div>
+  <div id="bookshelf" class="bookshelf"></div>
+  <button class="add-book" id="addBook"><svg><use href="#i-plus"/></svg>添加小说仓库</button>
+  <div class="sidebar-bottom"><span class="small-label">一个仓库，一部小说</span><p>正文留在 GitHub，<br>在这里继续阅读。</p><span class="version">V4 · 创作工作台</span></div>
+ </aside>
+ <main class="workspace">
+  <div class="mobile-bar"><span class="mobile-brand"><svg><use href="#i-book"/></svg>小说书架</span><select id="mobileBooks" aria-label="切换小说"></select><button id="mobileAdd" class="icon-button" aria-label="添加小说仓库"><svg><use href="#i-plus"/></svg></button></div>
+  <header class="topbar"><a id="repoLink" href="https://github.com/1464356758/XIAOSHUOv4" target="_blank" rel="noopener noreferrer"><svg><use href="#i-link"/></svg><span id="repoName">连接小说仓库</span></a><div class="sync-controls"><span id="syncStatus" class="sync-status"><i></i>准备连接</span><button class="button subtle small" id="refresh"><svg><use href="#i-refresh"/></svg><span>刷新</span></button></div></header>
+  <div id="connectionError" class="notice error" role="alert" hidden></div>
+  <section class="page-heading"><div><div class="eyebrow">YOUR STORY, IN PROGRESS</div><h1 id="bookTitle">每一个故事，都值得写完。</h1><p id="bookSubtitle">连接仓库，接着上次的地方。</p></div><button id="exportAll" class="button outline"><svg><use href="#i-download"/></svg>导出整本 TXT</button></section>
+  <nav class="tabs" aria-label="小说页面"><button data-tab="dashboard" class="tab active" aria-current="page">创作进度</button><button data-tab="chapters" class="tab">章节阅读 <span id="chapterBadge">0</span></button><button data-tab="topics" class="tab">平台与选题</button><span class="tab-end" id="lastChecked">每60秒自动刷新</span></nav>
+  <section id="dashboardPanel" class="panel">
+   <div class="overview"><div class="overview-main"><span class="section-kicker">已完成章节</span><div class="big-number"><strong id="chapterCount">0</strong><span>/ <span id="targetChapters">100</span> 章</span></div><div class="progress-track"><div id="bookProgress"></div></div><div class="progress-caption"><span id="progressPercent">尚未开始正文</span><span>一点一点，成为一本书。</span></div></div><div class="overview-side"><span class="section-kicker">累计正文</span><strong id="hanCount">0<span> 字</span></strong><span id="targetHan">目标约90万字</span></div><div class="overview-side"><span class="section-kicker">创作平台</span><strong class="platform-name" id="currentPlatform">待选择</strong><span id="sourceUpdate">等待仓库数据</span></div></div>
+   <div class="dashboard-grid"><section class="task-card"><div class="card-heading"><span class="section-kicker">当前任务</span><span class="pill" id="taskPill">准备中</span></div><h2 id="taskTitle">正在读取最新进度</h2><p id="taskDetail">请稍候。</p><div class="next-action"><span>下一步</span><p id="nextAction">读取仓库中的当前任务。</p></div><div class="task-actions"><button id="copyContinue" class="button primary"><svg><use href="#i-copy"/></svg>复制继续任务指令</button><button id="goTopics" class="text-button">选择平台 <svg><use href="#i-arrow"/></svg></button></div></section>
+   <section class="journey-card"><span class="section-kicker">从灵感到完稿</span><ol id="journey" class="journey"></ol><p class="muted footnote">进度以仓库中已保存的结果为准。</p></section></div>
+   <section class="recent-section"><div class="section-title"><h2>最近的创作足迹</h2><span id="dataVersion" class="muted"></span></div><div id="historyList" class="history-list"><p class="empty-inline">等待第一次同步。</p></div></section>
+  </section>
+  <section id="chaptersPanel" class="panel" hidden>
+   <div class="chapter-tools"><div class="search-wrap"><input id="chapterSearch" type="search" placeholder="搜索章名或章号" aria-label="搜索章节"></div><span id="chapterHint" class="muted">只显示已采用正文</span></div>
+   <div class="reading-layout"><aside id="chapterList" class="chapter-list" aria-label="章节目录"></aside><article class="reader"><div id="readerEmpty" class="reader-empty"><span class="empty-illustration"><svg><use href="#i-book"/></svg></span><h2>下一页，等你的故事。</h2><p>采用的章节会自动出现在这里。<br>选择一章，即可阅读、复制和导出。</p><button class="button outline" id="copyStartup"><svg><use href="#i-copy"/></svg>复制启动指令</button></div><div id="readerContent" hidden><div class="reader-toolbar"><button id="backToContents" class="text-button">← 目录</button><div class="reader-options"><button id="smallerFont" class="icon-button" aria-label="缩小字号">A−</button><button id="largerFont" class="icon-button" aria-label="放大字号">A+</button><button id="togglePaper" class="button subtle small">纸色</button></div></div><div class="reader-heading"><span class="eyebrow" id="readingNumber"></span><h2 id="readingTitle"></h2><div class="reading-meta"><span id="readingCount"></span><span id="hashVerified">正文版本已核对</span></div></div><div id="pendingNotice" class="notice warning" hidden>本章受前文修改影响，正在等待重新核对。</div><div class="reader-actions"><button class="button outline small" id="copyChapter"><svg><use href="#i-copy"/></svg>复制本章</button><button class="button subtle small" id="exportChapter"><svg><use href="#i-download"/></svg>导出本章</button></div><div id="chapterText" class="chapter-text"></div><div class="chapter-pagination"><button id="prevChapter" class="button outline">上一章</button><button id="nextChapter" class="button primary">下一章 <svg><use href="#i-arrow"/></svg></button></div></div></article></div>
+  </section>
+  <section id="topicsPanel" class="panel" hidden><div class="topics-intro"><div><div class="eyebrow">FIND YOUR NEXT STORY</div><h2>先选一片土壤，再让故事生长。</h2><p>选择平台，交给 GPT 核查现行规则、研究榜单，<br class="desktop-only">再从5—10个原创方向中，选你最想写的那个。</p></div><span class="editorial-number">01—10</span></div><div class="platform-grid" id="platformGrid"></div><div class="research-action"><p id="platformActionHint">选择后复制研究指令，发给 GPT 执行并写回仓库。</p><button id="copyResearch" class="button primary"><svg><use href="#i-copy"/></svg>复制平台研究指令</button></div><div id="researchSummary" class="research-summary" hidden></div><div class="section-title topic-section-title"><h2>待选的故事方向</h2><span id="topicCount" class="muted">等待研究结果</span></div><div id="topicList" class="topic-list"><div class="empty-topics"><span>还没有候选题材</span><p>研究完成并提交到仓库后，这里会显示候选的卖点、长篇动力和风险。</p></div></div></section>
+  <footer class="page-footer"><span>把故事写下去。</span><span>GitHub 同步 · 正文版本校验 · TXT 导出</span></footer>
+ </main>
+</div>
+<dialog id="repoDialog"><form id="repoForm"><div class="dialog-heading"><h2>添加一部小说</h2><button type="button" id="closeDialog" class="icon-button" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div><p>一个仓库对应一部作品。添加后，可随时在书架切换。</p><label for="repoInput">GitHub 仓库链接</label><input id="repoInput" type="text" placeholder="https://github.com/用户名/小说仓库" autocomplete="off" required><p class="form-help">支持公开仓库。新作品请先复制初始化包，由 GPT 完成初始化。</p><p id="formError" class="form-error" role="alert" hidden></p><button type="submit" class="button primary full" id="connectButton"><svg><use href="#i-link"/></svg>连接并添加</button><div class="manage-shelf"><h3>管理书架</h3><div id="manageShelf"></div></div></form></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+<script type="module" src="./app.js"></script>
+</body></html>

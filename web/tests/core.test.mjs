@@ -1,0 +1,39 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {webcrypto} from 'node:crypto';
+import {parseRepository,rawURL,validateManifest,fetchManifest,fetchChapter,sha256,exportBook,readShelf,RequestGate,researchPrompt,startupPrompt,safeFilename} from '../dist/core.mjs';
+if(!globalThis.crypto)globalThis.crypto=webcrypto;
+const repo=parseRepository('https://github.com/example/novel');
+async function fixture(count=1){
+  const text='这是测试正文，不是正式小说。';const hash=await sha256(text);
+  return {text,data:{schema_version:1,initialized:true,book:{id:'test',title:'测试作品',platform:null},source:{repository_url:repo.url,branch:'main'},progress:{adopted_chapters:count,actual_han:count*12,target_chapters:100,target_han:900000,needs_revalidation:[]},task:{phase:'WRITING'},topics:[],chapters:Array.from({length:count},(_,i)=>({number:i+1,title:'测试章节'+(i+1),han_count:12,sha256:hash,text_path:`book/chapters/CH${String(i+1).padStart(3,'0')}_${hash}.txt`,needs_revalidation:false}))}};
+}
+const response=(text,status=200)=>new Response(text,{status,headers:{'content-type':'text/plain;charset=utf-8'}});
+
+test('repository URL and owner/repo normalize to same identity',()=>{assert.equal(parseRepository('example/novel').key,repo.key);assert.equal(parseRepository(repo.url+'.git/').key,repo.key);});
+test('reject credentials, lookalike hosts, file URLs, query and traversal',()=>{for(const value of ['javascript:alert(1)','https://github.com.evil/a/b','https://user:token@github.com/a/b','https://github.com/a/b/tree/main','https://github.com/a/b?token=secret','https://github.com/a/../b'])assert.throws(()=>parseRepository(value));});
+test('raw file reads use GitHub default branch HEAD',()=>{assert.match(rawURL(repo,'online/index.json'),/\/HEAD\/online\/index\.json$/);});
+test('reject unsafe content paths',()=>{for(const value of ['../secret','/absolute','book/../secret','book\\x','book//x'])assert.throws(()=>rawURL(repo,value));});
+test('manifest must match the selected repository',async()=>{const {data}=await fixture();data.source.repository_url='https://github.com/example/other';assert.throws(()=>validateManifest(data,repo),/另一部小说/);});
+test('manifest requires contiguous adopted chapters',async()=>{const {data}=await fixture(2);data.chapters[1].number=3;assert.throws(()=>validateManifest(data,repo));});
+test('manifest refuses arbitrary URLs and unsafe chapter locations',async()=>{const {data}=await fixture();data.chapters[0].text_path='https://evil.test/file';assert.throws(()=>validateManifest(data,repo));});
+test('empty initialization manifest is a valid empty state',async()=>{const {data}=await fixture(0);data.initialized=false;data.book.id=null;data.source.repository_url=null;assert.equal(validateManifest(data,repo).chapters.length,0);});
+test('manifest fetch requests live raw data with no-store and omits credentials',async()=>{const {data}=await fixture();let calls=0;const result=await fetchManifest(repo,{fetcher:async(url,options)=>{calls++;assert.match(url,/raw\.githubusercontent\.com/);assert.match(url,/_refresh=/);assert.equal(options.cache,'no-store');assert.equal(options.credentials,'omit');return response(JSON.stringify(data));}});assert.equal(calls,1);assert.equal(result.book.title,'测试作品');});
+test('404 is an explicit initialization or access error',async()=>{await assert.rejects(fetchManifest(repo,{fetcher:async()=>response('no',404)}),error=>error.code==='not_found');});
+test('rate limits are explicit and never appear as empty success',async()=>{await assert.rejects(fetchManifest(repo,{fetcher:async()=>response('slow',429)}),error=>error.code==='rate_limit');});
+test('malformed JSON is rejected',async()=>{await assert.rejects(fetchManifest(repo,{fetcher:async()=>response('<html>bad</html>')}),error=>error.code==='invalid_manifest');});
+test('oversized response is rejected',async()=>{await assert.rejects(fetchManifest(repo,{maxBytes:5,fetcher:async()=>response('123456789')}),error=>error.code==='too_large');});
+test('chapter text must match adopted SHA-256',async()=>{const {text,data}=await fixture();assert.equal(await fetchChapter(repo,data.chapters[0],{fetcher:async()=>response(text)}),text);});
+test('chapter tampering stops reading and export',async()=>{const {data}=await fixture();await assert.rejects(fetchChapter(repo,data.chapters[0],{fetcher:async()=>response('被改过的文字')}),error=>error.code==='hash_mismatch');});
+test('CRLF normalizes the same way as the Python state tool',async()=>{const text='第一段\n第二段';const hash=await sha256(text);const {data}=await fixture();const chapter={...data.chapters[0],sha256:hash,text_path:`book/chapters/CH001_${hash}.txt`};assert.equal(await fetchChapter(repo,chapter,{fetcher:async()=>response('第一段\r\n第二段')}),text);});
+test('full export preserves chapter order while loading at most three at once',async()=>{const {text,data}=await fixture(8);let active=0,max=0;const done=[];const result=await exportBook(repo,data,{fetcher:async()=>{active++;max=Math.max(max,active);await new Promise(resolve=>setTimeout(resolve,2));active--;return response(text);},onProgress:n=>done.push(n)});assert.equal(result.chapters,8);assert.ok(max<=3);assert.equal(done.length,8);assert.ok(result.text.indexOf('第1章')<result.text.indexOf('第8章'));});
+test('empty book does not export a fake chapter',async()=>{const {data}=await fixture(0);await assert.rejects(exportBook(repo,data),error=>error.code==='empty');});
+test('pending revalidation blocks whole-book export',async()=>{const {data}=await fixture();data.progress.needs_revalidation=[1];await assert.rejects(exportBook(repo,data),error=>error.code==='pending');});
+test('one failed chapter prevents a partial successful export',async()=>{const {text,data}=await fixture(4);await assert.rejects(exportBook(repo,data,{fetcher:async url=>response(url.includes('CH003_')?'错误文字':text)}),error=>error.code==='hash_mismatch');});
+test('cancelling an export does not produce a download result',async()=>{const {data}=await fixture();const controller=new AbortController();controller.abort();await assert.rejects(exportBook(repo,data,{signal:controller.signal}),error=>error.name==='AbortError');});
+test('request gate makes previous novel responses stale and aborts them',()=>{const gate=new RequestGate();const first=gate.start();const next=gate.start();assert.equal(first.current(),false);assert.equal(first.signal.aborted,true);assert.equal(next.current(),true);gate.cancel();assert.equal(next.current(),false);});
+test('shelf deduplicates repositories and ignores unsafe saved URLs',()=>{const storage={getItem:()=>JSON.stringify([{url:repo.url,title:'甲'},{url:repo.url,title:'乙'},{url:'javascript:bad'}])};const shelf=readShelf(storage);assert.equal(shelf.length,1);assert.equal(shelf[0].title,'乙');});
+test('corrupt or unavailable storage returns a safe empty shelf',()=>{assert.deepEqual(readShelf({getItem:()=>'{bad'}),[]);assert.deepEqual(readShelf({getItem:()=>{throw new Error('denied');}}),[]);});
+test('prompts carry selected novel and stop before automatic topic selection',()=>{const prompt=researchPrompt(repo,'fanqie');assert.ok(prompt.includes(repo.url));assert.ok(prompt.includes('番茄小说'));assert.ok(prompt.includes('5—10'));assert.ok(prompt.includes('等待我选题'));assert.ok(startupPrompt(repo).includes('当前先不写正文'));});
+test('export filename excludes path and reserved characters',()=>{assert.equal(safeFilename('A/B:C?'), 'ABC.txt');});
+test('100 chapters can be assembled from a consistent 900000-character fixture',async()=>{const text='验'.repeat(9000);const hash=await sha256(text);const {data}=await fixture(100);for(const chapter of data.chapters){chapter.sha256=hash;chapter.text_path=`book/chapters/CH${String(chapter.number).padStart(3,'0')}_${hash}.txt`;chapter.han_count=9000;}const result=await exportBook(repo,data,{fetcher:async()=>response(text)});assert.equal(result.chapters,100);assert.equal((result.text.match(/验/g)||[]).length,900000);});

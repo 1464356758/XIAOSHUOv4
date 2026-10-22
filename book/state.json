@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "book_id": "f3626289-6903-436a-a009-eeee8a209510",
+  "title": "未命名小说",
+  "revision": 0,
+  "config": {
+    "target_chapters": 100,
+    "target_han": 900000,
+    "chapter_han_min": 8000,
+    "chapter_han_max": 10000,
+    "book_han_min": 880000,
+    "book_han_max": 920000,
+    "strict_length": true,
+    "review_interval": 5,
+    "max_local_repairs": 3
+  },
+  "chapters": {},
+  "checkpoints": [],
+  "needs_revalidation": [],
+  "inputs": {},
+  "input_history": [],
+  "tasks": {},
+  "completion": null
+}

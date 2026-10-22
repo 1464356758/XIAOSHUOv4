@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "revision": 0,
+  "book_id": "f3626289-6903-436a-a009-eeee8a209510",
+  "phase": "WAITING_PLATFORM",
+  "platform": null,
+  "selected_topic": null,
+  "research_path": null,
+  "topics_path": null,
+  "chapter": 1,
+  "history": [
+    {
+      "at": "2026-10-22T01:32:46+00:00",
+      "phase": "WAITING_PLATFORM",
+      "label": "等待选择平台",
+      "detail": "系统已准备好，请先选择创作平台。"
+    }
+  ],
+  "detail": "系统已准备好，请先选择创作平台。",
+  "next_action": "在起点、番茄、七猫、晋江中选择一个平台，或指定其他平台。",
+  "updated_at": "2026-10-22T01:32:46+00:00"
+}

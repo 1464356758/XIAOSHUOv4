@@ -1,0 +1,17 @@
+{
+  "platform": "待选择平台编号",
+  "candidates": [
+    {
+      "id": "T01",
+      "title": "暂定书名",
+      "genre": "题材与读者",
+      "pitch": "一句话卖点与人物矛盾",
+      "reader_promise": "读者期待",
+      "long_form_engine": "约90万字的展开动力",
+      "stage_variation": "各阶段的实质变化",
+      "ending_direction": "结局方向",
+      "risk": "风险与来源不足",
+      "source_ids": []
+    }
+  ]
+}
