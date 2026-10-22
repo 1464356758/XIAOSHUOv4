@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {webcrypto} from 'node:crypto';
 import {gzipSync} from 'node:zlib';
 import {canonicalJSON,decryptPrivateBook,validateReaderKey} from '../dist/core.mjs';
-import {parseRepository,rawURL,validateManifest,fetchManifest,fetchChapter,sha256,exportBook,readShelf,RequestGate,researchPrompt,startupPrompt,safeFilename} from '../dist/core.mjs';
+import {parseRepository,rawURL,validateManifest,fetchManifest,fetchChapter,sha256,exportBook,readShelf,RequestGate,researchPrompt,startupPrompt,continuationPrompt,safeFilename} from '../dist/core.mjs';
 if(!globalThis.crypto)globalThis.crypto=webcrypto;
 const repo=parseRepository('https://github.com/example/novel');
 async function fixture(count=1){
@@ -38,6 +38,7 @@ test('request gate makes previous novel responses stale and aborts them',()=>{co
 test('shelf deduplicates repositories and ignores unsafe saved URLs',()=>{const storage={getItem:()=>JSON.stringify([{url:repo.url,title:'甲'},{url:repo.url,title:'乙'},{url:'javascript:bad'}])};const shelf=readShelf(storage);assert.equal(shelf.length,1);assert.equal(shelf[0].title,'乙');});
 test('corrupt or unavailable storage returns a safe empty shelf',()=>{assert.deepEqual(readShelf({getItem:()=>'{bad'}),[]);assert.deepEqual(readShelf({getItem:()=>{throw new Error('denied');}}),[]);});
 test('prompts carry selected novel and stop before automatic topic selection',()=>{const prompt=researchPrompt(repo,'fanqie');assert.ok(prompt.includes(repo.url));assert.ok(prompt.includes('番茄小说'));assert.ok(prompt.includes('5—10'));assert.ok(prompt.includes('等待我选题'));assert.ok(startupPrompt(repo).includes('当前先不写正文'));});
+test('continuation instructions read current files and preserve the current task',async()=>{const {data}=await fixture();data.task={phase:'WAITING_NEXT',label:'等待下一章',next_action:'执行合成第六章任务'};const prompt=continuationPrompt(repo,data);for(const value of [repo.url,'book/state.json','book/接管记录.md','章后记录','执行合成第六章任务','无需阅读密钥'])assert.ok(prompt.includes(value));assert.ok(!prompt.includes('导入本书钥匙'));});
 test('export filename excludes path and reserved characters',()=>{assert.equal(safeFilename('A/B:C?'), 'ABC.txt');});
 test('100 chapters can be assembled from a consistent 900000-character fixture',async()=>{const text='验'.repeat(9000);const hash=await sha256(text);const {data}=await fixture(100);for(const chapter of data.chapters){chapter.sha256=hash;chapter.text_path=`book/chapters/CH${String(chapter.number).padStart(3,'0')}_${hash}.txt`;chapter.han_count=9000;}const result=await exportBook(repo,data,{fetcher:async()=>response(text)});assert.equal(result.chapters,100);assert.equal((result.text.match(/验/g)||[]).length,900000);});
 

@@ -4,6 +4,8 @@
 
 先读取AGENTS.md、project_config.json与当前真实文件；已有book/state.json就恢复当前书，不重新初始化，不根据旧聊天编造进度。
 
+默认直接读取正文，不使用阅读密钥。book/state.json及其引用的chapters、records、inputs、候选和回看可由软件与GPT直接访问；不自动加密、不生成钥匙、不要求作者上传或导入钥匙。旧vault只作历史档案，不能覆盖现行state。详见docs/正文直接读取.md。
+
 如果是空初始化包：在可运行Python的工作区读取并执行tools/online_state.py bootstrap，填入我提供的真实仓库链接和实际默认分支，生成新book_id。不要复制其他小说的身份或正文。已有不同作品身份时先核对，不直接覆盖。
 
 我只使用一个GPT入口，不切换策划、写手或审核角色，也不手工填写JSON。你负责创建、读取、检查和维护文件，所有重要进度真实写回GitHub。遇到输出上限保存接续位置，同一章正常续写不消耗修订次数。

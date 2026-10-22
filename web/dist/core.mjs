@@ -152,7 +152,11 @@ export function researchPrompt(repo,platform){
   const name=PLATFORM_NAMES[platform]||'由我指定的平台';
   return `读取GitHub小说仓库 ${repo.url}，遵循AGENTS.md与启动新书.txt，先核对正式状态。\n我选择${name}。请核查现行官方创作、投稿、签约、更新和AI辅助使用规则，记录来源、日期与未核实项；研究该平台当前公开榜单及同类型作品，区分榜单时间、类别和可见指标。根据研究提出5—10个原创选题，每个说明卖点、人物矛盾、90万字展开动力、阶段变化、结局方向和风险。把研究与候选写回仓库并更新online/index.json，停在等待我选题。不要替我选定，也不要开始正文。`;
 }
-export function startupPrompt(repo){return `接管GitHub小说仓库 ${repo.url}，读取AGENTS.md和启动新书.txt。若尚未初始化，使用空母版建立本书身份；已有进度则继续当前任务。先让我选择平台，再查官方规则和榜单，提出5—10个原创选题供我选择。每次重要进度写回GitHub并更新online/index.json，当前先不写正文。`;}
+export function startupPrompt(repo){return `接管GitHub小说仓库 ${repo.url}，读取AGENTS.md和启动新书.txt。正文与章后记录直接保存在book/，不用导入阅读密钥，不自动改成加密存储。若尚未初始化，使用空母版建立本书身份；已有进度则继续当前任务。先让我选择平台，再查官方规则和榜单，提出5—10个原创选题供我选择。每次重要进度写回GitHub并更新online/index.json，当前先不写正文。`;}
+
+export function continuationPrompt(repo,manifest){
+  return `读取GitHub小说仓库 ${repo.url} 的AGENTS.md、启动新书.txt和默认分支最新正式状态。直接读取book/state.json、book/workflow.json、online/index.json、book/接管记录.md，以及state引用的最新正文、章后记录、canon和roadmap；无需阅读密钥，不使用旧vault作为当前入口。当前网页显示：${manifest.task.label||manifest.task.phase}。下一步：${manifest.task.next_action||'接着仓库当前任务执行。'}。已有采用稿不重写、不重新初始化；核对候选、三轮修订计数、待重核与回看覆盖。按我的本次指令执行，完成后更新online/index.json，与关联产物一起写回GitHub并回读验证。不自动恢复阅读加密。`;
+}
 
 export function readShelf(storage){
   try{

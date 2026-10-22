@@ -199,6 +199,8 @@ def build_index(project, save=True):
                            book_id=state['book_id'], key_id=pointer['key_id'])
         ns.require(ns.read_json(root / 'private_storage.json') == pointer, '索引生成期间私密稿改变，请重试。')
     else:
+        data['source']['manuscript_storage'] = 'plain_files_v1'
+        data['source']['requires_reader_key'] = False
         ns.require(ns.load_state(root)['revision'] == state['revision'], '索引生成期间正式状态改变，请重试。')
     ns.require(load_workflow(project)["revision"] == workflow["revision"], "索引生成期间正式状态改变，请重试。")
     if save: ns.atomic_json(project / "online/index.json", data)

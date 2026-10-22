@@ -22,5 +22,9 @@
     "background_unattended": false,
     "api_adapter_installed": false,
     "note": "GPT在授权的聊天任务中创作，网页负责读取仓库。"
+  },
+  "storage": {
+    "mode": "plain_files",
+    "requires_reader_key": false
   }
 }

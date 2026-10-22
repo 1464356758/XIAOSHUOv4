@@ -176,6 +176,57 @@ def unlock(project, key_file, out):
     ns.atomic_json(out / 'private_parent.json', {'vault_sha256': ns.read_json(Path(project) / 'book/private_storage.json')['sha256']})
     return {'unlocked': True, 'book_id': envelope['public']['book_id'], 'revision': envelope['public']['revision'], 'chapters': len(envelope['public']['chapters'])}
 
+def publish_plain(project, key_file, author_request):
+    """按作者实际指令恢复直接读取；从当前密文认证恢复，保留身份和全部版本。"""
+    ns.require(bool(author_request.strip()), '需要记录作者取消阅读密钥的实际指令。')
+    project = Path(project).resolve()
+    root = project / 'book'
+    with ns.writer_lock(root):
+        pointer, _ = read_public(project)
+        envelope, files = decrypt(project, key_file)
+        ns.require(envelope['public']['book_id'] == pointer['book_id']
+                   and envelope['public']['revision'] == pointer['revision'], '迁移期间加密稿改变，请重读。')
+        secret = base64.b64encode(read_key(key_file, pointer['book_id'])).decode()
+        ns.require(all(secret not in text and '"key_base64"' not in text for text in files.values()),
+                   '书稿夹有密钥文件，不能发布。')
+        ns.require('private_parent.json' not in files and 'private_storage.json' not in files,
+                   '书稿夹有存储控制指针，不能直接发布。')
+        with tempfile.TemporaryDirectory(prefix='novel-public-verify-') as tmp:
+            stage = Path(tmp)
+            for name, text in files.items():
+                ns.atomic_text(stage / name, text)
+            ns.require(projection(stage) == envelope['public'], '恢复的正式状态与密文目录不符。')
+        # 先检查已有不可变文件，避免用本地遗留物覆盖正式版本。
+        mutable = {'state.json', '接管记录.md'}
+        for name, text in files.items():
+            target = ns.inside(root, name)
+            if name not in mutable and name != 'workflow.json' and target.exists():
+                ns.require(target.read_text(encoding='utf-8') == text, '已有正式产物冲突：' + name)
+        for name, text in files.items():
+            if name in ('state.json', 'workflow.json'):
+                continue
+            target = ns.inside(root, name)
+            if name in mutable:
+                ns.atomic_text(target, text)
+            else:
+                ns.immutable_text(target, text)
+        ns.require(read_public(project)[0] == pointer, '迁移期间加密稿改变，请重读。')
+        ns.atomic_text(root / 'state.json', files['state.json'])
+        ns.atomic_json(root / 'storage_migration.json', dict(
+            mode='plain_files', requires_reader_key=False,
+            author_request=author_request.strip(), book_id=pointer['book_id'],
+            revision=pointer['revision'], previous_vault_path=pointer['path'],
+            previous_vault_sha256=pointer['sha256'],
+            note='现行来源是book/state.json及其引用文件。历史vault仅保留作旧版本档案，不是当前阅读入口。'))
+        (root / 'private_storage.json').unlink()
+        result = ns.status(root)
+        ns.require(result['revision'] == envelope['public']['revision']
+                   and result['adopted_chapters'] == envelope['public']['progress']['adopted_chapters'],
+                   '恢复后的进度不一致。')
+    return dict(published_plain=True, book_id=result['book_id'], revision=result['revision'],
+                chapters=result['adopted_chapters'], actual_han=result['actual_han'],
+                requires_reader_key=False)
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument('--project', default='.')
@@ -184,11 +235,16 @@ def main():
     s.add_parser('status')
     a = s.add_parser('pack'); a.add_argument('--source', required=True); a.add_argument('--key-file', required=True)
     a = s.add_parser('unlock'); a.add_argument('--key-file', required=True); a.add_argument('--out', required=True)
+    a = s.add_parser('publish-plain'); a.add_argument('--key-file', required=True); a.add_argument('--author-request', required=True)
     args = p.parse_args()
     try:
         if args.command == 'keygen': result = make_key(args.out, args.book_id)
         elif args.command == 'pack': result = pack(args.project, args.source, args.key_file)
         elif args.command == 'unlock': result = unlock(args.project, args.key_file, args.out)
+        elif args.command == 'publish-plain': result = publish_plain(args.project, args.key_file, args.author_request)
+        elif not (Path(args.project) / 'book/private_storage.json').exists():
+            result = dict(ns.status(Path(args.project) / 'book'), encrypted=False,
+                          note='正文和记录可直接读取，不需要阅读密钥。')
         else:
             pointer, data = read_public(args.project)
             result = dict(data['public']['progress'], book_id=pointer['book_id'], revision=pointer['revision'], encrypted=True,

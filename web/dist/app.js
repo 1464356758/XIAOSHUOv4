@@ -1,4 +1,4 @@
-import {parseRepository,fetchManifest,fetchChapter,exportBook,formatHan,safeFilename,researchPrompt,startupPrompt,readShelf,RequestGate,PLATFORM_NAMES,PHASE_LABELS,validateReaderKey} from './core.mjs';
+import {parseRepository,fetchManifest,fetchChapter,exportBook,formatHan,safeFilename,researchPrompt,startupPrompt,continuationPrompt,readShelf,RequestGate,PLATFORM_NAMES,PHASE_LABELS} from './core.mjs';
 
 const $=id=>document.getElementById(id);
 const storage={getItem:key=>{try{return localStorage.getItem(key);}catch{return null;}},setItem:(key,value)=>{try{localStorage.setItem(key,value);}catch{}}};
@@ -7,8 +7,6 @@ const icon=id=>{const svg=document.createElementNS('http://www.w3.org/2000/svg',
 const DEFAULT_REPO='https://github.com/1464356758/XIAOSHUOv4';
 const state={shelf:readShelf(storage),active:null,manifest:null,chapter:null,text:null,platform:'qidian',tab:'dashboard',lastChecked:null,font:Math.min(28,Math.max(16,Number(storage.getItem('novel-font'))||20)),paper:storage.getItem('novel-paper')||'',cooldownUntil:0};
 const syncGate=new RequestGate(),chapterGate=new RequestGate(),exportGate=new RequestGate(),formGate=new RequestGate();
-// 私密钥匙只在当前页面内存中保存，不写URL、浏览器持久存储或网络。
-const readerKeys=new Map();
 let toastTimer;
 function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,4300);}
 function persist(){storage.setItem('novel-v4-shelf',JSON.stringify(state.shelf));if(state.active)storage.setItem('novel-v4-active',state.active.key);}
@@ -27,7 +25,6 @@ function renderShelf(){
 }
 function removeBook(key){state.shelf=state.shelf.filter(x=>x.key!==key);if(state.active?.key===key){syncGate.cancel();chapterGate.cancel();exportGate.cancel();state.active=null;state.manifest=null;state.chapter=null;state.text=null;if(state.shelf.length)selectBook(state.shelf[0]);else{resetBook();setConnection('未连接');setError('书架为空。添加一个小说仓库开始阅读。');}}persist();renderShelf();toast('已从本机书架移除，GitHub 仓库没有改动。');}
 function resetBook(){
-  $('privateControls').hidden=true;
   $('exportAll').replaceChildren(icon('download'),document.createTextNode('导出整本 TXT'));
   $('bookTitle').textContent=state.active?.title||'每一个故事，都值得写完。';$('bookSubtitle').textContent='正在读取仓库的最新进度。';$('chapterCount').textContent='0';$('hanCount').replaceChildren(document.createTextNode('0'),make('span','',' 字'));$('chapterBadge').textContent='0';$('bookProgress').style.width='0%';$('currentPlatform').textContent='待选择';$('taskTitle').textContent='正在读取最新进度';$('taskDetail').textContent='请稍候。';$('nextAction').textContent='读取当前正式任务。';$('historyList').replaceChildren(make('p','empty-inline','等待同步。'));$('chapterList').replaceChildren();$('readerContent').hidden=true;$('readerEmpty').hidden=false;$('topicList').replaceChildren(make('div','empty-topics','等待研究结果。'));$('researchSummary').hidden=true;$('exportAll').disabled=true;$('copyContinue').disabled=true;
 }
@@ -43,8 +40,8 @@ async function refresh(forceFresh=false){
   try{
     const data=await fetchManifest(repo,{signal:ticket.signal,forceFresh});if(!ticket.current()||state.active?.key!==repo.key)return;
     if(state.manifest && (data.source.state_revision<state.manifest.source.state_revision||(data.source.state_revision===state.manifest.source.state_revision&&data.source.workflow_revision<state.manifest.source.workflow_revision))){setConnection('已连接 · 保留较新进度');return;}
-    const oldHash=state.chapter?.sha256;const currentNumber=state.chapter?.number;applyManifest(data);setError('');setConnection('已连接');state.cooldownUntil=0;
-    if(currentNumber){const updated=data.chapters.find(x=>x.number===currentNumber);if(!updated){state.chapter=null;state.text=null;$('readerEmpty').hidden=false;$('readerContent').hidden=true;}else if(updated.sha256!==oldHash)await openChapter(updated);else{state.chapter=updated;$('pendingNotice').hidden=!updated.needs_revalidation;}}
+    const oldHash=state.chapter?.sha256;const oldStorage=state.chapter?.storage;const currentNumber=state.chapter?.number;applyManifest(data);setError('');setConnection('已连接');state.cooldownUntil=0;
+    if(currentNumber){const updated=data.chapters.find(x=>x.number===currentNumber);if(!updated){state.chapter=null;state.text=null;$('readerEmpty').hidden=false;$('readerContent').hidden=true;}else if(updated.sha256!==oldHash||updated.storage!==oldStorage||state.text===null)await openChapter(updated);else{state.chapter=updated;$('pendingNotice').hidden=!updated.needs_revalidation;}}
   }catch(error){if(!ticket.current()||error.name==='AbortError')return;setConnection(state.manifest?'同步失败 · 保留上次数据':'连接失败',true);setError(error.message||'网络连接失败，请稍后刷新。');if(error.code==='rate_limit')state.cooldownUntil=Date.now()+300000;}
   finally{if(ticket.current()){$('refresh').disabled=false;$('refresh').classList.remove('spin');}}
 }
@@ -60,8 +57,6 @@ function applyManifest(data){
   $('copyContinue').disabled=false;$('exportAll').disabled=!data.chapters.length||!!data.progress.needs_revalidation?.length;
   $('dataVersion').textContent=`数据版本 ${data.source.state_revision??0} · ${data.source.workflow_revision??0}`;
   renderJourney();renderHistory();renderChapters();renderPlatforms();renderTopics();
-  $('privateControls').hidden=data.source.manuscript_storage!=='encrypted_book_v1';
-  $('privateState').textContent=readerKeys.has(data.book.id)?'本页已解锁 · 关闭页面后需重新导入':'正文已加密 · 导入本书钥匙后阅读';
 }
 function renderJourney(){
   const phase=state.manifest?.task.phase;let stage=0;if(phase==='RESEARCH_PLATFORM'||phase==='SCANNING_RANKINGS')stage=1;else if(phase==='WAITING_TOPIC')stage=2;else if(phase==='PLANNING')stage=3;else if(['WRITING','REVIEWING','REVISING','CHECKPOINT','SAVING','BLOCKED','WAITING_NEXT'].includes(phase))stage=state.manifest?.book.selected_topic_id?4:1;else if(phase==='COMPLETE')stage=5;
@@ -80,7 +75,7 @@ function renderChapters(){
 async function openChapter(chapter){
   if(!state.active)return;const repo=state.active;const ticket=chapterGate.start();state.chapter=chapter;state.text=null;setTab('chapters');renderChapters();$('readerEmpty').hidden=true;$('readerContent').hidden=false;$('readingNumber').textContent='CHAPTER '+String(chapter.number).padStart(3,'0');$('readingTitle').textContent=chapter.title;$('readingCount').textContent=chapter.han_count.toLocaleString()+' 字';$('hashVerified').textContent='正在读取并核对正文';$('chapterText').textContent='正在加载正文……';$('copyChapter').disabled=true;$('exportChapter').disabled=true;$('pendingNotice').hidden=!chapter.needs_revalidation;
   const i=state.manifest.chapters.findIndex(x=>x.number===chapter.number);$('prevChapter').disabled=i<=0;$('nextChapter').disabled=i<0||i>=state.manifest.chapters.length-1;
-  try{const text=await fetchChapter(repo,chapter,{signal:ticket.signal,key:readerKeys.get(state.manifest.book.id)});if(!ticket.current()||state.active?.key!==repo.key)return;state.text=text;$('chapterText').textContent=text;$('hashVerified').textContent='正文版本已核对';$('copyChapter').disabled=false;$('exportChapter').disabled=chapter.needs_revalidation;storage.setItem('novel-last-'+repo.key,String(chapter.number));}
+  try{const text=await fetchChapter(repo,chapter,{signal:ticket.signal});if(!ticket.current()||state.active?.key!==repo.key)return;state.text=text;$('chapterText').textContent=text;$('hashVerified').textContent='正文版本已核对';$('copyChapter').disabled=false;$('exportChapter').disabled=chapter.needs_revalidation;storage.setItem('novel-last-'+repo.key,String(chapter.number));}
   catch(error){if(!ticket.current()||error.name==='AbortError')return;$('chapterText').textContent=error.message||'正文读取失败。';$('hashVerified').textContent='读取未完成';toast(error.message||'读取失败');}
 }
 function renderPlatforms(){
@@ -98,7 +93,7 @@ async function copyText(text,message='已复制'){if(!text){toast('暂时没有�
 function download(text,name){const blob=new Blob(['\uFEFF',text],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=make('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),20000);}
 async function exportAll(){
   if(!state.active||!state.manifest)return;const repo=state.active;const manifest=state.manifest;const ticket=exportGate.start();const button=$('exportAll');button.disabled=true;button.replaceChildren(icon('download'),document.createTextNode('准备导出…'));
-  try{const result=await exportBook(repo,manifest,{signal:ticket.signal,key:readerKeys.get(manifest.book.id),onProgress:(n,total)=>{if(ticket.current())button.replaceChildren(icon('download'),document.createTextNode(`导出 ${n}/${total}`));}});if(!ticket.current()||state.active?.key!==repo.key)return;download(result.text,result.filename);toast(`已生成 ${result.chapters} 章 TXT，请在下载中查看。`);}
+  try{const result=await exportBook(repo,manifest,{signal:ticket.signal,onProgress:(n,total)=>{if(ticket.current())button.replaceChildren(icon('download'),document.createTextNode(`导出 ${n}/${total}`));}});if(!ticket.current()||state.active?.key!==repo.key)return;download(result.text,result.filename);toast(`已生成 ${result.chapters} 章 TXT，请在下载中查看。`);}
   catch(error){if(ticket.current()&&error.name!=='AbortError')toast(error.message||'导出失败，未生成不完整文件。');}
   finally{if(ticket.current()){button.replaceChildren(icon('download'),document.createTextNode('导出整本 TXT'));button.disabled=!state.manifest?.chapters.length||!!state.manifest?.progress.needs_revalidation?.length;}}
 }
@@ -111,16 +106,8 @@ $('repoForm').addEventListener('submit',async event=>{event.preventDefault();$('
 });
 $('addBook').addEventListener('click',showDialog);$('mobileAdd').addEventListener('click',showDialog);$('closeDialog').addEventListener('click',closeDialog);$('repoDialog').addEventListener('cancel',()=>formGate.cancel());$('mobileBooks').addEventListener('change',event=>{const b=state.shelf.find(x=>x.key===event.target.value);if(b)selectBook(b);});
 $('refresh').addEventListener('click',()=>refresh(true));$('exportAll').addEventListener('click',exportAll);document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));$('goTopics').addEventListener('click',()=>setTab('topics'));$('chapterSearch').addEventListener('input',renderChapters);$('backToContents').addEventListener('click',()=>$('chapterList').scrollIntoView({behavior:'smooth',block:'start'}));
-$('importKey').addEventListener('click',()=>$('keyFile').click());
-$('keyFile').addEventListener('change',async event=>{
-  const file=event.target.files?.[0];event.target.value='';if(!file||!state.manifest)return;
-  const bookId=state.manifest.book.id;
-  try{if(file.size>16000)throw new Error('请选择本书的 JSON 钥匙文件。');const key=await validateReaderKey(JSON.parse(await file.text()),bookId);if(state.manifest?.book.id!==bookId)return;readerKeys.set(bookId,key);$('privateState').textContent='本页已解锁 · 关闭页面后需重新导入';toast('钥匙已载入，本地解密阅读。');const chapter=state.chapter||state.manifest.chapters[0];if(chapter)await openChapter(chapter);}
-  catch(error){toast(error.message||'钥匙导入失败。');}
-});
-$('lockBook').addEventListener('click',()=>{if(!state.manifest)return;readerKeys.delete(state.manifest.book.id);chapterGate.cancel();exportGate.cancel();state.text=null;$('chapterText').textContent='已锁定。导入私密阅读钥匙后继续。';$('copyChapter').disabled=true;$('exportChapter').disabled=true;$('privateState').textContent='正文已加密 · 导入本书钥匙后阅读';toast('已清除本页钥匙。');});
 $('copyStartup').addEventListener('click',()=>state.active&&copyText(startupPrompt(state.active),'启动指令已复制，发送给 GPT 即可。'));$('copyResearch').addEventListener('click',()=>state.active&&copyText(researchPrompt(state.active,state.platform),'平台研究指令已复制，发送给 GPT 即可。'));
-$('copyContinue').addEventListener('click',()=>{if(!state.active||!state.manifest)return;const data=state.manifest;if(data.task.phase==='WAITING_PLATFORM'||data.initialized===false){copyText(startupPrompt(state.active),'启动指令已复制。');return;}copyText(`读取GitHub小说仓库 ${state.active.url} 的AGENTS.md与最新正式状态，接着当前任务执行。当前显示：${data.task.label}。下一步：${data.task.next_action}。复用已有产物，遵守三轮修订上限，完成后更新online/index.json并写回仓库。`,'继续任务指令已复制。');});
+$('copyContinue').addEventListener('click',()=>{if(!state.active||!state.manifest)return;const data=state.manifest;if(data.task.phase==='WAITING_PLATFORM'||data.initialized===false){copyText(startupPrompt(state.active),'启动指令已复制。');return;}copyText(continuationPrompt(state.active,data),'继续任务指令已复制。');});
 $('copyChapter').addEventListener('click',()=>{if(state.chapter&&state.text!==null)copyText(`第${state.chapter.number}章 ${state.chapter.title}\n\n${state.text}`,'本章已复制。');});$('exportChapter').addEventListener('click',()=>{if(state.chapter&&state.text!==null&&!state.chapter.needs_revalidation)download(`第${state.chapter.number}章 ${state.chapter.title}\n\n${state.text}`,safeFilename(`第${state.chapter.number}章_${state.chapter.title}`));});
 for(const [id,step] of [['prevChapter',-1],['nextChapter',1]])$(id).addEventListener('click',()=>{if(!state.chapter||!state.manifest)return;const index=state.manifest.chapters.findIndex(x=>x.number===state.chapter.number);const next=state.manifest.chapters[index+step];if(next){openChapter(next);$('readerContent').scrollIntoView({behavior:'smooth',block:'start'});}});
 function applyPreferences(){document.documentElement.style.setProperty('--reader-font',state.font+'px');document.body.dataset.paper=state.paper;storage.setItem('novel-font',String(state.font));storage.setItem('novel-paper',state.paper);}

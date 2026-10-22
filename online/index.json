@@ -11,13 +11,13 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T15:45:54+00:00",
+    "generated_at": "2026-10-22T16:10:40+00:00",
     "state_revision": 10,
-    "workflow_revision": 30,
+    "workflow_revision": 31,
     "state_sha256": "23ab229ed923576484e03a2b0113f013ffa3181d3b40db432048e693db7e77e0",
-    "workflow_sha256": "cf6c6420a7e57ee62c917fa7ca0c0ef586179ab50fcf64c202a69cb88a82bb5c",
-    "manuscript_storage": "encrypted_book_v1",
-    "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428"
+    "workflow_sha256": "239a7982b1ac1b85fe5c8ccaab03fc8bcafe44eec741b9d9f3930946c9a0ac91",
+    "manuscript_storage": "plain_files_v1",
+    "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
@@ -34,9 +34,9 @@
     "phase": "WAITING_NEXT",
     "label": "等待下一章",
     "chapter": 6,
-    "detail": "第五章《师父的名字》已采用8293汉字，1轮局部修订；共5章42205汉字。首次五章全文回看完成，近期路线已更新；第六章未生成，等待下一次创作指令。",
-    "next_action": "接到继续指令后恢复最新私密稿，读第五章全文与近期路线，创作第六章《旧图不是路》。",
-    "updated_at": "2026-10-22T15:45:54+00:00"
+    "detail": "已按作者要求取消阅读密钥，正文、章后记录和接管资料可直接读取。当前仍为5章42205汉字；首次五章全文回看完成，第六章尚未生成。",
+    "next_action": "直接读取book/state.json和book/接管记录.md；收到继续指令后读第五章全文与当前路线，创作第六章《旧图不是路》，无需阅读密钥。",
+    "updated_at": "2026-10-22T16:10:40+00:00"
   },
   "chapters": [
     {
@@ -46,12 +46,7 @@
       "han_count": 8558,
       "text_path": "book/chapters/CH001_1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da.txt",
       "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
-      "needs_revalidation": false,
-      "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
-      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
-      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+      "needs_revalidation": false
     },
     {
       "number": 2,
@@ -60,12 +55,7 @@
       "han_count": 8520,
       "text_path": "book/chapters/CH002_b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951.txt",
       "sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
-      "needs_revalidation": false,
-      "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
-      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
-      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+      "needs_revalidation": false
     },
     {
       "number": 3,
@@ -74,12 +64,7 @@
       "han_count": 8284,
       "text_path": "book/chapters/CH003_50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a.txt",
       "sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
-      "needs_revalidation": false,
-      "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
-      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
-      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+      "needs_revalidation": false
     },
     {
       "number": 4,
@@ -88,12 +73,7 @@
       "han_count": 8550,
       "text_path": "book/chapters/CH004_e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e.txt",
       "sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
-      "needs_revalidation": false,
-      "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
-      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
-      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+      "needs_revalidation": false
     },
     {
       "number": 5,
@@ -102,12 +82,7 @@
       "han_count": 8293,
       "text_path": "book/chapters/CH005_313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83.txt",
       "sha256": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
-      "needs_revalidation": false,
-      "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
-      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
-      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+      "needs_revalidation": false
     }
   ],
   "topics": [
@@ -1072,12 +1047,6 @@
   "history": [
     {
       "at": "2026-10-22T12:12:36+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第二章《前辈欠三块灵石》已检查采用：8520汉字，2轮局部修订；共2章17078汉字，正在封存章后记录并核对加密阅读和导出。"
-    },
-    {
-      "at": "2026-10-22T12:12:36+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第二章《前辈欠三块灵石》已完成并采用：8520汉字，2轮局部修订。正式稿共2章17078汉字；正文、章后记录与候选历史加密保存。当前停在第2章，等待下一次创作指令。"
@@ -1159,6 +1128,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第五章《师父的名字》已采用8293汉字，1轮局部修订；共5章42205汉字。首次五章全文回看完成，近期路线已更新；第六章未生成，等待下一次创作指令。"
+    },
+    {
+      "at": "2026-10-22T16:10:40+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "已按作者要求取消阅读密钥，正文、章后记录和接管资料可直接读取。当前仍为5章42205汉字；首次五章全文回看完成，第六章尚未生成。"
     }
   ]
 }

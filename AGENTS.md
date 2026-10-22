@@ -4,7 +4,9 @@
 
 ## 先读
 
-若存在`book/private_storage.json`，它指向的GitHub加密稿是当前正文、章后记忆、候选历史和核心state的唯一正式来源。先读《docs/私密稿保存.md》并运行`tools/private_book.py status`。`book/state.json`此时仅为迁入前基线，禁止据此判断0章、重新初始化或覆盖加密稿。使用作者私密文件中的本书钥匙，解锁到公开项目目录之外，再对解锁目录运行原核心工具。公开`book/workflow.json`和`online/index.json`仍记录任务与安全目录。
+作者已明确取消阅读密钥。本书及新书母版默认直接读取：`book/state.json`是当前正式状态，`book/chapters/`和`book/records/`是正文与章后记录，路线、候选和回看也直接保存在`book/`。先读《docs/正文直接读取.md》。软件和GPT均不需要钥匙，不自动恢复加密、创建新钥匙或要求作者导入文件。
+
+采用直接模式的项目以最新state的实际值为准，不从聊天或历史档案推断采用章数。`vault/`仅为历史档案，不是现行入口；不要再把旧的加密接管说明或迁入前0章基线当当前状态。如果其他旧仓库确实还有`book/private_storage.json`，按其真实存储模式读取，不将旧占位state误判成新书；迁移工具说明在《docs/私密稿保存.md》。
 
 1. `启动新书.txt`、`project_config.json`。
 2. 有`book/state.json`就读取状态、`book/workflow.json`、`online/index.json`及当前任务相关产物。

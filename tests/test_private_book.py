@@ -133,6 +133,47 @@ class PrivateBookTests(unittest.TestCase):
         with self.assertRaises(ns.WorkspaceError):
             vault.make_key(self.key, ns.load_state(self.work)['book_id'])
 
+    def test_authorized_plain_migration_preserves_files_history_and_live_workflow(self):
+        self.seal()
+        online.set_task(self.project, 'WRITING', '合成的最新任务', '继续合成测试', 2)
+        workflow = online.load_workflow(self.project)
+        before = ns.load_state(self.work)
+        result = vault.publish_plain(self.project, self.key, '合成授权：取消阅读密钥并直接读取。')
+        self.assertFalse(result['requires_reader_key'])
+        self.assertFalse((self.project / 'book/private_storage.json').exists())
+        self.assertFalse((self.project / 'book/private_parent.json').exists())
+        self.assertEqual(ns.load_state(self.project / 'book'), before)
+        self.assertEqual(online.load_workflow(self.project), workflow)
+        for folder in ('chapters', 'records', 'candidates', 'inputs'):
+            for source in (self.work / folder).glob('*'):
+                self.assertEqual((self.project / 'book' / folder / source.name).read_bytes(), source.read_bytes())
+        index = online.build_index(self.project)
+        self.assertEqual(index['source']['manuscript_storage'], 'plain_files_v1')
+        self.assertFalse(index['source']['requires_reader_key'])
+        self.assertNotIn('storage', index['chapters'][0])
+        self.assertTrue(online.validate_index(self.project)['valid'])
+
+    def test_plain_migration_wrong_key_leaves_official_pointer_in_place(self):
+        self.seal()
+        pointer = (self.project / 'book/private_storage.json').read_bytes()
+        wrong = self.base / 'another-key.json'
+        vault.make_key(wrong, ns.load_state(self.work)['book_id'])
+        with self.assertRaises(ns.WorkspaceError):
+            vault.publish_plain(self.project, wrong, '合成授权')
+        self.assertEqual((self.project / 'book/private_storage.json').read_bytes(), pointer)
+
+    def test_plain_migration_rejects_immutable_conflict_without_changing_state(self):
+        self.seal()
+        before = (self.project / 'book/state.json').read_bytes()
+        item = ns.load_state(self.work)['chapters']['1']
+        file = self.project / 'book' / item['text_path']
+        file.parent.mkdir(parents=True)
+        file.write_text('这也是合成内容，但与正式采用不符。')
+        with self.assertRaisesRegex(ns.WorkspaceError, '冲突'):
+            vault.publish_plain(self.project, self.key, '合成授权')
+        self.assertTrue((self.project / 'book/private_storage.json').exists())
+        self.assertEqual((self.project / 'book/state.json').read_bytes(), before)
+
 
 if __name__ == '__main__':
     unittest.main()

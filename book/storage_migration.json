@@ -1,0 +1,10 @@
+{
+  "mode": "plain_files",
+  "requires_reader_key": false,
+  "author_request": "取消密钥这个动作，软件指令可以查看内容。",
+  "book_id": "f3626289-6903-436a-a009-eeee8a209510",
+  "revision": 10,
+  "previous_vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
+  "previous_vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
+  "note": "现行来源是book/state.json及其引用文件。历史vault仅保留作旧版本档案，不是当前阅读入口。"
+}
