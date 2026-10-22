@@ -440,6 +440,27 @@
       ],
       "candidate_sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
       "candidate_path": "candidates/CH006_b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439.txt"
+    },
+    "7": {
+      "task_id": "99d26eba-dcad-407d-871d-bab7d4841889",
+      "chapter": 7,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 1,
+      "history": [
+        {
+          "sha256": "41ecaa003af3c45db6402dfe654b942efb3f8c07f989633095f2665af0676aaf",
+          "reason": "初稿",
+          "repairs": 0
+        },
+        {
+          "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+          "reason": "全文回读集中修复：初八误称初五点件为前日两处；补开篇F仍初七入夜前；明确后挡只是临时固座、初九肩仍待发；限热条款改指实际人员/改件前提，消除冷验已做或热验未做的歧义，并修三个字错数和端着空手病句；去掉无必要包带回填，明确显印纸湿边源为潮灰。",
+          "repairs": 1
+        }
+      ],
+      "candidate_sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+      "candidate_path": "candidates/CH007_85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738.txt"
     }
   },
   "completion": null
