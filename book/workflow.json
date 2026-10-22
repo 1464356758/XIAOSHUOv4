@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "revision": 1,
+  "revision": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "RESEARCH_PLATFORM",
+  "phase": "SCANNING_RANKINGS",
   "platform": "qimao",
   "selected_topic": null,
-  "research_path": null,
+  "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
   "topics_path": null,
   "chapter": 1,
   "history": [
@@ -20,9 +20,15 @@
       "phase": "RESEARCH_PLATFORM",
       "label": "核查平台规则",
       "detail": "已选择七猫中文网，正在等待核查现行规则。"
+    },
+    {
+      "at": "2026-10-22T04:53:38+00:00",
+      "phase": "SCANNING_RANKINGS",
+      "label": "研究榜单",
+      "detail": "规则和榜单资料已保存；存在待核实项。"
     }
   ],
-  "detail": "已选择七猫中文网，正在等待核查现行规则。",
-  "next_action": "核查官方规则和公开榜单，保留来源与时间，再提出5—10个原创选题。",
-  "updated_at": "2026-10-22T04:46:17+00:00"
+  "detail": "规则和榜单资料已保存；存在待核实项。",
+  "next_action": "根据研究形成5—10个原创候选，说明长篇动力和风险。",
+  "updated_at": "2026-10-22T04:53:38+00:00"
 }
