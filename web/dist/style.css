@@ -8,3 +8,5 @@
 /* Keep supporting text readable on paper backgrounds. */
 .page-heading p,.task-card>p,.next-action p,.research-action p,.topics-intro p,.history-row p,.reader-empty p,.empty-topics p,.platform-card small,.form-help{color:#718064!important}
 @media(max-width:640px){.task-card>p,.topics-intro p,.research-action p,.empty-topics p,.reader-empty p{font-size:12px}.history-row p,.platform-card small{font-size:10px}}
+
+.private-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 22px;padding:15px 18px;border:1px solid var(--line,#d7ded8);border-radius:12px;background:var(--panel,#fff);color:var(--ink,#193c39);font-size:14px}.private-controls[hidden]{display:none}.private-controls>div{display:flex;gap:8px;flex-wrap:wrap}@media(max-width:700px){.private-controls{align-items:flex-start;flex-direction:column}}

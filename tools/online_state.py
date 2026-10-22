@@ -11,12 +11,25 @@ from urllib.parse import urlparse
 
 import novel_state as ns
 
+def current_state(project):
+    project = Path(project)
+    if (project / 'book/private_storage.json').exists():
+        import private_book
+        pointer, envelope = private_book.read_public(project)
+        public = envelope['public']
+        return dict(public, chapters={str(x['number']): x for x in public['chapters']},
+                    completion=True if public['progress']['completed'] else None,
+                    needs_revalidation=public['progress']['needs_revalidation']), (pointer, envelope)
+    state = ns.load_state(project / 'book')
+    ns.verify_files(project / 'book', state)
+    return state, None
+
 PHASES = {
     "WAITING_PLATFORM": "等待选择平台", "RESEARCH_PLATFORM": "核查平台规则",
     "SCANNING_RANKINGS": "研究榜单", "WAITING_TOPIC": "等待选择题材",
     "PLANNING": "长篇规划", "WRITING": "撰写正文", "REVIEWING": "检查本章",
     "REVISING": "局部修订", "CHECKPOINT": "阶段回看", "SAVING": "保存进度",
-    "BLOCKED": "需要处理问题", "COMPLETE": "全书完成"
+    "BLOCKED": "需要处理问题", "WAITING_NEXT": "等待下一章", "COMPLETE": "全书完成"
 }
 
 def now():
@@ -88,11 +101,12 @@ def select_platform(project, platform):
 def set_task(project, phase, detail, next_action, chapter=None):
     ns.require(bool(detail.strip()) and bool(next_action.strip()), "任务应说明当前工作和下一步。")
     with ns.writer_lock(Path(project) / "book"):
-        wf = load_workflow(project); state = ns.load_state(Path(project) / "book")
+        wf = load_workflow(project); state, _ = current_state(project)
         if phase in ("WRITING", "REVIEWING", "REVISING", "CHECKPOINT"):
             ns.require(wf["selected_topic"] is not None and set(state["inputs"]) == {"canon", "roadmap"}, "先选题并完成作者设定和故事路线。")
         if phase == "WAITING_TOPIC": ns.require(wf["topics_path"] is not None, "先保存5—10个选题。")
         if phase == "COMPLETE": ns.require(state["completion"] is not None, "先完成核心工具的完稿检查。")
+        if phase == 'WAITING_NEXT': ns.require(bool(state['chapters']), '先完成至少一章。')
         if chapter is not None:
             ns.require(1 <= chapter <= state["config"]["target_chapters"], "当前章号无效。")
             wf["chapter"] = chapter
@@ -163,7 +177,7 @@ def select_topic(project, topic_id, request):
 
 def build_index(project, save=True):
     project = Path(project).resolve(); root = project / "book"
-    state = ns.load_state(root); ns.verify_files(root, state)
+    state, sealed = current_state(project)
     workflow = load_workflow(project); cfg = get_config(project)
     ns.require(workflow["book_id"] == state["book_id"], "工作流与小说身份不符。")
     phase = workflow["phase"]; research = None; topics = []
@@ -171,12 +185,22 @@ def build_index(project, save=True):
     if workflow["topics_path"]: topics = ns.read_json(ns.inside(project, workflow["topics_path"]))["candidates"]
     data = {"schema_version": 1, "system_version": "4.1-online", "initialized": True,
             "book": {"id": state["book_id"], "title": state["title"], "platform": workflow["platform"], "selected_topic_id": workflow["selected_topic"]["id"] if workflow["selected_topic"] else None},
-            "source": {"repository_url": cfg["authority"]["repository_url"], "branch": cfg["authority"]["branch"], "generated_at": now(), "state_revision": state["revision"], "workflow_revision": workflow["revision"], "state_sha256": ns.digest((root / "state.json").read_text(encoding="utf-8")), "workflow_sha256": ns.digest((root / "workflow.json").read_text(encoding="utf-8"))},
-            "progress": {"target_chapters": state["config"]["target_chapters"], "adopted_chapters": len(state["chapters"]), "target_han": state["config"]["target_han"], "actual_han": sum(x["han_count"] for x in state["chapters"].values()), "completed": state["completion"] is not None, "needs_revalidation": state["needs_revalidation"], **ns.review_status(state)},
+            "source": {"repository_url": cfg["authority"]["repository_url"], "branch": cfg["authority"]["branch"], "generated_at": now(), "state_revision": state["revision"], "workflow_revision": workflow["revision"], "state_sha256": state['state_sha256'] if sealed else ns.digest((root / "state.json").read_text(encoding="utf-8")), "workflow_sha256": ns.digest((root / "workflow.json").read_text(encoding="utf-8"))},
+            "progress": {"target_chapters": state["config"]["target_chapters"], "adopted_chapters": len(state["chapters"]), "target_han": state["config"]["target_han"], "actual_han": sum(x["han_count"] for x in state["chapters"].values()), "completed": state["completion"] is not None, "needs_revalidation": state["needs_revalidation"], **({k:state['progress'][k] for k in ('reviewed_until','window_review_due','unresolved_reviews')} if sealed else ns.review_status(state))},
             "task": {"phase": phase, "label": PHASES[phase], "chapter": workflow["chapter"], "detail": workflow.get("detail", ""), "next_action": workflow.get("next_action", ""), "updated_at": workflow["updated_at"]},
             "chapters": [{"number": int(n), "title": item["title"], "stage": item["stage"], "han_count": item["han_count"], "text_path": "book/" + item["text_path"], "sha256": item["text_sha256"], "needs_revalidation": int(n) in state["needs_revalidation"]} for n, item in sorted(state["chapters"].items(), key=lambda x:int(x[0]))],
             "topics": topics, "research": research, "history": workflow.get("history", [])[-15:]}
-    ns.require(ns.load_state(root)["revision"] == state["revision"] and load_workflow(project)["revision"] == workflow["revision"], "索引生成期间正式状态改变，请重试。")
+    if sealed:
+        pointer, envelope = sealed
+        data['source']['manuscript_storage'] = 'encrypted_book_v1'
+        data['source']['vault_sha256'] = pointer['sha256']
+        for chapter in data['chapters']:
+            chapter.update(storage='encrypted_book_v1', vault_path=pointer['path'], vault_sha256=pointer['sha256'],
+                           book_id=state['book_id'], key_id=pointer['key_id'])
+        ns.require(ns.read_json(root / 'private_storage.json') == pointer, '索引生成期间私密稿改变，请重试。')
+    else:
+        ns.require(ns.load_state(root)['revision'] == state['revision'], '索引生成期间正式状态改变，请重试。')
+    ns.require(load_workflow(project)["revision"] == workflow["revision"], "索引生成期间正式状态改变，请重试。")
     if save: ns.atomic_json(project / "online/index.json", data)
     return data
 

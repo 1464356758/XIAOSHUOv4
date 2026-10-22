@@ -94,6 +94,8 @@ def inside(root, relative):
 
 
 def load_state(root):
+    require(not (Path(root) / "private_storage.json").exists(),
+            "本书已启用私密稿；先用tools/private_book.py status查看进度，再用私密钥匙unlock到新工作目录。公开state.json是迁入前基线，不能据此重写。")
     path = Path(root) / "state.json"
     require(path.exists(), "本书尚未初始化；先执行 init。")
     state = read_json(path)

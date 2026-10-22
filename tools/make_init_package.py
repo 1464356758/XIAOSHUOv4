@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[1]
 
 def build(root=ROOT,out=None):
     root=Path(root).resolve();out=Path(out or root/'初始化系统包.zip').resolve()
-    names=['AGENTS.md','README.md','启动新书.txt','执行规程.md','工具使用与数据格式.md','平台研究与选题.md','system_config.json','platforms.json','.gitignore','docs/线上同步协议.md']
+    names=['AGENTS.md','README.md','启动新书.txt','执行规程.md','工具使用与数据格式.md','平台研究与选题.md','system_config.json','platforms.json','.gitignore','docs/线上同步协议.md','docs/私密稿保存.md','requirements-private.txt']
     files={name:(root/name).read_bytes() for name in names}
     for folder in ('tools','templates','tests'):
         for path in sorted((root/folder).glob('*')):

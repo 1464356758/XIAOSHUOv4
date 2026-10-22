@@ -11,17 +11,19 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T10:29:53+00:00",
-    "state_revision": 3,
-    "workflow_revision": 9,
-    "state_sha256": "b69ab30cc5c5d8c2686f7ccb1a88e239483c87136c01237e642eef936114e6d6",
-    "workflow_sha256": "46d59fc1a569e66133c8a257523e9a82807f60f1b6b4818919ffde6a24586150"
+    "generated_at": "2026-10-22T11:03:22+00:00",
+    "state_revision": 4,
+    "workflow_revision": 13,
+    "state_sha256": "e0f2b7863fac4ab4f25cedecf8bf11ca319e3b499e03ac42875e52fe345e370a",
+    "workflow_sha256": "12da49e5180f0d4ca6fcd391f7ae6d40a1134911ec7c20cccf4658166042c671",
+    "manuscript_storage": "encrypted_book_v1",
+    "vault_sha256": "c8bd142e2e7a9dfed03ff3aa818df1705bde400d51721213893ddbe025231344"
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 0,
+    "adopted_chapters": 1,
     "target_han": 900000,
-    "actual_han": 0,
+    "actual_han": 8558,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 0,
@@ -29,14 +31,29 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "PLANNING",
-    "label": "长篇规划",
-    "chapter": 1,
-    "detail": "T09开书规划已保存：核心人物与两岸规则、十阶段100章方向、前五章细化及因果检查；正文0章，等待明确开始指令。",
-    "next_action": "作者明确开始正文后，先落实正式稿的首发保护与存储方式，再按当前canon和roadmap写CH001；不重新选题。",
-    "updated_at": "2026-10-22T10:29:53+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 2,
+    "detail": "第一章《碗里有人》已完成并采用，正文8558汉字；正文、章后记录和候选历史以加密稿保存。当前停在第1章，等待下一次创作指令。",
+    "next_action": "继续时先用本书私密钥匙解锁GitHub最新加密稿，阅读全文与章后记录，再写CH002《前辈欠三块灵石》。",
+    "updated_at": "2026-10-22T11:03:21+00:00"
   },
-  "chapters": [],
+  "chapters": [
+    {
+      "number": 1,
+      "title": "碗里有人",
+      "stage": "S01",
+      "han_count": 8558,
+      "text_path": "book/chapters/CH001_1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da.txt",
+      "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
+      "needs_revalidation": false,
+      "storage": "encrypted_book_v1",
+      "vault_path": "vault/book_c8bd142e2e7a9dfed03ff3aa818df1705bde400d51721213893ddbe025231344.json",
+      "vault_sha256": "c8bd142e2e7a9dfed03ff3aa818df1705bde400d51721213893ddbe025231344",
+      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
+      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+    }
+  ],
   "topics": [
     {
       "id": "T09",
@@ -1056,6 +1073,30 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "T09开书规划已保存：核心人物与两岸规则、十阶段100章方向、前五章细化及因果检查；正文0章，等待明确开始指令。"
+    },
+    {
+      "at": "2026-10-22T10:58:38+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "作者已明确开始第一章；完整稿正在私密工作区完成写后检查，不向公开仓库提交明文。"
+    },
+    {
+      "at": "2026-10-22T10:58:38+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第一章《碗里有人》完成全文检查和一轮局部修订，实测8558汉字；正在接入加密保存与阅读。"
+    },
+    {
+      "at": "2026-10-22T11:02:45+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第一章《碗里有人》已审阅采用：8558汉字、1轮局部修订。正在封存实际正文、章后记忆与历史，核对私密阅读和导出。"
+    },
+    {
+      "at": "2026-10-22T11:03:21+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第一章《碗里有人》已完成并采用，正文8558汉字；正文、章后记录和候选历史以加密稿保存。当前停在第1章，等待下一次创作指令。"
     }
   ]
 }

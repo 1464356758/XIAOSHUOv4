@@ -5,7 +5,8 @@
   "authority": {
     "mode": "github",
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
-    "branch": "main"
+    "branch": "main",
+    "manuscript_storage": "encrypted_book_v1"
   },
   "reader_url": "https://xiaoshuo-v4-reader-7d26.qq1464356758.chatgpt.site",
   "writing": {
