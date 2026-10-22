@@ -11,32 +11,32 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T15:30:59+00:00",
-    "state_revision": 7,
-    "workflow_revision": 27,
-    "state_sha256": "88a6cad1969e646c12ca549a5fa823549faefafc41ab1c04647c5ecbede22eca",
-    "workflow_sha256": "0d15798c3fff5bbb2bbb16aa546884916f983d82072980874126d2864d74b64c",
+    "generated_at": "2026-10-22T15:45:54+00:00",
+    "state_revision": 10,
+    "workflow_revision": 30,
+    "state_sha256": "23ab229ed923576484e03a2b0113f013ffa3181d3b40db432048e693db7e77e0",
+    "workflow_sha256": "cf6c6420a7e57ee62c917fa7ca0c0ef586179ab50fcf64c202a69cb88a82bb5c",
     "manuscript_storage": "encrypted_book_v1",
-    "vault_sha256": "ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b"
+    "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428"
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 4,
+    "adopted_chapters": 5,
     "target_han": 900000,
-    "actual_han": 33912,
+    "actual_han": 42205,
     "completed": false,
     "needs_revalidation": [],
-    "reviewed_until": 0,
+    "reviewed_until": 5,
     "window_review_due": false,
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
-    "chapter": 5,
-    "detail": "第五章完整候选已登记并完成全文检查、1轮局部修订；正在整理章后记录与首次五章全文回看。当前正式采用仍为4章。",
-    "next_action": "核对并采用第五章，完成到期五章全文回看和近期路线更新。",
-    "updated_at": "2026-10-22T15:30:59+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 6,
+    "detail": "第五章《师父的名字》已采用8293汉字，1轮局部修订；共5章42205汉字。首次五章全文回看完成，近期路线已更新；第六章未生成，等待下一次创作指令。",
+    "next_action": "接到继续指令后恢复最新私密稿，读第五章全文与近期路线，创作第六章《旧图不是路》。",
+    "updated_at": "2026-10-22T15:45:54+00:00"
   },
   "chapters": [
     {
@@ -48,8 +48,8 @@
       "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b.json",
-      "vault_sha256": "ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b",
+      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
+      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     },
@@ -62,8 +62,8 @@
       "sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b.json",
-      "vault_sha256": "ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b",
+      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
+      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     },
@@ -76,8 +76,8 @@
       "sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b.json",
-      "vault_sha256": "ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b",
+      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
+      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     },
@@ -90,8 +90,22 @@
       "sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b.json",
-      "vault_sha256": "ce18e30d54eb0c631f24d913eb2e00d7144f84c3e256660e37ab7c4b980ba41b",
+      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
+      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
+      "book_id": "f3626289-6903-436a-a009-eeee8a209510",
+      "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
+    },
+    {
+      "number": 5,
+      "title": "师父的名字",
+      "stage": "S01",
+      "han_count": 8293,
+      "text_path": "book/chapters/CH005_313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83.txt",
+      "sha256": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
+      "needs_revalidation": false,
+      "storage": "encrypted_book_v1",
+      "vault_path": "vault/book_c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428.json",
+      "vault_sha256": "c4f30b499504d48ced9db3c7b675cedc6f8c1ed0cbc4acf1663801718fc7a428",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     }
@@ -1057,24 +1071,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T11:03:21+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第一章《碗里有人》已完成并采用，正文8558汉字；正文、章后记录和候选历史以加密稿保存。当前停在第1章，等待下一次创作指令。"
-    },
-    {
-      "at": "2026-10-22T11:37:13+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者已授权继续下一步。正在读取最新加密正式稿，创作第二章《前辈欠三块灵石》；第一章采用稿保持8558汉字。"
-    },
-    {
-      "at": "2026-10-22T12:03:32+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第二章《前辈欠三块灵石》完整候选已登记：8520汉字，2轮局部修订；正在整理章后记录与采用检查，当前正式采用仍为1章。"
-    },
-    {
       "at": "2026-10-22T12:12:36+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1145,6 +1141,24 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第五章完整候选已登记并完成全文检查、1轮局部修订；正在整理章后记录与首次五章全文回看。当前正式采用仍为4章。"
+    },
+    {
+      "at": "2026-10-22T15:39:06+00:00",
+      "phase": "CHECKPOINT",
+      "label": "阶段回看",
+      "detail": "第五章《师父的名字》已采用8293汉字，1轮局部修订；正式稿共5章42205汉字，正在登记首次五章全文回看并更新近期路线。"
+    },
+    {
+      "at": "2026-10-22T15:45:54+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第五章8293汉字已采用；共5章42205汉字，首次五章全文回看及近期路线更新完成，正在封存并验证五章阅读导出。"
+    },
+    {
+      "at": "2026-10-22T15:45:54+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第五章《师父的名字》已采用8293汉字，1轮局部修订；共5章42205汉字。首次五章全文回看完成，近期路线已更新；第六章未生成，等待下一次创作指令。"
     }
   ]
 }
