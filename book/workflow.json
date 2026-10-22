@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 53,
+  "revision": 54,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "SYSTEM_UPGRADE",
+  "phase": "REVISING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T09",
@@ -29,7 +29,7 @@
   },
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
   "topics_path": "research/topics_1c6457bad3f3d87203063a8befb9736bd073811380aa883f19c840a68f653340.json",
-  "chapter": 11,
+  "chapter": 1,
   "history": [
     {
       "at": "2026-10-22T01:32:46+00:00",
@@ -354,9 +354,15 @@
       "phase": "SYSTEM_UPGRADE",
       "label": "升级创作系统",
       "detail": "作者要求把开篇钩子检查与每日生成发布纳入母版，采用前检查、采用后冻结、只能前向处理剧情问题。正在升级主系统与空初始化包，当前十章83499字不改写，本次不生成十一章。"
+    },
+    {
+      "at": "2026-10-22T23:50:53+00:00",
+      "phase": "REVISING",
+      "label": "局部修订",
+      "detail": "按作者最新要求优化当前第一章的开篇节奏，并同步升级初始化包；保留既有十章事实，修改后逐章核对承接，再建立连载冻结基线。"
     }
   ],
-  "detail": "作者要求把开篇钩子检查与每日生成发布纳入母版，采用前检查、采用后冻结、只能前向处理剧情问题。正在升级主系统与空初始化包，当前十章83499字不改写，本次不生成十一章。",
-  "next_action": "完成冻结与发布前检查、回归验证、空母版独立开书验证，写回GitHub后恢复等待下一章。",
-  "updated_at": "2026-10-22T22:29:59+00:00"
+  "detail": "按作者最新要求优化当前第一章的开篇节奏，并同步升级初始化包；保留既有十章事实，修改后逐章核对承接，再建立连载冻结基线。",
+  "next_action": "完成第一章定向修改，核查CH002—CH010受影响内容，升级发布前检查与初始化包。",
+  "updated_at": "2026-10-22T23:50:53+00:00"
 }

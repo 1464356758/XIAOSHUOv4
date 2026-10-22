@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T22:29:59+00:00",
+    "generated_at": "2026-10-22T23:50:53+00:00",
     "state_revision": 20,
-    "workflow_revision": 53,
+    "workflow_revision": 54,
     "state_sha256": "8dbc8a1074915848dad107370944063eb9c92ee5feb7f27ded9169b3c5d11817",
-    "workflow_sha256": "16d95bef87f5b43fcdc8eb5ebaddfe169cb10a7aed4922fb7e2dec276c3e843f",
+    "workflow_sha256": "f18aabbab0f501119099dd77e11b8d849bdf3bdfd1accac7fad30daef69d4b70",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "SYSTEM_UPGRADE",
-    "label": "升级创作系统",
-    "chapter": 11,
-    "detail": "作者要求把开篇钩子检查与每日生成发布纳入母版，采用前检查、采用后冻结、只能前向处理剧情问题。正在升级主系统与空初始化包，当前十章83499字不改写，本次不生成十一章。",
-    "next_action": "完成冻结与发布前检查、回归验证、空母版独立开书验证，写回GitHub后恢复等待下一章。",
-    "updated_at": "2026-10-22T22:29:59+00:00"
+    "phase": "REVISING",
+    "label": "局部修订",
+    "chapter": 1,
+    "detail": "按作者最新要求优化当前第一章的开篇节奏，并同步升级初始化包；保留既有十章事实，修改后逐章核对承接，再建立连载冻结基线。",
+    "next_action": "完成第一章定向修改，核查CH002—CH010受影响内容，升级发布前检查与初始化包。",
+    "updated_at": "2026-10-22T23:50:53+00:00"
   },
   "chapters": [
     {
@@ -1091,12 +1091,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T17:44:20+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第七章《空着的那一格》已完成采用8269汉字，1轮局部修订；共7章58847汉字。初八冷检查到后挡/旧线差异并实际限热，F已绕内门迁齐物资；第八章未生成。"
-    },
-    {
       "at": "2026-10-22T18:35:39+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1179,6 +1173,12 @@
       "phase": "SYSTEM_UPGRADE",
       "label": "升级创作系统",
       "detail": "作者要求把开篇钩子检查与每日生成发布纳入母版，采用前检查、采用后冻结、只能前向处理剧情问题。正在升级主系统与空初始化包，当前十章83499字不改写，本次不生成十一章。"
+    },
+    {
+      "at": "2026-10-22T23:50:53+00:00",
+      "phase": "REVISING",
+      "label": "局部修订",
+      "detail": "按作者最新要求优化当前第一章的开篇节奏，并同步升级初始化包；保留既有十章事实，修改后逐章核对承接，再建立连载冻结基线。"
     }
   ]
 }
