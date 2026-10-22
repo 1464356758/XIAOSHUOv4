@@ -11,13 +11,13 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T12:17:32+00:00",
+    "generated_at": "2026-10-22T12:37:07+00:00",
     "state_revision": 5,
-    "workflow_revision": 18,
-    "state_sha256": "4ae97414be3522e0307717529761470af6078ba42e75a65fa10e45d0d1a52485",
-    "workflow_sha256": "6dd22bcdc17e33a7ac75bab6dccab79d2e95d4ab07f155118f5ec735168be07c",
+    "workflow_revision": 19,
+    "state_sha256": "c744acfb965867ec974655327133c837413db2db685c1567b37197a3ee89e244",
+    "workflow_sha256": "70a8851809bf09647ba26cdd90004d8204906b09e2eb1d658c8085d51865681a",
     "manuscript_storage": "encrypted_book_v1",
-    "vault_sha256": "7a775251883fd57af698b9d9d55eb839f2082e2b0576293a70ef58849b6a9ff2"
+    "vault_sha256": "2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532"
   },
   "progress": {
     "target_chapters": 100,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 3,
-    "detail": "作者已授权继续下一步。正在恢复两章私密正式稿，创作第三章《一片不值钱的铜》；当前正式采用2章17078汉字。",
-    "next_action": "读取上章全文、当前设定和来源记录，完成第三章后集中检查并加密保存。",
-    "updated_at": "2026-10-22T12:17:32+00:00"
+    "detail": "第三章《一片不值钱的铜》完整候选8284汉字，已全文检查并完成2轮局部修订；正在登记章后记录，当前正式采用仍为2章。",
+    "next_action": "核对记录引用与当前版本，check-record通过后采用第三章并加密同步阅读目录。",
+    "updated_at": "2026-10-22T12:37:06+00:00"
   },
   "chapters": [
     {
@@ -48,8 +48,8 @@
       "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_7a775251883fd57af698b9d9d55eb839f2082e2b0576293a70ef58849b6a9ff2.json",
-      "vault_sha256": "7a775251883fd57af698b9d9d55eb839f2082e2b0576293a70ef58849b6a9ff2",
+      "vault_path": "vault/book_2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532.json",
+      "vault_sha256": "2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     },
@@ -62,8 +62,8 @@
       "sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_7a775251883fd57af698b9d9d55eb839f2082e2b0576293a70ef58849b6a9ff2.json",
-      "vault_sha256": "7a775251883fd57af698b9d9d55eb839f2082e2b0576293a70ef58849b6a9ff2",
+      "vault_path": "vault/book_2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532.json",
+      "vault_sha256": "2f28858cd5a8039cfaa4e0e9fe52aa2dbcc0d10314e3712bbefba7273b0cd532",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     }
@@ -1029,12 +1029,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T05:01:03+00:00",
-      "phase": "WAITING_TOPIC",
-      "label": "等待选择题材",
-      "detail": "七猫研究已保存：三类六榜、12部样本和8个原创候选。部分规则待核实，等待作者选题。"
-    },
-    {
       "at": "2026-10-22T08:36:43+00:00",
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
@@ -1117,6 +1111,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已授权继续下一步。正在恢复两章私密正式稿，创作第三章《一片不值钱的铜》；当前正式采用2章17078汉字。"
+    },
+    {
+      "at": "2026-10-22T12:37:06+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第三章《一片不值钱的铜》完整候选8284汉字，已全文检查并完成2轮局部修订；正在登记章后记录，当前正式采用仍为2章。"
     }
   ]
 }
