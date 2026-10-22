@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 13,
+  "revision": 14,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -86,6 +86,15 @@
       "record_path": "records/CH008_2c5881151445388eda8948d8f51bdc436562842ade441e942a87ed1fc81e0c5d.json",
       "record_sha256": "2c5881151445388eda8948d8f51bdc436562842ade441e942a87ed1fc81e0c5d",
       "han_count": 8332
+    },
+    "9": {
+      "title": "第一道出口",
+      "stage": "S01",
+      "text_path": "chapters/CH009_0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804.txt",
+      "text_sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+      "record_path": "records/CH009_fe22c8f1092c4bcfdca9a843c58b2e2e7d5baba2e9df585315c3baa5c0206d73.json",
+      "record_sha256": "fe22c8f1092c4bcfdca9a843c58b2e2e7d5baba2e9df585315c3baa5c0206d73",
+      "han_count": 8183
     }
   },
   "checkpoints": [
@@ -510,17 +519,22 @@
       "task_id": "edc6e665-3100-4c1f-ab1b-fe42407f9226",
       "chapter": 9,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "b09df059b1eef1ff6a4c0027387c693d1c0bce28b03f0e6d4a02fb256a08288a",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+          "reason": "全文集中修复：罗申未得知旧碗却直接问碗；同一骡夫被提前派走又驾返城车；曹包已送出却仍挂肩带；删正文误入的P-A10制作ID，补旧领退册取出来源；木料由桑获许领取不补岑未写的问话，小灶签取自既有木匣；明确自费午饭只是订待送，并补上坡歇息耗时、去无据问三次数。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "b09df059b1eef1ff6a4c0027387c693d1c0bce28b03f0e6d4a02fb256a08288a",
-      "candidate_path": "candidates/CH009_b09df059b1eef1ff6a4c0027387c693d1c0bce28b03f0e6d4a02fb256a08288a.txt"
+      "candidate_sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+      "candidate_path": "candidates/CH009_0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804.txt"
     }
   },
   "completion": null

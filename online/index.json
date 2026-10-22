@@ -11,19 +11,19 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T19:28:04+00:00",
-    "state_revision": 13,
-    "workflow_revision": 45,
-    "state_sha256": "3a9c3be4c0e502acccd7ce17434c05083c67fa73bd01430ffe16b9a3f7a6f3f4",
-    "workflow_sha256": "24f00217cfc5816ce9046e6220f908d675a7ab04ae9b81bd84869d10d415b086",
+    "generated_at": "2026-10-22T19:35:31+00:00",
+    "state_revision": 14,
+    "workflow_revision": 46,
+    "state_sha256": "688020a554946b8b8950b5dffa942ace5ada675b8d799ba405c0e612fbe54d91",
+    "workflow_sha256": "7b5885303563b0539c9677d16a0f47c6c584514abeeee875ea8da07e43ded9dd",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 8,
+    "adopted_chapters": 9,
     "target_han": 900000,
-    "actual_han": 67179,
+    "actual_han": 75362,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 5,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 9,
-    "detail": "第九章《第一道出口》完整初稿8137汉字已登记；正在全文检查实际出陵/返城、物品和少量伤损、雇佣知情及旧铁来源证据，当前正式采用仍8章。",
-    "next_action": "集中核对本章与历史，修复有证据的局部问题，整理章后事实与Q09真实兑现后采用。",
-    "updated_at": "2026-10-22T19:28:04+00:00"
+    "detail": "第九章《第一道出口》已检查采用8183汉字，1轮局部修订；共9章75362汉字。F三人真正出陵返城、50条章后记录已整理，正在保存并核对阅读与导出。",
+    "next_action": "同步第九章正文、记录、状态及接管，核对原件与整本导出，完成后等待第十章授权。",
+    "updated_at": "2026-10-22T19:35:31+00:00"
   },
   "chapters": [
     {
@@ -109,6 +109,15 @@
       "han_count": 8332,
       "text_path": "book/chapters/CH008_ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c.txt",
       "sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+      "needs_revalidation": false
+    },
+    {
+      "number": 9,
+      "title": "第一道出口",
+      "stage": "S01",
+      "han_count": 8183,
+      "text_path": "book/chapters/CH009_0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804.txt",
+      "sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
       "needs_revalidation": false
     }
   ],
@@ -1073,12 +1082,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T16:10:40+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "已按作者要求取消阅读密钥，正文、章后记录和接管资料可直接读取。当前仍为5章42205汉字；首次五章全文回看完成，第六章尚未生成。"
-    },
-    {
       "at": "2026-10-22T16:38:08+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1161,6 +1164,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第九章《第一道出口》完整初稿8137汉字已登记；正在全文检查实际出陵/返城、物品和少量伤损、雇佣知情及旧铁来源证据，当前正式采用仍8章。"
+    },
+    {
+      "at": "2026-10-22T19:35:31+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第九章《第一道出口》已检查采用8183汉字，1轮局部修订；共9章75362汉字。F三人真正出陵返城、50条章后记录已整理，正在保存并核对阅读与导出。"
     }
   ]
 }
