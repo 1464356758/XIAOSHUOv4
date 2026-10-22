@@ -11,19 +11,19 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T17:32:57+00:00",
-    "state_revision": 11,
-    "workflow_revision": 37,
-    "state_sha256": "a28482e298c80d9c568dcf90a7e74d97880c9609b92bbb9c13254916c29f1e2f",
-    "workflow_sha256": "fb43c6d76ae43c7b6765d1e3f634c57ed9d681307d1db0d398e76f85f12d357c",
+    "generated_at": "2026-10-22T17:44:20+00:00",
+    "state_revision": 12,
+    "workflow_revision": 39,
+    "state_sha256": "219d733c225eee07ba20f626a9937b6399fec2f09e344b02b96b0f84f28e899e",
+    "workflow_sha256": "d5d951f4593738311aaf435a73fd7809a22312be25dfa89a02bb309558284b35",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 6,
+    "adopted_chapters": 7,
     "target_han": 900000,
-    "actual_han": 50578,
+    "actual_han": 58847,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 5,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
-    "chapter": 7,
-    "detail": "第七章《空着的那一格》完整初稿已登记8299汉字；正在集中检查冷检/试热条件、实际陪检人、F绕门与运物、初八不联络。当前正式采用仍6章。",
-    "next_action": "全文回读并修复有证据的问题，建立章后记录，通过采用检查后同步。",
-    "updated_at": "2026-10-22T17:32:57+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 8,
+    "detail": "第七章《空着的那一格》已完成采用8269汉字，1轮局部修订；共7章58847汉字。初八冷检查到后挡/旧线差异并实际限热，F已绕内门迁齐物资；第八章未生成。",
+    "next_action": "收到继续指令后读最新state、第七章全文与记录、路线V2，创作第八章《他们的昨天》：接返坊/初九，比较本端冷检与旧单、补旧事可查来源，F推进外闸缝；初九辰初须实际满足条件才重接。",
+    "updated_at": "2026-10-22T17:44:20+00:00"
   },
   "chapters": [
     {
@@ -91,6 +91,15 @@
       "han_count": 8373,
       "text_path": "book/chapters/CH006_b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439.txt",
       "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+      "needs_revalidation": false
+    },
+    {
+      "number": 7,
+      "title": "空着的那一格",
+      "stage": "S01",
+      "han_count": 8269,
+      "text_path": "book/chapters/CH007_85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738.txt",
+      "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
       "needs_revalidation": false
     }
   ],
@@ -1055,18 +1064,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T13:18:10+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第四章《不在那边的刀痕》完整候选8550汉字，已全文检查并完成1轮局部修订；正在整理章后记录，当前正式采用仍为3章。"
-    },
-    {
-      "at": "2026-10-22T13:28:57+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第四章《不在那边的刀痕》已采用：8550汉字、1轮局部修订；正式稿共4章33912汉字，正在封存正文、章后记录与候选历史并核对阅读导出。"
-    },
-    {
       "at": "2026-10-22T13:28:57+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1143,6 +1140,18 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第七章《空着的那一格》完整初稿已登记8299汉字；正在集中检查冷检/试热条件、实际陪检人、F绕门与运物、初八不联络。当前正式采用仍6章。"
+    },
+    {
+      "at": "2026-10-22T17:44:19+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第七章《空着的那一格》已采用8269汉字、1轮局部修订；正式稿共7章58847汉字。49条章后记录已整理，正在保存与核对七章阅读和导出。"
+    },
+    {
+      "at": "2026-10-22T17:44:20+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第七章《空着的那一格》已完成采用8269汉字，1轮局部修订；共7章58847汉字。初八冷检查到后挡/旧线差异并实际限热，F已绕内门迁齐物资；第八章未生成。"
     }
   ]
 }
