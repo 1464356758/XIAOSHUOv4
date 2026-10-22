@@ -10,7 +10,7 @@ const syncGate=new RequestGate(),chapterGate=new RequestGate(),exportGate=new Re
 let toastTimer;
 function toast(text){$('toast').textContent=text;$('toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('toast').hidden=true,4300);}
 function persist(){storage.setItem('novel-v4-shelf',JSON.stringify(state.shelf));if(state.active)storage.setItem('novel-v4-active',state.active.key);}
-function prettyDate(value,short=false){if(!value)return'暂无更新';const d=new Date(value);if(Number.isNaN(d.valueOf()))return'时间未记录';return d.toLocaleString('zh-CN',short?{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}:{month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'});}
+function prettyDate(value,short=false){if(!value)return'暂无更新';const d=new Date(value);if(Number.isNaN(d.valueOf()))return'时间未记录';return d.toLocaleString('zh-CN',{timeZone:'Asia/Shanghai',...(short?{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}:{month:'long',day:'numeric',hour:'2-digit',minute:'2-digit'})});}
 function setConnection(message,stale=false){$('syncStatus').replaceChildren(make('i'),document.createTextNode(message));$('syncStatus').classList.toggle('stale',stale);}
 function setError(message){$('connectionError').textContent=message;$('connectionError').hidden=!message;}
 

@@ -3,6 +3,7 @@ import importlib.util
 import json
 from pathlib import Path
 import shutil
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -114,6 +115,17 @@ class OnlineTests(unittest.TestCase):
     def test_bad_repository_url_is_rejected(self):
         for url in ('https://github.com.evil.test/a/b','https://github.com/a/b/tree/main','https://user@github.com/a/b'):
             with self.assertRaises(online.ns.WorkspaceError):online.repository(url)
+
+    def test_init_archive_can_bootstrap_as_an_independent_new_book(self):
+        output=Path(self.tmp.name)/'fresh.zip';pack.build(SOURCE,output)
+        fresh=Path(self.tmp.name)/'fresh'
+        with zipfile.ZipFile(output) as archive:archive.extractall(fresh)
+        result=subprocess.run([sys.executable,'tools/online_state.py','bootstrap','--repo','https://github.com/example/fresh-book'],cwd=fresh,capture_output=True,text=True)
+        self.assertEqual(result.returncode,0,result.stderr)
+        info=json.loads(result.stdout);self.assertEqual(info['phase'],'WAITING_PLATFORM')
+        self.assertNotEqual(info['book_id'],online.ns.load_state(self.project/'book')['book_id'])
+        check=subprocess.run([sys.executable,'tools/online_state.py','validate-index'],cwd=fresh,capture_output=True,text=True)
+        self.assertEqual(check.returncode,0,check.stderr)
 
 
 if __name__=='__main__':unittest.main()
