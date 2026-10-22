@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "revision": 5,
+  "revision": 7,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "phase": "WAITING_TOPIC",
   "platform": "qimao",
   "selected_topic": null,
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
-  "topics_path": "research/topics_962e417ecd3b83ca10c29af88514199122870a7073bc5a6c31fda2f564b7823b.json",
+  "topics_path": "research/topics_1c6457bad3f3d87203063a8befb9736bd073811380aa883f19c840a68f653340.json",
   "chapter": 1,
   "history": [
     {
@@ -44,9 +44,21 @@
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "作者要求构思更离奇的题材，正在准备第二批；第一批候选保留，尚未选题。"
+    },
+    {
+      "at": "2026-10-22T08:41:38+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-10-22T08:41:38+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "按作者要求新增8个更离奇的原创候选T09—T16；第一批保留，等待实际选题。"
     }
   ],
-  "detail": "作者要求构思更离奇的题材，正在准备第二批；第一批候选保留，尚未选题。",
-  "next_action": "形成第二批5—10个更离奇的候选，写明长篇动力后等待作者选择。",
-  "updated_at": "2026-10-22T08:36:43+00:00"
+  "detail": "按作者要求新增8个更离奇的原创候选T09—T16；第一批保留，等待实际选题。",
+  "next_action": "可选T09—T16，也可回选第一批T01—T08；选定后先做长篇规划，当前不写正文。",
+  "updated_at": "2026-10-22T08:41:38+00:00"
 }
