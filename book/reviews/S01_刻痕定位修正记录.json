@@ -1,0 +1,92 @@
+{
+  "reason": "S01实际全文回看发现已完成章的局部定位矛盾，常规检查授权内仅修碗底→外壁；不是为延长原任务三轮上限",
+  "old_chapter8": {
+    "title": "他们的昨天",
+    "stage": "S01",
+    "text_path": "chapters/CH008_ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c.txt",
+    "text_sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+    "record_path": "records/CH008_2c5881151445388eda8948d8f51bdc436562842ade441e942a87ed1fc81e0c5d.json",
+    "record_sha256": "2c5881151445388eda8948d8f51bdc436562842ade441e942a87ed1fc81e0c5d",
+    "han_count": 8332
+  },
+  "old_completed_task": {
+    "task_id": "418aa663-f953-4b0b-a7a0-177438bb4c9d",
+    "chapter": 8,
+    "mode": "write",
+    "phase": "adopted",
+    "repairs": 2,
+    "history": [
+      {
+        "sha256": "dcce7644e8de762c864075d88e993f77fe83dd2a66b4f5a58a73ec07d0e15697",
+        "reason": "初稿",
+        "repairs": 0
+      },
+      {
+        "sha256": "f9f3364c766b8271e07dc65b43c7fd1f494220631c7721a980262664c2b449bb",
+        "reason": "全文回读集中修复：初九转述鲁平应绳误写今日，乔麦曾在第四章见过闻溪却被写成首次照面；补A清水与F实际触碗，纠正铜页托持者；旧领条原纸已交严后误随岑、挽索原属闻却误作梁私物、未设旧锈环和末人回收索；理顺湿纸随包、三包与干碗先后，保留局部纸棍动作与报刻时限。",
+        "repairs": 1
+      },
+      {
+        "sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+        "reason": "复核第六章实际旧册查阅段落：严已亲自翻到七支，不应本章无缘故重演找错三本；改为取回已翻旧册，以新增戊三领条对号为进展。修正人物未登案却写下案的动作。",
+        "repairs": 2
+      }
+    ],
+    "candidate_sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+    "candidate_path": "candidates/CH008_ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c.txt"
+  },
+  "new_text_sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
+  "old_quote": "碗底那道后来刻的向下短钩",
+  "new_quote": "外壁那道后来刻的向下短钩",
+  "subsequent_revalidation_required": [
+    9,
+    10
+  ],
+  "new_chapter8": {
+    "title": "他们的昨天",
+    "stage": "S01",
+    "text_path": "chapters/CH008_a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1.txt",
+    "text_sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
+    "record_path": "records/CH008_630a3fb71b2d2148a614fc4afe9d6483e068d11160a45c8ee294bfeb741ebc4e.json",
+    "record_sha256": "630a3fb71b2d2148a614fc4afe9d6483e068d11160a45c8ee294bfeb741ebc4e",
+    "han_count": 8332
+  },
+  "new_completed_edit_task": {
+    "task_id": "d07de37a-0593-4870-8edd-17bb18821897",
+    "chapter": 8,
+    "mode": "edit",
+    "phase": "adopted",
+    "repairs": 0,
+    "history": [
+      {
+        "sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
+        "reason": "本次首十章全文回看发现CH008一处碗底与CH004外釉刻痕定位矛盾；在常规写后修复授权内只改碗底为外壁，完成原任务之后的明确新修正，保留原2轮已完成任务历史，随后顺序重核9、10章。",
+        "repairs": 0
+      }
+    ],
+    "candidate_sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
+    "candidate_path": "candidates/CH008_a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1.txt"
+  },
+  "revalidation_completed": {
+    "9": {
+      "title": "第一道出口",
+      "stage": "S01",
+      "text_path": "chapters/CH009_0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804.txt",
+      "text_sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+      "record_path": "records/CH009_6dbda6be0e630d1b17835011b1277b684d57245b67427f404fb7cef3aa7549fe.json",
+      "record_sha256": "6dbda6be0e630d1b17835011b1277b684d57245b67427f404fb7cef3aa7549fe",
+      "han_count": 8183
+    },
+    "10": {
+      "title": "不能白收的东西",
+      "stage": "S01",
+      "text_path": "chapters/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt",
+      "text_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+      "record_path": "records/CH010_e878360a8b70385388a8a9d7e8bc7020b8bf293f40b0a3bf93f75430779a5be7.json",
+      "record_sha256": "e878360a8b70385388a8a9d7e8bc7020b8bf293f40b0a3bf93f75430779a5be7",
+      "han_count": 8137
+    }
+  },
+  "needs_revalidation": [],
+  "status": "resolved"
+}

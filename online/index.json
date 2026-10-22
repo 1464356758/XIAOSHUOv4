@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T20:08:33+00:00",
-    "state_revision": 15,
-    "workflow_revision": 50,
-    "state_sha256": "a3d3fef29303c19c6f250f1dbed82e59553c0e763dbbdefa005f747032dbc48a",
-    "workflow_sha256": "2e2ad402024a3da23153931de3c9722f27c8d7ac901c1e772b009a681816cdb6",
+    "generated_at": "2026-10-22T20:19:06+00:00",
+    "state_revision": 20,
+    "workflow_revision": 51,
+    "state_sha256": "8dbc8a1074915848dad107370944063eb9c92ee5feb7f27ded9169b3c5d11817",
+    "workflow_sha256": "32feccc0dc18e46d9e26a7a93a9bccd1ef3ba19758f1209c2102dc7873a2ee4c",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -26,17 +26,17 @@
     "actual_han": 83499,
     "completed": false,
     "needs_revalidation": [],
-    "reviewed_until": 5,
-    "window_review_due": true,
+    "reviewed_until": 10,
+    "window_review_due": false,
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "CHECKPOINT",
-    "label": "阶段回看",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 10,
-    "detail": "第十章《不能白收的东西》已检查采用8137汉字、1轮局部修订；正式稿10章83499汉字。正在累计真实读取CH001—010全文及记录执行S01阶段回看，目前未标完成，不转S02或开十一章。",
-    "next_action": "继续全文读取未覆盖章并登记阶段回看，落实未来反重复调整后保存、核对阅读导出；不自动写第十一章。",
-    "updated_at": "2026-10-22T20:08:32+00:00"
+    "detail": "第十章《不能白收的东西》8137汉字已采用，累计10章83499汉字。首十章实际全文回看已完成；第八章一处刻痕定位已修并顺序重核9/10，未来路线V3已登记，无待重核或未解回看，正在保存并核对阅读导出。",
+    "next_action": "保存并核对完成后等待作者授权CH011《旧单之外的人》；不自动写第十一章。",
+    "updated_at": "2026-10-22T20:19:05+00:00"
   },
   "chapters": [
     {
@@ -107,8 +107,8 @@
       "title": "他们的昨天",
       "stage": "S01",
       "han_count": 8332,
-      "text_path": "book/chapters/CH008_ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c.txt",
-      "sha256": "ba7398afa754ba20262a2c81a06988af95b343b809593e8a49a2c273cb85525c",
+      "text_path": "book/chapters/CH008_a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1.txt",
+      "sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
       "needs_revalidation": false
     },
     {
@@ -1091,12 +1091,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T17:18:23+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者已授权继续下一章。已核对6章50578汉字正式稿、第六章全文及路线V2；正在创作第七章《空着的那一格》，落实初八矿上冷检与F迁人探坡，本晨按约不联络。"
-    },
-    {
       "at": "2026-10-22T17:32:57+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1179,6 +1173,12 @@
       "phase": "CHECKPOINT",
       "label": "阶段回看",
       "detail": "第十章《不能白收的东西》已检查采用8137汉字、1轮局部修订；正式稿10章83499汉字。正在累计真实读取CH001—010全文及记录执行S01阶段回看，目前未标完成，不转S02或开十一章。"
+    },
+    {
+      "at": "2026-10-22T20:19:05+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第十章《不能白收的东西》8137汉字已采用，累计10章83499汉字。首十章实际全文回看已完成；第八章一处刻痕定位已修并顺序重核9/10，未来路线V3已登记，无待重核或未解回看，正在保存并核对阅读导出。"
     }
   ]
 }
