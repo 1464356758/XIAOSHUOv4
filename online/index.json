@@ -5,17 +5,17 @@
   "book": {
     "id": "f3626289-6903-436a-a009-eeee8a209510",
     "title": "未命名小说",
-    "platform": null,
+    "platform": "qimao",
     "selected_topic_id": null
   },
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T01:32:46+00:00",
+    "generated_at": "2026-10-22T04:46:17+00:00",
     "state_revision": 0,
-    "workflow_revision": 0,
+    "workflow_revision": 1,
     "state_sha256": "bf7c63aca896065b05e1256f65e499011491176ac6c17ad349076098e145cd68",
-    "workflow_sha256": "9c0d4087d352101c6aecb4017af3d99dcd948a915883d8da8c92ddffb52189bc"
+    "workflow_sha256": "374e74db1753e9d58267cc744a1112cf298b4b29a585ed2803feb6956f8f1b0b"
   },
   "progress": {
     "target_chapters": 100,
@@ -29,12 +29,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WAITING_PLATFORM",
-    "label": "等待选择平台",
+    "phase": "RESEARCH_PLATFORM",
+    "label": "核查平台规则",
     "chapter": 1,
-    "detail": "系统已准备好，请先选择创作平台。",
-    "next_action": "在起点、番茄、七猫、晋江中选择一个平台，或指定其他平台。",
-    "updated_at": "2026-10-22T01:32:46+00:00"
+    "detail": "已选择七猫中文网，正在等待核查现行规则。",
+    "next_action": "核查官方规则和公开榜单，保留来源与时间，再提出5—10个原创选题。",
+    "updated_at": "2026-10-22T04:46:17+00:00"
   },
   "chapters": [],
   "topics": [],
@@ -45,6 +45,12 @@
       "phase": "WAITING_PLATFORM",
       "label": "等待选择平台",
       "detail": "系统已准备好，请先选择创作平台。"
+    },
+    {
+      "at": "2026-10-22T04:46:17+00:00",
+      "phase": "RESEARCH_PLATFORM",
+      "label": "核查平台规则",
+      "detail": "已选择七猫中文网，正在等待核查现行规则。"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "revision": 0,
+  "revision": 1,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "WAITING_PLATFORM",
-  "platform": null,
+  "phase": "RESEARCH_PLATFORM",
+  "platform": "qimao",
   "selected_topic": null,
   "research_path": null,
   "topics_path": null,
@@ -14,9 +14,15 @@
       "phase": "WAITING_PLATFORM",
       "label": "等待选择平台",
       "detail": "系统已准备好，请先选择创作平台。"
+    },
+    {
+      "at": "2026-10-22T04:46:17+00:00",
+      "phase": "RESEARCH_PLATFORM",
+      "label": "核查平台规则",
+      "detail": "已选择七猫中文网，正在等待核查现行规则。"
     }
   ],
-  "detail": "系统已准备好，请先选择创作平台。",
-  "next_action": "在起点、番茄、七猫、晋江中选择一个平台，或指定其他平台。",
-  "updated_at": "2026-10-22T01:32:46+00:00"
+  "detail": "已选择七猫中文网，正在等待核查现行规则。",
+  "next_action": "核查官方规则和公开榜单，保留来源与时间，再提出5—10个原创选题。",
+  "updated_at": "2026-10-22T04:46:17+00:00"
 }
