@@ -11,13 +11,13 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T11:37:13+00:00",
+    "generated_at": "2026-10-22T12:03:33+00:00",
     "state_revision": 4,
-    "workflow_revision": 14,
-    "state_sha256": "e0f2b7863fac4ab4f25cedecf8bf11ca319e3b499e03ac42875e52fe345e370a",
-    "workflow_sha256": "3797f7bb732f1e35a653213e5933574014869e71909343c8dfbff46d20552b8e",
+    "workflow_revision": 15,
+    "state_sha256": "bd3ac9792d8ef04e96de9e603b4418fb5525bb98cc964f00081ea2e93409135a",
+    "workflow_sha256": "789a126867ecf7f56e5f03503ef5f5a307e362d43ff9d947add1c50ec5cd824b",
     "manuscript_storage": "encrypted_book_v1",
-    "vault_sha256": "c8bd142e2e7a9dfed03ff3aa818df1705bde400d51721213893ddbe025231344"
+    "vault_sha256": "4ba9da7f047eabb08d0bc0be2ccd128f89570e8f7bf922012a40907f2ead54f5"
   },
   "progress": {
     "target_chapters": 100,
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 2,
-    "detail": "作者已授权继续下一步。正在读取最新加密正式稿，创作第二章《前辈欠三块灵石》；第一章采用稿保持8558汉字。",
-    "next_action": "完成第二章整章正文、集中检查与必要局部修订，再加密保存并更新目录。",
-    "updated_at": "2026-10-22T11:37:13+00:00"
+    "detail": "第二章《前辈欠三块灵石》完整候选已登记：8520汉字，2轮局部修订；正在整理章后记录与采用检查，当前正式采用仍为1章。",
+    "next_action": "核对记录对应当前候选全文与上章来源，check-record通过后采用并加密同步。",
+    "updated_at": "2026-10-22T12:03:32+00:00"
   },
   "chapters": [
     {
@@ -48,8 +48,8 @@
       "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
       "needs_revalidation": false,
       "storage": "encrypted_book_v1",
-      "vault_path": "vault/book_c8bd142e2e7a9dfed03ff3aa818df1705bde400d51721213893ddbe025231344.json",
-      "vault_sha256": "c8bd142e2e7a9dfed03ff3aa818df1705bde400d51721213893ddbe025231344",
+      "vault_path": "vault/book_4ba9da7f047eabb08d0bc0be2ccd128f89570e8f7bf922012a40907f2ead54f5.json",
+      "vault_sha256": "4ba9da7f047eabb08d0bc0be2ccd128f89570e8f7bf922012a40907f2ead54f5",
       "book_id": "f3626289-6903-436a-a009-eeee8a209510",
       "key_id": "8467ea2a2d7670231aa5e0bd1d954058a182d9d9d56f625f4672bda0254f1ebe"
     }
@@ -1015,12 +1015,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T01:32:46+00:00",
-      "phase": "WAITING_PLATFORM",
-      "label": "等待选择平台",
-      "detail": "系统已准备好，请先选择创作平台。"
-    },
-    {
       "at": "2026-10-22T04:46:17+00:00",
       "phase": "RESEARCH_PLATFORM",
       "label": "核查平台规则",
@@ -1103,6 +1097,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已授权继续下一步。正在读取最新加密正式稿，创作第二章《前辈欠三块灵石》；第一章采用稿保持8558汉字。"
+    },
+    {
+      "at": "2026-10-22T12:03:32+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第二章《前辈欠三块灵石》完整候选已登记：8520汉字，2轮局部修订；正在整理章后记录与采用检查，当前正式采用仍为1章。"
     }
   ]
 }
