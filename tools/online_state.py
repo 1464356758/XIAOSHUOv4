@@ -29,7 +29,8 @@ PHASES = {
     "SCANNING_RANKINGS": "研究榜单", "WAITING_TOPIC": "等待选择题材",
     "PLANNING": "长篇规划", "WRITING": "撰写正文", "REVIEWING": "检查本章",
     "REVISING": "局部修订", "CHECKPOINT": "阶段回看", "SAVING": "保存进度",
-    "BLOCKED": "需要处理问题", "WAITING_NEXT": "等待下一章", "COMPLETE": "全书完成"
+    "BLOCKED": "需要处理问题", "WAITING_NEXT": "等待下一章", "COMPLETE": "全书完成",
+    "SYSTEM_UPGRADE": "升级创作系统"
 }
 
 def now():
