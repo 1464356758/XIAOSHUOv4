@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T11:03:22+00:00",
+    "generated_at": "2026-10-22T11:37:13+00:00",
     "state_revision": 4,
-    "workflow_revision": 13,
+    "workflow_revision": 14,
     "state_sha256": "e0f2b7863fac4ab4f25cedecf8bf11ca319e3b499e03ac42875e52fe345e370a",
-    "workflow_sha256": "12da49e5180f0d4ca6fcd391f7ae6d40a1134911ec7c20cccf4658166042c671",
+    "workflow_sha256": "3797f7bb732f1e35a653213e5933574014869e71909343c8dfbff46d20552b8e",
     "manuscript_storage": "encrypted_book_v1",
     "vault_sha256": "c8bd142e2e7a9dfed03ff3aa818df1705bde400d51721213893ddbe025231344"
   },
@@ -31,12 +31,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 2,
-    "detail": "第一章《碗里有人》已完成并采用，正文8558汉字；正文、章后记录和候选历史以加密稿保存。当前停在第1章，等待下一次创作指令。",
-    "next_action": "继续时先用本书私密钥匙解锁GitHub最新加密稿，阅读全文与章后记录，再写CH002《前辈欠三块灵石》。",
-    "updated_at": "2026-10-22T11:03:21+00:00"
+    "detail": "作者已授权继续下一步。正在读取最新加密正式稿，创作第二章《前辈欠三块灵石》；第一章采用稿保持8558汉字。",
+    "next_action": "完成第二章整章正文、集中检查与必要局部修订，再加密保存并更新目录。",
+    "updated_at": "2026-10-22T11:37:13+00:00"
   },
   "chapters": [
     {
@@ -1097,6 +1097,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第一章《碗里有人》已完成并采用，正文8558汉字；正文、章后记录和候选历史以加密稿保存。当前停在第1章，等待下一次创作指令。"
+    },
+    {
+      "at": "2026-10-22T11:37:13+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "作者已授权继续下一步。正在读取最新加密正式稿，创作第二章《前辈欠三块灵石》；第一章采用稿保持8558汉字。"
     }
   ]
 }
