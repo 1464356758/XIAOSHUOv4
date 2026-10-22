@@ -13,7 +13,7 @@
     "chapter_order": "serial",
     "route_window_min": 3,
     "route_window_max": 5,
-    "platform": null,
+    "platform": "qimao",
     "genre": null
   },
   "execution": {

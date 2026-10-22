@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "revision": 2,
+  "revision": 4,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "SCANNING_RANKINGS",
+  "phase": "WAITING_TOPIC",
   "platform": "qimao",
   "selected_topic": null,
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
-  "topics_path": null,
+  "topics_path": "research/topics_962e417ecd3b83ca10c29af88514199122870a7073bc5a6c31fda2f564b7823b.json",
   "chapter": 1,
   "history": [
     {
@@ -26,9 +26,21 @@
       "phase": "SCANNING_RANKINGS",
       "label": "研究榜单",
       "detail": "规则和榜单资料已保存；存在待核实项。"
+    },
+    {
+      "at": "2026-10-22T05:01:03+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "已准备8个原创选题，等待作者选择。"
+    },
+    {
+      "at": "2026-10-22T05:01:03+00:00",
+      "phase": "WAITING_TOPIC",
+      "label": "等待选择题材",
+      "detail": "七猫研究已保存：三类六榜、12部样本和8个原创候选。部分规则待核实，等待作者选题。"
     }
   ],
-  "detail": "规则和榜单资料已保存；存在待核实项。",
-  "next_action": "根据研究形成5—10个原创候选，说明长篇动力和风险。",
-  "updated_at": "2026-10-22T04:53:38+00:00"
+  "detail": "七猫研究已保存：三类六榜、12部样本和8个原创候选。部分规则待核实，等待作者选题。",
+  "next_action": "回复T01—T08选择题材后先做长篇规划；正式正文落盘前处理首发保护与存储方式，当前不写正文。",
+  "updated_at": "2026-10-22T05:01:03+00:00"
 }
