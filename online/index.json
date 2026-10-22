@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T09:50:18+00:00",
-    "state_revision": 1,
-    "workflow_revision": 8,
-    "state_sha256": "77f3601ebd853c1d2cffc0c7583aa8009d8f0360feacd7f8ff3ef3d2102a2803",
-    "workflow_sha256": "7476b62c7e5452275c5a58bbd82557ac7aec3b58faf476197e1e2469efb47d87"
+    "generated_at": "2026-10-22T10:29:53+00:00",
+    "state_revision": 3,
+    "workflow_revision": 9,
+    "state_sha256": "b69ab30cc5c5d8c2686f7ccb1a88e239483c87136c01237e642eef936114e6d6",
+    "workflow_sha256": "46d59fc1a569e66133c8a257523e9a82807f60f1b6b4818919ffde6a24586150"
   },
   "progress": {
     "target_chapters": 100,
@@ -32,9 +32,9 @@
     "phase": "PLANNING",
     "label": "长篇规划",
     "chapter": 1,
-    "detail": "已选定《我还没死，三千年后的盗墓贼先找上门了》，准备长篇规划。",
-    "next_action": "建立作者设定、阶段因果、结局条件和近期3—5章路线。",
-    "updated_at": "2026-10-22T09:50:18+00:00"
+    "detail": "T09开书规划已保存：核心人物与两岸规则、十阶段100章方向、前五章细化及因果检查；正文0章，等待明确开始指令。",
+    "next_action": "作者明确开始正文后，先落实正式稿的首发保护与存储方式，再按当前canon和roadmap写CH001；不重新选题。",
+    "updated_at": "2026-10-22T10:29:53+00:00"
   },
   "chapters": [],
   "topics": [
@@ -1050,6 +1050,12 @@
       "phase": "PLANNING",
       "label": "长篇规划",
       "detail": "已选定《我还没死，三千年后的盗墓贼先找上门了》，准备长篇规划。"
+    },
+    {
+      "at": "2026-10-22T10:29:53+00:00",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "T09开书规划已保存：核心人物与两岸规则、十阶段100章方向、前五章细化及因果检查；正文0章，等待明确开始指令。"
     }
   ]
 }

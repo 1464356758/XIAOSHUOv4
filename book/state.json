@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 1,
+  "revision": 3,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -17,8 +17,34 @@
   "chapters": {},
   "checkpoints": [],
   "needs_revalidation": [],
-  "inputs": {},
-  "input_history": [],
+  "inputs": {
+    "canon": {
+      "kind": "canon",
+      "path": "inputs/canon_5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079.md",
+      "sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+      "reason": "作者选择T09后建立开书硬设定；具体人名和机制为GPT规划采用，尚无正文"
+    },
+    "roadmap": {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_cc48753b48c1e7df5dfbec8fe88a460cfa0e3ea2bb59e98e74ac516ca1d1b1b4.md",
+      "sha256": "cc48753b48c1e7df5dfbec8fe88a460cfa0e3ea2bb59e98e74ac516ca1d1b1b4",
+      "reason": "建立十阶段100章方向、近期五章与九次物资预算，均为未来计划"
+    }
+  },
+  "input_history": [
+    {
+      "kind": "canon",
+      "path": "inputs/canon_5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079.md",
+      "sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+      "reason": "作者选择T09后建立开书硬设定；具体人名和机制为GPT规划采用，尚无正文"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_cc48753b48c1e7df5dfbec8fe88a460cfa0e3ea2bb59e98e74ac516ca1d1b1b4.md",
+      "sha256": "cc48753b48c1e7df5dfbec8fe88a460cfa0e3ea2bb59e98e74ac516ca1d1b1b4",
+      "reason": "建立十阶段100章方向、近期五章与九次物资预算，均为未来计划"
+    }
+  ],
   "tasks": {},
   "completion": null
 }
