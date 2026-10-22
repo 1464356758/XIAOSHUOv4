@@ -4,18 +4,18 @@
   "initialized": true,
   "book": {
     "id": "f3626289-6903-436a-a009-eeee8a209510",
-    "title": "未命名小说",
+    "title": "我还没死，三千年后的盗墓贼先找上门了",
     "platform": "qimao",
-    "selected_topic_id": null
+    "selected_topic_id": "T09"
   },
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T08:41:38+00:00",
-    "state_revision": 0,
-    "workflow_revision": 7,
-    "state_sha256": "bf7c63aca896065b05e1256f65e499011491176ac6c17ad349076098e145cd68",
-    "workflow_sha256": "e360dcae8621d9ba7d35ec6bf48daeb925317b5493292e43067e7229488bd93e"
+    "generated_at": "2026-10-22T09:50:18+00:00",
+    "state_revision": 1,
+    "workflow_revision": 8,
+    "state_sha256": "77f3601ebd853c1d2cffc0c7583aa8009d8f0360feacd7f8ff3ef3d2102a2803",
+    "workflow_sha256": "7476b62c7e5452275c5a58bbd82557ac7aec3b58faf476197e1e2469efb47d87"
   },
   "progress": {
     "target_chapters": 100,
@@ -29,12 +29,12 @@
     "unresolved_reviews": []
   },
   "task": {
-    "phase": "WAITING_TOPIC",
-    "label": "等待选择题材",
+    "phase": "PLANNING",
+    "label": "长篇规划",
     "chapter": 1,
-    "detail": "按作者要求新增8个更离奇的原创候选T09—T16；第一批保留，等待实际选题。",
-    "next_action": "可选T09—T16，也可回选第一批T01—T08；选定后先做长篇规划，当前不写正文。",
-    "updated_at": "2026-10-22T08:41:38+00:00"
+    "detail": "已选定《我还没死，三千年后的盗墓贼先找上门了》，准备长篇规划。",
+    "next_action": "建立作者设定、阶段因果、结局条件和近期3—5章路线。",
+    "updated_at": "2026-10-22T09:50:18+00:00"
   },
   "chapters": [],
   "topics": [
@@ -1044,6 +1044,12 @@
       "phase": "WAITING_TOPIC",
       "label": "等待选择题材",
       "detail": "按作者要求新增8个更离奇的原创候选T09—T16；第一批保留，等待实际选题。"
+    },
+    {
+      "at": "2026-10-22T09:50:18+00:00",
+      "phase": "PLANNING",
+      "label": "长篇规划",
+      "detail": "已选定《我还没死，三千年后的盗墓贼先找上门了》，准备长篇规划。"
     }
   ]
 }

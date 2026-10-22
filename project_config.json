@@ -1,6 +1,6 @@
 {
   "system_version": "4.1-online",
-  "project_name": "未命名小说",
+  "project_name": "我还没死，三千年后的盗墓贼先找上门了",
   "book_root": "book",
   "authority": {
     "mode": "github",
@@ -14,7 +14,7 @@
     "route_window_min": 3,
     "route_window_max": 5,
     "platform": "qimao",
-    "genre": null
+    "genre": "仙侠／跨时代悬疑"
   },
   "execution": {
     "context_character_budget": 40000,
