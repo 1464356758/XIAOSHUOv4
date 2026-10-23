@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T01:54:55+00:00",
+    "generated_at": "2026-10-23T02:13:23+00:00",
     "state_revision": 34,
-    "workflow_revision": 56,
-    "state_sha256": "c9444920ca2dad10d7efe47443d39c43a1ba1b19d022387bcead4c90b779abef",
-    "workflow_sha256": "bad44a169efd712e727f31fb83eeaea0916d603f3b3dcc5b817df4f663d61389",
+    "workflow_revision": 57,
+    "state_sha256": "697f186d4bf2ea2380bc16f85cf3607411508c73818e0577b459a4fa318e26e0",
+    "workflow_sha256": "b5d7abaa7640720450a306a3077d504cb83f9fc72339852f7a663153ac345e33",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 11,
-    "detail": "作者已授权继续章节；读取最近三章全文、当前路线与承诺，创作CH011《旧单之外的人》。",
-    "next_action": "完成本章、集中审核、release-check，采用冻结后交付TXT。",
-    "updated_at": "2026-10-23T01:54:55+00:00"
+    "detail": "CH011完整初稿8425汉字已登记同一候选；核对最近三章及本章事实、知情、物资和承诺，尚未采用。",
+    "next_action": "集中审核，必要局部修订后填写release-request并release-check。",
+    "updated_at": "2026-10-23T02:13:23+00:00"
   },
   "chapters": [
     {
@@ -1127,12 +1127,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T18:58:06+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第八章《他们的昨天》已检查采用8332汉字，2轮局部修订；共8章67179汉字。51条章后记录和初九转运现状已整理，正在保存并核对在线阅读及整本导出。"
-    },
-    {
       "at": "2026-10-22T19:04:56+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1215,6 +1209,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已授权继续章节；读取最近三章全文、当前路线与承诺，创作CH011《旧单之外的人》。"
+    },
+    {
+      "at": "2026-10-23T02:13:23+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "CH011完整初稿8425汉字已登记同一候选；核对最近三章及本章事实、知情、物资和承诺，尚未采用。"
     }
   ]
 }

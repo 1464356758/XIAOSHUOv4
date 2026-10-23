@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 56,
+  "revision": 57,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "WRITING",
+  "phase": "REVIEWING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T09",
@@ -372,9 +372,15 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "作者已授权继续章节；读取最近三章全文、当前路线与承诺，创作CH011《旧单之外的人》。"
+    },
+    {
+      "at": "2026-10-23T02:13:23+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "CH011完整初稿8425汉字已登记同一候选；核对最近三章及本章事实、知情、物资和承诺，尚未采用。"
     }
   ],
-  "detail": "作者已授权继续章节；读取最近三章全文、当前路线与承诺，创作CH011《旧单之外的人》。",
-  "next_action": "完成本章、集中审核、release-check，采用冻结后交付TXT。",
-  "updated_at": "2026-10-23T01:54:55+00:00"
+  "detail": "CH011完整初稿8425汉字已登记同一候选；核对最近三章及本章事实、知情、物资和承诺，尚未采用。",
+  "next_action": "集中审核，必要局部修订后填写release-request并release-check。",
+  "updated_at": "2026-10-23T02:13:23+00:00"
 }

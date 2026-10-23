@@ -809,6 +809,22 @@
       ],
       "candidate_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
       "candidate_path": "candidates/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt"
+    },
+    "11": {
+      "task_id": "a0b9ece1-b2f8-4f28-bb55-221f78584882",
+      "chapter": 11,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 0,
+      "history": [
+        {
+          "sha256": "9dbe1e221b85a8ccc83793d03276790d03ce10c99989810a130a3d587bb3b916",
+          "reason": "初稿",
+          "repairs": 0
+        }
+      ],
+      "candidate_sha256": "9dbe1e221b85a8ccc83793d03276790d03ce10c99989810a130a3d587bb3b916",
+      "candidate_path": "candidates/CH011_9dbe1e221b85a8ccc83793d03276790d03ce10c99989810a130a3d587bb3b916.txt"
     }
   },
   "completion": null,
