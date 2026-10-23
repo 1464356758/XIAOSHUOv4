@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 50,
+  "revision": 52,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -182,6 +182,15 @@
       "record_path": "records/CH018_342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014.json",
       "record_sha256": "342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014",
       "han_count": 8200
+    },
+    "19": {
+      "title": "字还在",
+      "stage": "S02",
+      "text_path": "chapters/CH019_48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e.txt",
+      "text_sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+      "record_path": "records/CH019_daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8.json",
+      "record_sha256": "daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8",
+      "han_count": 8231
     }
   },
   "checkpoints": [
@@ -750,9 +759,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349.md",
-      "sha256": "3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349",
-      "reason": "CH018真实过廿一到廿二桑活、冷导向修成但未热验，灯扣实付与本月底住权推进；仅调未来19原铜对照、20生计/阶段回看及N02实证、21廿四许约，其他期限不动。"
+      "path": "inputs/roadmap_33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72.md",
+      "sha256": "33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72",
+      "reason": "CH019实看原铜旧殁不改已闭Q02，十月两铺4钱已付/风嘴3交付；只调未来20实际试修旬工与外庭、两端固定环按证验证和采用前阶段全文回看，21—22保廿四许约，期限不移。"
     }
   },
   "input_history": [
@@ -833,6 +842,12 @@
       "path": "inputs/roadmap_3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349.md",
       "sha256": "3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349",
       "reason": "CH018真实过廿一到廿二桑活、冷导向修成但未热验，灯扣实付与本月底住权推进；仅调未来19原铜对照、20生计/阶段回看及N02实证、21廿四许约，其他期限不动。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72.md",
+      "sha256": "33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72",
+      "reason": "CH019实看原铜旧殁不改已闭Q02，十月两铺4钱已付/风嘴3交付；只调未来20实际试修旬工与外庭、两端固定环按证验证和采用前阶段全文回看，21—22保廿四许约，期限不移。"
     }
   ],
   "tasks": {
@@ -1233,17 +1248,27 @@
       "task_id": "05929765-d351-491f-8ff2-6945d1204524",
       "chapter": 19,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 2,
       "history": [
         {
           "sha256": "e972d11352f6d2c8570713ea372ecd1694390739736b5f2e32db9b2af7dec9f3",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "55747dfc900b9a834f46e521fb4e0501ddfdcb61b2d7c0f8ea79c58b2ab8054d",
+          "reason": "集中全文复读一轮局修：明确闻侧晨窗触沿、补修后热退量漏字，补邵原半日报价使议价有实因；统一客件格在小灶门旁，分清午后本轮收桶与戌初晚水，并删无用预设防范句。",
+          "repairs": 1
+        },
+        {
+          "sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+          "reason": "回核旧损原句时发现将许茂与十九日的速记误连；仅改为许茂的五日试工，恢复正文既有人名，试工18—22及24会面不变。",
+          "repairs": 2
         }
       ],
-      "candidate_sha256": "e972d11352f6d2c8570713ea372ecd1694390739736b5f2e32db9b2af7dec9f3",
-      "candidate_path": "candidates/CH019_e972d11352f6d2c8570713ea372ecd1694390739736b5f2e32db9b2af7dec9f3.txt"
+      "candidate_sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+      "candidate_path": "candidates/CH019_48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e.txt"
     }
   },
   "completion": null,
@@ -1322,6 +1347,10 @@
       "18": {
         "text_sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
         "record_sha256": "342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014"
+      },
+      "19": {
+        "text_sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+        "record_sha256": "daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8"
       }
     },
     "published": {},
@@ -1365,6 +1394,11 @@
         "path": "releases/CH018_93fd45c59d7be4272d204e48245ec4cc611ea51f18e36f0ccf460b67ac59353b.json",
         "sha256": "93fd45c59d7be4272d204e48245ec4cc611ea51f18e36f0ccf460b67ac59353b",
         "used": true
+      },
+      "19": {
+        "path": "releases/CH019_4528198bdbfb6f6805138a22e562a9b0f5ab230124448e23808aefbef58a330a.json",
+        "sha256": "4528198bdbfb6f6805138a22e562a9b0f5ab230124448e23808aefbef58a330a",
+        "used": true
       }
     },
     "promises": {
@@ -1398,7 +1432,7 @@
       },
       "Q02": {
         "deadline_chapter": 19,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q02",
@@ -1408,9 +1442,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q02",
+            "action": "complete",
+            "deadline_chapter": 19,
+            "reason": "22晨F亲见A桑存活与22午后亲看乙二第二原铜旧桑殁仍在并置，旧史不因救师消去的阶段答案实得；A获知结果仍待23晨，没冒称机制全解。",
+            "evidence": {
+              "chapter": 19,
+              "sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+              "quote": "他那边的一盏灯已经修好，这里的一个殁字没有少。"
+            },
+            "chapter": 19
           }
         ],
-        "last_reviewed_chapter": 18
+        "last_reviewed_chapter": 19
       },
       "Q03": {
         "deadline_chapter": 60,
@@ -1426,7 +1472,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 18
+        "last_reviewed_chapter": 19
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1442,7 +1488,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 18
+        "last_reviewed_chapter": 19
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1458,7 +1504,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 18
+        "last_reviewed_chapter": 19
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1474,7 +1520,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 18
+        "last_reviewed_chapter": 19
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -1658,7 +1704,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 18
+        "last_reviewed_chapter": 19
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
@@ -1733,7 +1779,7 @@
         ],
         "deadline_chapter": 22,
         "status": "open",
-        "last_reviewed_chapter": 18
+        "last_reviewed_chapter": 19
       }
     },
     "incidents": {},
