@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T11:34:18+00:00",
+    "generated_at": "2026-10-23T11:55:23+00:00",
     "state_revision": 44,
-    "workflow_revision": 74,
+    "workflow_revision": 75,
     "state_sha256": "dfe5ba1d14249b1dbe11b8aae1cebae724f93c98be685b82d8261771b9de5319",
-    "workflow_sha256": "6cfc2829d18c2fae9feed8c3324cacd0fb2b42b018bf647c8679629733cf1b48",
+    "workflow_sha256": "57c7094c37bb1c0b3cd602b932412762cd288cc76d5a330b73693124b8f6d5ad",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 16,
-    "detail": "第十五章《谁站在闸外》8528汉字已完成审核、冻结、同步并回读；采用前11—15全文回看已完成，TXT已保存，累计15章125324汉字。",
-    "next_action": "等待作者继续第十六章《点火以前》（暂题）：转完整肩/后挡固修示线，履行初十七许会谈，按实际日期准备17热态结果与18廿一。",
-    "updated_at": "2026-10-23T11:34:17+00:00"
+    "detail": "已核对main十五章冻结进度，读取近三章全文与V9，正在创作第十六章《点火以前》：完整验件、后挡固修示线及初十七许会谈。",
+    "next_action": "完成CH016整章，集中核对与采用前检查。",
+    "updated_at": "2026-10-23T11:55:23+00:00"
   },
   "chapters": [
     {
@@ -1187,12 +1187,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T03:35:00+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第十二章完整初稿8268汉字已登记候选，正在集中核查物资、知情、前章证据和放行条件。"
-    },
-    {
       "at": "2026-10-23T03:48:56+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1275,6 +1269,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十五章《谁站在闸外》8528汉字已完成审核、冻结、同步并回读；采用前11—15全文回看已完成，TXT已保存，累计15章125324汉字。"
+    },
+    {
+      "at": "2026-10-23T11:55:23+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已核对main十五章冻结进度，读取近三章全文与V9，正在创作第十六章《点火以前》：完整验件、后挡固修示线及初十七许会谈。"
     }
   ]
 }
