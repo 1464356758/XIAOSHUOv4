@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T12:24:58+00:00",
+    "generated_at": "2026-10-23T12:29:47+00:00",
     "state_revision": 46,
-    "workflow_revision": 78,
+    "workflow_revision": 79,
     "state_sha256": "adc658d90ca85183d7f03d56bed955d67f7417adb0930d86736c16db60a708e2",
-    "workflow_sha256": "81fb205c72b37a2940fbc31f86a164f043a3f68f3fa8885127ece1c419b2ae51",
+    "workflow_sha256": "cb4fefb2899e24a6537275385336d20e9adecbe85669e9688c131a428081862a",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
-    "chapter": 16,
-    "detail": "第十六章《点火以前》8480汉字已完成审核、采用冻结、同步并回读；一轮局修，TXT已保存，累计16章133804汉字。",
-    "next_action": "等待作者继续第十七章《火收以后》（暂题）：十九新签人齐后实际受控首热与冷后结果，18廿一存活、19廿二原铜约照旧。",
-    "updated_at": "2026-10-23T12:24:58+00:00"
+    "phase": "WRITING",
+    "label": "撰写正文",
+    "chapter": 17,
+    "detail": "已核对main十六章冻结进度、近三章全文与V10，正在创作第十七章《火收以后》：十九真实受控首热、冷后结果和停产代价。",
+    "next_action": "完成CH017整章，集中核查热试时间/岗位/实际后果并做采用前检查。",
+    "updated_at": "2026-10-23T12:29:46+00:00"
   },
   "chapters": [
     {
@@ -1199,12 +1199,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T04:17:50+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第十三章完整初稿已登记，正在集中检查来源结论、剖查授权、旧碗折价与两岸晨后知情。"
-    },
-    {
       "at": "2026-10-23T04:31:30+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1287,6 +1281,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十六章《点火以前》8480汉字已完成审核、采用冻结、同步并回读；一轮局修，TXT已保存，累计16章133804汉字。"
+    },
+    {
+      "at": "2026-10-23T12:29:46+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已核对main十六章冻结进度、近三章全文与V10，正在创作第十七章《火收以后》：十九真实受控首热、冷后结果和停产代价。"
     }
   ]
 }
