@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T03:21:39+00:00",
+    "generated_at": "2026-10-23T03:35:00+00:00",
     "state_revision": 36,
-    "workflow_revision": 59,
-    "state_sha256": "951faf852a00a0ec733864648fc449bd8beb47724d330f0791baad4636fb5b70",
-    "workflow_sha256": "0d3b794920ca707f6e5c02fd3857399b04406e4bfb22f3a3b8e1d978a16d18f0",
+    "workflow_revision": 60,
+    "state_sha256": "15c764e476b4870dfd19ccc49000721fb304e177bc04b437b2443d920c28a1f9",
+    "workflow_sha256": "2d9bf144104039e65f9c67b6a3b08d88f0eb2efd34512cd03ae0974883df4060",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 12,
-    "detail": "正在创作第十二章《第二道细裂》：已核对近三章全文、五章推进与V5路线，推进初十一试料和许茂原工条核对。",
-    "next_action": "完成8000—10000汉字完整候选，集中检查后登记采用。",
-    "updated_at": "2026-10-23T03:21:39+00:00"
+    "detail": "第十二章完整初稿8268汉字已登记候选，正在集中核查物资、知情、前章证据和放行条件。",
+    "next_action": "完成本章事实记录与八项发布前检查，必要时按同一任务局部修复。",
+    "updated_at": "2026-10-23T03:35:00+00:00"
   },
   "chapters": [
     {
@@ -1139,12 +1139,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T19:28:04+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第九章《第一道出口》完整初稿8137汉字已登记；正在全文检查实际出陵/返城、物品和少量伤损、雇佣知情及旧铁来源证据，当前正式采用仍8章。"
-    },
-    {
       "at": "2026-10-22T19:35:31+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1227,6 +1221,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "正在创作第十二章《第二道细裂》：已核对近三章全文、五章推进与V5路线，推进初十一试料和许茂原工条核对。"
+    },
+    {
+      "at": "2026-10-23T03:35:00+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第十二章完整初稿8268汉字已登记候选，正在集中核查物资、知情、前章证据和放行条件。"
     }
   ]
 }
