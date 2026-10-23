@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 44,
+  "revision": 46,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -155,6 +155,15 @@
       "record_path": "records/CH015_541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30.json",
       "record_sha256": "541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30",
       "han_count": 8528
+    },
+    "16": {
+      "title": "点火以前",
+      "stage": "S02",
+      "text_path": "chapters/CH016_d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed.txt",
+      "text_sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+      "record_path": "records/CH016_e0b10cc7656ff8acdd210177e2aaf442eac774fc46e6b32f2ff20a90e4e32b6c.json",
+      "record_sha256": "e0b10cc7656ff8acdd210177e2aaf442eac774fc46e6b32f2ff20a90e4e32b6c",
+      "han_count": 8480
     }
   },
   "checkpoints": [
@@ -723,9 +732,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da.md",
-      "sha256": "6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da",
-      "reason": "CH015与11—15全文回看已采用，外应15真人受训/可到已闭，乔新炭与装袋有价、梁真离城/曹单房已成；仅调未来16全件固修与十七会谈、17真实热反馈、18廿一实际存活，降低重复工序说明，其他期限不动。"
+      "path": "inputs/roadmap_b1eb395915d9f1fc42ab74ca846233d73eeea990265f8ebf8adf3f3eabe77799.md",
+      "sha256": "b1eb395915d9f1fc42ab74ca846233d73eeea990265f8ebf8adf3f3eabe77799",
+      "reason": "CH016冷验真配/后挡固修及冷标已成，17许约已履/廿四新核账约独立跟踪；仅调未来17真实首热反馈、18廿一存活、19廿二原铜实看，20乔份与阶段回看，许余项22前履约，其他期限不动。"
     }
   },
   "input_history": [
@@ -788,6 +797,12 @@
       "path": "inputs/roadmap_6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da.md",
       "sha256": "6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da",
       "reason": "CH015与11—15全文回看已采用，外应15真人受训/可到已闭，乔新炭与装袋有价、梁真离城/曹单房已成；仅调未来16全件固修与十七会谈、17真实热反馈、18廿一实际存活，降低重复工序说明，其他期限不动。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_b1eb395915d9f1fc42ab74ca846233d73eeea990265f8ebf8adf3f3eabe77799.md",
+      "sha256": "b1eb395915d9f1fc42ab74ca846233d73eeea990265f8ebf8adf3f3eabe77799",
+      "reason": "CH016冷验真配/后挡固修及冷标已成，17许约已履/廿四新核账约独立跟踪；仅调未来17真实首热反馈、18廿一存活、19廿二原铜实看，20乔份与阶段回看，许余项22前履约，其他期限不动。"
     }
   ],
   "tasks": {
@@ -1120,7 +1135,7 @@
       "task_id": "fdbf03d8-32e7-4526-97a6-be0104d6f6c1",
       "chapter": 16,
       "mode": "write",
-      "phase": "candidate",
+      "phase": "adopted",
       "repairs": 1,
       "history": [
         {
@@ -1202,6 +1217,10 @@
       "15": {
         "text_sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
         "record_sha256": "541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30"
+      },
+      "16": {
+        "text_sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+        "record_sha256": "e0b10cc7656ff8acdd210177e2aaf442eac774fc46e6b32f2ff20a90e4e32b6c"
       }
     },
     "published": {},
@@ -1229,6 +1248,11 @@
       "15": {
         "path": "releases/CH015_7fe243ba7b7c970728a1aba2d5173152b3957f2acd2b60f21be176cd77f66d3a.json",
         "sha256": "7fe243ba7b7c970728a1aba2d5173152b3957f2acd2b60f21be176cd77f66d3a",
+        "used": true
+      },
+      "16": {
+        "path": "releases/CH016_274745e3a76a0e4da480937e4d9fbed1a1d13ecd08ab60244c2e3917d85efbc8.json",
+        "sha256": "274745e3a76a0e4da480937e4d9fbed1a1d13ecd08ab60244c2e3917d85efbc8",
         "used": true
       }
     },
@@ -1275,7 +1299,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q03": {
         "deadline_chapter": 60,
@@ -1291,7 +1315,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1307,7 +1331,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1323,7 +1347,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1339,7 +1363,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -1355,7 +1379,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q04": {
         "deadline_chapter": 18,
@@ -1371,7 +1395,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q04-cold-inspection": {
         "deadline_chapter": 15,
@@ -1415,7 +1439,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q04-backstop-source": {
         "deadline_chapter": 13,
@@ -1487,7 +1511,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 15
+        "last_reviewed_chapter": 16
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
@@ -1544,6 +1568,25 @@
           }
         ],
         "last_reviewed_chapter": 13
+      },
+      "Q-Xu-loss": {
+        "history": [
+          {
+            "id": "Q-Xu-loss",
+            "action": "set",
+            "deadline_chapter": 22,
+            "reason": "独立跟踪本章新形成的廿四下工严本人/桑到北料场核木场可得账与后续承担；此前旧损事实已揭，本项不重设救师Q04期限、不要求抹缺证或新工抵赔。22章前按真实廿四履约给阶段结果/承担，五日短带真做/真钱也要接住。",
+            "evidence": {
+              "chapter": 16,
+              "sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+              "quote": "廿四下工后，我把实际问到的带到这里，你看过再往下合。"
+            },
+            "chapter": 16
+          }
+        ],
+        "deadline_chapter": 22,
+        "status": "open",
+        "last_reviewed_chapter": 16
       }
     },
     "incidents": {},
