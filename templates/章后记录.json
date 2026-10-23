@@ -38,5 +38,6 @@
     "next_options": "后续可选行动",
     "scene_function": "场景实际作用"
   },
-  "thread_events": []
+  "thread_events": [],
+  "stage_closing": false
 }

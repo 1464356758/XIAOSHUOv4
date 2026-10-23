@@ -112,6 +112,26 @@ class OnlineTests(unittest.TestCase):
             manifest=json.loads(archive.read('online/index.json'));self.assertFalse(manifest['initialized']);self.assertIsNone(manifest['book']['id'])
             self.assertEqual(manifest['topics'],[])
 
+    def test_v42_template_bootstraps_two_independent_serial_books(self):
+        output=Path(self.tmp.name)/'serial-init.zip';pack.build(SOURCE,output)
+        identities=[]
+        for number in (1,2):
+            target=Path(self.tmp.name)/f'fresh-{number}'
+            with zipfile.ZipFile(output) as archive:
+                for required in ('tools/serial_release.py','每日一章指令.txt','docs/连载冻结与发布前检查.md'):
+                    self.assertIn(required,archive.namelist())
+                archive.extractall(target)
+            run=subprocess.run([sys.executable,'tools/online_state.py','bootstrap','--repo',f'https://github.com/example/fresh-{number}'],cwd=target,capture_output=True,text=True)
+            self.assertEqual(run.returncode,0,run.stderr)
+            state=json.loads((target/'book/state.json').read_text())
+            identities.append(state['book_id'])
+            self.assertTrue(state['config']['serial_mode'])
+            self.assertEqual(state['serialization']['frozen'],{})
+            self.assertEqual(state['serialization']['published'],{})
+            self.assertEqual(json.loads((target/'book/workflow.json').read_text())['phase'],'WAITING_PLATFORM')
+            self.assertEqual(json.loads((target/'online/index.json').read_text())['progress']['actual_han'],0)
+        self.assertNotEqual(identities[0],identities[1])
+
     def test_bad_repository_url_is_rejected(self):
         for url in ('https://github.com.evil.test/a/b','https://github.com/a/b/tree/main','https://user@github.com/a/b'):
             with self.assertRaises(online.ns.WorkspaceError):online.repository(url)

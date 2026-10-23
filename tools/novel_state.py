@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import contextlib
 import hashlib
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -16,10 +17,29 @@ import re
 import tempfile
 import uuid
 import zipfile
+from types import SimpleNamespace
 
 
 class WorkspaceError(ValueError):
     pass
+
+
+_SERIAL_MODULE = None
+
+
+def serial_module():
+    global _SERIAL_MODULE
+    if _SERIAL_MODULE is None:
+        spec = importlib.util.spec_from_file_location("novel_serial_release", Path(__file__).with_name("serial_release.py"))
+        _SERIAL_MODULE = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(_SERIAL_MODULE)
+    return _SERIAL_MODULE
+
+
+def serial_api():
+    names = ("require", "digest", "han_count", "read_json", "atomic_json", "immutable_text", "inside",
+             "load_state", "verify_files", "writer_lock", "validate_record", "records", "quote_exists", "review_status")
+    return SimpleNamespace(**{name: globals()[name] for name in names})
 
 
 def require(condition, message):
@@ -113,6 +133,8 @@ def verify_files(root, state):
             require(path.is_file(), f"第 {key} 章缺少文件：{chapter[field]}")
             require(digest(path.read_text(encoding="utf-8")) == chapter[sha_field],
                     f"第 {key} 章文件与采用版本不符：{chapter[field]}")
+    if state.get("serialization", {}).get("enabled"):
+        serial_module().verify_frozen(state, serial_api())
 
 
 def init(root, title, overrides=None):
@@ -122,7 +144,10 @@ def init(root, title, overrides=None):
         config = {"target_chapters": 100, "target_han": 900000,
                   "chapter_han_min": 8000, "chapter_han_max": 10000,
                   "book_han_min": 880000, "book_han_max": 920000,
-                  "strict_length": True, "review_interval": 5, "max_local_repairs": 3}
+                  "strict_length": True, "review_interval": 5, "max_local_repairs": 3,
+                  "serial_mode": False, "serial_stage_size": 10, "serial_lookahead": 3,
+                  "opening_hook_max_han": 800, "opening_core_max_han": 3000,
+                  "opening_impact_max_han": 3000}
         config.update(overrides or {})
         require(config["review_interval"] >= 1, "回看间隔必须为正数。")
         require(0 <= config["chapter_han_min"] <= config["chapter_han_max"], "章长区间无效。")
@@ -133,6 +158,8 @@ def init(root, title, overrides=None):
                  "revision": 0, "config": config, "chapters": {},
                  "checkpoints": [], "needs_revalidation": [], "inputs": {},
                  "input_history": [], "tasks": {}, "completion": None}
+        if config["serial_mode"]:
+            state["serialization"] = serial_module().new_state(config, serial_api())
         atomic_json(Path(root) / "state.json", state)
         return state
 
@@ -183,7 +210,8 @@ def status(root):
             "completed": state["completion"] is not None,
             "inputs": state["inputs"],
             "needs_revalidation": state["needs_revalidation"], **review_status(state),
-            "literary_quality": "程序未评判；必须由GPT与作者依据正文判断"}
+            "literary_quality": "程序未评判；必须由GPT与作者依据正文判断",
+            **(serial_module().summary(state) if state.get("serialization", {}).get("enabled") else {})}
 
 
 def quote_exists(text, quote):
@@ -202,6 +230,8 @@ def set_input(root, kind, path, reason, base_revision):
         old = state["inputs"].get(kind)
         if old and old["sha256"] == sha:
             return {"revision": state["revision"], "unchanged": True}
+        require(not (kind == "canon" and state.get("serialization", {}).get("frozen")),
+                "连载定稿已冻结，不能改canon并重写既往。保留已发生事实，调整未来roadmap；确有旧错用incident登记前向处理。")
         relative = f"inputs/{kind}_{sha}.md"
         target = inside(root, relative); target.parent.mkdir(parents=True, exist_ok=True)
         immutable_text(target, content)
@@ -221,6 +251,8 @@ def candidate(root, chapter, text_path, mode="write", request="", repairing=Fals
     with writer_lock(root):
         state = load_state(root); verify_files(root, state)
         require(state["completion"] is None, "完成后先reopen再改稿。")
+        if state.get("serialization", {}).get("enabled"):
+            serial_module().guard_chapter(state, chapter, serial_api())
         previous = state["chapters"].get(str(chapter))
         stage = previous["stage"] if previous else state["chapters"].get(str(len(state["chapters"])), {}).get("stage", "S01")
         ensure_next_allowed(state, chapter, stage)
@@ -297,6 +329,9 @@ def validate_record(root, state, text, record):
     require(bool(record.get("title", "").strip()) and bool(record.get("stage", "").strip()), "缺少标题或阶段编号。")
     require(bool(record.get("summary", "").strip()), "章节摘要为空；保留旧记录，不能覆盖。")
     require(isinstance(record.get("story_time_end"), int) and not isinstance(record["story_time_end"], bool), "缺少统一故事时间轴上的整数位置。")
+    if state.get("serialization", {}).get("enabled") and chapter == len(state["chapters"]) + 1 and chapter > 1:
+        previous = read_json(inside(root, state["chapters"][str(chapter - 1)]["record_path"]))
+        require(record["story_time_end"] >= previous["story_time_end"], "连载章末时间倒退；倒叙须保留当前章末位置，逐事实记录其真实生效时间。")
     review = record.get("review", {})
     require(review.get("read_full_text") is True, "尚未声明完整阅读本章。")
     require(review.get("decision") == "adopt" and review.get("blocking_issues") == [], "本章仍有必须处理的问题。")
@@ -368,6 +403,9 @@ def adopt(root, text_path, record_path, revalidate=False):
             stored = read_json(inside(root, prior["record_path"]))
             if stored == dict(record, measured_han=han_count(text)) and prior["text_sha256"] == digest(text):
                 return {"chapter": record["chapter"], "revision": state["revision"], "already_adopted": True}
+        serial = state.get("serialization", {}).get("enabled")
+        if serial:
+            serial_module().guard_chapter(state, record.get("chapter"), serial_api())
         count = validate_record(root, state, text, record)
         chapter = record["chapter"]
         last = len(state["chapters"])
@@ -379,6 +417,7 @@ def adopt(root, text_path, record_path, revalidate=False):
             task = state["tasks"].get(str(chapter), {})
             require(task.get("phase") == "candidate" and task.get("candidate_sha256") == digest(text), "先用candidate登记本稿；改稿使用repair计入同一任务。")
         ensure_next_allowed(state, chapter, record["stage"])
+        release = serial_module().validated_gate(root, state, text, record, serial_api()) if serial else None
         old = state["chapters"].get(str(chapter))
         sha = digest(text)
         require(not old or old["stage"] == record["stage"], "已采用章的阶段归属不能由写后记录静默改变。")
@@ -406,6 +445,8 @@ def adopt(root, text_path, record_path, revalidate=False):
         if str(chapter) in state["tasks"]:
             state["tasks"][str(chapter)]["phase"] = "adopted"
         state["completion"] = None
+        if serial:
+            serial_module().on_adopt(state, chapter, item, release, serial_api())
         state["revision"] += 1
         atomic_json(Path(root) / "state.json", state)
         return {"chapter": chapter, "revision": state["revision"], "han_count": count,
@@ -439,7 +480,7 @@ def checkpoint(root, report_path):
         return {"revision": state["revision"], **review_status(state)}
 
 
-def context(root, query="", budget=40000, story_time=None):
+def context(root, query="", budget=80000, story_time=None):
     state = load_state(root)
     verify_files(root, state)
     require(not state["needs_revalidation"], "前文变更后的影响核对未完成，不能组装正常续写包。")
@@ -466,6 +507,8 @@ def context(root, query="", budget=40000, story_time=None):
     # 所有冲突条目必须放入必要区，不能因检索排序消失。
     parts.append("## 记忆冲突（先核对，不自动选真）\n" + json.dumps(projection["conflicts"], ensure_ascii=False, indent=2))
     parts.append("## 未闭合伏笔事件\n" + json.dumps(projection["open_threads"], ensure_ascii=False, indent=2))
+    if state.get("serialization", {}).get("enabled"):
+        parts.append("## 连载冻结与前向处理\n" + json.dumps(serial_module().continuation_state(root, state, serial_api()), ensure_ascii=False, indent=2))
     required = "\n\n".join(parts)
     require(len(required) + 300 <= budget, "必要资料超过字符预算；不能静默截断。请扩大预算，或由GPT明确记录分批读取范围。")
     omitted = len(facts) - len(selected)
@@ -494,6 +537,8 @@ def finish(root, report_path):
         total = sum(c["han_count"] for c in state["chapters"].values())
         require(state["config"]["book_han_min"] <= total <= state["config"]["book_han_max"], "全书实测汉字数不在约定范围内。")
         require(report.get("decision") == "complete" and report.get("blocking_issues") == [], "完稿仍有必须处理的问题。")
+        if state.get("serialization", {}).get("enabled"):
+            serial_module().finish_guard(root, state, serial_api())
         for field in ("main_conflict", "character_choice", "promise_payoffs", "remaining_open_questions"):
             require(bool(report.get(field, "").strip()), f"完稿报告缺少{field}。")
         require(isinstance(report.get("evidence"), list) and bool(report["evidence"]), "完稿判断缺少正文证据。")
@@ -524,6 +569,7 @@ def export_text(root, out):
     require(bool(state["chapters"]), "尚无采用正文。")
     target = Path(out).resolve(); require(not target.is_relative_to(Path(root).resolve()), "导出到作品目录外，避免覆盖来源。")
     parts = [f"第{n}章 {state['chapters'][str(n)]['title']}\n\n" + inside(root, state["chapters"][str(n)]["text_path"]).read_text(encoding="utf-8") for n in range(1, len(state["chapters"]) + 1)]
+    target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("\n\n".join(parts), encoding="utf-8")
     return {"path": str(target), "chapters": len(parts), "completed": state["completion"] is not None}
 
@@ -557,10 +603,10 @@ def snapshot(root, out):
         # 快照同时携带本工具和关键规程，恢复不依赖原临时目录。
         package = Path(__file__).resolve().parents[1]
         files["SYSTEM/tools/novel_state.py"] = Path(__file__).read_bytes()
-        for name in ("启动指令.txt", "启动新书.txt", "平台研究与选题.md", "platforms.json", "执行规程.md", "工具使用与数据格式.md", "system_config.json", "project_config.json"):
+        for name in ("启动指令.txt", "启动新书.txt", "每日一章指令.txt", "docs/连载冻结与发布前检查.md", "平台研究与选题.md", "platforms.json", "执行规程.md", "工具使用与数据格式.md", "system_config.json", "project_config.json"):
             path = package / name
             if path.is_file(): files["SYSTEM/" + name] = path.read_bytes()
-        for name in ("online_state.py", "make_init_package.py"):
+        for name in ("online_state.py", "make_init_package.py", "serial_release.py"):
             path = package / "tools" / name
             if path.is_file(): files["SYSTEM/tools/" + name] = path.read_bytes()
         templates = package / "templates"
@@ -590,7 +636,7 @@ def main():
     for command in ("adopt", "revalidate", "check-record"):
         p = subs.add_parser(command); p.add_argument("--text", required=True); p.add_argument("--record", required=True)
     p = subs.add_parser("checkpoint"); p.add_argument("--report", required=True)
-    p = subs.add_parser("context"); p.add_argument("--query", default=""); p.add_argument("--budget", type=int, default=40000); p.add_argument("--out")
+    p = subs.add_parser("context"); p.add_argument("--query", default=""); p.add_argument("--budget", type=int, default=80000); p.add_argument("--out")
     p.add_argument("--time", type=int)
     p = subs.add_parser("set-input"); p.add_argument("--kind", choices=("canon", "roadmap"), required=True); p.add_argument("--file", required=True); p.add_argument("--reason", required=True); p.add_argument("--base-revision", type=int, required=True)
     for command in ("candidate", "repair"):
@@ -602,6 +648,14 @@ def main():
     for command in ("snapshot", "export"):
         p = subs.add_parser(command); p.add_argument("--out", required=True)
     p = subs.add_parser("verify-snapshot"); p.add_argument("--file", required=True)
+    p = subs.add_parser("serial-enable"); p.add_argument("--reason", required=True); p.add_argument("--base-revision", required=True, type=int)
+    for command in ("release-request", "release-check"):
+        p = subs.add_parser(command); p.add_argument("--text", required=True); p.add_argument("--record", required=True)
+        if command == "release-check": p.add_argument("--report", required=True)
+        else: p.add_argument("--out", required=True)
+    p = subs.add_parser("publish"); p.add_argument("--chapter", required=True, type=int); p.add_argument("--text-sha256", required=True); p.add_argument("--published-at", required=True); p.add_argument("--evidence", required=True)
+    p = subs.add_parser("incident"); p.add_argument("--report", required=True)
+    p = subs.add_parser("serial-plan"); p.add_argument("--report", required=True)
     args = parser.parse_args()
     try:
         if args.command == "init":
@@ -638,6 +692,18 @@ def main():
             result = verify_snapshot(args.file)
         elif args.command == "export":
             result = export_text(args.root, args.out)
+        elif args.command == "serial-enable":
+            result = serial_module().enable(args.root, args.reason, args.base_revision, serial_api())
+        elif args.command == "release-request":
+            result = serial_module().request(args.root, args.text, args.record, args.out, serial_api())
+        elif args.command == "release-check":
+            result = serial_module().check(args.root, args.text, args.record, args.report, serial_api())
+        elif args.command == "publish":
+            result = serial_module().publish(args.root, args.chapter, args.text_sha256, args.published_at, args.evidence, serial_api())
+        elif args.command == "incident":
+            result = serial_module().incident(args.root, args.report, serial_api())
+        elif args.command == "serial-plan":
+            result = serial_module().plan(args.root, args.report, serial_api())
         else:
             result = context(args.root, args.query, args.budget, args.time)
             if args.out:

@@ -1,0 +1,210 @@
+{
+  "chapter": 1,
+  "title": "碗里有人",
+  "stage": "S01",
+  "base_revision": 20,
+  "canon_sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+  "text_sha256": "9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d",
+  "complete": true,
+  "story_time_end": 20,
+  "summary": "以当日稍后同名墓志现场短倒叙开场，随后明确回到辰初之前。岑照为修旧灶欠下三块灵石，清早摔缺父亲留下的青口碗。辰初碗中传来灰室小队求救。他用旧灶工序提供有限判断，曹砚生测量改装压箍、闻溪放置本地铜片、梁九川护持，恢复通气但未开门。闻溪展示墓主同名拓纸并自报三千年后历号；岑照保留怀疑。断联前双方约次晨再试，他报出姓名。因误了试火，他承担本地机会损失，铜芯仍待校准，债务未消。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [],
+    "conclusion": "已读原第一章全文、修改后完整差异并复读新开篇；按照作者最新“现在的这部小说需要改”授权作一次定向开篇修改。先呈现拓纸上的同名墓志及17岁欠债少年的恐惧，再用“辰初钟声还没响时”明确切回清晨。实际事件仍为摔碗→辰初求救→有限协作通气→展示拓纸与历号→断联报姓名→误试火承担成本；章末minute20不变。删两处解释和重复工契外形，全部已有事实/线索及后章回查引文逐项保留。女人只声称最早一层约三千年，不写陵已埋满三千年或必然死期。闻溪仍至断联前才听少年姓名，A未向F报年龄和本端历号，未新增传物/修为/全知。程序只核版本、引文与汉字，不判文学质量。"
+  },
+  "facts": [
+    {
+      "kind": "state",
+      "key": "A:C-A01:work_debt",
+      "value": "岑照领旧灶时支过三块开火钱；三日后验不过则从杂役工钱扣，本章尚未偿清。",
+      "holder": "",
+      "valid_from": -15,
+      "valid_until": null,
+      "quote": "他领这口废灶时，支过三块开火钱，买铜、买炭，余下的才够填上这半个月的肚子。灶修好，便能接坊里零碎的小活抵钱；三日后仍验不过，纸上的借支就要从杂役工钱里扣。"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A01:damage",
+      "value": "青口碗左沿新缺一处；缺口下有早已烧成的米粒状青点，器底未写出损坏。",
+      "holder": "",
+      "valid_from": -10,
+      "valid_until": null,
+      "quote": "啪的一声，青口碗磕上石阶，崩掉一个豌豆大的口子。"
+    },
+    {
+      "kind": "fact",
+      "key": "A:N01:first_contact",
+      "value": "辰初岑照触碗沿时首次听见求救，清水静止时见到声像；离开接触、搬动和复稳的表现只按正文记录，不据本章推断全部机制。",
+      "holder": "",
+      "valid_from": 0,
+      "valid_until": null,
+      "quote": "他的手刚碰到碗沿。\n\n碗里有人喘了一口气。"
+    },
+    {
+      "kind": "fact",
+      "key": "F:L-F01:later_brace_observed",
+      "value": "曹砚生通过测针和显印纸识别盖外后添压箍及可动死片，提供本端测量，不只是照令操作。",
+      "holder": "",
+      "valid_from": 7,
+      "valid_until": null,
+      "quote": "“中间那个点是空的。”曹砚生道，“左右两个，连的是外箍。中间那一截只穿了死片，能活动。”"
+    },
+    {
+      "kind": "fact",
+      "key": "F:L-F01:vent_restored",
+      "value": "曹砚生操柄、闻溪放本地铜片、梁九川护持，暂时恢复灰室通气；铜片来自曹砚生袖袋，不是跨时传物。",
+      "holder": "",
+      "valid_from": 10,
+      "valid_until": null,
+      "quote": "铜片刚吃住力，梁九川便从她肩后伸手，稳稳托住曹砚生的手腕。\n\n短柄没有再退。\n\n风声一点点长起来。"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:location",
+      "value": "闻溪、曹砚生、梁九川仍在灰室；风已通，石门和外闸仍封，尚未脱陵。",
+      "holder": "",
+      "valid_from": 11,
+      "valid_until": null,
+      "quote": "缝里仍是死的，外层闸也没有升起来。风进了灰室，却没把他们顺带送出去。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A01:inscription_claim",
+      "value": "岑照看见闻溪展示的拓纸，纸上写问照帝陵、青崖故址以及与自己相同的墓主名；不等于已经证明其必然结局。",
+      "holder": "C-A01",
+      "valid_from": 12,
+      "valid_until": null,
+      "quote": "他顺着往下读。\n\n青崖故址，帝之所出。\n\n再下面，小字间有缺损，能连得起来的并不多。岑照正想让她换个角度，视线却先碰到另一行。\n\n墓主，岑照。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A01:F_calendar_claim",
+      "value": "岑照听闻溪自报衡历3174年九月初三；当前他所在为衡历174年同日。这里只记听见声称，未记时间理论已获实证。",
+      "holder": "C-A01",
+      "valid_from": 13,
+      "valid_until": null,
+      "quote": "闻溪报了历号。\n\n衡历，三千一百七十四年，九月初三。"
+    },
+    {
+      "kind": "belief",
+      "key": "A:C-A01:identity_uncertain",
+      "value": "岑照怀疑墓主与自己有关，但保留同名、戏弄等可能，准备继续核对。",
+      "holder": "C-A01",
+      "valid_from": 12,
+      "valid_until": null,
+      "quote": "“兴许……同名。”\n\n他说给对方听，也说给自己听。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F01:A_location_claim",
+      "value": "闻溪听见少年自称在青崖门器坊旧灶，并用门向与壁龛位置核对；未听到少年本端历号及十七岁年龄。",
+      "holder": "C-F01",
+      "valid_from": 11,
+      "valid_until": null,
+      "quote": "“青崖门，器坊的旧灶。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F01:A_name_heard",
+      "value": "闻溪在断联前听见少年自报名岑照并作出停顿；她对这一现象的解释尚未写出。",
+      "holder": "C-F01",
+      "valid_from": 15,
+      "valid_until": null,
+      "quote": "“岑照。”\n\n闻溪的脸停住了。"
+    },
+    {
+      "kind": "fact",
+      "key": "A:N01:first_window_end",
+      "value": "辰初第一刻报刻时声像消失；双方约明早辰初再试，尚不能仅凭一次现象确认每日必开。",
+      "holder": "",
+      "valid_from": 15,
+      "valid_until": null,
+      "quote": "木梆第二下响了。\n\n水里的灯没了。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A04:unidentified_voice",
+      "value": "严铎确实听见屋内陌生咳声；只知岑照接触来路不明之物，不知未来、帝陵或通道真相。",
+      "holder": "C-A04",
+      "valid_from": 20,
+      "valid_until": null,
+      "quote": "“刚才那个咳嗽的，谁？”\n\n岑照看着矮凳。"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A04:repair_status",
+      "value": "镇火铜芯未修成；严铎验出旧芯已烧歪、岑照以其作参照误判，后续需重新校准。",
+      "holder": "",
+      "valid_from": 18,
+      "valid_until": null,
+      "quote": "“旧芯也烧歪了。你比的是个错数。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A01:trial_fire",
+      "value": "为救援失去当日预留试火；债额及三日期限不变，明日需自行排西棚空当。",
+      "holder": "",
+      "valid_from": 19,
+      "valid_until": null,
+      "quote": "严铎收起短尺：“三日的限没改。明日试火，你自己去西棚问空当。我没法给你把一早上的火扣着。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A01:holder_location",
+      "value": "缺口碗由岑照包好放在旧灶屋铺盖最里头保管，未丢弃或毁坏。",
+      "holder": "",
+      "valid_from": 20,
+      "valid_until": null,
+      "quote": "他把剩下的饼吃完，回屋找了一块干净布，将缺口碗包起来，放到铺盖最里头。"
+    }
+  ],
+  "progression": {
+    "goal": "岑照保住修灶与试火机会；灰室三人先取得可呼吸的风。",
+    "obstacle": "缺工料、错误测量参照和试火限时；后世地图失准、闸闭、风盖被后添压箍卡死；双方互疑。",
+    "method": "以本端旧灶声音和工序缩小范围；对后世改装承认不知；曹砚生独立显印、试柄，闻溪用其自带薄铜片暂卡，梁九川护持。",
+    "choice": "岑照先帮未证身份的陌生人，未索宝或回报；小队先小幅验证，不盲拆，不掀整个盖。",
+    "result": "通气恢复、小队仍困；声像及同名陵铭形成可继续验证的联系。",
+    "consequence": "岑照失去当日预留火且铜芯误差暴露；三块灵石未偿。双方约次晨辰初再试，岑照保护旧碗。",
+    "next_options": "本端重测、谈废料与明日试火；后世维持气口并测门闸；下次从历号、共同器物旧痕和各自现场证人继续互证。",
+    "scene_function": "短倒叙先让同名墓志触及主角，再回清晨依原时序建立生计、求救、三人独立验证、有限救援及本地代价；身份仍待查，不把后世记载当必然人生。"
+  },
+  "thread_events": [
+    {
+      "id": "Q01",
+      "action": "partial",
+      "description": "第一次跨碗互助有效，小队得到通气；对方身份、实物互证与出陵仍未完成。",
+      "quote": "风声一点点长起来。"
+    },
+    {
+      "id": "Q02",
+      "action": "plant",
+      "description": "闻溪自报三千年后历号，同源碗的缺口与釉点形成待检线索，未证明必然未来或改史规则。",
+      "quote": "“最早的一层，距今约三千年。”"
+    },
+    {
+      "id": "Q03",
+      "action": "plant",
+      "description": "岑照看到与自己同名的帝陵墓主，身份与尊号来源待查，未确定就是自己的必然人生。",
+      "quote": "名字一样，碗也一样，都还可以再核对。"
+    },
+    {
+      "id": "Q01-local-stove",
+      "action": "plant",
+      "description": "三灵石与小灶修复压力仍开着，实际失去当日试火；准备重新校准。",
+      "quote": "砂槽里的铜芯得重测。\n\n试火得重新排。\n\n三块灵石，一块也没少。"
+    }
+  ],
+  "review_history": [
+    {
+      "read_full_text": true,
+      "decision": "adopt",
+      "blocking_issues": [],
+      "sources_checked": [],
+      "conclusion": "已集中阅读全文并核对当前canon与CH001路线，完成一轮局部修订。联络限于辰初一刻，结尾本地处理延至第20分钟；救援仅恢复通气。三人本端测量与操作有来源，无传物、晋升、未来全知或改变B历史。年月声称、碑文、人物推测和实际观察分列；闻溪未知A历号及年龄，严铎只听见陌生咳声。动作交接明确，铜芯用钳持握，姓名拆字正确。具体分钟为叙事先后定位，正文未给出钟表读数的事件不冒充精密实测。程序校验不作为文学评分。"
+    }
+  ],
+  "measured_han": 8551
+}

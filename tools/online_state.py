@@ -75,7 +75,7 @@ def bootstrap(project, repo_url, branch="main", title="未命名小说"):
     if not existing:
         ns.init(book, title, ns.read_json(project / "system_config.json"))
     state = ns.load_state(book); ns.verify_files(book, state)
-    config["system_version"] = "4.1-online"
+    config["system_version"] = "4.2-serial"
     config["project_name"] = state["title"]
     config["authority"] = {"mode": "github", "repository_url": repo_url, "branch": branch}
     ns.atomic_json(project / "project_config.json", config)
@@ -184,7 +184,7 @@ def build_index(project, save=True):
     phase = workflow["phase"]; research = None; topics = []
     if workflow["research_path"]: research = ns.read_json(ns.inside(project, workflow["research_path"]))
     if workflow["topics_path"]: topics = ns.read_json(ns.inside(project, workflow["topics_path"]))["candidates"]
-    data = {"schema_version": 1, "system_version": "4.1-online", "initialized": True,
+    data = {"schema_version": 1, "system_version": "4.2-serial", "initialized": True,
             "book": {"id": state["book_id"], "title": state["title"], "platform": workflow["platform"], "selected_topic_id": workflow["selected_topic"]["id"] if workflow["selected_topic"] else None},
             "source": {"repository_url": cfg["authority"]["repository_url"], "branch": cfg["authority"]["branch"], "generated_at": now(), "state_revision": state["revision"], "workflow_revision": workflow["revision"], "state_sha256": state['state_sha256'] if sealed else ns.digest((root / "state.json").read_text(encoding="utf-8")), "workflow_sha256": ns.digest((root / "workflow.json").read_text(encoding="utf-8"))},
             "progress": {"target_chapters": state["config"]["target_chapters"], "adopted_chapters": len(state["chapters"]), "target_han": state["config"]["target_han"], "actual_han": sum(x["han_count"] for x in state["chapters"].values()), "completed": state["completion"] is not None, "needs_revalidation": state["needs_revalidation"], **({k:state['progress'][k] for k in ('reviewed_until','window_review_due','unresolved_reviews')} if sealed else ns.review_status(state))},
@@ -202,6 +202,12 @@ def build_index(project, save=True):
     else:
         data['source']['manuscript_storage'] = 'plain_files_v1'
         data['source']['requires_reader_key'] = False
+        if state.get('serialization', {}).get('enabled'):
+            data['progress'].update(ns.serial_module().summary(state))
+            for chapter in data['chapters']:
+                receipt = state['serialization']['published'].get(str(chapter['number']))
+                chapter.update(frozen=True, publication_status='confirmed' if receipt else 'unreported',
+                               published_at=receipt['published_at'] if receipt else None)
         ns.require(ns.load_state(root)['revision'] == state['revision'], '索引生成期间正式状态改变，请重试。')
     ns.require(load_workflow(project)["revision"] == workflow["revision"], "索引生成期间正式状态改变，请重试。")
     if save: ns.atomic_json(project / "online/index.json", data)

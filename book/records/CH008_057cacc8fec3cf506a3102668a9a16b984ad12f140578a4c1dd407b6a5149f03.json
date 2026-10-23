@@ -1,0 +1,639 @@
+{
+  "chapter": 8,
+  "title": "他们的昨天",
+  "stage": "S01",
+  "base_revision": 27,
+  "canon_sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+  "text_sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
+  "complete": true,
+  "story_time_end": 8690,
+  "summary": "初八夜三人返坊，严将七支白边垫片及小修附页交料房对样，实际叫停初九装车。桑识木样残印为旧回料戊三（仍待验），从自己样匣取166年补料领条，交严与旧领退册对号、签口述，原纸夹存，岑得收条；总簿、旧验工副联及全责仍待查。F检查整石与砖背后拆两块后填砖，休息后梁先穿旧孔到外闸外的原进路转角并返回。初九辰初双方按条件重联，岑报冷检/限热、桑活着；原铜页仍记廿一殁与独守，乔本次亲见，人物不把旧单或当前冷走当完整命运证明。F报告迁移与侧路，双方约初十条件接续。窗后A晾碗存收条准备问料房；F耗实际时间逐件送铜、三包和干碗，收回闻自用挽索，全员到外闸外旧入口廊向上阶进发，尚未到地面。",
+  "review": {
+    "read_full_text": true,
+    "decision": "adopt",
+    "blocking_issues": [],
+    "sources_checked": [
+      {
+        "chapter": 7,
+        "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+        "quote": "旁看窄签已经在矿口销回，随车副签还留在硬套里，今日的记纸另隔一层，免得旧铁上的黑水浸过去。"
+      },
+      {
+        "chapter": 7,
+        "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+        "quote": "自己那根先前扣在石案脚下的挽索，早已收回腰侧。"
+      },
+      {
+        "chapter": 7,
+        "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+        "quote": "曹砚生把测针收短，先量砖边与门架的接缝，没去碰闸轴。"
+      },
+      {
+        "chapter": 7,
+        "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+        "quote": "严铎将白边的新垫片收进矿上的小样匣。"
+      },
+      {
+        "chapter": 7,
+        "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+        "quote": "陪检未定、改件未复核，不得起热。"
+      },
+      {
+        "chapter": 6,
+        "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+        "quote": "初九辰初，我把它放稳，添清水。"
+      },
+      {
+        "chapter": 6,
+        "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+        "quote": "严铎抬眼看他，过了一阵，转身去柜里取旧册。"
+      },
+      {
+        "chapter": 6,
+        "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+        "quote": "“余下两片没写出事的经过。”"
+      },
+      {
+        "chapter": 4,
+        "sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
+        "quote": "乔麦把左手按到碗沿上，岑照将两只手都收回膝上。"
+      },
+      {
+        "chapter": 4,
+        "sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
+        "quote": "她在缺口旁边一处光滑的外釉上点了点。"
+      }
+    ],
+    "conclusion": "本轮已分批实际复读CH002—010各章全文，CH004聚合输出截断后补读前段及衔接，核对新第一章完整差异、相关旧引文与时序；本章正文未改。初八夜交领条、初九晨重联保持先后，乔此时见旧单不因开篇获得全知；短钩在外壁、B死记未改。F全员越外闸侧孔而尚未地面，与CH001只恢复通气的结果一致。 保留既有事实值、推进及有限能力，不把程序通过视为文学保证。"
+  },
+  "facts": [
+    {
+      "kind": "state",
+      "key": "A:C-A03:departure",
+      "value": "初八入夜师徒与严实际返抵青崖坊，桑活着同行交料条；不再滞留回程车，尚未活过廿一。",
+      "holder": "",
+      "valid_from": 7890,
+      "valid_until": null,
+      "quote": "车进青崖坊时，灯已经点到第二排。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A01:travel_list_copy",
+      "value": "初八随车返坊已完成；随车副签与冷检记纸仍在纸套，一次旁看窄签已销回。章末拟去料房问旁看，不构成初九新入矿许可。",
+      "holder": "",
+      "valid_from": 8070,
+      "valid_until": null,
+      "quote": "“不走。签销了，想再进还得重问。明早我守碗。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A09:shim_sample_holder",
+      "value": "严已把七支白边垫片样匣实际带至坊料房并展示，附页说明后挡动过旧线未重校；不再在回程车膝上。原黑旧片及旧线仍留矿，未跨时传物。",
+      "holder": "",
+      "valid_from": 7900,
+      "valid_until": null,
+      "quote": "严铎没有先回住处，抱着小样匣进去，将取自七支后挡的白边垫片摆在灯下。"
+    },
+    {
+      "kind": "state",
+      "key": "A:new_shoulder:shipment_hold",
+      "value": "严实际叫停初九七支新肩装车，装车条圈待核、件挪回待验处；只是本批七支，非全矿停产，更非新肩已验合格。",
+      "holder": "",
+      "valid_from": 7905,
+      "valid_until": null,
+      "quote": "有人翻出已经排好的装车条，将七支那一行圈住，另写待核。"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A08:old_gate_model_holder",
+      "value": "岑返坊拆包给桑看底，桑即还岑，带往料房比领条；未交严长期存、未传F。半印只获桑的回料口识认，还须查验。",
+      "holder": "",
+      "valid_from": 7930,
+      "valid_until": null,
+      "quote": "老人将木样放回他手里，转身去自己那间窄屋。"
+    },
+    {
+      "kind": "belief",
+      "key": "A:C-A03:half_stamp_identification",
+      "value": "桑认木样残印为旧回料口戊字三匣而非验过印，自己明确半印须查；这不是残印自行显出完整原文，也未据此认出新人物。",
+      "holder": "C-A03",
+      "valid_from": 7930,
+      "valid_until": null,
+      "quote": "“八年前那件铁，从回料口戊三匣领的。这是我的领条。样底的残印，我认着也是那一处，单凭半印，你还得查。”"
+    },
+    {
+      "kind": "fact",
+      "key": "A:P-A10:old_material_receipt_observed",
+      "value": "新增P-A10旧补料领条：桑从自己样匣实际取出，字有衡历166年、七支闸肩补料、旧回戊三、领者桑见石；纸旧折破。它是领条，不是缺失的旧验工副联。",
+      "holder": "",
+      "valid_from": 7940,
+      "valid_until": null,
+      "quote": "上面一行是七支闸肩补料，年头在衡历一六六。再往下，写旧回戊三，领者桑见石。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A01:Sang_material_responsibility",
+      "value": "岑亲听桑解释知旧料且由自己领，怕拿出原纸后追查这层责任；没有把原省验/断肩当又一秘密，也未把旧伤者或全部责任先定。",
+      "holder": "C-A01",
+      "valid_from": 7950,
+      "valid_until": null,
+      "quote": "“那是省验。这是料从我手里领。”"
+    },
+    {
+      "kind": "fact",
+      "key": "A:old_case:receipt_ledger_match",
+      "value": "严取回初七已翻旧领退册，与新交领条的戊三号/领者相互对上；当前册只记领出，尚未找到此前退入来源，不能称全案已查清。",
+      "holder": "",
+      "valid_from": 7980,
+      "valid_until": null,
+      "quote": "右边原先不大起眼的细栏，记着戊三。严铎把领条移到旁边，两边的号对上，领者都是桑见石。"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A10:original_custody",
+      "value": "旧领条原纸由严夹板收存，桑在今日口述旁押名，领料事实进入实际查问；岑拿的是收条而非原纸。",
+      "holder": "",
+      "valid_from": 8000,
+      "valid_until": null,
+      "quote": "严铎写了收条，注明所收旧领条一纸、七支补料、旧回戊三，原纸夹存。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A04:Sang_prior_liability_claim",
+      "value": "严除初七桑省验/断肩签名外，已亲收旧补料领条、对册核到戊三和领者，并听桑承认自己领旧料；回料总簿及原验工单仍待查，责任伤者未查清。",
+      "holder": "C-A04",
+      "valid_from": 8000,
+      "valid_until": null,
+      "quote": "他说完，重新望向桑见石：“领条我要留下。连你今日说的话，一并附进旧案查问。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:old_case:missing_verification_copy",
+      "value": "桑本章仍未交出旧验工副联，只说当年送矿，现不能确定留册。新增领条与领退册不能替代它。",
+      "holder": "",
+      "valid_from": 7970,
+      "valid_until": null,
+      "quote": "“不在这里。送矿上了，副联到底留在哪一册，我如今说不准。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:old_case:return_register_search",
+      "value": "回料来源下一步是查总簿存处；本章只有严明确要查及岑次晨打算去问，没有已找到总簿/证人或旧料首次来源。",
+      "holder": "",
+      "valid_from": 7985,
+      "valid_until": null,
+      "quote": "“明日查总簿存在哪。”严铎道。"
+    },
+    {
+      "kind": "state",
+      "key": "A:old_case:receipt_copy_custody",
+      "value": "严收旧领条后开新收条，桑先转交岑入纸套；初九通话后岑将收条放在远离碗的一格，未随碗淋水。",
+      "holder": "",
+      "valid_from": 8660,
+      "valid_until": null,
+      "quote": "岑照将收条放在离碗更远的一格。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A02:current_mine_result",
+      "value": "初八晚乔麦实际听岑转述外线到而内扣未退、鲁班冲突及丁严押限热；她自己问岑是否外看，不能倒记她亲历矿中。",
+      "holder": "C-A02",
+      "valid_from": 8070,
+      "valid_until": null,
+      "quote": "岑照笑了一下，坐到离灶稍远的矮凳上，将矿里今日的事说给她。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A02:own_charcoal_work",
+      "value": "乔仍自持炭袋签，湿炭结算/窑份未解决；初九须去认新炭，有独立工期。参加本次窗口不等于今后无偿常驻代守。",
+      "holder": "",
+      "valid_from": 8070,
+      "valid_until": null,
+      "quote": "“我明早巳初前要去认一炉新炭。若那边有声，先叫我一声，别替我答应别的。”"
+    },
+    {
+      "kind": "fact",
+      "key": "F:L-F01:fill_bricks_removed",
+      "value": "初八晚闻曹梁以缝边/整石/砖背现场检查后取下相邻两块填砖；承闸整石未动，拆砖平放廊内不堵原路，不靠A改物让门消失。",
+      "holder": "",
+      "valid_from": 8010,
+      "valid_until": null,
+      "quote": "砖后露出一条横着的旧孔，积灰很厚，顶边却是平的。曹砚生用灯照过孔底，看到外闸门架的另一面。填砖没有伸进承轴的整石里，靠砖背的那道细裂也停在新灰上。"
+    },
+    {
+      "kind": "state",
+      "key": "F:print_papers:condition",
+      "value": "曹两张湿边纸仍另收，一张只接刮灰且卷扎、另一张另夹，均不再算细印好纸；最终一起入册后包中带走，余好纸未数。",
+      "holder": "",
+      "valid_from": 8670,
+      "valid_until": null,
+      "quote": "两张湿过的显印纸仍另夹在册后，一并收进包里，没有为了包轻些便扔掉。"
+    },
+    {
+      "kind": "fact",
+      "key": "F:L-F01:outer_bypass_round_trip",
+      "value": "初九窗前梁空身先穿清开旧孔到外闸另一侧，照见旧进路上坡阶，走到首转角后实际返回；只核此段可双向走，尚未见天/到地面。",
+      "holder": "",
+      "valid_from": 8610,
+      "valid_until": null,
+      "quote": "“上坡，走进来那段台阶。第一处转角还在，上头还黑。没看见天。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F02:walked_route_report",
+      "value": "曹亲查外闸旁后砌砖/整石与孔宽，先听梁双向验走报告；章末本人也实际过孔至外廊。当前已非只走两闸间，但地面以上未走。",
+      "holder": "C-F02",
+      "valid_from": 8690,
+      "valid_until": null,
+      "quote": "曹砚生出去重新裹好，将铜安置在外廊干处，裂木托的尖角朝墙，免得转身的人踩上。"
+    },
+    {
+      "kind": "state",
+      "key": "F:L-F01:outer_gate_route",
+      "value": "外闸仍落地闭合，但旧检修侧孔已拆填砖开通，人能斜肩过，器物分件接；梁先往返、再三人及三包铜碗均越到外侧旧入口廊，尚须沿旧阶实走地面。",
+      "holder": "",
+      "valid_from": 8690,
+      "valid_until": null,
+      "quote": "闻溪慢慢吐气，将肩送过去，脚终于踩到外闸另一面的地。"
+    },
+    {
+      "kind": "fact",
+      "key": "N01:initial9:contact_conditions",
+      "value": "初九辰初A坊新案清水静置，岑实际接触；F两闸间平砖/布垫清水静置，闻实际持续触碗。图像在整刻内保持，报刻后结束，没有初八/午间补窗。",
+      "holder": "",
+      "valid_from": 8640,
+      "valid_until": null,
+      "quote": "岑照已经取清水入碗，等水面静了，才把记纸放在一旁。"
+    },
+    {
+      "kind": "fact",
+      "key": "N01:initial9:F_touch",
+      "value": "闻在初九窗前将手贴沿留住，窗口中未挪碗去照整间廊；人说话、铜页照角与碗稳定分开。",
+      "holder": "",
+      "valid_from": 8640,
+      "valid_until": null,
+      "quote": "闻溪把手指贴到碗沿，留在那里。"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:location",
+      "value": "初九辰初闻曹梁及三包铜碗仍在两闸间短廊，梁已走过外孔又返回；等约定联络后才转运全队，未提前到地面。",
+      "holder": "",
+      "valid_from": 8640,
+      "valid_until": null,
+      "quote": "“出了里门，没出地面。”闻溪答，“昨日人和包都搬到了两闸之间。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F01:initial8_mine_report",
+      "value": "闻本窗首次听岑报告初八两回冷检、垫片旧线差异、桑还坊、丁严限热和鲁廿一班冲突；这些来自A转述/桑在场，不是F亲验本端矿器。",
+      "holder": "C-F01",
+      "valid_from": 8644,
+      "valid_until": null,
+      "quote": "旧线到了，里扣没退净；后来卸片、稳座，又走了第二遍冷位。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F02:initial8_mine_report",
+      "value": "曹本窗听岑说外示杆座与后挡同架、加片未重校，询问后照记；没将冷检当热态/新肩合格，初八缺席期间不曾自动知道。",
+      "holder": "C-F02",
+      "valid_from": 8644,
+      "valid_until": null,
+      "quote": "曹砚生听到垫片，问加在何处，岑照将外杆的座与后挡同架、动过却没有重校的情形说清。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F03:initial8_mine_report",
+      "value": "梁在初九本窗听到桑回坊、两次冷检和七支限热等新事，此前并未知情；不因听见活的桑就否认本端旧单所记。",
+      "holder": "C-F03",
+      "valid_from": 8644,
+      "valid_until": null,
+      "quote": "“回坊了。”他说，“还没把自己落在矿里。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A01:Sang_old_death_record",
+      "value": "初九岑再次在声像里核原铜页廿一/殁/独守未因本端限热改字；只限此实际对照，未亲手验B原物，也没由一差异证明全部危险已消。",
+      "holder": "C-A01",
+      "valid_from": 8646,
+      "valid_until": null,
+      "quote": "九月廿一。\n\n殁。\n\n回闸，独守。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A03:Sang_old_death_record",
+      "value": "桑初九再看原页，听闻解释独守不够推断别的人为什么未到，仍不知死因；承认本端昨日抢认旧线是自己的当前错误。",
+      "holder": "C-A03",
+      "valid_from": 8646,
+      "valid_until": null,
+      "quote": "“这张单写独守。有没有别的人在别处，为什么没在，单上不够看。不能替它添。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A02:Sang_old_death_claim",
+      "value": "乔麦初九实际参加窗口，首次看桑名字/殁等原页声像，从此前转述升级为自己看字；她CH004已见闻并扶碗，不是首次见未来人。她仍未见旧死因。",
+      "holder": "C-A02",
+      "valid_from": 8646,
+      "valid_until": null,
+      "quote": "她看清名字，手指在裤缝上扣紧了一点，转头看桑见石。"
+    },
+    {
+      "kind": "belief",
+      "key": "A:C-A01:old_record_and_current_choice",
+      "value": "岑曾盼字淡，见原页未改后把希望移到本端实找能来人/复核新件；区分别端已经发生与眼前选择，非已掌握完整时间理论或可复活旧人。",
+      "holder": "C-A01",
+      "valid_from": 8648,
+      "valid_until": null,
+      "quote": "“那我还是去找人。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F01:old_material_receipt_report",
+      "value": "闻听岑桑报告166年旧回戊三领条已交严、出料册对号，原始退入来源还待查；没亲接原纸或独立核账。",
+      "holder": "C-F01",
+      "valid_from": 8649,
+      "valid_until": null,
+      "quote": "旧回戊三，衡历一六六年，原纸已给严铎。册上相应的出料号确实对得上，退入前从哪里来，还得另找总簿。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F02:old_material_receipt_report",
+      "value": "曹听同一领条报告与桑亲口说自己领旧料，已在册记；这是跨端口述知情，不等于曹亲核166年旧来源。",
+      "holder": "C-F02",
+      "valid_from": 8649,
+      "valid_until": null,
+      "quote": "桑见石在旁边补了一句：“领旧料的是我。别传成我只是认得。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "F:C-F03:old_material_receipt_report",
+      "value": "梁同窗听岑/桑报告领条及自领旧料，不知全案伤者、受益者或责任终论。",
+      "holder": "C-F03",
+      "valid_from": 8649,
+      "valid_until": null,
+      "quote": "他将昨夜师父交领条的事说出来。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A01:F_exit_progress",
+      "value": "岑初九才听闻曹梁说初八搬至两闸间、拆砖开外孔和梁往返旧进路；知道仍地下、要运包，不能继承窗口后全队已转运事件。",
+      "holder": "C-A01",
+      "valid_from": 8651,
+      "valid_until": null,
+      "quote": "“出了里门，没出地面。”闻溪答，“昨日人和包都搬到了两闸之间。"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A03:F_exit_progress",
+      "value": "桑在同窗听到F侧孔实走但未到地面，祝他们出去吃热饭；不知道窗口后是否全部过孔，不替F承诺可瞬通断渠庭。",
+      "holder": "C-A03",
+      "valid_from": 8651,
+      "valid_until": null,
+      "quote": "“接灯，走到外头的第一个转角，再回来。上坡石阶还要走，没替那一段先答应。”"
+    },
+    {
+      "kind": "knowledge",
+      "key": "A:C-A02:F_exit_progress",
+      "value": "乔实际看新闸影并听其开侧孔/梁往返/仍未出地面，不只听岑另说；听完便去自己炭工，没接下常驻代守。",
+      "holder": "C-A02",
+      "valid_from": 8651,
+      "valid_until": null,
+      "quote": "“是我们自己拆的砖。”梁九川补道。"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:priority",
+      "value": "梁明确先走，闻曹同意先人和原页撤出，余款/错27年旧图出去再问；再入未决、雇主用意不明，没有为等A而继续困陵。",
+      "holder": "",
+      "valid_from": 8653,
+      "valid_until": null,
+      "quote": "“先把人和原页带出去。余款、那张错了二十七年的旧图，出去才有地方问。我们还不知道是谁给错，也不知道为什么，不留在闸底下替人猜完。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-F05:retention",
+      "value": "曹制薄规仍连原包在岑袖内，F同意暂不还；本章没有第二次传物，原一次消耗/余八预算不变。",
+      "holder": "",
+      "valid_from": 8652,
+      "valid_until": null,
+      "quote": "岑照看见曹砚生点了点头，才将袖内包尺的纸按好。"
+    },
+    {
+      "kind": "fact",
+      "key": "N01:initial9:window_ends",
+      "value": "初九辰初这一次完整窗口随下一报刻结束，未晃碗求延时或用乔换手续到窗外；接下来是本地行动。",
+      "holder": "",
+      "valid_from": 8655,
+      "valid_until": null,
+      "quote": "坊里的报刻钟再响时，水底的光暗下去。"
+    },
+    {
+      "kind": "state",
+      "key": "N01:initial10:conditional_agreement",
+      "value": "双方已实际约初十辰初条件联络，F若人/碗不稳不硬接，A无声则做自己的事；这里只记录约定，不写成初十联络已发生。",
+      "holder": "",
+      "valid_from": 8654,
+      "valid_until": null,
+      "quote": "“初十辰初。”闻溪道，“路上若遇到不稳的地方，先安置人和碗，不硬接。没声，你也做自己的事。”"
+    },
+    {
+      "kind": "state",
+      "key": "A:P-A01:holder_location",
+      "value": "岑已将碗从库内高格取到新案，初九窗后倒水拭外，内朝上自然晾，不贴火烘；仍留坊案，不随去料房。",
+      "holder": "",
+      "valid_from": 8660,
+      "valid_until": null,
+      "quote": "岑照倒净碗里的水，用干布拭了碗外。灶边早晨还凉，他没有把旧陶贴过去烘，只让里头朝上，先晾着。"
+    },
+    {
+      "kind": "state",
+      "key": "A:C-A03:departure",
+      "value": "初九窗后桑仍活着在坊院，与岑准备往料房；没有再进矿、新陪检定人或解除限热事件。",
+      "holder": "",
+      "valid_from": 8660,
+      "valid_until": null,
+      "quote": "可初九的早上，师父还站在院里，朝鞋里又倒出一粒昨日带回的砂。"
+    },
+    {
+      "kind": "state",
+      "key": "F:P-B06:read_extent",
+      "value": "第二原页在窗中短核仍记殁/独守，未新读死因；三片随后闻/曹/梁逐件过孔，隔布裂木复包在外廊，描纸曹册随包。A只知道通话时状态，不知后来转运完成。",
+      "holder": "",
+      "valid_from": 8680,
+      "valid_until": null,
+      "quote": "三片送完，隔布仍留在片与片之间。"
+    },
+    {
+      "kind": "state",
+      "key": "F:P-B01:holder_location",
+      "value": "B碗窗后倒水擦外并等内干，闻以干布软衣隔圈足装曹包上层，由外孔实际交给外廊曹；随全队在外闸外地下旧廊，没到地面或再添水。",
+      "holder": "",
+      "valid_from": 8685,
+      "valid_until": null,
+      "quote": "旧碗的内壁终于干了。闻溪照原样裹住，让软衣隔开圈足，包入曹砚生原先留出的上层空位。"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:first_pack_staged",
+      "value": "三只包已逐件从两闸间经外侧孔搬到外闸外旧入口廊，不再留原岔口/短廊；铜页另轻托、曹包上层干碗、灯和册均随队。",
+      "holder": "",
+      "valid_from": 8690,
+      "valid_until": null,
+      "quote": "梁九川指着地上三只包：“都在。”"
+    },
+    {
+      "kind": "state",
+      "key": "F:personal_sling:holder",
+      "value": "施工及梁先探借用的是闻溪自己的挽索，绕当地实石而非灰室承重粗绳；末人过孔前闻解扣收索递出，过后梁归还，闻重新扣腰。",
+      "holder": "",
+      "valid_from": 8690,
+      "valid_until": null,
+      "quote": "等她站稳，他把挽索还到她手里。闻溪检查扣头，重新扣回腰侧。"
+    },
+    {
+      "kind": "state",
+      "key": "F:C-F01:hand_pain",
+      "value": "闻掌根仍受磨酸痛，搬铜以小臂分担、过孔停下改肘撑，曹不拽腕；未全愈或增为断手大伤。",
+      "holder": "",
+      "valid_from": 8688,
+      "valid_until": null,
+      "quote": "孔底的砖灰擦过袖子，身子转到最窄处，掌根一酸，她停住，改用肘弯撑。"
+    },
+    {
+      "kind": "state",
+      "key": "F:C-F03:minor_foot_abrasion",
+      "value": "梁初八晚检查鞋时可见脚磨破少许，休息后仍能往返侧孔、搬物带路；不作已残疾，也没凭热饭愿望让擦伤立即痊愈。",
+      "holder": "",
+      "valid_from": 8090,
+      "valid_until": null,
+      "quote": "他的脚也磨破了一点，方才只顾谈出去，谁都没有问。"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:rations",
+      "value": "原粮水本章仍节用，过孔转运间实际吃各自少量干粮、喝几口囊水，未取得外部补给或已吃热饭；地面后还须补水。",
+      "holder": "",
+      "valid_from": 8680,
+      "valid_until": null,
+      "quote": "他们隔着孔喝了几口水。水囊比刚入陵时轻，出去后得补，余下的旧阶也要用腿走。"
+    },
+    {
+      "kind": "state",
+      "key": "F:team:location",
+      "value": "章末三人全已越外闸侧孔，三包、铜页、干碗、灯、册和个人索齐在外侧旧入口廊，梁向上迈首阶；仍地下未见天。旧回灰室路未封，未达断渠庭/新大区。",
+      "holder": "",
+      "valid_from": 8690,
+      "valid_until": null,
+      "quote": "梁九川先提起自己的包，向上迈了一阶。\n\n这一次，没有人留在门后。"
+    }
+  ],
+  "progression": {
+    "goal": "A把冷检结果变成能执行的停发/复核与旧料来源；F开实路撤离，重联后分清对方的新事。",
+    "obstacle": "矿上限热未等于新件/陪检落实；桑怕追查迟留旧领条；B死亡旧页仍在；外闸闭合、孔窄、伤掌与物资需逐件运输。",
+    "method": "垫片附页到料房停装；旧领条实际交存并和旧册对号；F查缝/砖背后拆填砖并先验往返，窗口短核原页，再分件接物。",
+    "choice": "桑交纸签口述让人追自己的责任；岑不靠旧字改淡安慰自己，继续找真能来的人及核件；F先带人和原件退，再谈余款/雇图/再入。",
+    "result": "七支初九新肩停装、166年戊三来源可查；初九重联双方更新知情；全F已越外闸侧孔到入口旧廊，尚未到地面。",
+    "consequence": "旧单不改不取消本端责任，旧料调查有了留存证据而非口头等明日；F有实际可用的下一段撤路和自主选择，不等A替开门。",
+    "next_options": "CH009沿上坡旧阶实际到可撤地面并带齐人器，处理有限粮水和雇主接应；A只能申请旁看/查总簿、安排当端核件，不自动获得新矿签。",
+    "scene_function": "把两岸分开落实为记录、责任和行动；师徒信任不靠抹去错处，F取得真实空间进展，为第九章地面出口兑现铺路。"
+  },
+  "thread_events": [
+    {
+      "id": "Q02",
+      "action": "develop",
+      "description": "本端已有实际限热/新件停发，B原页死亡字仍在；人物据有限对照把旧记与当前选择分开，不直接宣讲全套宇宙真相。",
+      "quote": "“我昨儿那一下，别记到他头上。”"
+    },
+    {
+      "id": "Q04",
+      "action": "develop",
+      "description": "桑实际交166年旧补料原条、与已翻旧册对号并签口述承受追查；只获得戊三来源抓手，未找到旧验工副联、伤者、受益者或完整责任。",
+      "quote": "“领条我要留下。连你今日说的话，一并附进旧案查问。”"
+    },
+    {
+      "id": "Q04-heat-hold",
+      "action": "develop",
+      "description": "初八矿限热传导为坊内初九新肩实际不装车、退待验；廿一及桑名字仍在，人和改件待定，不虚报救人已成。",
+      "quote": "有人翻出已经排好的装车条，将七支那一行圈住，另写待核。"
+    },
+    {
+      "id": "Q04-backstop-source",
+      "action": "develop",
+      "description": "白边新垫片及附页已返坊到料房供抄样者查，未把当前修签当166年全案。",
+      "quote": "将取自七支后挡的白边垫片摆在灯下。"
+    },
+    {
+      "id": "Q09",
+      "action": "partial",
+      "description": "两块填砖实拆、梁先验往返、三人及全部随身物实际绕过外闸至旧入口廊；下一章必须沿实路让人到可撤地面，本章尚未出陵。",
+      "quote": "这一次，没有人留在门后。"
+    },
+    {
+      "id": "Q07",
+      "action": "develop",
+      "description": "三人同意优先携原页撤出、雇图/余款外头再问，再入另议；没有预先定奉陵社害人。",
+      "quote": "“出去再商量。”"
+    }
+  ],
+  "review_history": [
+    {
+      "read_full_text": true,
+      "decision": "adopt",
+      "blocking_issues": [],
+      "sources_checked": [
+        {
+          "chapter": 7,
+          "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+          "quote": "旁看窄签已经在矿口销回，随车副签还留在硬套里，今日的记纸另隔一层，免得旧铁上的黑水浸过去。"
+        },
+        {
+          "chapter": 7,
+          "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+          "quote": "自己那根先前扣在石案脚下的挽索，早已收回腰侧。"
+        },
+        {
+          "chapter": 7,
+          "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+          "quote": "曹砚生把测针收短，先量砖边与门架的接缝，没去碰闸轴。"
+        },
+        {
+          "chapter": 7,
+          "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+          "quote": "严铎将白边的新垫片收进矿上的小样匣。"
+        },
+        {
+          "chapter": 7,
+          "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+          "quote": "陪检未定、改件未复核，不得起热。"
+        },
+        {
+          "chapter": 6,
+          "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+          "quote": "初九辰初，我把它放稳，添清水。"
+        },
+        {
+          "chapter": 6,
+          "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+          "quote": "严铎抬眼看他，过了一阵，转身去柜里取旧册。"
+        },
+        {
+          "chapter": 6,
+          "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+          "quote": "“余下两片没写出事的经过。”"
+        },
+        {
+          "chapter": 4,
+          "sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
+          "quote": "乔麦把左手按到碗沿上，岑照将两只手都收回膝上。"
+        },
+        {
+          "chapter": 4,
+          "sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
+          "quote": "她在缺口旁边一处光滑的外釉上点了点。"
+        }
+      ],
+      "conclusion": "本次S01全文回看已完整读CH001—010正文（CH010初稿全文及修订差异），并核各章全部记录字段。CH008唯一定位误写：外釉短钩被称碗底，按CH004明确刻痕位置只改这两个字为外壁，不动原纹、缺口、功能、时间或情节。完整读旧CH008全文后已逐字回读这一处新差异，其他文字与事实记录不变；采用后依程序顺序重核CH009—010。"
+    }
+  ],
+  "measured_han": 8332
+}

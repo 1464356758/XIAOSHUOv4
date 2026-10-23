@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "system_version": "4.1-online",
+  "system_version": "4.2-serial",
   "initialized": true,
   "book": {
     "id": "f3626289-6903-436a-a009-eeee8a209510",
@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-22T23:50:53+00:00",
-    "state_revision": 20,
-    "workflow_revision": 54,
-    "state_sha256": "8dbc8a1074915848dad107370944063eb9c92ee5feb7f27ded9169b3c5d11817",
-    "workflow_sha256": "f18aabbab0f501119099dd77e11b8d849bdf3bdfd1accac7fad30daef69d4b70",
+    "generated_at": "2026-10-23T00:11:34+00:00",
+    "state_revision": 34,
+    "workflow_revision": 55,
+    "state_sha256": "c9444920ca2dad10d7efe47443d39c43a1ba1b19d022387bcead4c90b779abef",
+    "workflow_sha256": "ebcc791293fe2cf3884bc5bce337d41e4f7ab37179331db0c7493d73bf566c42",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -23,30 +23,39 @@
     "target_chapters": 100,
     "adopted_chapters": 10,
     "target_han": 900000,
-    "actual_han": 83499,
+    "actual_han": 83492,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 10,
     "window_review_due": false,
-    "unresolved_reviews": []
+    "unresolved_reviews": [],
+    "serial_mode": true,
+    "frozen_chapters": 10,
+    "published_chapters": 0,
+    "publication_status": "只统计真实回执；无回执不等于未发布",
+    "open_incidents": 0,
+    "release_check_required": true
   },
   "task": {
-    "phase": "REVISING",
-    "label": "局部修订",
-    "chapter": 1,
-    "detail": "按作者最新要求优化当前第一章的开篇节奏，并同步升级初始化包；保留既有十章事实，修改后逐章核对承接，再建立连载冻结基线。",
-    "next_action": "完成第一章定向修改，核查CH002—CH010受影响内容，升级发布前检查与初始化包。",
-    "updated_at": "2026-10-22T23:50:53+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 11,
+    "detail": "V4.2升级完成：第一章开篇优化为8551汉字，2—10章正文不变并顺序核对；现10章83492汉字，十章正文与事实记录已冻结。15项开放承诺已设期限，首十章当前版本全文回看通过。平台发布回执未登记，本次未生成第十一章。",
+    "next_action": "作者下次授权时按每日一章指令创作CH011《旧单之外的人》：实际报平安、推进活证人与图源；采用前release-check，保持15项承诺期限与旧事实。",
+    "updated_at": "2026-10-23T00:11:34+00:00"
   },
   "chapters": [
     {
       "number": 1,
       "title": "碗里有人",
       "stage": "S01",
-      "han_count": 8558,
-      "text_path": "book/chapters/CH001_1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da.txt",
-      "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
-      "needs_revalidation": false
+      "han_count": 8551,
+      "text_path": "book/chapters/CH001_9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d.txt",
+      "sha256": "9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 2,
@@ -55,7 +64,10 @@
       "han_count": 8520,
       "text_path": "book/chapters/CH002_b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951.txt",
       "sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 3,
@@ -64,7 +76,10 @@
       "han_count": 8284,
       "text_path": "book/chapters/CH003_50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a.txt",
       "sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 4,
@@ -73,7 +88,10 @@
       "han_count": 8550,
       "text_path": "book/chapters/CH004_e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e.txt",
       "sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 5,
@@ -82,7 +100,10 @@
       "han_count": 8293,
       "text_path": "book/chapters/CH005_313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83.txt",
       "sha256": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 6,
@@ -91,7 +112,10 @@
       "han_count": 8373,
       "text_path": "book/chapters/CH006_b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439.txt",
       "sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 7,
@@ -100,7 +124,10 @@
       "han_count": 8269,
       "text_path": "book/chapters/CH007_85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738.txt",
       "sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 8,
@@ -109,7 +136,10 @@
       "han_count": 8332,
       "text_path": "book/chapters/CH008_a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1.txt",
       "sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 9,
@@ -118,7 +148,10 @@
       "han_count": 8183,
       "text_path": "book/chapters/CH009_0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804.txt",
       "sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     },
     {
       "number": 10,
@@ -127,7 +160,10 @@
       "han_count": 8137,
       "text_path": "book/chapters/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt",
       "sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
-      "needs_revalidation": false
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
     }
   ],
   "topics": [
@@ -1091,12 +1127,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T18:35:39+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者已授权继续。已核对7章58847汉字、第七章实际全文和路线V2；正在创作第八章《他们的昨天》，接初八返坊、初九重联与F外闸侧路。"
-    },
-    {
       "at": "2026-10-22T18:48:29+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1179,6 +1209,12 @@
       "phase": "REVISING",
       "label": "局部修订",
       "detail": "按作者最新要求优化当前第一章的开篇节奏，并同步升级初始化包；保留既有十章事实，修改后逐章核对承接，再建立连载冻结基线。"
+    },
+    {
+      "at": "2026-10-23T00:11:34+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "V4.2升级完成：第一章开篇优化为8551汉字，2—10章正文不变并顺序核对；现10章83492汉字，十章正文与事实记录已冻结。15项开放承诺已设期限，首十章当前版本全文回看通过。平台发布回执未登记，本次未生成第十一章。"
     }
   ]
 }

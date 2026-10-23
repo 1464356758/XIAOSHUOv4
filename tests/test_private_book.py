@@ -24,6 +24,10 @@ class PrivateBookTests(unittest.TestCase):
         cfg = online.get_config(self.project)
         cfg['authority']['repository_url'] = ''
         ns.atomic_json(self.project / 'project_config.json', cfg)
+        # 这些用例验证旧版存储/迁移，不测试新书发布前检查。
+        legacy = ns.read_json(self.project / 'system_config.json')
+        legacy['serial_mode'] = False
+        ns.atomic_json(self.project / 'system_config.json', legacy)
         online.bootstrap(self.project, 'https://github.com/example/synthetic')
         for kind in ('canon', 'roadmap'):
             file = self.base / (kind + '.md')
@@ -70,6 +74,14 @@ class PrivateBookTests(unittest.TestCase):
         self.assertEqual((out / item['text_path']).read_text(), self.text)
         self.assertEqual(result['chapters'], 1)
         self.assertNotIn(self.text, (self.project / result['path']).read_text())
+
+    def test_serial_freeze_survives_legacy_storage_roundtrip(self):
+        ns.serial_module().enable(self.work, '合成迁移测试', ns.load_state(self.work)['revision'], ns.serial_api())
+        self.seal()
+        out = self.base / 'serial-restored'
+        vault.unlock(self.project, self.key, out)
+        self.assertEqual(ns.status(out)['frozen_chapters'], 1)
+        self.assertEqual(ns.status(out)['published_chapters'], 0)
 
     def test_public_baseline_cannot_be_mistaken_for_current_state(self):
         self.seal()

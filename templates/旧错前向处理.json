@@ -1,0 +1,9 @@
+{
+  "id": "填写独立问题编号",
+  "base_revision": null,
+  "source": {"chapter": null, "sha256": "填写冻结正文哈希", "quote": "填写原文"},
+  "problem": "说明真实矛盾，区分角色误判与未查证",
+  "impact": "受影响的人物、知情、物资、时间和未来安排",
+  "forward_plan": "保留旧事实，在后续安排实际行动和代价",
+  "target_chapter": null
+}

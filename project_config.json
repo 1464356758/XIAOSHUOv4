@@ -1,12 +1,12 @@
 {
-  "system_version": "4.1-online",
+  "system_version": "4.2-serial",
   "project_name": "我还没死，三千年后的盗墓贼先找上门了",
   "book_root": "book",
   "authority": {
     "mode": "github",
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "manuscript_storage": "encrypted_book_v1"
+    "manuscript_storage": "plain_files_v1"
   },
   "reader_url": "https://xiaoshuo-v4-reader-7d26.qq1464356758.chatgpt.site",
   "writing": {
@@ -18,7 +18,7 @@
     "genre": "仙侠／跨时代悬疑"
   },
   "execution": {
-    "context_character_budget": 40000,
+    "context_character_budget": 80000,
     "background_unattended": false,
     "api_adapter_installed": false,
     "note": "GPT在授权的聊天任务中创作，网页负责读取仓库。"

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 20,
+  "revision": 34,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -12,25 +12,31 @@
     "book_han_max": 920000,
     "strict_length": true,
     "review_interval": 5,
-    "max_local_repairs": 3
+    "max_local_repairs": 3,
+    "serial_mode": true,
+    "serial_stage_size": 10,
+    "serial_lookahead": 3,
+    "opening_hook_max_han": 800,
+    "opening_core_max_han": 3000,
+    "opening_impact_max_han": 3000
   },
   "chapters": {
     "1": {
       "title": "碗里有人",
       "stage": "S01",
-      "text_path": "chapters/CH001_1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da.txt",
-      "text_sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
-      "record_path": "records/CH001_907af07a6f871e6288ed36f56a7e01ac6d8de2d31bd7dbc23f4868f27359455f.json",
-      "record_sha256": "907af07a6f871e6288ed36f56a7e01ac6d8de2d31bd7dbc23f4868f27359455f",
-      "han_count": 8558
+      "text_path": "chapters/CH001_9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d.txt",
+      "text_sha256": "9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d",
+      "record_path": "records/CH001_65b222b0e5c8b27832b7a5ef889ac7384eacf9094c1b06e8f0d774397b8ad40d.json",
+      "record_sha256": "65b222b0e5c8b27832b7a5ef889ac7384eacf9094c1b06e8f0d774397b8ad40d",
+      "han_count": 8551
     },
     "2": {
       "title": "前辈欠三块灵石",
       "stage": "S01",
       "text_path": "chapters/CH002_b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951.txt",
       "text_sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
-      "record_path": "records/CH002_d898c6deba3780bd75957778a1914d42f45fdb1f222cdbdb9791bedfa962a0b5.json",
-      "record_sha256": "d898c6deba3780bd75957778a1914d42f45fdb1f222cdbdb9791bedfa962a0b5",
+      "record_path": "records/CH002_ee2f53e1f5cbc5e0ed2558270796c37872ba7a042c450d21f00ce915fd7f69b7.json",
+      "record_sha256": "ee2f53e1f5cbc5e0ed2558270796c37872ba7a042c450d21f00ce915fd7f69b7",
       "han_count": 8520
     },
     "3": {
@@ -38,8 +44,8 @@
       "stage": "S01",
       "text_path": "chapters/CH003_50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a.txt",
       "text_sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
-      "record_path": "records/CH003_9931249ffb862d09759b13137a964d033c1ee20f601c3b49a611762b493ce0bf.json",
-      "record_sha256": "9931249ffb862d09759b13137a964d033c1ee20f601c3b49a611762b493ce0bf",
+      "record_path": "records/CH003_ba534f8c16c23d8715f309cbf8bf7ced128b52e0506f5abf54ea20bbcf84f68d.json",
+      "record_sha256": "ba534f8c16c23d8715f309cbf8bf7ced128b52e0506f5abf54ea20bbcf84f68d",
       "han_count": 8284
     },
     "4": {
@@ -47,8 +53,8 @@
       "stage": "S01",
       "text_path": "chapters/CH004_e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e.txt",
       "text_sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
-      "record_path": "records/CH004_f412c9347fac83eb92f38eaef96afbc6239c73a3383e052549a722d6a886c4ab.json",
-      "record_sha256": "f412c9347fac83eb92f38eaef96afbc6239c73a3383e052549a722d6a886c4ab",
+      "record_path": "records/CH004_ad6cfed049788c88b8d4fc4e6c756803f94c8bf3928e7670106516ac6037ca1f.json",
+      "record_sha256": "ad6cfed049788c88b8d4fc4e6c756803f94c8bf3928e7670106516ac6037ca1f",
       "han_count": 8550
     },
     "5": {
@@ -56,8 +62,8 @@
       "stage": "S01",
       "text_path": "chapters/CH005_313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83.txt",
       "text_sha256": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
-      "record_path": "records/CH005_90fd1b456cc1a0fdcc9e2e871d6f906e13b5a9e1749f52cbabd3509170ffe4f9.json",
-      "record_sha256": "90fd1b456cc1a0fdcc9e2e871d6f906e13b5a9e1749f52cbabd3509170ffe4f9",
+      "record_path": "records/CH005_a081b29dedbb9f509f69530754f2e4cb81968d3e508cbbcf5739bf7d8947de2b.json",
+      "record_sha256": "a081b29dedbb9f509f69530754f2e4cb81968d3e508cbbcf5739bf7d8947de2b",
       "han_count": 8293
     },
     "6": {
@@ -65,8 +71,8 @@
       "stage": "S01",
       "text_path": "chapters/CH006_b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439.txt",
       "text_sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
-      "record_path": "records/CH006_7be66c90b3b8cf178b6173c150d096b506564931c202776346b463bdb3b419ed.json",
-      "record_sha256": "7be66c90b3b8cf178b6173c150d096b506564931c202776346b463bdb3b419ed",
+      "record_path": "records/CH006_724b67cce3d81d98feaf2b87814ae5bd803824b8530fcf183130fdf740ed9bc8.json",
+      "record_sha256": "724b67cce3d81d98feaf2b87814ae5bd803824b8530fcf183130fdf740ed9bc8",
       "han_count": 8373
     },
     "7": {
@@ -74,8 +80,8 @@
       "stage": "S01",
       "text_path": "chapters/CH007_85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738.txt",
       "text_sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
-      "record_path": "records/CH007_1c5aee288dacdd60eee2578acc70c8c787162b0d49950ac2ff3fd3ab54fb972d.json",
-      "record_sha256": "1c5aee288dacdd60eee2578acc70c8c787162b0d49950ac2ff3fd3ab54fb972d",
+      "record_path": "records/CH007_8dfdb210611b2c6d859bb72c442675383b303028d71f83085e24ee4aa9f9f175.json",
+      "record_sha256": "8dfdb210611b2c6d859bb72c442675383b303028d71f83085e24ee4aa9f9f175",
       "han_count": 8269
     },
     "8": {
@@ -83,8 +89,8 @@
       "stage": "S01",
       "text_path": "chapters/CH008_a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1.txt",
       "text_sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
-      "record_path": "records/CH008_630a3fb71b2d2148a614fc4afe9d6483e068d11160a45c8ee294bfeb741ebc4e.json",
-      "record_sha256": "630a3fb71b2d2148a614fc4afe9d6483e068d11160a45c8ee294bfeb741ebc4e",
+      "record_path": "records/CH008_057cacc8fec3cf506a3102668a9a16b984ad12f140578a4c1dd407b6a5149f03.json",
+      "record_sha256": "057cacc8fec3cf506a3102668a9a16b984ad12f140578a4c1dd407b6a5149f03",
       "han_count": 8332
     },
     "9": {
@@ -92,8 +98,8 @@
       "stage": "S01",
       "text_path": "chapters/CH009_0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804.txt",
       "text_sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
-      "record_path": "records/CH009_6dbda6be0e630d1b17835011b1277b684d57245b67427f404fb7cef3aa7549fe.json",
-      "record_sha256": "6dbda6be0e630d1b17835011b1277b684d57245b67427f404fb7cef3aa7549fe",
+      "record_path": "records/CH009_92a06c957e5699e7bbf092d8ab7a9b60197c777b7af1818e1465fb54b7fc4e9c.json",
+      "record_sha256": "92a06c957e5699e7bbf092d8ab7a9b60197c777b7af1818e1465fb54b7fc4e9c",
       "han_count": 8183
     },
     "10": {
@@ -101,8 +107,8 @@
       "stage": "S01",
       "text_path": "chapters/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt",
       "text_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
-      "record_path": "records/CH010_e878360a8b70385388a8a9d7e8bc7020b8bf293f40b0a3bf93f75430779a5be7.json",
-      "record_sha256": "e878360a8b70385388a8a9d7e8bc7020b8bf293f40b0a3bf93f75430779a5be7",
+      "record_path": "records/CH010_a88d8b5a79fb4cbb017b152f74930e3c7c14c0d02e55ee86b0f84602a91e64ec.json",
+      "record_sha256": "a88d8b5a79fb4cbb017b152f74930e3c7c14c0d02e55ee86b0f84602a91e64ec",
       "han_count": 8137
     }
   },
@@ -492,6 +498,58 @@
       "promise_payoffs": "已付Q01声像/实物与救通气、小灶原债；Q02仅新痕不复制及原页不改的有限证据、不是全部时岸理论；Q04原页分照/初七见严/初八冷检子项完成，桑廿一生命/旧伤者受益者/旧验工副联未付；Q05/X01永久用一余八，未新送；Q09真实出口完成，独立行动仍长线；Q07出去问图已实际提问并开查但未查复。新增初十报平安/一天点工、三日碗代存有到期动作，不当已发生。",
       "ending_runway": "90章剩约816501汉字到90万（配置区间剩796501—836501）。九次共享预算用1余8，三对端只N01，N02/03仍按后续实证引入。师父廿一day18、旧史真葬地、供给受益与延后代价、后续互助出错/持续伤损、分工替代、最后一肋知情选择及永久断联均尚有足够空间；不能用第一阶段承重细节吞掉这些依赖。只调未发生X02用途和近期场面，不改九次上限、终局拆主炉成本与三息断网。",
       "next_action": "将随本报告准备的路线V3正式登记：CH011《旧单之外的人》初十实际通报平安并进入本端活证人行动、F一次点工兑现与图源查问；CH012拟实物对照替换无必要药礼，发送须有必要性；CH013—015推进当年受损者/受益者和现实成本，列三日代存及廿一时限。保存回看、最新正文记录和索引，停在等待作者下次授权，不生成第十一章。"
+    },
+    {
+      "kind": "stage",
+      "from": 1,
+      "to": 10,
+      "base_revision": 30,
+      "canon_sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+      "read_mode": "full_text_batches",
+      "decision": "adjust_future",
+      "coverage": {
+        "1": "9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d",
+        "2": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
+        "3": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
+        "4": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
+        "5": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
+        "6": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+        "7": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+        "8": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
+        "9": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+        "10": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3"
+      },
+      "record_coverage": {
+        "1": "65b222b0e5c8b27832b7a5ef889ac7384eacf9094c1b06e8f0d774397b8ad40d",
+        "2": "ee2f53e1f5cbc5e0ed2558270796c37872ba7a042c450d21f00ce915fd7f69b7",
+        "3": "ba534f8c16c23d8715f309cbf8bf7ced128b52e0506f5abf54ea20bbcf84f68d",
+        "4": "ad6cfed049788c88b8d4fc4e6c756803f94c8bf3928e7670106516ac6037ca1f",
+        "5": "a081b29dedbb9f509f69530754f2e4cb81968d3e508cbbcf5739bf7d8947de2b",
+        "6": "724b67cce3d81d98feaf2b87814ae5bd803824b8530fcf183130fdf740ed9bc8",
+        "7": "8dfdb210611b2c6d859bb72c442675383b303028d71f83085e24ee4aa9f9f175",
+        "8": "057cacc8fec3cf506a3102668a9a16b984ad12f140578a4c1dd407b6a5149f03",
+        "9": "92a06c957e5699e7bbf092d8ab7a9b60197c777b7af1818e1465fb54b7fc4e9c",
+        "10": "a88d8b5a79fb4cbb017b152f74930e3c7c14c0d02e55ee86b0f84602a91e64ec"
+      },
+      "conclusion": "本轮实际读原CH001全文及新开篇全部差异，分章阅读全文CH002—010；CH004首轮聚合截断后补读前段与4500—5600字衔接。第一章仅短倒叙呈现墓志及删重复解释，实际发生次序不变。2—10正文哈希逐章不变、1—10记录按序核对，全部引用存在。两条已完成短任务在CH010补payoff，不能复演；当前无硬矛盾需改2—10正文。",
+      "causal_progress": "求救只通气→独立制薄规与一次传递→本端修灶偿债→刻痕未复制→旧页师父死记与当代排工→冷检/旧料责任/限热→F真正脱困结钱与A首单。成果和行动代价有承接，CH001倒叙不让闻溪提前知道少年姓名/年龄/历号，不把B碑证升级为必然命运。",
+      "repetition_comparison": "S01多次门、量、对旧字的桥段有功能差异，但8万余字集中灰室和核件带来中段重复风险。S02不得再找同一铜页的新字、复演整次初八冷检或重追三灵石；11起转活证人和受损者、图源的可查新答复、真实人手与停工代价，阶段内交付结果。",
+      "character_changes": "岑从自信报旧式到承认不知，从替师父遮掩到照实记录旧责；桑真实签押并承认怕，不能每章再首次认错。乔自己的炭窑目标和逐次拒绝权保留。闻曹梁真实离陵、休息、议价并分配新工作，不能变成永远在室内等祖师救。",
+      "promise_payoffs": "三灵石、灶、初八矿旁看、首次出陵、雇主会面结款和首笔新修工已有具体结果；后两条短任务补关。师父廿一、北口来源、陪检真名、图袋查复、碗三日代存和初十报平安仍有真实期限；大谜团与短任务拆开设期限，不把部分兑现当全解。",
+      "ending_runway": "当前十章83492汉字，余90章到90万需均约9072。九次只用X01、余八；三端仅N01可用、两岸不改史与最终断网代价均保留。后续以必要人物场面与可见改变形成长度，25/50/75/90重估而非补工序。",
+      "next_action": "更新未发生路线V4和结构化期限，冻结已核对十章与语义记录，重建空白初始化包。CH011不在本轮创作；下次授权时按新release流程实际兑现报平安、图源与证人行动。",
+      "findings": [
+        {
+          "severity": "future_plan",
+          "issue": "重复测量/下一页会拖慢中段，未来安排须从查册转见人和责任后果。",
+          "action": "只约束未生成章节；不要求回改已采用2—10。"
+        },
+        {
+          "severity": "record_fixed",
+          "issue": "Q07-employer-meeting与Q-A-new-repair的实际成果先于关闭记录。",
+          "action": "已按CH010真实引文补payoff，非新增正文事件。"
+        }
+      ]
     }
   ],
   "needs_revalidation": [],
@@ -504,9 +562,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_f90728bae5d1efbbf4a6031828f995d257584415d8034f8b688b58423c5f2e38.md",
-      "sha256": "f90728bae5d1efbbf4a6031828f995d257584415d8034f8b688b58423c5f2e38",
-      "reason": "首十章实际全文回看：修复刻痕定位并完成9/10重核；只调未写11—15的活证人/现实成本推进、三日碗代存和廿一日历。F已出陵结款，取消无必要药礼，X02拟改经实际必要性和授权/重量核定才发送的凡铁小样；九次总预算和终局边界不变。"
+      "path": "inputs/roadmap_469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac.md",
+      "sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+      "reason": "V4.2：开篇修改后基线、S02防重复、真实期限与定稿前检查；仅调整未发生内容。"
     }
   },
   "input_history": [
@@ -533,29 +591,30 @@
       "path": "inputs/roadmap_f90728bae5d1efbbf4a6031828f995d257584415d8034f8b688b58423c5f2e38.md",
       "sha256": "f90728bae5d1efbbf4a6031828f995d257584415d8034f8b688b58423c5f2e38",
       "reason": "首十章实际全文回看：修复刻痕定位并完成9/10重核；只调未写11—15的活证人/现实成本推进、三日碗代存和廿一日历。F已出陵结款，取消无必要药礼，X02拟改经实际必要性和授权/重量核定才发送的凡铁小样；九次总预算和终局边界不变。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac.md",
+      "sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+      "reason": "V4.2：开篇修改后基线、S02防重复、真实期限与定稿前检查；仅调整未发生内容。"
     }
   ],
   "tasks": {
     "1": {
-      "task_id": "97d066df-9f01-4ce0-a0ef-1d1dbd5a8cba",
+      "task_id": "83447691-59c9-477c-8b44-f9bcc9089e06",
       "chapter": 1,
-      "mode": "write",
+      "mode": "edit",
       "phase": "adopted",
-      "repairs": 1,
+      "repairs": 0,
       "history": [
         {
-          "sha256": "99e67c16e20bf3c4bd8f0011f2f2956d1fa0554fb2a20cb9b6fd8d66188d0c6c",
-          "reason": "初稿",
+          "sha256": "9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d",
+          "reason": "作者2026-10-23最新明确要求：现在的这部小说需要改；优化第一章钩子位置，保留后续事实。",
           "repairs": 0
-        },
-        {
-          "sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
-          "reason": "集中修复初稿中烧红铜芯的持握、联络时两端接触与交接衔接、照字拆解及无依据的三千年寿命表述；补清读者早期年代线索。",
-          "repairs": 1
         }
       ],
-      "candidate_sha256": "1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da",
-      "candidate_path": "candidates/CH001_1abfe70ffc4f676028853996b19b39f1861952fb775abce6749510a13be985da.txt"
+      "candidate_sha256": "9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d",
+      "candidate_path": "candidates/CH001_9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d.txt"
     },
     "2": {
       "task_id": "e7ddfe1a-a61f-4590-9161-716c90cf6bf5",
@@ -752,5 +811,286 @@
       "candidate_path": "candidates/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt"
     }
   },
-  "completion": null
+  "completion": null,
+  "serialization": {
+    "schema_version": 1,
+    "enabled": true,
+    "frozen": {
+      "1": {
+        "text_sha256": "9e92542558501ca9e69df6c629f02ea3d583bb556e76e407a0e44a65ebc0268d",
+        "record_sha256": "65b222b0e5c8b27832b7a5ef889ac7384eacf9094c1b06e8f0d774397b8ad40d"
+      },
+      "2": {
+        "text_sha256": "b467eb34cdd4aa485180387f473d63455f7f862677af3591abea53f17c044951",
+        "record_sha256": "ee2f53e1f5cbc5e0ed2558270796c37872ba7a042c450d21f00ce915fd7f69b7"
+      },
+      "3": {
+        "text_sha256": "50e4d98d17525e45fbcbbf3c41e655338fc3b4b259d0af4095b4e0115f1db94a",
+        "record_sha256": "ba534f8c16c23d8715f309cbf8bf7ced128b52e0506f5abf54ea20bbcf84f68d"
+      },
+      "4": {
+        "text_sha256": "e87813806522887a0614dd2c57519532f3ae31bb577a192348f2e3491592067e",
+        "record_sha256": "ad6cfed049788c88b8d4fc4e6c756803f94c8bf3928e7670106516ac6037ca1f"
+      },
+      "5": {
+        "text_sha256": "313357cc01139d4bce446c33616134a8f284d94f12d72c5c584ebd41b27f6b83",
+        "record_sha256": "a081b29dedbb9f509f69530754f2e4cb81968d3e508cbbcf5739bf7d8947de2b"
+      },
+      "6": {
+        "text_sha256": "b6f6348cb431de65f0e6ecbccf7969fa586850294cf0745c2701cedf0bf2b439",
+        "record_sha256": "724b67cce3d81d98feaf2b87814ae5bd803824b8530fcf183130fdf740ed9bc8"
+      },
+      "7": {
+        "text_sha256": "85a955332c07a934a7edce5069591b09060ae7c6ae82160e1a9e0714281b1738",
+        "record_sha256": "8dfdb210611b2c6d859bb72c442675383b303028d71f83085e24ee4aa9f9f175"
+      },
+      "8": {
+        "text_sha256": "a710b50d7fa9dfe4e16a7f70a2300fed0a65b4fdbee833080503122802a531c1",
+        "record_sha256": "057cacc8fec3cf506a3102668a9a16b984ad12f140578a4c1dd407b6a5149f03"
+      },
+      "9": {
+        "text_sha256": "0084f4c306bda381cc6835c313b01a395d18b84d4f1f88f0d6991eb6e6473804",
+        "record_sha256": "92a06c957e5699e7bbf092d8ab7a9b60197c777b7af1818e1465fb54b7fc4e9c"
+      },
+      "10": {
+        "text_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+        "record_sha256": "a88d8b5a79fb4cbb017b152f74930e3c7c14c0d02e55ee86b0f84602a91e64ec"
+      }
+    },
+    "published": {},
+    "gates": {},
+    "promises": {
+      "Q01": {
+        "deadline_chapter": 11,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q01",
+            "deadline_chapter": 11,
+            "reason": "首次互助与F脱困已发生，CH011实际报平安收束这一层；墓主归属继续由Q03承接，不重复困灰室。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q02": {
+        "deadline_chapter": 19,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q02",
+            "deadline_chapter": 19,
+            "reason": "A桑活过廿一后，结合既有刻钩与B原页按实际权限对照，给出两岸不是自动改史的可见结果，不宣讲全宇宙理论。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q03": {
+        "deadline_chapter": 60,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q03",
+            "deadline_chapter": 60,
+            "reason": "仙帝陵主和称号的核心来历在31—40功过证据、59—60葬地与补救阶段给出答案；最终个人去向另由Q10收束。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q05": {
+        "deadline_chapter": 96,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q05",
+            "deadline_chapter": 96,
+            "reason": "共享九肋预算及每次真实损耗，95—96作最后一次知情选择，终局不得续网。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q07": {
+        "deadline_chapter": 80,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q07",
+            "deadline_chapter": 80,
+            "reason": "雇主保护与控制在23—28、56、71—80逐阶段给结果，不能以已结一次尾款假装全部控制解除。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q09": {
+        "deadline_chapter": 98,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q09",
+            "deadline_chapter": 98,
+            "reason": "已有出陵和议价作为部分兑现，持续建立双方独立能力，93/97/98分别完成本端行动。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q-Jo-charcoal": {
+        "deadline_chapter": 20,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q-Jo-charcoal",
+            "deadline_chapter": 20,
+            "reason": "S02末前给旧湿料责任与经营选择的具体阶段结果，不再每章只看一袋；后续更大事业另立来源明确的新目标。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q04": {
+        "deadline_chapter": 18,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q04",
+            "deadline_chapter": 18,
+            "reason": "按实际历法推进到廿一后，使A桑真实存活，不换替死者，保留B死亡和本端问责。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q04-cold-inspection": {
+        "deadline_chapter": 15,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q04-cold-inspection",
+            "deadline_chapter": 15,
+            "reason": "冷检已做，不复演；补全仍未兑现的训练、具名及廿一实际可到的人手安排。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q04-heat-hold": {
+        "deadline_chapter": 17,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q04-heat-hold",
+            "deadline_chapter": 17,
+            "reason": "起热前核清新件、后挡、限位与人手；条件不成就实际停试并承担损失，不能纸上放行。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q04-backstop-source": {
+        "deadline_chapter": 13,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q04-backstop-source",
+            "deadline_chapter": 13,
+            "reason": "白边新垫与八月小修来源已在案，进一步原退料/验工证据给出可查结果；不混作166全责结论。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q07-map-source": {
+        "deadline_chapter": 12,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q07-map-source",
+            "deadline_chapter": 12,
+            "reason": "兑现初九调袋簿承诺，给封袋来源或具体抵牾及责任边界，不只再报27年差。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q01-local-livelihood": {
+        "deadline_chapter": 20,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q01-local-livelihood",
+            "deadline_chapter": 20,
+            "reason": "以已清债和首单为基础形成真实可持续的收入/炉与住处安排，不能重追旧债制造困境。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q01-next-safety-report": {
+        "deadline_chapter": 11,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q01-next-safety-report",
+            "deadline_chapter": 11,
+            "reason": "初十辰初实际告A三人已出、城中住店，不把未发送的笔记算已知。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      },
+      "Q07-bowl-custody": {
+        "deadline_chapter": 13,
+        "status": "open",
+        "history": [
+          {
+            "id": "Q07-bowl-custody",
+            "deadline_chapter": 13,
+            "reason": "初九午后起三日，初十二午后到限；此前写当面交验/续约或真实保管改变。",
+            "action": "set",
+            "source": "roadmap",
+            "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
+            "chapter": 10
+          }
+        ]
+      }
+    },
+    "incidents": {},
+    "migration": {
+      "reason": "作者要求每日一章发布且既往不能回改；按最新授权完成当前CH001修改、2—10全文承接核对及阶段回看后，冻结十章现行正文和语义记录。未追认平台发布。",
+      "base_revision": 32,
+      "note": "既有采用版本冻结；不追认开篇检查或平台发布。"
+    }
+  }
 }

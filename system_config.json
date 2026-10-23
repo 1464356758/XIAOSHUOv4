@@ -7,5 +7,11 @@
   "book_han_max": 920000,
   "strict_length": true,
   "review_interval": 5,
-  "max_local_repairs": 3
+  "max_local_repairs": 3,
+  "serial_mode": true,
+  "serial_stage_size": 10,
+  "serial_lookahead": 3,
+  "opening_hook_max_han": 800,
+  "opening_core_max_han": 3000,
+  "opening_impact_max_han": 3000
 }
