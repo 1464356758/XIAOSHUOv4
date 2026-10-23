@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 94,
+  "revision": 95,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "WAITING_NEXT",
+  "phase": "WRITING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T09",
@@ -29,7 +29,7 @@
   },
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
   "topics_path": "research/topics_1c6457bad3f3d87203063a8befb9736bd073811380aa883f19c840a68f653340.json",
-  "chapter": 20,
+  "chapter": 21,
   "history": [
     {
       "at": "2026-10-22T01:32:46+00:00",
@@ -600,9 +600,15 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第二十章《戌初的声音》8542汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；11—20阶段全文回看已在采用前完成，累计20章167280汉字。"
+    },
+    {
+      "at": "2026-10-23T19:15:34+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "开始第二十一章S03；已核main正式20章/revision54，读取近三章全文、近五章推进及24许约来源。"
     }
   ],
-  "detail": "第二十章《戌初的声音》8542汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；11—20阶段全文回看已在采用前完成，累计20章167280汉字。",
-  "next_action": "等待作者继续第二十一章S03；24晨先互报社已获报/固定端再议，按24下工真赴许约核五日试工与旧损，22期限前兑现阶段承担。",
-  "updated_at": "2026-10-23T18:54:50+00:00"
+  "detail": "开始第二十一章S03；已核main正式20章/revision54，读取近三章全文、近五章推进及24许约来源。",
+  "next_action": "完成23夜社问/24晨实互报与24下工北料场本人履约，给旧损阶段承担并写出有成本炼息变化；完整8000—10000汉字后集中审查。",
+  "updated_at": "2026-10-23T19:15:34+00:00"
 }

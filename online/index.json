@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T18:54:50+00:00",
+    "generated_at": "2026-10-23T19:15:34+00:00",
     "state_revision": 54,
-    "workflow_revision": 94,
+    "workflow_revision": 95,
     "state_sha256": "08ec114206facfcd687e09b9750777cd582c5623f8686bb9088d368430b0a060",
-    "workflow_sha256": "21f2f4957f10c74bb1a0db9a815979e1bd444e3e89b8e9983ed301c79316f6fe",
+    "workflow_sha256": "855a3e082b5ef20ec8c55e7a02620ceff36fb76c7d36a5542ce274a86eaa93e5",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
-    "chapter": 20,
-    "detail": "第二十章《戌初的声音》8542汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；11—20阶段全文回看已在采用前完成，累计20章167280汉字。",
-    "next_action": "等待作者继续第二十一章S03；24晨先互报社已获报/固定端再议，按24下工真赴许约核五日试工与旧损，22期限前兑现阶段承担。",
-    "updated_at": "2026-10-23T18:54:50+00:00"
+    "phase": "WRITING",
+    "label": "撰写正文",
+    "chapter": 21,
+    "detail": "开始第二十一章S03；已核main正式20章/revision54，读取近三章全文、近五章推进及24许约来源。",
+    "next_action": "完成23夜社问/24晨实互报与24下工北料场本人履约，给旧损阶段承担并写出有成本炼息变化；完整8000—10000汉字后集中审查。",
+    "updated_at": "2026-10-23T19:15:34+00:00"
   },
   "chapters": [
     {
@@ -1247,12 +1247,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T12:43:59+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第十七章《火收以后》完整初稿8497汉字已登记；首热真实停、冷后复核并撤廿一热项，进入集中核查。"
-    },
-    {
       "at": "2026-10-23T15:10:31+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1335,6 +1329,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第二十章《戌初的声音》8542汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；11—20阶段全文回看已在采用前完成，累计20章167280汉字。"
+    },
+    {
+      "at": "2026-10-23T19:15:34+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "开始第二十一章S03；已核main正式20章/revision54，读取近三章全文、近五章推进及24许约来源。"
     }
   ]
 }
