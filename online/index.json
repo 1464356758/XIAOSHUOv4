@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T09:53:49+00:00",
+    "generated_at": "2026-10-23T10:10:19+00:00",
     "state_revision": 40,
-    "workflow_revision": 67,
-    "state_sha256": "76bc068884c6a22707bfe0bd4e273ac2fae5c793c0408d44b18a1ebf41f4c009",
-    "workflow_sha256": "287f3c5e562e3fee2f86373221074e27123fed6b01364964b11aa77382e87df0",
+    "workflow_revision": 68,
+    "state_sha256": "34fa859bff5076d26a40320747b5726a758013beda6390490cacb869cbb10ede",
+    "workflow_sha256": "7500b8970d4e9f56ddde7ffcd31a5bfb334e8d2258bcb984a4d011655e669bc7",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 14,
-    "detail": "已恢复十三章正式进度，创作第十四章《那一班工饭》；核对实际旧责承担、剖毁新肩与共有旧碗后果。",
-    "next_action": "完成完整8000—10000汉字候选，集中审核并记录、采用、保存。",
-    "updated_at": "2026-10-23T09:53:49+00:00"
+    "detail": "第十四章完整初稿8226汉字已登记，同一任务进入集中审核；核查两岸互告、旧伤工先付、重做料工和新收入。",
+    "next_action": "集中回读全文和相关历史，记录实际问题；最多三轮局修，完成章后记录与发布前检查后采用。",
+    "updated_at": "2026-10-23T10:10:19+00:00"
   },
   "chapters": [
     {
@@ -1163,12 +1163,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T22:29:59+00:00",
-      "phase": "SYSTEM_UPGRADE",
-      "label": "升级创作系统",
-      "detail": "作者要求把开篇钩子检查与每日生成发布纳入母版，采用前检查、采用后冻结、只能前向处理剧情问题。正在升级主系统与空初始化包，当前十章83499字不改写，本次不生成十一章。"
-    },
-    {
       "at": "2026-10-22T23:50:53+00:00",
       "phase": "REVISING",
       "label": "局部修订",
@@ -1251,6 +1245,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "已恢复十三章正式进度，创作第十四章《那一班工饭》；核对实际旧责承担、剖毁新肩与共有旧碗后果。"
+    },
+    {
+      "at": "2026-10-23T10:10:19+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第十四章完整初稿8226汉字已登记，同一任务进入集中审核；核查两岸互告、旧伤工先付、重做料工和新收入。"
     }
   ]
 }
