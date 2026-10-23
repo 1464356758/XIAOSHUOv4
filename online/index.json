@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T10:47:25+00:00",
+    "generated_at": "2026-10-23T11:10:37+00:00",
     "state_revision": 42,
-    "workflow_revision": 71,
-    "state_sha256": "f0d6c7a304ade5559d2dac3e4d56eedb54efcd570323bfb109a3ba43667d8dc9",
-    "workflow_sha256": "4f8d308b53b86105d352792b17900dae7c746dd7cbd92bfe3ef36c114fe7f11e",
+    "workflow_revision": 72,
+    "state_sha256": "5d6ae9398e738ed38df0d979e1e30523c41d2a62dd46807ff0619962d935ecc3",
+    "workflow_sha256": "afdce421e023a57195ac1797c782fbe927dd86e9416b10c4834c2bbd133e1316",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 15,
-    "detail": "已恢复十四章冻结进度，创作第十五章《谁站在闸外》；本轮落实真人主验/外应、训练和廿一排班，采用前实际回看十一至十五章。",
-    "next_action": "读取近期正文与记录，完成8000—10000汉字完整候选；集中审核、到期全文回看和release-check通过后采用与保存。",
-    "updated_at": "2026-10-23T10:47:25+00:00"
+    "detail": "第十五章完整初稿8494汉字已登记；已实读十一至十四全文，进入集中审核及十一至十五章到期全文回看。",
+    "next_action": "补齐当前候选全文/记录覆盖，集中修复实证问题；完成五章回看和release-check后采用，最多三轮局修不重开任务。",
+    "updated_at": "2026-10-23T11:10:36+00:00"
   },
   "chapters": [
     {
@@ -1175,12 +1175,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T02:13:23+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "CH011完整初稿8425汉字已登记同一候选；核对最近三章及本章事实、知情、物资和承诺，尚未采用。"
-    },
-    {
       "at": "2026-10-23T02:31:25+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1263,6 +1257,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "已恢复十四章冻结进度，创作第十五章《谁站在闸外》；本轮落实真人主验/外应、训练和廿一排班，采用前实际回看十一至十五章。"
+    },
+    {
+      "at": "2026-10-23T11:10:36+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第十五章完整初稿8494汉字已登记；已实读十一至十四全文，进入集中审核及十一至十五章到期全文回看。"
     }
   ]
 }
