@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T02:13:23+00:00",
-    "state_revision": 34,
-    "workflow_revision": 57,
-    "state_sha256": "697f186d4bf2ea2380bc16f85cf3607411508c73818e0577b459a4fa318e26e0",
-    "workflow_sha256": "b5d7abaa7640720450a306a3077d504cb83f9fc72339852f7a663153ac345e33",
+    "generated_at": "2026-10-23T02:31:25+00:00",
+    "state_revision": 36,
+    "workflow_revision": 58,
+    "state_sha256": "951faf852a00a0ec733864648fc449bd8beb47724d330f0791baad4636fb5b70",
+    "workflow_sha256": "eb90cfeb9fdc544030aa17d41760a68d2f241830448c218ee10e5e02bd7781bc",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 10,
+    "adopted_chapters": 11,
     "target_han": 900000,
-    "actual_han": 83492,
+    "actual_han": 91971,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 10,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 10,
+    "frozen_chapters": 11,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
-    "chapter": 11,
-    "detail": "CH011完整初稿8425汉字已登记同一候选；核对最近三章及本章事实、知情、物资和承诺，尚未采用。",
-    "next_action": "集中审核，必要局部修订后填写release-request并release-check。",
-    "updated_at": "2026-10-23T02:13:23+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 12,
+    "detail": "CH011《旧单之外的人》8479汉字，2轮局部修订后发布前检查通过并定稿冻结。当前11章91971汉字，路线V5；本次未生成第十二章。",
+    "next_action": "作者下次授权后创作CH012：晨窗互告、本端薄样试验与桑取原条；外验/传物须追加耗样授权及真实计重/器用条件。保持碗13章到期、人手15、起热17、救师18。",
+    "updated_at": "2026-10-23T02:31:25+00:00"
   },
   "chapters": [
     {
@@ -160,6 +160,18 @@
       "han_count": 8137,
       "text_path": "book/chapters/CH010_e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3.txt",
       "sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 11,
+      "title": "旧单之外的人",
+      "stage": "S02",
+      "han_count": 8479,
+      "text_path": "book/chapters/CH011_64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f.txt",
+      "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1127,12 +1139,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T19:04:56+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第八章《他们的昨天》已完成采用8332汉字，2轮局部修订；正式稿共8章67179汉字。旧领条已交存对号，初九重联后F人器全越外闸侧孔仍地下；第九章未生成。"
-    },
-    {
       "at": "2026-10-22T19:17:06+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1215,6 +1221,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "CH011完整初稿8425汉字已登记同一候选；核对最近三章及本章事实、知情、物资和承诺，尚未采用。"
+    },
+    {
+      "at": "2026-10-23T02:31:25+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "CH011《旧单之外的人》8479汉字，2轮局部修订后发布前检查通过并定稿冻结。当前11章91971汉字，路线V5；本次未生成第十二章。"
     }
   ]
 }

@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 34,
+  "revision": 36,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -110,6 +110,15 @@
       "record_path": "records/CH010_a88d8b5a79fb4cbb017b152f74930e3c7c14c0d02e55ee86b0f84602a91e64ec.json",
       "record_sha256": "a88d8b5a79fb4cbb017b152f74930e3c7c14c0d02e55ee86b0f84602a91e64ec",
       "han_count": 8137
+    },
+    "11": {
+      "title": "旧单之外的人",
+      "stage": "S02",
+      "text_path": "chapters/CH011_64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f.txt",
+      "text_sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+      "record_path": "records/CH011_4208d71e55c12f65b6e3b4646687183f8337565a1c1fe11553e546c9f2b3b969.json",
+      "record_sha256": "4208d71e55c12f65b6e3b4646687183f8337565a1c1fe11553e546c9f2b3b969",
+      "han_count": 8479
     }
   },
   "checkpoints": [
@@ -562,9 +571,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac.md",
-      "sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
-      "reason": "V4.2：开篇修改后基线、S02防重复、真实期限与定稿前检查；仅调整未发生内容。"
+      "path": "inputs/roadmap_771566789f55df1758efbde245cd28c20106dcd9a91478597dbc29d502877760.md",
+      "sha256": "771566789f55df1758efbde245cd28c20106dcd9a91478597dbc29d502877760",
+      "reason": "CH011采用后仅调未来：报平安/本次图源已关闭；许证言与原件分层，凡铁现仅限用途领用、不得默认外送；曹拒续工/未来器用须另办、碗初十二到期、人员15章前落实；保留两端未互通知情和九肋边界。"
     }
   },
   "input_history": [
@@ -597,6 +606,12 @@
       "path": "inputs/roadmap_469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac.md",
       "sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
       "reason": "V4.2：开篇修改后基线、S02防重复、真实期限与定稿前检查；仅调整未发生内容。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_771566789f55df1758efbde245cd28c20106dcd9a91478597dbc29d502877760.md",
+      "sha256": "771566789f55df1758efbde245cd28c20106dcd9a91478597dbc29d502877760",
+      "reason": "CH011采用后仅调未来：报平安/本次图源已关闭；许证言与原件分层，凡铁现仅限用途领用、不得默认外送；曹拒续工/未来器用须另办、碗初十二到期、人员15章前落实；保留两端未互通知情和九肋边界。"
     }
   ],
   "tasks": {
@@ -814,17 +829,27 @@
       "task_id": "a0b9ece1-b2f8-4f28-bb55-221f78584882",
       "chapter": 11,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 2,
       "history": [
         {
           "sha256": "9dbe1e221b85a8ccc83793d03276790d03ce10c99989810a130a3d587bb3b916",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "5c0f9030229daef89b5f3907bf4a8689ba52a621b6593d53e01326e491f82058",
+          "reason": "集中全文审核：删除将3122至3149的27年错写成可用签存续年数的叙述；明确原错图从社存原袋取出、原铜仍在社；验工半联只见抄文，桑认原句而不凭抄文认原件笔迹；明确A出坊只携抄记与收条，修正茂字笔画和梁重新拾针的动作衔接。",
+          "repairs": 1
+        },
+        {
+          "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+          "reason": "回查CH009知识记录：桑当年只知许茂伤手，昨日才从总簿知道所领戊三铁来自北口；补明两个事件此前未对应，避免新证人情节反向赋予桑既有原料来历知识。同时保留许伤发生于卸件前、并非证明桑补肩导致此伤的因果边界。",
+          "repairs": 2
         }
       ],
-      "candidate_sha256": "9dbe1e221b85a8ccc83793d03276790d03ce10c99989810a130a3d587bb3b916",
-      "candidate_path": "candidates/CH011_9dbe1e221b85a8ccc83793d03276790d03ce10c99989810a130a3d587bb3b916.txt"
+      "candidate_sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+      "candidate_path": "candidates/CH011_64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f.txt"
     }
   },
   "completion": null,
@@ -871,14 +896,24 @@
       "10": {
         "text_sha256": "e8367985f1aa9ed631b19fd59c3c72a7566cf9576c04f084b6d0532fed099df3",
         "record_sha256": "a88d8b5a79fb4cbb017b152f74930e3c7c14c0d02e55ee86b0f84602a91e64ec"
+      },
+      "11": {
+        "text_sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+        "record_sha256": "4208d71e55c12f65b6e3b4646687183f8337565a1c1fe11553e546c9f2b3b969"
       }
     },
     "published": {},
-    "gates": {},
+    "gates": {
+      "11": {
+        "path": "releases/CH011_5acc18072d11fe05ecc36f28a739ba99d769e0f4b3fae05c886c258477525df0.json",
+        "sha256": "5acc18072d11fe05ecc36f28a739ba99d769e0f4b3fae05c886c258477525df0",
+        "used": true
+      }
+    },
     "promises": {
       "Q01": {
         "deadline_chapter": 11,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q01",
@@ -888,8 +923,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q01",
+            "action": "complete",
+            "deadline_chapter": 11,
+            "reason": "首次声像互助与脱困求生这一层，本章向A实际报告三人返城，已完成；墓主来历和生计分别有独立承诺。",
+            "evidence": {
+              "chapter": 11,
+              "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+              "quote": "“出来了。”闻溪说，“三个人，都在照河城，住店。”"
+            },
+            "chapter": 11
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q02": {
         "deadline_chapter": 19,
@@ -904,7 +952,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q03": {
         "deadline_chapter": 60,
@@ -919,7 +968,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -934,7 +984,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -949,7 +1000,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -964,7 +1016,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -979,7 +1032,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q04": {
         "deadline_chapter": 18,
@@ -994,7 +1048,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q04-cold-inspection": {
         "deadline_chapter": 15,
@@ -1009,7 +1064,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q04-heat-hold": {
         "deadline_chapter": 17,
@@ -1024,7 +1080,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q04-backstop-source": {
         "deadline_chapter": 13,
@@ -1039,11 +1096,12 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q07-map-source": {
         "deadline_chapter": 12,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q07-map-source",
@@ -1053,8 +1111,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q07-map-source",
+            "action": "complete",
+            "deadline_chapter": 12,
+            "reason": "杜认封袋未查改建、罗认交一纸、附页现场取到，邵认误图并实际撤班，提前给出本次图源答案；不扩大成全部阴谋查清。",
+            "evidence": {
+              "chapter": 11,
+              "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+              "quote": "轮到邵恒，他看完，在末尾写本社出图有误，停用复核。"
+            },
+            "chapter": 11
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q01-local-livelihood": {
         "deadline_chapter": 20,
@@ -1069,11 +1140,12 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q01-next-safety-report",
@@ -1083,8 +1155,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q01-next-safety-report",
+            "action": "complete",
+            "deadline_chapter": 11,
+            "reason": "初九只备未发，本章初十辰初已实际传到A师徒，按11章关闭。",
+            "evidence": {
+              "chapter": 11,
+              "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+              "quote": "“昨日。接过话，沿原来的石阶往上。没再遇到新门。”"
+            },
+            "chapter": 11
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       },
       "Q07-bowl-custody": {
         "deadline_chapter": 13,
@@ -1099,7 +1184,8 @@
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
           }
-        ]
+        ],
+        "last_reviewed_chapter": 11
       }
     },
     "incidents": {},
