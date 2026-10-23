@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 48,
+  "revision": 50,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -173,6 +173,15 @@
       "record_path": "records/CH017_1614f78b205ec487ba6a7f20bf8601bc98b0d7f6235511eb75086f752482c0f3.json",
       "record_sha256": "1614f78b205ec487ba6a7f20bf8601bc98b0d7f6235511eb75086f752482c0f3",
       "han_count": 8503
+    },
+    "18": {
+      "title": "没有火的廿一",
+      "stage": "S02",
+      "text_path": "chapters/CH018_60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2.txt",
+      "text_sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+      "record_path": "records/CH018_342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014.json",
+      "record_sha256": "342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014",
+      "han_count": 8200
     }
   },
   "checkpoints": [
@@ -741,9 +750,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_1cd8fca422492b9ba0f318d4ea7a58f2f80b224300376df782e1fd882e1bfc74.md",
-      "sha256": "1cd8fca422492b9ba0f318d4ea7a58f2f80b224300376df782e1fd882e1bfc74",
-      "reason": "CH017首热真实未过并撤廿一热项/料车、乔经营份真实恢复且出本购袋；仅调未来18真过廿一、19原铜对照及20生计/阶段回看，许损22等原期限不动。"
+      "path": "inputs/roadmap_3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349.md",
+      "sha256": "3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349",
+      "reason": "CH018真实过廿一到廿二桑活、冷导向修成但未热验，灯扣实付与本月底住权推进；仅调未来19原铜对照、20生计/阶段回看及N02实证、21廿四许约，其他期限不动。"
     }
   },
   "input_history": [
@@ -818,6 +827,12 @@
       "path": "inputs/roadmap_1cd8fca422492b9ba0f318d4ea7a58f2f80b224300376df782e1fd882e1bfc74.md",
       "sha256": "1cd8fca422492b9ba0f318d4ea7a58f2f80b224300376df782e1fd882e1bfc74",
       "reason": "CH017首热真实未过并撤廿一热项/料车、乔经营份真实恢复且出本购袋；仅调未来18真过廿一、19原铜对照及20生计/阶段回看，许损22等原期限不动。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349.md",
+      "sha256": "3178ea3be23757c8393b3acf86b9c90eab5c5b2d20c016a2b33cf41b727b6349",
+      "reason": "CH018真实过廿一到廿二桑活、冷导向修成但未热验，灯扣实付与本月底住权推进；仅调未来19原铜对照、20生计/阶段回看及N02实证、21廿四许约，其他期限不动。"
     }
   ],
   "tasks": {
@@ -1197,17 +1212,22 @@
       "task_id": "a4b79743-3f8d-4ff0-af56-d319261b8795",
       "chapter": 18,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "ac78b04dd02c88885927e2534b53665f2bad3da12675d889ed2c3711bcdcf25b",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+          "reason": "晨窗删曹手仍完好的预知意味，仅写理纸所见；夜段删除未有来源的多次遥望矿烟及可见地理断言，改眼前听看师父，保持结局与既有事实。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "ac78b04dd02c88885927e2534b53665f2bad3da12675d889ed2c3711bcdcf25b",
-      "candidate_path": "candidates/CH018_ac78b04dd02c88885927e2534b53665f2bad3da12675d889ed2c3711bcdcf25b.txt"
+      "candidate_sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+      "candidate_path": "candidates/CH018_60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2.txt"
     }
   },
   "completion": null,
@@ -1282,6 +1302,10 @@
       "17": {
         "text_sha256": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
         "record_sha256": "1614f78b205ec487ba6a7f20bf8601bc98b0d7f6235511eb75086f752482c0f3"
+      },
+      "18": {
+        "text_sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+        "record_sha256": "342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014"
       }
     },
     "published": {},
@@ -1319,6 +1343,11 @@
       "17": {
         "path": "releases/CH017_814c3e49fd78bd66db434db7b6950cea4d2fb2b5042a85e262799f257118b50e.json",
         "sha256": "814c3e49fd78bd66db434db7b6950cea4d2fb2b5042a85e262799f257118b50e",
+        "used": true
+      },
+      "18": {
+        "path": "releases/CH018_93fd45c59d7be4272d204e48245ec4cc611ea51f18e36f0ccf460b67ac59353b.json",
+        "sha256": "93fd45c59d7be4272d204e48245ec4cc611ea51f18e36f0ccf460b67ac59353b",
         "used": true
       }
     },
@@ -1365,7 +1394,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       },
       "Q03": {
         "deadline_chapter": 60,
@@ -1381,7 +1410,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1397,7 +1426,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1413,7 +1442,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1429,7 +1458,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -1461,7 +1490,7 @@
       },
       "Q04": {
         "deadline_chapter": 18,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q04",
@@ -1471,9 +1500,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q04",
+            "action": "complete",
+            "deadline_chapter": 18,
+            "reason": "21真实冷班/整日无火无替死，至22黎明桑穿鞋洗脸叫水，救师原期限阶段兑现；不抹B真实死亡、不赦许赔，后者独立期限22仍开。",
+            "evidence": {
+              "chapter": 18,
+              "sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+              "quote": "廿二清早，桑见石在。"
+            },
+            "chapter": 18
           }
         ],
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       },
       "Q04-cold-inspection": {
         "deadline_chapter": 15,
@@ -1601,7 +1642,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
@@ -1676,7 +1717,7 @@
         ],
         "deadline_chapter": 22,
         "status": "open",
-        "last_reviewed_chapter": 17
+        "last_reviewed_chapter": 18
       }
     },
     "incidents": {},

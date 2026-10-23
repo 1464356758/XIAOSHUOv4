@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T16:13:29+00:00",
-    "state_revision": 48,
-    "workflow_revision": 84,
-    "state_sha256": "0ae9b7e9e2975b4ed9bdff7d4ae782104f664b519f70b30c7aa5a629ff132799",
-    "workflow_sha256": "5db44d077a4560fed43c402e329e59240543f698db68c62ff005b04ea703edac",
+    "generated_at": "2026-10-23T16:25:17+00:00",
+    "state_revision": 50,
+    "workflow_revision": 85,
+    "state_sha256": "72a41cfa2cc107d0b2b2ba2514a5d0107f070b27e0972a11a002cbf3b75f8be8",
+    "workflow_sha256": "20ae0c2e640c675513a1483752eeaa1852200dd804e07b11fcfefd8bdf873c5a",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 17,
+    "adopted_chapters": 18,
     "target_han": 900000,
-    "actual_han": 142307,
+    "actual_han": 150507,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 15,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 17,
+    "frozen_chapters": 18,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 18,
-    "detail": "第十八章《没有火的廿一》完整初稿8211汉字已登记，已实际写到廿二清早桑见石仍在；正在核对冷修范围、两岸知情、工钱与生计进展。",
-    "next_action": "完成八项证据审核、近三章比较和未来三章衔接后采用冻结并导出TXT。",
-    "updated_at": "2026-10-23T16:13:28+00:00"
+    "detail": "第十八章《没有火的廿一》8200汉字一轮局修后八检查通过并采用冻结，累计18章150507汉字；正在保存正文记录、V12和TXT。",
+    "next_action": "同步并回读正文记录，交付第十八章TXT后等待第十九章。",
+    "updated_at": "2026-10-23T16:25:17+00:00"
   },
   "chapters": [
     {
@@ -244,6 +244,18 @@
       "han_count": 8503,
       "text_path": "book/chapters/CH017_c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c.txt",
       "sha256": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 18,
+      "title": "没有火的廿一",
+      "stage": "S02",
+      "han_count": 8200,
+      "text_path": "book/chapters/CH018_60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2.txt",
+      "sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1211,12 +1223,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T10:25:39+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第十四章《那一班工饭》8246汉字已完成审核、采用冻结并同步回读；TXT已保存，累计14章116796汉字。"
-    },
-    {
       "at": "2026-10-23T10:47:25+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1299,6 +1305,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第十八章《没有火的廿一》完整初稿8211汉字已登记，已实际写到廿二清早桑见石仍在；正在核对冷修范围、两岸知情、工钱与生计进展。"
+    },
+    {
+      "at": "2026-10-23T16:25:17+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第十八章《没有火的廿一》8200汉字一轮局修后八检查通过并采用冻结，累计18章150507汉字；正在保存正文记录、V12和TXT。"
     }
   ]
 }
