@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T00:11:34+00:00",
+    "generated_at": "2026-10-23T01:54:55+00:00",
     "state_revision": 34,
-    "workflow_revision": 55,
+    "workflow_revision": 56,
     "state_sha256": "c9444920ca2dad10d7efe47443d39c43a1ba1b19d022387bcead4c90b779abef",
-    "workflow_sha256": "ebcc791293fe2cf3884bc5bce337d41e4f7ab37179331db0c7493d73bf566c42",
+    "workflow_sha256": "bad44a169efd712e727f31fb83eeaea0916d603f3b3dcc5b817df4f663d61389",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 11,
-    "detail": "V4.2升级完成：第一章开篇优化为8551汉字，2—10章正文不变并顺序核对；现10章83492汉字，十章正文与事实记录已冻结。15项开放承诺已设期限，首十章当前版本全文回看通过。平台发布回执未登记，本次未生成第十一章。",
-    "next_action": "作者下次授权时按每日一章指令创作CH011《旧单之外的人》：实际报平安、推进活证人与图源；采用前release-check，保持15项承诺期限与旧事实。",
-    "updated_at": "2026-10-23T00:11:34+00:00"
+    "detail": "作者已授权继续章节；读取最近三章全文、当前路线与承诺，创作CH011《旧单之外的人》。",
+    "next_action": "完成本章、集中审核、release-check，采用冻结后交付TXT。",
+    "updated_at": "2026-10-23T01:54:55+00:00"
   },
   "chapters": [
     {
@@ -1127,12 +1127,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T18:48:29+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第八章《他们的昨天》完整初稿已登记，正在全文检查旧料来源及交存代价、初九通话的知情和时限、F侧路验走及人器转运；正式采用仍7章。"
-    },
-    {
       "at": "2026-10-22T18:58:06+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1215,6 +1209,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "V4.2升级完成：第一章开篇优化为8551汉字，2—10章正文不变并顺序核对；现10章83492汉字，十章正文与事实记录已冻结。15项开放承诺已设期限，首十章当前版本全文回看通过。平台发布回执未登记，本次未生成第十一章。"
+    },
+    {
+      "at": "2026-10-23T01:54:55+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "作者已授权继续章节；读取最近三章全文、当前路线与承诺，创作CH011《旧单之外的人》。"
     }
   ]
 }
