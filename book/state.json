@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 54,
+  "revision": 56,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -200,6 +200,15 @@
       "record_path": "records/CH020_23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049.json",
       "record_sha256": "23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049",
       "han_count": 8542
+    },
+    "21": {
+      "title": "活人的账",
+      "stage": "S03",
+      "text_path": "chapters/CH021_d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652.txt",
+      "text_sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
+      "record_path": "records/CH021_8be28993c7ab05cc2e74dd76f1481e69e45a5bcab034d1ad43539d8aabeebf89.json",
+      "record_sha256": "8be28993c7ab05cc2e74dd76f1481e69e45a5bcab034d1ad43539d8aabeebf89",
+      "han_count": 8273
     }
   },
   "checkpoints": [
@@ -1111,9 +1120,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f.md",
-      "sha256": "73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f",
-      "reason": "CH020生计阶段实得/N02有限固定声像验证且公共现场真实曝光，11—20采用前阶段全文回看完成；仅调整未来21—23旧损履约、公开端合作与有成本炼息成长，五期限不移。"
+      "path": "inputs/roadmap_de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019.md",
+      "sha256": "de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019",
+      "reason": "CH021本人24核问/实付49及实工续排已兑现旧损阶段、炼息三回与F两布失败有实际成本；仅滚动22—24筛片试做/局部供水结果与有成本成长，四原开放期限不移。"
     }
   },
   "input_history": [
@@ -1206,6 +1215,12 @@
       "path": "inputs/roadmap_73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f.md",
       "sha256": "73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f",
       "reason": "CH020生计阶段实得/N02有限固定声像验证且公共现场真实曝光，11—20采用前阶段全文回看完成；仅调整未来21—23旧损履约、公开端合作与有成本炼息成长，五期限不移。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019.md",
+      "sha256": "de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019",
+      "reason": "CH021本人24核问/实付49及实工续排已兑现旧损阶段、炼息三回与F两布失败有实际成本；仅滚动22—24筛片试做/局部供水结果与有成本成长，四原开放期限不移。"
     }
   ],
   "tasks": {
@@ -1653,17 +1668,22 @@
       "task_id": "f840b964-5c03-4e14-9cec-34ebd051da7d",
       "chapter": 21,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "aa38e8730f4f042ab19afd0075d8eabe1fd5f2b17335d1689b821a660484a5f0",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
+          "reason": "集中全文检查：23晚N02只实见余窗，改一刻后为报刻以后；24晨明确昨夜请求及双碗原位；去除九回账目十四个钱字误指，分清旧损累计/私用余额，简化算工旁白；明确现筛为陶板，收尾闻回隔院而样记留曹，不让B碗无动作换到曹房。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "aa38e8730f4f042ab19afd0075d8eabe1fd5f2b17335d1689b821a660484a5f0",
-      "candidate_path": "candidates/CH021_aa38e8730f4f042ab19afd0075d8eabe1fd5f2b17335d1689b821a660484a5f0.txt"
+      "candidate_sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
+      "candidate_path": "candidates/CH021_d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652.txt"
     }
   },
   "completion": null,
@@ -1750,6 +1770,10 @@
       "20": {
         "text_sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
         "record_sha256": "23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049"
+      },
+      "21": {
+        "text_sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
+        "record_sha256": "8be28993c7ab05cc2e74dd76f1481e69e45a5bcab034d1ad43539d8aabeebf89"
       }
     },
     "published": {},
@@ -1802,6 +1826,11 @@
       "20": {
         "path": "releases/CH020_8a290ff8a038f9fbf303ff732dfda3754560ce9b1a808ab40fab0da43a2face7.json",
         "sha256": "8a290ff8a038f9fbf303ff732dfda3754560ce9b1a808ab40fab0da43a2face7",
+        "used": true
+      },
+      "21": {
+        "path": "releases/CH021_5fcd659621c38092aef3313a8f5bc449320cd2462e74923fe1fd56b19fbfc69a.json",
+        "sha256": "5fcd659621c38092aef3313a8f5bc449320cd2462e74923fe1fd56b19fbfc69a",
         "used": true
       }
     },
@@ -1876,7 +1905,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 20
+        "last_reviewed_chapter": 21
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1892,7 +1921,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 20
+        "last_reviewed_chapter": 21
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1908,7 +1937,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 20
+        "last_reviewed_chapter": 21
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1924,7 +1953,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 20
+        "last_reviewed_chapter": 21
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -2191,11 +2220,23 @@
               "quote": "廿四下工后，我把实际问到的带到这里，你看过再往下合。"
             },
             "chapter": 16
+          },
+          {
+            "id": "Q-Xu-loss",
+            "action": "complete",
+            "deadline_chapter": 22,
+            "reason": "16新增的24本人核问及阶段承担在21真履：严桑本人/冯原册到，9回14有限与前段缺证自述共存；新48+1实际拿/不总清，五日14实核与续排/新架4成交，非把全旧伤结清或新薪抵旧赔。",
+            "evidence": {
+              "chapter": 21,
+              "sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
+              "quote": "“但你们这回来了，也拿了。我认这一回。”"
+            },
+            "chapter": 21
           }
         ],
         "deadline_chapter": 22,
-        "status": "open",
-        "last_reviewed_chapter": 20
+        "status": "closed",
+        "last_reviewed_chapter": 21
       }
     },
     "incidents": {},

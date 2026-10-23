@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T19:25:13+00:00",
-    "state_revision": 54,
-    "workflow_revision": 96,
-    "state_sha256": "c66ba0e8060bf3a932793f0529bf9f75de745f6fbaab4412311b6f7dcfafdb70",
-    "workflow_sha256": "4cc6fbadcdc172663db117a61259717a4b179c87b905f04e7716baa9f5ed50a7",
+    "generated_at": "2026-10-23T19:36:55+00:00",
+    "state_revision": 56,
+    "workflow_revision": 97,
+    "state_sha256": "c7d1ed4cba3749a0132259ddc0d2394ae28c3e6ea847f8f81b4a45fe24983409",
+    "workflow_sha256": "0fdaaf144ed8d88037a2faea02fb55c64528d3061345870a647e9798ada2ba34",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 20,
+    "adopted_chapters": 21,
     "target_han": 900000,
-    "actual_han": 167280,
+    "actual_han": 175553,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 20,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 20,
+    "frozen_chapters": 21,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 21,
-    "detail": "第二十一章《活人的账》完整候选已登记；本章实际兑现24本人赴约/分段旧账核认/新先付49与短带续工，开始集中八项检查。",
-    "next_action": "全文复读，核18—20逐章差异、木场证据边界/五日实收14/新先付48+1、炼息炭耗/新筛样双试与双方知情；同任务最多3修，审核通过后采用。",
-    "updated_at": "2026-10-23T19:25:13+00:00"
+    "detail": "第二十一章《活人的账》8273汉字已通过八项集中检查并采用冻结，49事实/同任务1修；累计21章175553，前20章和40raw SHA不变，Q-Xu-loss阶段已兑现，正在同步正文与TXT。",
+    "next_action": "同批写回当前正文记录/release/仅未来V15/集中检查/接管/流程索引，逐文件回读核验并保存TXT；完成后WAITING_NEXT停在22之前。",
+    "updated_at": "2026-10-23T19:36:55+00:00"
   },
   "chapters": [
     {
@@ -280,6 +280,18 @@
       "han_count": 8542,
       "text_path": "book/chapters/CH020_73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8.txt",
       "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 21,
+      "title": "活人的账",
+      "stage": "S03",
+      "han_count": 8273,
+      "text_path": "book/chapters/CH021_d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652.txt",
+      "sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1247,12 +1259,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T15:12:28+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第十七章《火收以后》8503汉字已定稿，累计17章142307汉字；正文、章后记录、八检查、未来V11及TXT已保存并回读核验。"
-    },
-    {
       "at": "2026-10-23T15:59:03+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1335,6 +1341,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第二十一章《活人的账》完整候选已登记；本章实际兑现24本人赴约/分段旧账核认/新先付49与短带续工，开始集中八项检查。"
+    },
+    {
+      "at": "2026-10-23T19:36:55+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第二十一章《活人的账》8273汉字已通过八项集中检查并采用冻结，49事实/同任务1修；累计21章175553，前20章和40raw SHA不变，Q-Xu-loss阶段已兑现，正在同步正文与TXT。"
     }
   ]
 }
