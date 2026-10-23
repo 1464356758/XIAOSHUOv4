@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T02:31:25+00:00",
+    "generated_at": "2026-10-23T03:21:39+00:00",
     "state_revision": 36,
-    "workflow_revision": 58,
+    "workflow_revision": 59,
     "state_sha256": "951faf852a00a0ec733864648fc449bd8beb47724d330f0791baad4636fb5b70",
-    "workflow_sha256": "eb90cfeb9fdc544030aa17d41760a68d2f241830448c218ee10e5e02bd7781bc",
+    "workflow_sha256": "0d3b794920ca707f6e5c02fd3857399b04406e4bfb22f3a3b8e1d978a16d18f0",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 12,
-    "detail": "CH011《旧单之外的人》8479汉字，2轮局部修订后发布前检查通过并定稿冻结。当前11章91971汉字，路线V5；本次未生成第十二章。",
-    "next_action": "作者下次授权后创作CH012：晨窗互告、本端薄样试验与桑取原条；外验/传物须追加耗样授权及真实计重/器用条件。保持碗13章到期、人手15、起热17、救师18。",
-    "updated_at": "2026-10-23T02:31:25+00:00"
+    "detail": "正在创作第十二章《第二道细裂》：已核对近三章全文、五章推进与V5路线，推进初十一试料和许茂原工条核对。",
+    "next_action": "完成8000—10000汉字完整候选，集中检查后登记采用。",
+    "updated_at": "2026-10-23T03:21:39+00:00"
   },
   "chapters": [
     {
@@ -1139,12 +1139,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T19:17:06+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者授权继续。已核对8章67179汉字、CH008全文及51条记录，当前无待重核；正在创作第九章《第一道出口》，完成真实撤地面和本端旧料来源推进。"
-    },
-    {
       "at": "2026-10-22T19:28:04+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1227,6 +1221,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "CH011《旧单之外的人》8479汉字，2轮局部修订后发布前检查通过并定稿冻结。当前11章91971汉字，路线V5；本次未生成第十二章。"
+    },
+    {
+      "at": "2026-10-23T03:21:39+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "正在创作第十二章《第二道细裂》：已核对近三章全文、五章推进与V5路线，推进初十一试料和许茂原工条核对。"
     }
   ]
 }
