@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T03:48:57+00:00",
+    "generated_at": "2026-10-23T03:51:12+00:00",
     "state_revision": 38,
-    "workflow_revision": 61,
+    "workflow_revision": 62,
     "state_sha256": "2b58371ea1dc8b09bfb3a237fdd6f236c515baa469a5ab961964d11eb65825ab",
-    "workflow_sha256": "4ca528fabc0fe15f8314cd20afc0a9da858c126434a94ce95f25a4704aee75ba",
+    "workflow_sha256": "69fec653ffc60037c8ff15f4f98866c4dae0e165ff22b3531829b2e1abe2692d",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "SAVING",
-    "label": "保存进度",
-    "chapter": 12,
-    "detail": "第十二章8241汉字已审定冻结，前十一章不变；路线V6、章后事实与TXT已备妥，正在保存并回读。",
-    "next_action": "核对远程采用正文、记录、任务与索引，完成TXT交付后等待第十三章。",
-    "updated_at": "2026-10-23T03:48:56+00:00"
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
+    "chapter": 13,
+    "detail": "第十二章《第二道细裂》8241汉字已定稿冻结、写回并回读；TXT已交付准备，累计12章100212汉字。",
+    "next_action": "等待作者下一章授权，继续第十三章《谁先摸过炉》；先读CH010—012全文与路线V6，处理初十二来源核对和碗代存到期。",
+    "updated_at": "2026-10-23T03:51:11+00:00"
   },
   "chapters": [
     {
@@ -1151,12 +1151,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T19:38:49+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第九章《第一道出口》已完成采用8183汉字，1轮局部修订；共9章75362汉字。F已真正出陵返城住脚店、等午后约见，A已查到旧料簿并挂牌；第十章未生成。"
-    },
-    {
       "at": "2026-10-22T19:52:42+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1239,6 +1233,12 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第十二章8241汉字已审定冻结，前十一章不变；路线V6、章后事实与TXT已备妥，正在保存并回读。"
+    },
+    {
+      "at": "2026-10-23T03:51:11+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第十二章《第二道细裂》8241汉字已定稿冻结、写回并回读；TXT已交付准备，累计12章100212汉字。"
     }
   ]
 }

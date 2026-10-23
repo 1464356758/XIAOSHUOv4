@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 61,
+  "revision": 62,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "SAVING",
+  "phase": "WAITING_NEXT",
   "platform": "qimao",
   "selected_topic": {
     "id": "T09",
@@ -29,7 +29,7 @@
   },
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
   "topics_path": "research/topics_1c6457bad3f3d87203063a8befb9736bd073811380aa883f19c840a68f653340.json",
-  "chapter": 12,
+  "chapter": 13,
   "history": [
     {
       "at": "2026-10-22T01:32:46+00:00",
@@ -402,9 +402,15 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第十二章8241汉字已审定冻结，前十一章不变；路线V6、章后事实与TXT已备妥，正在保存并回读。"
+    },
+    {
+      "at": "2026-10-23T03:51:11+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第十二章《第二道细裂》8241汉字已定稿冻结、写回并回读；TXT已交付准备，累计12章100212汉字。"
     }
   ],
-  "detail": "第十二章8241汉字已审定冻结，前十一章不变；路线V6、章后事实与TXT已备妥，正在保存并回读。",
-  "next_action": "核对远程采用正文、记录、任务与索引，完成TXT交付后等待第十三章。",
-  "updated_at": "2026-10-23T03:48:56+00:00"
+  "detail": "第十二章《第二道细裂》8241汉字已定稿冻结、写回并回读；TXT已交付准备，累计12章100212汉字。",
+  "next_action": "等待作者下一章授权，继续第十三章《谁先摸过炉》；先读CH010—012全文与路线V6，处理初十二来源核对和碗代存到期。",
+  "updated_at": "2026-10-23T03:51:11+00:00"
 }
