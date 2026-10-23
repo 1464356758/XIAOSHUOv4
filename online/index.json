@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T04:17:50+00:00",
-    "state_revision": 38,
-    "workflow_revision": 64,
-    "state_sha256": "f1bddc07f6990846ba6601a044e009392ac9f436e51cb042d9ceb319db1b1aad",
-    "workflow_sha256": "52a76224a14ffb5db21409ef0e2bd41e4a3fb75f216fff564185a2dfaee783e9",
+    "generated_at": "2026-10-23T04:31:30+00:00",
+    "state_revision": 40,
+    "workflow_revision": 65,
+    "state_sha256": "76bc068884c6a22707bfe0bd4e273ac2fae5c793c0408d44b18a1ebf41f4c009",
+    "workflow_sha256": "955e9a0df6c06bb147f1bf5198c56565150c1e972e883a4de0a5de9646610a4c",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 12,
+    "adopted_chapters": 13,
     "target_han": 900000,
-    "actual_han": 100212,
+    "actual_han": 108550,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 10,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 12,
+    "frozen_chapters": 13,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 13,
-    "detail": "第十三章完整初稿已登记，正在集中检查来源结论、剖查授权、旧碗折价与两岸晨后知情。",
-    "next_action": "完成章后事实及八项检查，必要时在同一任务局部修复后采用。",
-    "updated_at": "2026-10-23T04:17:50+00:00"
+    "detail": "第十三章8338汉字已审核定稿冻结，前十二章不变；两到期子项已兑现，路线V7/接管/导出已备妥。",
+    "next_action": "写回并回读正文、记录、任务与目录，交付TXT后等待第十四章。",
+    "updated_at": "2026-10-23T04:31:30+00:00"
   },
   "chapters": [
     {
@@ -184,6 +184,18 @@
       "han_count": 8241,
       "text_path": "book/chapters/CH012_d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9.txt",
       "sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 13,
+      "title": "谁先摸过炉",
+      "stage": "S02",
+      "han_count": 8338,
+      "text_path": "book/chapters/CH013_4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c.txt",
+      "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1151,12 +1163,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T20:08:32+00:00",
-      "phase": "CHECKPOINT",
-      "label": "阶段回看",
-      "detail": "第十章《不能白收的东西》已检查采用8137汉字、1轮局部修订；正式稿10章83499汉字。正在累计真实读取CH001—010全文及记录执行S01阶段回看，目前未标完成，不转S02或开十一章。"
-    },
-    {
       "at": "2026-10-22T20:19:05+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1239,6 +1245,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第十三章完整初稿已登记，正在集中检查来源结论、剖查授权、旧碗折价与两岸晨后知情。"
+    },
+    {
+      "at": "2026-10-23T04:31:30+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第十三章8338汉字已审核定稿冻结，前十二章不变；两到期子项已兑现，路线V7/接管/导出已备妥。"
     }
   ]
 }

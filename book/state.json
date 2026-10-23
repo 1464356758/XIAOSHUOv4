@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 38,
+  "revision": 40,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -128,6 +128,15 @@
       "record_path": "records/CH012_47401360f9e425e50b3c4309ca29a9c5921060db4b29e1ea098ba3fdb058fdd4.json",
       "record_sha256": "47401360f9e425e50b3c4309ca29a9c5921060db4b29e1ea098ba3fdb058fdd4",
       "han_count": 8241
+    },
+    "13": {
+      "title": "谁先摸过炉",
+      "stage": "S02",
+      "text_path": "chapters/CH013_4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c.txt",
+      "text_sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+      "record_path": "records/CH013_9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730.json",
+      "record_sha256": "9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730",
+      "han_count": 8338
     }
   },
   "checkpoints": [
@@ -580,9 +589,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_9215d7f8c3c76956187796469629322b8077e9b19f04dd90c361fa69afa7c215.md",
-      "sha256": "9215d7f8c3c76956187796469629322b8077e9b19f04dd90c361fa69afa7c215",
-      "reason": "CH012冻结后仅调未写路线：两薄样均裂只疑锻合、新肩追加复看真回棚；不硬送X02。原口粮条许自持与今日抄补严收分层，13章来源/碗到期限不移，接住乔初十二对数与梁核信使，15章具名外应和全文回看。"
+      "path": "inputs/roadmap_d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f.md",
+      "sha256": "d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f",
+      "reason": "CH013采用后仅调整未来：来源与三日代存已付并闭；新肩已剖毁待回炉、桑留协修停本次验工份。F碗归闻曹且移闻房、信已发未达，乔旧批损公耗有阶段结果；14转真实承担与重做/生计，15真人外应和全文回看，所有未到期限不移。"
     }
   },
   "input_history": [
@@ -627,6 +636,12 @@
       "path": "inputs/roadmap_9215d7f8c3c76956187796469629322b8077e9b19f04dd90c361fa69afa7c215.md",
       "sha256": "9215d7f8c3c76956187796469629322b8077e9b19f04dd90c361fa69afa7c215",
       "reason": "CH012冻结后仅调未写路线：两薄样均裂只疑锻合、新肩追加复看真回棚；不硬送X02。原口粮条许自持与今日抄补严收分层，13章来源/碗到期限不移，接住乔初十二对数与梁核信使，15章具名外应和全文回看。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f.md",
+      "sha256": "d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f",
+      "reason": "CH013采用后仅调整未来：来源与三日代存已付并闭；新肩已剖毁待回炉、桑留协修停本次验工份。F碗归闻曹且移闻房、信已发未达，乔旧批损公耗有阶段结果；14转真实承担与重做/生计，15真人外应和全文回看，所有未到期限不移。"
     }
   ],
   "tasks": {
@@ -891,17 +906,22 @@
       "task_id": "1743329b-020d-48e8-9065-7fac646dd8cd",
       "chapter": 13,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "9f9d21f11bb779f82762dc606ee1d60070c0b48bd9ef2eaa0be153bb5d459e5e",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+          "reason": "集中核查补明辰初平放清水及双方接触，纠正梁尚未听闻工食实付便先知的口述顺序；消除三份原件的数量歧义、明确冷检记纸和先前只抄外量项的证据范围。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "9f9d21f11bb779f82762dc606ee1d60070c0b48bd9ef2eaa0be153bb5d459e5e",
-      "candidate_path": "candidates/CH013_9f9d21f11bb779f82762dc606ee1d60070c0b48bd9ef2eaa0be153bb5d459e5e.txt"
+      "candidate_sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+      "candidate_path": "candidates/CH013_4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c.txt"
     }
   },
   "completion": null,
@@ -956,6 +976,10 @@
       "12": {
         "text_sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
         "record_sha256": "47401360f9e425e50b3c4309ca29a9c5921060db4b29e1ea098ba3fdb058fdd4"
+      },
+      "13": {
+        "text_sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+        "record_sha256": "9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730"
       }
     },
     "published": {},
@@ -968,6 +992,11 @@
       "12": {
         "path": "releases/CH012_02cfe9081c9ab910a22065a02b83ef1df8e09aeaef58b50567520da11eff4609.json",
         "sha256": "02cfe9081c9ab910a22065a02b83ef1df8e09aeaef58b50567520da11eff4609",
+        "used": true
+      },
+      "13": {
+        "path": "releases/CH013_7bcfe7ca7e23a40a2f682bd0f19fb2518b0e5e75d8e3a8383354b10c80210fa0.json",
+        "sha256": "7bcfe7ca7e23a40a2f682bd0f19fb2518b0e5e75d8e3a8383354b10c80210fa0",
         "used": true
       }
     },
@@ -1014,7 +1043,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q03": {
         "deadline_chapter": 60,
@@ -1030,7 +1059,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1046,7 +1075,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1062,7 +1091,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1078,7 +1107,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -1094,7 +1123,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q04": {
         "deadline_chapter": 18,
@@ -1110,7 +1139,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q04-cold-inspection": {
         "deadline_chapter": 15,
@@ -1126,7 +1155,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q04-heat-hold": {
         "deadline_chapter": 17,
@@ -1142,11 +1171,11 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q04-backstop-source": {
         "deadline_chapter": 13,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q04-backstop-source",
@@ -1156,9 +1185,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q04-backstop-source",
+            "action": "complete",
+            "deadline_chapter": 13,
+            "reason": "按原期限本日见原退项/原验工半联及背栏/八月原签和领用小条，阶段来源和不同年代责任明确；未声称全部赔责/死因结清，完整旧责继续Q04。",
+            "evidence": {
+              "chapter": 13,
+              "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+              "quote": "北口退项、七支旧半联和八月原小修签分别归夹，不能拿一份新誊好的汇单把原物换走。"
+            },
+            "chapter": 13
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q07-map-source": {
         "deadline_chapter": 12,
@@ -1202,7 +1243,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
@@ -1234,7 +1275,7 @@
       },
       "Q07-bowl-custody": {
         "deadline_chapter": 13,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q07-bowl-custody",
@@ -1244,9 +1285,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q07-bowl-custody",
+            "action": "complete",
+            "deadline_chapter": 13,
+            "reason": "到期面验实付、原条正副注结清，归闻曹共有且实际带回转闻房，期限处理结束不无限续代存；以后共有关系由Q09/控制Q07推进。",
+            "evidence": {
+              "chapter": 13,
+              "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+              "quote": "新条写旧碗一件，照原号点缺口、釉点、底纹，今日折价实付，归曹砚生与闻溪共有。"
+            },
+            "chapter": 13
           }
         ],
-        "last_reviewed_chapter": 12
+        "last_reviewed_chapter": 13
       }
     },
     "incidents": {},
