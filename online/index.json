@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T15:59:04+00:00",
+    "generated_at": "2026-10-23T16:13:29+00:00",
     "state_revision": 48,
-    "workflow_revision": 83,
-    "state_sha256": "bf8515917f265408bc5cc526129decbd61f79adb205a3cecf35232ce0ee83da0",
-    "workflow_sha256": "3c9d474386db373a89b462ec40f888eddf6b2c5cb44106f76cd0b1decfaa0a4c",
+    "workflow_revision": 84,
+    "state_sha256": "0ae9b7e9e2975b4ed9bdff7d4ae782104f664b519f70b30c7aa5a629ff132799",
+    "workflow_sha256": "5db44d077a4560fed43c402e329e59240543f698db68c62ff005b04ea703edac",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 18,
-    "detail": "已核对main十七章冻结进度；继续第十八章《没有火的廿一》，正在核读近三章与V11，实际走过廿一原死日。",
-    "next_action": "完成一整章8000—10000汉字，八项检查后定稿保存并交付TXT。",
-    "updated_at": "2026-10-23T15:59:03+00:00"
+    "detail": "第十八章《没有火的廿一》完整初稿8211汉字已登记，已实际写到廿二清早桑见石仍在；正在核对冷修范围、两岸知情、工钱与生计进展。",
+    "next_action": "完成八项证据审核、近三章比较和未来三章衔接后采用冻结并导出TXT。",
+    "updated_at": "2026-10-23T16:13:28+00:00"
   },
   "chapters": [
     {
@@ -1211,12 +1211,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T10:23:54+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第十四章《那一班工饭》8246汉字已审核采用冻结，45条章后记忆，累计14章116796汉字；一轮局修，正在保存仓库与TXT。"
-    },
-    {
       "at": "2026-10-23T10:25:39+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1299,6 +1293,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "已核对main十七章冻结进度；继续第十八章《没有火的廿一》，正在核读近三章与V11，实际走过廿一原死日。"
+    },
+    {
+      "at": "2026-10-23T16:13:28+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第十八章《没有火的廿一》完整初稿8211汉字已登记，已实际写到廿二清早桑见石仍在；正在核对冷修范围、两岸知情、工钱与生计进展。"
     }
   ]
 }
