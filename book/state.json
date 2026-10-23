@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 40,
+  "revision": 42,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -137,6 +137,15 @@
       "record_path": "records/CH013_9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730.json",
       "record_sha256": "9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730",
       "han_count": 8338
+    },
+    "14": {
+      "title": "那一班工饭",
+      "stage": "S02",
+      "text_path": "chapters/CH014_7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c.txt",
+      "text_sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+      "record_path": "records/CH014_e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd.json",
+      "record_sha256": "e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd",
+      "han_count": 8246
     }
   },
   "checkpoints": [
@@ -589,9 +598,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f.md",
-      "sha256": "d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f",
-      "reason": "CH013采用后仅调整未来：来源与三日代存已付并闭；新肩已剖毁待回炉、桑留协修停本次验工份。F碗归闻曹且移闻房、信已发未达，乔旧批损公耗有阶段结果；14转真实承担与重做/生计，15真人外应和全文回看，所有未到期限不移。"
+      "path": "inputs/roadmap_35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4.md",
+      "sha256": "35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4",
+      "reason": "CH014实付旧伤工36不结清、直条挪料实锻粗坯且停、岑新私炭与F社外新工已成；只调整15真人岗位训练与采用前11—15全文回看、乔新窑/车和十七会谈，17热/18存活/19双岸对照及所有期限不移。"
     }
   },
   "input_history": [
@@ -642,6 +651,12 @@
       "path": "inputs/roadmap_d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f.md",
       "sha256": "d422eba74deb0da652cf3f0f0aba92f5e156150368dee255bb1fbbdc9408ed0f",
       "reason": "CH013采用后仅调整未来：来源与三日代存已付并闭；新肩已剖毁待回炉、桑留协修停本次验工份。F碗归闻曹且移闻房、信已发未达，乔旧批损公耗有阶段结果；14转真实承担与重做/生计，15真人外应和全文回看，所有未到期限不移。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4.md",
+      "sha256": "35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4",
+      "reason": "CH014实付旧伤工36不结清、直条挪料实锻粗坯且停、岑新私炭与F社外新工已成；只调整15真人岗位训练与采用前11—15全文回看、乔新窑/车和十七会谈，17热/18存活/19双岸对照及所有期限不移。"
     }
   ],
   "tasks": {
@@ -927,17 +942,22 @@
       "task_id": "1b79df42-6502-4c53-9643-41d3c2ad69cc",
       "chapter": 14,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "f730895c8912c8b313e4515bf709e2a4ca28a7b6294370ef17741e758b6d8eec",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+          "reason": "集中检查修正五项动作与接触：晨窗A端触沿、外出落锁、实货卸空车、未持钳不隔空感热及轻炭改怀抱；剧情和已冻来源不改。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "f730895c8912c8b313e4515bf709e2a4ca28a7b6294370ef17741e758b6d8eec",
-      "candidate_path": "candidates/CH014_f730895c8912c8b313e4515bf709e2a4ca28a7b6294370ef17741e758b6d8eec.txt"
+      "candidate_sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+      "candidate_path": "candidates/CH014_7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c.txt"
     }
   },
   "completion": null,
@@ -996,6 +1016,10 @@
       "13": {
         "text_sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
         "record_sha256": "9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730"
+      },
+      "14": {
+        "text_sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+        "record_sha256": "e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd"
       }
     },
     "published": {},
@@ -1013,6 +1037,11 @@
       "13": {
         "path": "releases/CH013_7bcfe7ca7e23a40a2f682bd0f19fb2518b0e5e75d8e3a8383354b10c80210fa0.json",
         "sha256": "7bcfe7ca7e23a40a2f682bd0f19fb2518b0e5e75d8e3a8383354b10c80210fa0",
+        "used": true
+      },
+      "14": {
+        "path": "releases/CH014_0e2724dc2698a7c4e8fc59dbd5b72bae2c93999f7b09732f9c7e9fe88f477b50.json",
+        "sha256": "0e2724dc2698a7c4e8fc59dbd5b72bae2c93999f7b09732f9c7e9fe88f477b50",
         "used": true
       }
     },
@@ -1059,7 +1088,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q03": {
         "deadline_chapter": 60,
@@ -1075,7 +1104,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1091,7 +1120,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1107,7 +1136,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1123,7 +1152,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -1139,7 +1168,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q04": {
         "deadline_chapter": 18,
@@ -1155,7 +1184,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q04-cold-inspection": {
         "deadline_chapter": 15,
@@ -1171,7 +1200,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q04-heat-hold": {
         "deadline_chapter": 17,
@@ -1187,7 +1216,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q04-backstop-source": {
         "deadline_chapter": 13,
@@ -1259,7 +1288,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 13
+        "last_reviewed_chapter": 14
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
