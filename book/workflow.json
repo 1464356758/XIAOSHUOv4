@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 82,
+  "revision": 83,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "WAITING_NEXT",
+  "phase": "WRITING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T09",
@@ -29,7 +29,7 @@
   },
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
   "topics_path": "research/topics_1c6457bad3f3d87203063a8befb9736bd073811380aa883f19c840a68f653340.json",
-  "chapter": 17,
+  "chapter": 18,
   "history": [
     {
       "at": "2026-10-22T01:32:46+00:00",
@@ -528,9 +528,15 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十七章《火收以后》8503汉字已定稿，累计17章142307汉字；正文、章后记录、八检查、未来V11及TXT已保存并回读核验。"
+    },
+    {
+      "at": "2026-10-23T15:59:03+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已核对main十七章冻结进度；继续第十八章《没有火的廿一》，正在核读近三章与V11，实际走过廿一原死日。"
     }
   ],
-  "detail": "第十七章《火收以后》8503汉字已定稿，累计17章142307汉字；正文、章后记录、八检查、未来V11及TXT已保存并回读核验。",
-  "next_action": "等待作者继续第十八章；届时先读15—17全文与现行V11，真实走过廿一整日，不重演训练或以别人替死。",
-  "updated_at": "2026-10-23T15:12:28+00:00"
+  "detail": "已核对main十七章冻结进度；继续第十八章《没有火的廿一》，正在核读近三章与V11，实际走过廿一原死日。",
+  "next_action": "完成一整章8000—10000汉字，八项检查后定稿保存并交付TXT。",
+  "updated_at": "2026-10-23T15:59:03+00:00"
 }
