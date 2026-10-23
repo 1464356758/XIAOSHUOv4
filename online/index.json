@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T11:10:37+00:00",
-    "state_revision": 42,
-    "workflow_revision": 72,
-    "state_sha256": "5d6ae9398e738ed38df0d979e1e30523c41d2a62dd46807ff0619962d935ecc3",
-    "workflow_sha256": "afdce421e023a57195ac1797c782fbe927dd86e9416b10c4834c2bbd133e1316",
+    "generated_at": "2026-10-23T11:32:46+00:00",
+    "state_revision": 44,
+    "workflow_revision": 73,
+    "state_sha256": "dfe5ba1d14249b1dbe11b8aae1cebae724f93c98be685b82d8261771b9de5319",
+    "workflow_sha256": "6efbd3fdb3502ca7e520019c80bf2a7138222a5dee9139f5ca5d980c01f756be",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 14,
+    "adopted_chapters": 15,
     "target_han": 900000,
-    "actual_han": 116796,
+    "actual_han": 125324,
     "completed": false,
     "needs_revalidation": [],
-    "reviewed_until": 10,
+    "reviewed_until": 15,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 14,
+    "frozen_chapters": 15,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 15,
-    "detail": "第十五章完整初稿8494汉字已登记；已实读十一至十四全文，进入集中审核及十一至十五章到期全文回看。",
-    "next_action": "补齐当前候选全文/记录覆盖，集中修复实证问题；完成五章回看和release-check后采用，最多三轮局修不重开任务。",
-    "updated_at": "2026-10-23T11:10:36+00:00"
+    "detail": "第十五章《谁站在闸外》8528汉字已审核采用冻结，11—15全文回看在采用前完成；累计15章125324汉字，正在保存仓库与TXT。",
+    "next_action": "回读本章正文、记录、回看与workflow/index和导出；完成下载文件保存后等作者继续第十六章《点火以前》。",
+    "updated_at": "2026-10-23T11:32:46+00:00"
   },
   "chapters": [
     {
@@ -208,6 +208,18 @@
       "han_count": 8246,
       "text_path": "book/chapters/CH014_7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c.txt",
       "sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 15,
+      "title": "谁站在闸外",
+      "stage": "S02",
+      "han_count": 8528,
+      "text_path": "book/chapters/CH015_e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c.txt",
+      "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1175,12 +1187,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T02:31:25+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "CH011《旧单之外的人》8479汉字，2轮局部修订后发布前检查通过并定稿冻结。当前11章91971汉字，路线V5；本次未生成第十二章。"
-    },
-    {
       "at": "2026-10-23T03:21:39+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1263,6 +1269,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第十五章完整初稿8494汉字已登记；已实读十一至十四全文，进入集中审核及十一至十五章到期全文回看。"
+    },
+    {
+      "at": "2026-10-23T11:32:46+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第十五章《谁站在闸外》8528汉字已审核采用冻结，11—15全文回看在采用前完成；累计15章125324汉字，正在保存仓库与TXT。"
     }
   ]
 }

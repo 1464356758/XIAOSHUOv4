@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 42,
+  "revision": 44,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -146,6 +146,15 @@
       "record_path": "records/CH014_e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd.json",
       "record_sha256": "e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd",
       "han_count": 8246
+    },
+    "15": {
+      "title": "谁站在闸外",
+      "stage": "S02",
+      "text_path": "chapters/CH015_e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c.txt",
+      "text_sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+      "record_path": "records/CH015_541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30.json",
+      "record_sha256": "541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30",
+      "han_count": 8528
     }
   },
   "checkpoints": [
@@ -586,6 +595,122 @@
           "action": "已按CH010真实引文补payoff，非新增正文事件。"
         }
       ]
+    },
+    {
+      "kind": "window",
+      "from": 11,
+      "to": 15,
+      "base_revision": 42,
+      "canon_sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+      "read_mode": "full_text_batches",
+      "decision": "adjust_future",
+      "coverage": {
+        "11": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+        "12": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+        "13": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+        "14": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+        "15": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c"
+      },
+      "record_coverage": {
+        "11": "4208d71e55c12f65b6e3b4646687183f8337565a1c1fe11553e546c9f2b3b969",
+        "12": "47401360f9e425e50b3c4309ca29a9c5921060db4b29e1ea098ba3fdb058fdd4",
+        "13": "9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730",
+        "14": "e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd",
+        "15": "541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30"
+      },
+      "findings": [
+        {
+          "type": "payoff",
+          "finding": "十一给图源/报平安，十三给退料/半联/八月来源及代存结清，十五给真人外应训练/可到。并非一直把同一答案留到下一册。",
+          "evidence": [
+            {
+              "chapter": 11,
+              "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+              "quote": "“出来了。”闻溪说"
+            },
+            {
+              "chapter": 13,
+              "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+              "quote": "烘道先行，回验候冷。"
+            },
+            {
+              "chapter": 15,
+              "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+              "quote": "韩与顾当面各认自己的时辰"
+            }
+          ]
+        },
+        {
+          "type": "cost_preserved",
+          "finding": "十二耗私炭/两裂，十三剖毁整耳需重做与买碗动现钱，十四先付36与挪料，十五付调人/铺位/工食及梁离去。旧件不恢复、月息卷仍非还清、信发不当到。",
+          "evidence": [
+            {
+              "chapter": 12,
+              "sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+              "quote": "小灶里只余灰，没有再添炭的余地"
+            },
+            {
+              "chapter": 13,
+              "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+              "quote": "铁耳落在厚木上，沉沉一响。"
+            },
+            {
+              "chapter": 14,
+              "sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+              "quote": "他用自己的小布包收，三十六枚碰在一起"
+            },
+            {
+              "chapter": 15,
+              "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+              "quote": "人已离城，家还在前头。"
+            }
+          ]
+        },
+        {
+          "type": "watch",
+          "finding": "工艺拆分、签名与边界对话仍偏重，短语反复不等硬事实错误，但有落入熟悉的流程叙事风险。16—18必须以全件/固修、真实热反馈和廿一当日行动改变处境，不再用同款纸记/训练复述拖时长；已冻11—14不改。",
+          "evidence": [
+            {
+              "chapter": 12,
+              "sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+              "quote": "“这片裂。先认到这片。”"
+            },
+            {
+              "chapter": 14,
+              "sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+              "quote": "“今日只记粗坯。”孟泉道。"
+            },
+            {
+              "chapter": 15,
+              "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+              "quote": "今日只练报应、辨位与退人留锁"
+            }
+          ]
+        },
+        {
+          "type": "boundary",
+          "finding": "A:P-A08历史前缀有木样/凡铁两种完整字段，按完整key及来源分别解释，不合并库存；当前旧缺耳件与新直条件同理分清。该历史命名问题不以改冻结记录解决，接管继续提示。",
+          "evidence": [
+            {
+              "chapter": 13,
+              "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+              "quote": "两片昨日留样并在干布上，余条在旁"
+            },
+            {
+              "chapter": 15,
+              "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+              "quote": "旧缺耳件仍在另一侧。"
+            }
+          ]
+        }
+      ],
+      "conclusion": "实际分批完整读11、12、13、14和15初稿/局修全差异形成当前版本，核相关记录语义及原句；11/12与13记录输出截断处另补读，未把摘要当全文。无未解决硬事实/因果/角色知情阻断，本次可继续。采用前即绑定11—15准确正文/记录哈希，决定仅调未写未来，不解冻旧章。",
+      "causal_progress": "11把来路追到许的活伤/错图经手，12两薄样否定新料默认可靠，13原证补先火次序且剖耳毁成件/买碗，14旧责真先付及重做真耗/社外挣钱，15人从空栏到错听重练再站位认班、梁从托信到本人离城。前一步的结果改变下一步可做的事，未重复只取另一册或送另一宝。",
+      "repetition_comparison": "与首十章脱陵/清债/首客相比，本窗口求生转现下问责、材料与人手约束，F转权利/生计/去留。12与13的物试不是同一步，14与15的人责也有实付到岗位的差异；但多次以先界定所知再记纸的句式推进，16—18缩这类解释，给真实热态工艺/修行操作、当日风险选择与不可逆结果更多篇幅。",
+      "character_changes": "岑从许伤前不知手往哪放、初八不勾未知，到收有价冷工/保自灶日并敢喊外头没应；桑从送米自解到认原背押/自出12，再实际让韩里验而自己只递具；严丁能担料工/车脚并接受现场停。闻曹由社内点工/代存到共有碗和各自收入/分房，梁完成返乡离城的选择，乔争到公耗与本批有价翻验而经营份仍争。",
+      "promise_payoffs": "窗口实际完成原到期报平安/图源11、来源13、代存13、人手15。许先付/乔装袋/岑有钱炭是partial不改大期限。9项仍开：热17、桑18、两岸19、生计20、乔20、墓主60、控制80、九次96、独立98。后四近期限需具体结果，不通过挪章号/重命名无限等。",
+      "ending_runway": "本章8528汉字，采用后15章125324；余85章到90万需774676，均约9114，不拿同义工序补篇幅。三日跨度到初十六day13晚20时19500，次晨十七day14=20160；廿一day18仍要在CH018实际写到，热17/对照19不改。五章全文回看已在本候选前置，下一次到20/阶段收束。两岸/真实死史/一网九肋用1余8/终次三息永断及真实降载代价保持，X02无必要未强送。",
+      "next_action": "本候选release-check通过后才采用，同时保存回看。采用后路线V9只调未来16—18：件/后挡/示线和十七会谈、真实热试/实停、廿一活过；F由少一人后的自主工作/旧史查阅接主线。20前阶段回看再估剩余篇幅与阅读密度，不补同义场景凑九千。"
     }
   ],
   "needs_revalidation": [],
@@ -598,9 +723,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4.md",
-      "sha256": "35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4",
-      "reason": "CH014实付旧伤工36不结清、直条挪料实锻粗坯且停、岑新私炭与F社外新工已成；只调整15真人岗位训练与采用前11—15全文回看、乔新窑/车和十七会谈，17热/18存活/19双岸对照及所有期限不移。"
+      "path": "inputs/roadmap_6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da.md",
+      "sha256": "6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da",
+      "reason": "CH015与11—15全文回看已采用，外应15真人受训/可到已闭，乔新炭与装袋有价、梁真离城/曹单房已成；仅调未来16全件固修与十七会谈、17真实热反馈、18廿一实际存活，降低重复工序说明，其他期限不动。"
     }
   },
   "input_history": [
@@ -657,6 +782,12 @@
       "path": "inputs/roadmap_35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4.md",
       "sha256": "35f44c9342ed9ba7f69c83e70a5a54c4e2987c472771250532fe8b248963d0c4",
       "reason": "CH014实付旧伤工36不结清、直条挪料实锻粗坯且停、岑新私炭与F社外新工已成；只调整15真人岗位训练与采用前11—15全文回看、乔新窑/车和十七会谈，17热/18存活/19双岸对照及所有期限不移。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da.md",
+      "sha256": "6d7269fb2f5695f4657eed1492ba5079d52a367fe6a984bf7d93bc546944d4da",
+      "reason": "CH015与11—15全文回看已采用，外应15真人受训/可到已闭，乔新炭与装袋有价、梁真离城/曹单房已成；仅调未来16全件固修与十七会谈、17真实热反馈、18廿一实际存活，降低重复工序说明，其他期限不动。"
     }
   ],
   "tasks": {
@@ -963,17 +1094,27 @@
       "task_id": "241df01c-3711-45ae-acbb-4b3401597352",
       "chapter": 15,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 2,
       "history": [
         {
           "sha256": "ea62279a732d6c4dc90ec454a629a56a36b1752d9b3607c7df6f06610a4fc033",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "05656f293099c9b1bed23a9829c80e558dee70788009fe27702c00f26143a137",
+          "reason": "集中修复跨日与接触/知情：十三赔款买炭日期、十三散凉十四换袋到十五的炭源、韩资历来源、桑只递不代摸、岑不透看第二扣、韩站外听丁复报、接守到位轮饭、十五晨双触及末只带自抄记。",
+          "repairs": 1
+        },
+        {
+          "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+          "reason": "金额复核：两日三钱易被读成总三，与已写两日各三及两次实领六有歧义；仅改这两日的工钱，实际账不变。",
+          "repairs": 2
         }
       ],
-      "candidate_sha256": "ea62279a732d6c4dc90ec454a629a56a36b1752d9b3607c7df6f06610a4fc033",
-      "candidate_path": "candidates/CH015_ea62279a732d6c4dc90ec454a629a56a36b1752d9b3607c7df6f06610a4fc033.txt"
+      "candidate_sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+      "candidate_path": "candidates/CH015_e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c.txt"
     }
   },
   "completion": null,
@@ -1036,6 +1177,10 @@
       "14": {
         "text_sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
         "record_sha256": "e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd"
+      },
+      "15": {
+        "text_sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+        "record_sha256": "541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30"
       }
     },
     "published": {},
@@ -1058,6 +1203,11 @@
       "14": {
         "path": "releases/CH014_0e2724dc2698a7c4e8fc59dbd5b72bae2c93999f7b09732f9c7e9fe88f477b50.json",
         "sha256": "0e2724dc2698a7c4e8fc59dbd5b72bae2c93999f7b09732f9c7e9fe88f477b50",
+        "used": true
+      },
+      "15": {
+        "path": "releases/CH015_7fe243ba7b7c970728a1aba2d5173152b3957f2acd2b60f21be176cd77f66d3a.json",
+        "sha256": "7fe243ba7b7c970728a1aba2d5173152b3957f2acd2b60f21be176cd77f66d3a",
         "used": true
       }
     },
@@ -1104,7 +1254,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q03": {
         "deadline_chapter": 60,
@@ -1120,7 +1270,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1136,7 +1286,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1152,7 +1302,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1168,7 +1318,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -1184,7 +1334,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q04": {
         "deadline_chapter": 18,
@@ -1200,11 +1350,11 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q04-cold-inspection": {
         "deadline_chapter": 15,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q04-cold-inspection",
@@ -1214,9 +1364,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q04-cold-inspection",
+            "action": "complete",
+            "deadline_chapter": 15,
+            "reason": "到期以归来的既有外段应绳者顾延和轮检韩峤具名，十四未过后十六现场冷锁实练完成，顾已销旧派/退乡约/住矿且当面认廿一专班；不是预言未来一定来或热验已经合格，完成人手阶段项。",
+            "evidence": {
+              "chapter": 15,
+              "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+              "quote": "韩与顾当面各认自己的时辰，顾延原先归乡的车位已退话，外段牌也已销，不再让七支与北口各借半个鲁平。"
+            },
+            "chapter": 15
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q04-heat-hold": {
         "deadline_chapter": 17,
@@ -1232,7 +1394,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q04-backstop-source": {
         "deadline_chapter": 13,
@@ -1304,7 +1466,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 14
+        "last_reviewed_chapter": 15
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
