@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T19:15:34+00:00",
+    "generated_at": "2026-10-23T19:25:13+00:00",
     "state_revision": 54,
-    "workflow_revision": 95,
-    "state_sha256": "08ec114206facfcd687e09b9750777cd582c5623f8686bb9088d368430b0a060",
-    "workflow_sha256": "855a3e082b5ef20ec8c55e7a02620ceff36fb76c7d36a5542ce274a86eaa93e5",
+    "workflow_revision": 96,
+    "state_sha256": "c66ba0e8060bf3a932793f0529bf9f75de745f6fbaab4412311b6f7dcfafdb70",
+    "workflow_sha256": "4cc6fbadcdc172663db117a61259717a4b179c87b905f04e7716baa9f5ed50a7",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 21,
-    "detail": "开始第二十一章S03；已核main正式20章/revision54，读取近三章全文、近五章推进及24许约来源。",
-    "next_action": "完成23夜社问/24晨实互报与24下工北料场本人履约，给旧损阶段承担并写出有成本炼息变化；完整8000—10000汉字后集中审查。",
-    "updated_at": "2026-10-23T19:15:34+00:00"
+    "detail": "第二十一章《活人的账》完整候选已登记；本章实际兑现24本人赴约/分段旧账核认/新先付49与短带续工，开始集中八项检查。",
+    "next_action": "全文复读，核18—20逐章差异、木场证据边界/五日实收14/新先付48+1、炼息炭耗/新筛样双试与双方知情；同任务最多3修，审核通过后采用。",
+    "updated_at": "2026-10-23T19:25:13+00:00"
   },
   "chapters": [
     {
@@ -1247,12 +1247,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T15:10:31+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第十七章8503汉字已通过八检查并采用冻结，前十六章源文件核验未变；正在保存正文、章后记录、V11衔接及TXT。"
-    },
-    {
       "at": "2026-10-23T15:12:28+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1335,6 +1329,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "开始第二十一章S03；已核main正式20章/revision54，读取近三章全文、近五章推进及24许约来源。"
+    },
+    {
+      "at": "2026-10-23T19:25:13+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第二十一章《活人的账》完整候选已登记；本章实际兑现24本人赴约/分段旧账核认/新先付49与短带续工，开始集中八项检查。"
     }
   ]
 }
