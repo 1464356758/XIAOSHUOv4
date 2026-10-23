@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T16:26:55+00:00",
+    "generated_at": "2026-10-23T16:32:58+00:00",
     "state_revision": 50,
-    "workflow_revision": 86,
+    "workflow_revision": 87,
     "state_sha256": "72a41cfa2cc107d0b2b2ba2514a5d0107f070b27e0972a11a002cbf3b75f8be8",
-    "workflow_sha256": "10d48bc6654061f3ceb3d1fca491181d5497b981c7a75d999c494446f4a046a2",
+    "workflow_sha256": "a5a17e8509ce4665ff8bc6aa453c99d672d49af9007d7ffa656414a058565e0d",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
-    "chapter": 18,
-    "detail": "第十八章《没有火的廿一》8200汉字已审核定稿冻结、同步并回读，TXT已保存；累计18章150507汉字。",
-    "next_action": "等待作者继续第十九章；届时读16—18全文与V12，22晨实际互报后按午后原约提看乙二三原铜，兑现两岸对照。",
-    "updated_at": "2026-10-23T16:26:54+00:00"
+    "phase": "WRITING",
+    "label": "撰写正文",
+    "chapter": 19,
+    "detail": "已核对main十八章正式进度，开始第十九章《字还在》；核读16—18全文与现行V12，22晨互报后按午后原约提看乙二原铜。",
+    "next_action": "写完整8000—10000汉字，兑现Q02阶段对照，完成八检查与三章衔接后保存TXT。",
+    "updated_at": "2026-10-23T16:32:58+00:00"
   },
   "chapters": [
     {
@@ -1223,12 +1223,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T11:10:36+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第十五章完整初稿8494汉字已登记；已实读十一至十四全文，进入集中审核及十一至十五章到期全文回看。"
-    },
-    {
       "at": "2026-10-23T11:32:46+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1311,6 +1305,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十八章《没有火的廿一》8200汉字已审核定稿冻结、同步并回读，TXT已保存；累计18章150507汉字。"
+    },
+    {
+      "at": "2026-10-23T16:32:58+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已核对main十八章正式进度，开始第十九章《字还在》；核读16—18全文与现行V12，22晨互报后按午后原约提看乙二原铜。"
     }
   ]
 }
