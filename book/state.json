@@ -1115,6 +1115,27 @@
       ],
       "candidate_sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
       "candidate_path": "candidates/CH015_e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c.txt"
+    },
+    "16": {
+      "task_id": "fdbf03d8-32e7-4526-97a6-be0104d6f6c1",
+      "chapter": 16,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 1,
+      "history": [
+        {
+          "sha256": "aaa992ad005235fff6a92d4c9c7a8ea76e0826b7044735dcf1a2a6bb12fe732c",
+          "reason": "初稿",
+          "repairs": 0
+        },
+        {
+          "sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+          "reason": "集中检查补明十八晨窗两端平水实触；把十九首轮热前限料/风档/不上产料与停试动作写实，避免用未呈现的已核限量带过；收紧两处说明句。",
+          "repairs": 1
+        }
+      ],
+      "candidate_sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+      "candidate_path": "candidates/CH016_d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed.txt"
     }
   },
   "completion": null,
