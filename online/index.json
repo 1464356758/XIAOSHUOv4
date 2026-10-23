@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T10:25:40+00:00",
+    "generated_at": "2026-10-23T10:47:25+00:00",
     "state_revision": 42,
-    "workflow_revision": 70,
+    "workflow_revision": 71,
     "state_sha256": "f0d6c7a304ade5559d2dac3e4d56eedb54efcd570323bfb109a3ba43667d8dc9",
-    "workflow_sha256": "6d0ed3859dfef4e1ab48f07e21be4d0769cae97c92ead5e6fac8858b95f98f83",
+    "workflow_sha256": "4f8d308b53b86105d352792b17900dae7c746dd7cbd92bfe3ef36c114fe7f11e",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 15,
-    "detail": "第十四章《那一班工饭》8246汉字已完成审核、采用冻结并同步回读；TXT已保存，累计14章116796汉字。",
-    "next_action": "等待作者继续第十五章《谁站在闸外》（暂题）；落实真人岗位/训练与廿一排班，采用前完成CH011—015全文回看，接乔新窑和后续初十七会谈。",
-    "updated_at": "2026-10-23T10:25:39+00:00"
+    "detail": "已恢复十四章冻结进度，创作第十五章《谁站在闸外》；本轮落实真人主验/外应、训练和廿一排班，采用前实际回看十一至十五章。",
+    "next_action": "读取近期正文与记录，完成8000—10000汉字完整候选；集中审核、到期全文回看和release-check通过后采用与保存。",
+    "updated_at": "2026-10-23T10:47:25+00:00"
   },
   "chapters": [
     {
@@ -1175,12 +1175,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T01:54:55+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "作者已授权继续章节；读取最近三章全文、当前路线与承诺，创作CH011《旧单之外的人》。"
-    },
-    {
       "at": "2026-10-23T02:13:23+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1263,6 +1257,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十四章《那一班工饭》8246汉字已完成审核、采用冻结并同步回读；TXT已保存，累计14章116796汉字。"
+    },
+    {
+      "at": "2026-10-23T10:47:25+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已恢复十四章冻结进度，创作第十五章《谁站在闸外》；本轮落实真人主验/外应、训练和廿一排班，采用前实际回看十一至十五章。"
     }
   ]
 }
