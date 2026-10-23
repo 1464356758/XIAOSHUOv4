@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 65,
+  "revision": 66,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "SAVING",
+  "phase": "WAITING_NEXT",
   "platform": "qimao",
   "selected_topic": {
     "id": "T09",
@@ -29,7 +29,7 @@
   },
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
   "topics_path": "research/topics_1c6457bad3f3d87203063a8befb9736bd073811380aa883f19c840a68f653340.json",
-  "chapter": 13,
+  "chapter": 14,
   "history": [
     {
       "at": "2026-10-22T01:32:46+00:00",
@@ -426,9 +426,15 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第十三章8338汉字已审核定稿冻结，前十二章不变；两到期子项已兑现，路线V7/接管/导出已备妥。"
+    },
+    {
+      "at": "2026-10-23T04:33:01+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第十三章《谁先摸过炉》8338汉字已审定冻结并写回回读；TXT已保存，累计13章108550汉字。"
     }
   ],
-  "detail": "第十三章8338汉字已审核定稿冻结，前十二章不变；两到期子项已兑现，路线V7/接管/导出已备妥。",
-  "next_action": "写回并回读正文、记录、任务与目录，交付TXT后等待第十四章。",
-  "updated_at": "2026-10-23T04:31:30+00:00"
+  "detail": "第十三章《谁先摸过炉》8338汉字已审定冻结并写回回读；TXT已保存，累计13章108550汉字。",
+  "next_action": "等待下一章授权，继续第十四章《那一班工饭》；先读CH011—013全文、现行canon/V7，推进实际责任承担、重做与真人外应准备。",
+  "updated_at": "2026-10-23T04:33:01+00:00"
 }
