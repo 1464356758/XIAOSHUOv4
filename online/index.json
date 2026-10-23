@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T03:35:00+00:00",
-    "state_revision": 36,
-    "workflow_revision": 60,
-    "state_sha256": "15c764e476b4870dfd19ccc49000721fb304e177bc04b437b2443d920c28a1f9",
-    "workflow_sha256": "2d9bf144104039e65f9c67b6a3b08d88f0eb2efd34512cd03ae0974883df4060",
+    "generated_at": "2026-10-23T03:48:57+00:00",
+    "state_revision": 38,
+    "workflow_revision": 61,
+    "state_sha256": "2b58371ea1dc8b09bfb3a237fdd6f236c515baa469a5ab961964d11eb65825ab",
+    "workflow_sha256": "4ca528fabc0fe15f8314cd20afc0a9da858c126434a94ce95f25a4704aee75ba",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 11,
+    "adopted_chapters": 12,
     "target_han": 900000,
-    "actual_han": 91971,
+    "actual_han": 100212,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 10,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 11,
+    "frozen_chapters": 12,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 12,
-    "detail": "第十二章完整初稿8268汉字已登记候选，正在集中核查物资、知情、前章证据和放行条件。",
-    "next_action": "完成本章事实记录与八项发布前检查，必要时按同一任务局部修复。",
-    "updated_at": "2026-10-23T03:35:00+00:00"
+    "detail": "第十二章8241汉字已审定冻结，前十一章不变；路线V6、章后事实与TXT已备妥，正在保存并回读。",
+    "next_action": "核对远程采用正文、记录、任务与索引，完成TXT交付后等待第十三章。",
+    "updated_at": "2026-10-23T03:48:56+00:00"
   },
   "chapters": [
     {
@@ -172,6 +172,18 @@
       "han_count": 8479,
       "text_path": "book/chapters/CH011_64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f.txt",
       "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 12,
+      "title": "第二道细裂",
+      "stage": "S02",
+      "han_count": 8241,
+      "text_path": "book/chapters/CH012_d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9.txt",
+      "sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1139,12 +1151,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T19:35:31+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第九章《第一道出口》已检查采用8183汉字，1轮局部修订；共9章75362汉字。F三人真正出陵返城、50条章后记录已整理，正在保存并核对阅读与导出。"
-    },
-    {
       "at": "2026-10-22T19:38:49+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1227,6 +1233,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第十二章完整初稿8268汉字已登记候选，正在集中核查物资、知情、前章证据和放行条件。"
+    },
+    {
+      "at": "2026-10-23T03:48:56+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第十二章8241汉字已审定冻结，前十一章不变；路线V6、章后事实与TXT已备妥，正在保存并回读。"
     }
   ]
 }
