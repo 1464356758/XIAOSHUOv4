@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T19:38:02+00:00",
+    "generated_at": "2026-10-23T22:48:10+00:00",
     "state_revision": 56,
-    "workflow_revision": 98,
+    "workflow_revision": 99,
     "state_sha256": "c7d1ed4cba3749a0132259ddc0d2394ae28c3e6ea847f8f81b4a45fe24983409",
-    "workflow_sha256": "14f12f822cd6cf0e62c891c7a972bf6cba23310e1f4277a942778f77bbc6b858",
+    "workflow_sha256": "a456370f15aa4d069db44777af5b9369e7ddea903e3146318357d68c3c681b3a",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
-    "chapter": 21,
-    "detail": "第二十一章《活人的账》8273汉字已审核定稿冻结并同步GitHub，正文/记录/release/路线/流程索引等11文件逐项回读一致，TXT已保存；累计21章175553汉字。",
-    "next_action": "等待作者继续第二十二章S03；25晨真实互报24窗后许会/练息与提筛/两布试，旧损阶段不重开，25午后履井工，具体小样尽快试做并承担实际成本。",
-    "updated_at": "2026-10-23T19:38:02+00:00"
+    "phase": "WRITING",
+    "label": "撰写正文",
+    "chapter": 22,
+    "detail": "开始第二十二章S03；核main正式21章/revision56及近三章全文，许损24本人履约已完成不重开，接25晨实互报与筛框试做。",
+    "next_action": "写完整8000—10000汉字：两岸拿真实小样互报，25井工照约，F局部分格提筛当天实做实试，公开见面须实际同意且知情逐步发生；完成后集中八检查。",
+    "updated_at": "2026-10-23T22:48:10+00:00"
   },
   "chapters": [
     {
@@ -1259,12 +1259,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T16:13:28+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第十八章《没有火的廿一》完整初稿8211汉字已登记，已实际写到廿二清早桑见石仍在；正在核对冷修范围、两岸知情、工钱与生计进展。"
-    },
-    {
       "at": "2026-10-23T16:25:17+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1347,6 +1341,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第二十一章《活人的账》8273汉字已审核定稿冻结并同步GitHub，正文/记录/release/路线/流程索引等11文件逐项回读一致，TXT已保存；累计21章175553汉字。"
+    },
+    {
+      "at": "2026-10-23T22:48:10+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "开始第二十二章S03；核main正式21章/revision56及近三章全文，许损24本人履约已完成不重开，接25晨实互报与筛框试做。"
     }
   ]
 }
