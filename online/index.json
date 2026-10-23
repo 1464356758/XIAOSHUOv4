@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T12:29:47+00:00",
+    "generated_at": "2026-10-23T12:43:59+00:00",
     "state_revision": 46,
-    "workflow_revision": 79,
-    "state_sha256": "adc658d90ca85183d7f03d56bed955d67f7417adb0930d86736c16db60a708e2",
-    "workflow_sha256": "cb4fefb2899e24a6537275385336d20e9adecbe85669e9688c131a428081862a",
+    "workflow_revision": 80,
+    "state_sha256": "58e1cbbc4831da9d0b76cc2345e478dba00c136c8de48cff7421186d29a29761",
+    "workflow_sha256": "2618597e8f94b1e3d2870f7cf4220f2c54519abe18b13fb6e1da80dd7aff4e31",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 17,
-    "detail": "已核对main十六章冻结进度、近三章全文与V10，正在创作第十七章《火收以后》：十九真实受控首热、冷后结果和停产代价。",
-    "next_action": "完成CH017整章，集中核查热试时间/岗位/实际后果并做采用前检查。",
-    "updated_at": "2026-10-23T12:29:46+00:00"
+    "detail": "第十七章《火收以后》完整初稿8497汉字已登记；首热真实停、冷后复核并撤廿一热项，进入集中核查。",
+    "next_action": "全文核查两日知情/热退位证据/乔窑份实果与现金，整理章后记忆及八项证据。",
+    "updated_at": "2026-10-23T12:43:59+00:00"
   },
   "chapters": [
     {
@@ -1199,12 +1199,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T04:31:30+00:00",
-      "phase": "SAVING",
-      "label": "保存进度",
-      "detail": "第十三章8338汉字已审核定稿冻结，前十二章不变；两到期子项已兑现，路线V7/接管/导出已备妥。"
-    },
-    {
       "at": "2026-10-23T04:33:01+00:00",
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
@@ -1287,6 +1281,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "已核对main十六章冻结进度、近三章全文与V10，正在创作第十七章《火收以后》：十九真实受控首热、冷后结果和停产代价。"
+    },
+    {
+      "at": "2026-10-23T12:43:59+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第十七章《火收以后》完整初稿8497汉字已登记；首热真实停、冷后复核并撤廿一热项，进入集中核查。"
     }
   ]
 }

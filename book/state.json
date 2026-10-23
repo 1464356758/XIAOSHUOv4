@@ -1151,6 +1151,32 @@
       ],
       "candidate_sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
       "candidate_path": "candidates/CH016_d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed.txt"
+    },
+    "17": {
+      "task_id": "ee374084-b1dd-410d-b796-e7d8e9a3f081",
+      "chapter": 17,
+      "mode": "write",
+      "phase": "candidate",
+      "repairs": 2,
+      "history": [
+        {
+          "sha256": "beee3fc69bb003d683437db7cea9bddbf76f0bb5c23dafaa7632195e0c7cbc4b",
+          "reason": "初稿",
+          "repairs": 0
+        },
+        {
+          "sha256": "d38bd67e033d50e1da6b6ab7f7f2958cae6cad0503b7964822ce5c1ef9475466",
+          "reason": "集中核查限定新肩只外露处未见新裂、桑只外侧复量；梁17抵驿来源明确为来信，不推定现已继续南行；回废器库睡不取铺盖去灶；收紧无直接观察支撑的纸上数字。",
+          "repairs": 1
+        },
+        {
+          "sha256": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
+          "reason": "复核晨窗闲话：删去暗示A此前已听过挑水人细节的昨日/又，改成当下对看水与提桶的普通提醒，不扩继承18晨未实报信息。",
+          "repairs": 2
+        }
+      ],
+      "candidate_sha256": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
+      "candidate_path": "candidates/CH017_c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c.txt"
     }
   },
   "completion": null,
