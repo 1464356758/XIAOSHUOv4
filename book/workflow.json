@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": 90,
+  "revision": 91,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
-  "phase": "WAITING_NEXT",
+  "phase": "WRITING",
   "platform": "qimao",
   "selected_topic": {
     "id": "T09",
@@ -29,7 +29,7 @@
   },
   "research_path": "research/platform_17dd563692ed1d318d724332ab714cd91dfb4bfb3b3d0ce7ae7fc7ee221ac3bc.json",
   "topics_path": "research/topics_1c6457bad3f3d87203063a8befb9736bd073811380aa883f19c840a68f653340.json",
-  "chapter": 19,
+  "chapter": 20,
   "history": [
     {
       "at": "2026-10-22T01:32:46+00:00",
@@ -576,9 +576,15 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十九章《字还在》8231汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；累计19章158738汉字。"
+    },
+    {
+      "at": "2026-10-23T18:18:16+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已核对main十九章正式进度；创作第二十章，23日晨互报原铜/两环来源，实际兑现接修生计与外庭现场；采用前按实际范围全文回看11—20。"
     }
   ],
-  "detail": "第十九章《字还在》8231汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；累计19章158738汉字。",
-  "next_action": "等待作者继续第二十章；23晨先互报原铜与两环来源，实际试修/外庭及生计兑现，采用前实读11—20全文做阶段与窗口回看。",
-  "updated_at": "2026-10-23T17:07:59+00:00"
+  "detail": "已核对main十九章正式进度；创作第二十章，23日晨互报原铜/两环来源，实际兑现接修生计与外庭现场；采用前按实际范围全文回看11—20。",
+  "next_action": "读近三章与阶段11—19，写完整8000—10000汉字；候选集中检查、阶段全文回看通过后采用冻结，只交付20一章。",
+  "updated_at": "2026-10-23T18:18:16+00:00"
 }

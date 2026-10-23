@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T17:07:59+00:00",
+    "generated_at": "2026-10-23T18:18:16+00:00",
     "state_revision": 52,
-    "workflow_revision": 90,
+    "workflow_revision": 91,
     "state_sha256": "b29df352ff15f5cf93eeb68aa27cb28fc2e52ee50e8d54ccccd0a0978ac2adaf",
-    "workflow_sha256": "764c6712fa5fc7a94697d30e59e5bf68ff5851ec7c56320586e22510b7dc6964",
+    "workflow_sha256": "1bb6d78957f122104a061423256ebbb696a68e03d16dc6f31bccb435cd842b9b",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
-    "chapter": 19,
-    "detail": "第十九章《字还在》8231汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；累计19章158738汉字。",
-    "next_action": "等待作者继续第二十章；23晨先互报原铜与两环来源，实际试修/外庭及生计兑现，采用前实读11—20全文做阶段与窗口回看。",
-    "updated_at": "2026-10-23T17:07:59+00:00"
+    "phase": "WRITING",
+    "label": "撰写正文",
+    "chapter": 20,
+    "detail": "已核对main十九章正式进度；创作第二十章，23日晨互报原铜/两环来源，实际兑现接修生计与外庭现场；采用前按实际范围全文回看11—20。",
+    "next_action": "读近三章与阶段11—19，写完整8000—10000汉字；候选集中检查、阶段全文回看通过后采用冻结，只交付20一章。",
+    "updated_at": "2026-10-23T18:18:16+00:00"
   },
   "chapters": [
     {
@@ -1235,12 +1235,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T12:06:55+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第十六章《点火以前》完整初稿已登记；完成新肩冷验与实际配入、后挡固修示线，正在集中核查岗位工时、两岸知情和旧损会谈。"
-    },
-    {
       "at": "2026-10-23T12:17:45+00:00",
       "phase": "SAVING",
       "label": "保存进度",
@@ -1323,6 +1317,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十九章《字还在》8231汉字已审核定稿冻结、同步GitHub并逐文件回读核验，TXT已保存；累计19章158738汉字。"
+    },
+    {
+      "at": "2026-10-23T18:18:16+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已核对main十九章正式进度；创作第二十章，23日晨互报原铜/两环来源，实际兑现接修生计与外庭现场；采用前按实际范围全文回看11—20。"
     }
   ]
 }
