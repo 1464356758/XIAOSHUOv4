@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T04:33:01+00:00",
+    "generated_at": "2026-10-23T09:53:49+00:00",
     "state_revision": 40,
-    "workflow_revision": 66,
+    "workflow_revision": 67,
     "state_sha256": "76bc068884c6a22707bfe0bd4e273ac2fae5c793c0408d44b18a1ebf41f4c009",
-    "workflow_sha256": "bec7b01dc4ad04c963f5f202501f5e32b01544b9d0ea15b7cbdcf2563c7bfda8",
+    "workflow_sha256": "287f3c5e562e3fee2f86373221074e27123fed6b01364964b11aa77382e87df0",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WAITING_NEXT",
-    "label": "等待下一章",
+    "phase": "WRITING",
+    "label": "撰写正文",
     "chapter": 14,
-    "detail": "第十三章《谁先摸过炉》8338汉字已审定冻结并写回回读；TXT已保存，累计13章108550汉字。",
-    "next_action": "等待下一章授权，继续第十四章《那一班工饭》；先读CH011—013全文、现行canon/V7，推进实际责任承担、重做与真人外应准备。",
-    "updated_at": "2026-10-23T04:33:01+00:00"
+    "detail": "已恢复十三章正式进度，创作第十四章《那一班工饭》；核对实际旧责承担、剖毁新肩与共有旧碗后果。",
+    "next_action": "完成完整8000—10000汉字候选，集中审核并记录、采用、保存。",
+    "updated_at": "2026-10-23T09:53:49+00:00"
   },
   "chapters": [
     {
@@ -1163,12 +1163,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T20:20:40+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第十章《不能白收的东西》已完成采用8137汉字、1轮局部修订；累计10章83499汉字。S01首十章实际全文回看已完成，第八章刻痕位置已修、9/10重核通过、路线V3已更新。第十一章《旧单之外的人》尚未生成，等待下一次创作指令。"
-    },
-    {
       "at": "2026-10-22T22:29:59+00:00",
       "phase": "SYSTEM_UPGRADE",
       "label": "升级创作系统",
@@ -1251,6 +1245,12 @@
       "phase": "WAITING_NEXT",
       "label": "等待下一章",
       "detail": "第十三章《谁先摸过炉》8338汉字已审定冻结并写回回读；TXT已保存，累计13章108550汉字。"
+    },
+    {
+      "at": "2026-10-23T09:53:49+00:00",
+      "phase": "WRITING",
+      "label": "撰写正文",
+      "detail": "已恢复十三章正式进度，创作第十四章《那一班工饭》；核对实际旧责承担、剖毁新肩与共有旧碗后果。"
     }
   ]
 }
