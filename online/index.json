@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T18:37:11+00:00",
-    "state_revision": 52,
-    "workflow_revision": 92,
-    "state_sha256": "f1d451fae0a4c7f67dc833f39bc8aa726b22fc03f772144f19714f2d74733fce",
-    "workflow_sha256": "13f18cc71ff0626309aea1b92c224dbbaff85724ba09cfe69955d026f9ce6885",
+    "generated_at": "2026-10-23T18:53:25+00:00",
+    "state_revision": 54,
+    "workflow_revision": 93,
+    "state_sha256": "08ec114206facfcd687e09b9750777cd582c5623f8686bb9088d368430b0a060",
+    "workflow_sha256": "f0cfeb30906a754f479ebeb787cbc139418aae201470feb3f89cd439db6b1207",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 19,
+    "adopted_chapters": 20,
     "target_han": 900000,
-    "actual_han": 158738,
+    "actual_han": 167280,
     "completed": false,
     "needs_revalidation": [],
-    "reviewed_until": 15,
+    "reviewed_until": 20,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 19,
+    "frozen_chapters": 20,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 20,
-    "detail": "第二十章《戌初的声音》完整候选已登记，11—19正文已逐章实际读完；进入本章集中检查与11—20采用前阶段全文回看。",
-    "next_action": "完整复读候选、必要局修；填有实际证据的八检查和11—20阶段回看，采用前完成，不登记平台发布。",
-    "updated_at": "2026-10-23T18:37:11+00:00"
+    "detail": "第二十章《戌初的声音》8542汉字、一轮局修已完成八检查并采用冻结；11—20阶段全文回看已在采用前完成/登记，44条章后事实，累计20章167280汉字。正在保存并回读仓库与TXT。",
+    "next_action": "核对GitHub正文/记录/阶段回看及流程索引、保存TXT后停在等待第二十一章。",
+    "updated_at": "2026-10-23T18:53:25+00:00"
   },
   "chapters": [
     {
@@ -268,6 +268,18 @@
       "han_count": 8231,
       "text_path": "book/chapters/CH019_48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e.txt",
       "sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 20,
+      "title": "戌初的声音",
+      "stage": "S02",
+      "han_count": 8542,
+      "text_path": "book/chapters/CH020_73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8.txt",
+      "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1235,12 +1247,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T12:24:58+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第十六章《点火以前》8480汉字已完成审核、采用冻结、同步并回读；一轮局修，TXT已保存，累计16章133804汉字。"
-    },
-    {
       "at": "2026-10-23T12:29:46+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1323,6 +1329,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第二十章《戌初的声音》完整候选已登记，11—19正文已逐章实际读完；进入本章集中检查与11—20采用前阶段全文回看。"
+    },
+    {
+      "at": "2026-10-23T18:53:25+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第二十章《戌初的声音》8542汉字、一轮局修已完成八检查并采用冻结；11—20阶段全文回看已在采用前完成/登记，44条章后事实，累计20章167280汉字。正在保存并回读仓库与TXT。"
     }
   ]
 }

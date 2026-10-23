@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 52,
+  "revision": 54,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -191,6 +191,15 @@
       "record_path": "records/CH019_daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8.json",
       "record_sha256": "daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8",
       "han_count": 8231
+    },
+    "20": {
+      "title": "戌初的声音",
+      "stage": "S02",
+      "text_path": "chapters/CH020_73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8.txt",
+      "text_sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+      "record_path": "records/CH020_23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049.json",
+      "record_sha256": "23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049",
+      "han_count": 8542
     }
   },
   "checkpoints": [
@@ -747,6 +756,349 @@
       "promise_payoffs": "窗口实际完成原到期报平安/图源11、来源13、代存13、人手15。许先付/乔装袋/岑有钱炭是partial不改大期限。9项仍开：热17、桑18、两岸19、生计20、乔20、墓主60、控制80、九次96、独立98。后四近期限需具体结果，不通过挪章号/重命名无限等。",
       "ending_runway": "本章8528汉字，采用后15章125324；余85章到90万需774676，均约9114，不拿同义工序补篇幅。三日跨度到初十六day13晚20时19500，次晨十七day14=20160；廿一day18仍要在CH018实际写到，热17/对照19不改。五章全文回看已在本候选前置，下一次到20/阶段收束。两岸/真实死史/一网九肋用1余8/终次三息永断及真实降载代价保持，X02无必要未强送。",
       "next_action": "本候选release-check通过后才采用，同时保存回看。采用后路线V9只调未来16—18：件/后挡/示线和十七会谈、真实热试/实停、廿一活过；F由少一人后的自主工作/旧史查阅接主线。20前阶段回看再估剩余篇幅与阅读密度，不补同义场景凑九千。"
+    },
+    {
+      "kind": "stage",
+      "from": 11,
+      "to": 20,
+      "base_revision": 52,
+      "canon_sha256": "5b63d0bfe57837f41d0e67b4921027c1f967496ac9a0bb7f1b534952b9624079",
+      "read_mode": "full_text_batches",
+      "decision": "adjust_future",
+      "coverage": {
+        "11": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+        "12": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+        "13": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+        "14": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+        "15": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+        "16": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+        "17": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
+        "18": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+        "19": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+        "20": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8"
+      },
+      "record_coverage": {
+        "11": "4208d71e55c12f65b6e3b4646687183f8337565a1c1fe11553e546c9f2b3b969",
+        "12": "47401360f9e425e50b3c4309ca29a9c5921060db4b29e1ea098ba3fdb058fdd4",
+        "13": "9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730",
+        "14": "e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd",
+        "15": "541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30",
+        "16": "e0b10cc7656ff8acdd210177e2aaf442eac774fc46e6b32f2ff20a90e4e32b6c",
+        "17": "1614f78b205ec487ba6a7f20bf8601bc98b0d7f6235511eb75086f752482c0f3",
+        "18": "342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014",
+        "19": "daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8",
+        "20": "23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049"
+      },
+      "findings": [
+        {
+          "id": "S02-F01",
+          "level": "verified_boundary",
+          "finding": "旧料来源/责任、剖毁新肩、真实岗位训练、首热失败和撤产到过死日是一条有不可逆后果的链，不能下阶段退回首次知道省验/再换一个人独守。",
+          "evidence": [
+            {
+              "chapter": 11,
+              "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+              "quote": "耳根旧裂，不复挂用，送回料口待熔。"
+            },
+            {
+              "chapter": 12,
+              "sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+              "quote": "“这片裂。先认到这片。”"
+            },
+            {
+              "chapter": 13,
+              "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+              "quote": "它确实没有被裁净。"
+            },
+            {
+              "chapter": 14,
+              "sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+              "quote": "他用自己的小布包收，三十六枚碰在一起，响了很长一声。"
+            },
+            {
+              "chapter": 15,
+              "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+              "quote": "“外头没应！”"
+            },
+            {
+              "chapter": 16,
+              "sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+              "quote": "板卸开以后，新肩真正落进了座。"
+            },
+            {
+              "chapter": 17,
+              "sha256": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
+              "quote": "纸上并排留下两件事：首热后没有回足，实冷后可以回足。"
+            },
+            {
+              "chapter": 18,
+              "sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+              "quote": "廿二清早，桑见石在。"
+            }
+          ],
+          "action": "保留1—19冻结/旧损及冷修非热过；21先实际24核问许，不再重说13原件或强补原死局。"
+        },
+        {
+          "id": "S02-F02",
+          "level": "future_adjustment",
+          "finding": "11—18多章用取纸/限定能认范围/冷修/领工相似句序，人物处境确有新增，但技术限定与权利议价密度偏高；20已换新固定端与公开后果，21以后不能又连续等待同一份访问许可。",
+          "evidence": [
+            {
+              "chapter": 12,
+              "sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+              "quote": "今日试料，不收急件。"
+            },
+            {
+              "chapter": 16,
+              "sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+              "quote": "“冷着的。”"
+            },
+            {
+              "chapter": 18,
+              "sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+              "quote": "“今日拆量、冷修和复核能认。”"
+            },
+            {
+              "chapter": 20,
+              "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+              "quote": "“你们早就认识他。”"
+            }
+          ],
+          "action": "21当场接社问并在24给许核问承担；22落实已认事项/一项有现实需要的有价外庭合作，少复述合同边界、用人的不同选择与真实结果推进。新水路/旧材料必须有源，不再同型热险。"
+        },
+        {
+          "id": "S02-F03",
+          "level": "future_adjustment",
+          "finding": "本阶段手艺从粗看变限定测样/敢喊停/自修交付，立足与新端有回报；修行只基础稳息未新境界，若后十章仍只有记纸问价，会偏离仙侠题材的成长承诺。",
+          "evidence": [
+            {
+              "chapter": 16,
+              "sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+              "quote": "他把掌心放稳，将呼吸压到腹下"
+            },
+            {
+              "chapter": 20,
+              "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+              "quote": "细小的活让手指发酸"
+            },
+            {
+              "chapter": 20,
+              "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+              "quote": "十八钱，还有六顿晚饭。"
+            }
+          ],
+          "action": "21—23从师既有基础法/自身观察出发，用本人真实可支炭料和空日安排一次炼息承受/稳定练习，给具体可观察进步/疲惫及成本；不先标立脉、不把跨时声音当灵力或送无源法诀。后续境界须足过程。"
+        },
+        {
+          "id": "S02-F04",
+          "level": "verified_knowledge_change",
+          "finding": "19原铜旧死仍在给Q02答案，20晨才传A；20新端在公共处，第三人有真实见闻/报告，社不再完全不知有少年回应。但姓名称呼/听过碗一词不等于已获174历年、九肋和N01私房位置。",
+          "evidence": [
+            {
+              "chapter": 19,
+              "sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+              "quote": "那个字还在那里。"
+            },
+            {
+              "chapter": 19,
+              "sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+              "quote": "他到此时仍不知道原铜上的字有没有变。"
+            },
+            {
+              "chapter": 20,
+              "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+              "quote": "“原来不用那只碗，也能在这里见到你。”"
+            },
+            {
+              "chapter": 20,
+              "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+              "quote": "他又将吴听见的两句转过来"
+            }
+          ],
+          "action": "21实际24晨互报F社夜问/赵再议，明确谁听见什么再定行动，不突然全员知道或强行恢复完全保密；不得为了守秘密让值守人反常消失。"
+        },
+        {
+          "id": "S02-F05",
+          "level": "promise_due_next_window",
+          "finding": "救桑不赦许旧损。14真实先付36、16真赴17会/许自提五日试工，17实见收3，18—22全五日和木场项还未实际总核，24本人约落到下一章日历，22章截止不该再被同型过程拖走。",
+          "evidence": [
+            {
+              "chapter": 14,
+              "sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+              "quote": "本日先付，不作结清"
+            },
+            {
+              "chapter": 16,
+              "sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+              "quote": "“我本人来。确实不成，当面告诉你缺哪处。”"
+            },
+            {
+              "chapter": 17,
+              "sha256": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
+              "quote": "短带工二钱，竹架用具一钱"
+            },
+            {
+              "chapter": 20,
+              "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+              "quote": "桑说等许茂真下工，自己与严铎按约去"
+            }
+          ],
+          "action": "21日历24当面核真正可得木场证/许自述缺项/场方试工钱续否，真实可承担先做，22期限前给阶段结果；不拿新工资抵伤款/补造八年满工，也不叫徒弟独代。"
+        }
+      ],
+      "conclusion": "本轮按实际输出批次读11—19全部冻结正文与20完整候选；11/12/14首次截区均另补，20一修差分全核，正文与记录哈希覆盖11—20准确。未发现须改冻结章/重初始化才能继续的硬冲突，20本章局修已解，stage决定仅调整未来。11—15既有窗口有效，当前11—20stage同时覆盖16—20到期窗口，采用前检查绑定base52、当前正文/记录/canon，不能先采用后补。文学风险为限定/议价密度及成长兑现速度，已写明确21—23行动调整，不把程序验证当质量保证。",
+      "causal_progress": "11从北口待熔漏抄/活许受伤与F漏附页实撤班开始；12原粮条亲看与两薄样开裂使完整新肩暂停；13原半联背押与新肩破坏剖验给责任和不可逆报废，F实付购碗共有；14实付许36/挪净长料锻粗坯、岑修钳买炭、F社外测量挣钱；15真人岗位两轮训练与实际停权/梁真离城；16全件冷验及真实固修配入重标、实赴许约自提轻工；17真实首热不合/冷后回足分行、撤21生产认成本，乔经营份真得/出资购袋；18真走21到22桑活，无替死；19原铜仍殁与活人并存、十月床实付/新客；20定日轻修交付与自主基础，F外庭实完水记后N02真通，现场曝光转入新阶段。",
+      "repetition_comparison": "与1—10困灰室清口/撤路不同，11—20主法是当事证据与公共工作从调查到承担，剖毁新件/先付36/冷标配入/撤产/活过死日都改变处境，不只是机关换名。但11—13查纸、15报应、16/18冷修、16—20有价工作范围多次使用先问再认的同句式；20的新地点/晚声像/第三人介入已开新局，21—23须快速执行旧约和新合作，不再每章一张明日再看的条。轻修段保持短，技术条件放在必要行动处，更多实际失败/选择/人际后果。",
+      "character_changes": "岑从只想护师、怕写错/怕做坏，变为敢喊外头没应、收住斜塞/热探冲动，自己拒重件/亲修交付/问宿并和师各出钱，20能排工空日并等闻履本职；桑从认旧押到出12/不收回验工格/留短钩/让韩做主，活后自己喝温水/负24旧约，未洗白或献命赎；严从查纸到认真实剖耗挪料/撤车/宿期，韩顾丁均有能叫停/不临抽岗的行动。乔主动争份且出本守班，梁真实离城不召回。闻曹从脱困到自买碗/社外挣钱与公共水记，有独立劳动价和选择；20闻承也差点先走而真留到底、承旧识，吴赵巡护各有不可由主角一声改掉的日常职责。",
+      "promise_payoffs": "本阶段完成首次报平安与本次图源11、旧料/后挡来源与B碗归属13、具名受训外应15、热停条件17、乔经营份17、桑原死日18、原铜与A活人并存Q02/19、生计基础20；不重开原三灵石/来源/代存等。许损独立22仍开且24约在下一章，墓主60/控制80/九肋96/独立98保持。N02有真实源/权限/有限声像，不夸三端已齐或机制全解；只有X01一传/用1余8，未靠新端补库存。",
+      "ending_runway": "11—20实际83788、全20章167280，余80章要732720至90万，均约9159，章配置可覆盖但近段均长不足9000，需随新目标扩展实际有用场景，不用重复冷检/签纸灌水。21—30以新端公共访问/供给合作、旧损实际执行和有成本修行进步做新阶段引擎；25/阶段重估篇幅。终次三息永断/旧B死亡/共九肋/三对固定窗与材料来源保持，最后十章仍应优先兑现，不用隐端续命。",
+      "next_action": "先以此绑定当前20候选/记录通过release-check后采用冻结，adopt自动登记本stage；之后未来V14细化21—23，原1—19和canon不动。保存stage覆盖/集中检查/接管、GitHub按头非强制同批回读及TXT，停WAITING_NEXT不多写21。下次24晨先告知社已听声与认识事实，再真实赴许约/核试工和木场项；22前有阶段承担，后续新合作有执行结果和炼息进步，不假造已完工。",
+      "full_text_batches": [
+        {
+          "chapter": 11,
+          "sha256": "64e233fdabbfd8b39bb7907b5d3ed322467962c8d116612fddd025cf6bee9f8f",
+          "record_sha256": "4208d71e55c12f65b6e3b4646687183f8337565a1c1fe11553e546c9f2b3b969",
+          "read_ranges": [
+            [
+              0,
+              10598
+            ]
+          ],
+          "reading": "首次全章批量输出中段截断；随后另补11从8061至10598全文末尾及12从0至2180，覆盖全部被截区；未将摘要当全文。"
+        },
+        {
+          "chapter": 12,
+          "sha256": "d8c65dfbb19fb65aec6887335e91c9cdeffb2ed595eaf7861bbcd346c965acf9",
+          "record_sha256": "47401360f9e425e50b3c4309ca29a9c5921060db4b29e1ea098ba3fdb058fdd4",
+          "read_ranges": [
+            [
+              0,
+              10210
+            ]
+          ],
+          "reading": "首次全章批量输出中段截断；随后另补11从8061至10598全文末尾及12从0至2180，覆盖全部被截区；未将摘要当全文。"
+        },
+        {
+          "chapter": 13,
+          "sha256": "4a0aa8fdd028a839ec2e5564ba9e45606f13eb0702b97e0ad771fb2c6ddaa05c",
+          "record_sha256": "9806cd6f97753d67a09ad7c04ed005d67b0fa94cb82f22c57c60831440c44730",
+          "read_ranges": [
+            [
+              0,
+              10359
+            ]
+          ],
+          "reading": "本轮实际输出阅读全文；15—19按字符0—5500、5500—末尾分批。"
+        },
+        {
+          "chapter": 14,
+          "sha256": "7fef22c4d54500048a90f7c544907b84736887b61f4c80c1b069361b5890f45c",
+          "record_sha256": "e4f03217ac0143631c70ef9a45a5dd13e108b2f9722ae004677bfee15c4e68dd",
+          "read_ranges": [
+            [
+              0,
+              10176
+            ]
+          ],
+          "reading": "首次全章输出中段截断；另补字符2898—7238（长料由此至掌柜亲自走过）覆盖缺失区，结合首尾已读完整。"
+        },
+        {
+          "chapter": 15,
+          "sha256": "e46aee42f3a882343cdab317fa5f513556087366be453b5b1f12744d2895791c",
+          "record_sha256": "541600fa8c177163d09ce0cbf385fd9d6d1c205d5e63101e31d5a1e489da8c30",
+          "read_ranges": [
+            [
+              0,
+              5500
+            ],
+            [
+              5500,
+              10408
+            ]
+          ],
+          "reading": "本轮实际输出阅读全文；15—19按字符0—5500、5500—末尾分批。"
+        },
+        {
+          "chapter": 16,
+          "sha256": "d469fe758e24b1ce2b10032c3ce8fd417c73fe46dea5c1a056c3649a766e86ed",
+          "record_sha256": "e0b10cc7656ff8acdd210177e2aaf442eac774fc46e6b32f2ff20a90e4e32b6c",
+          "read_ranges": [
+            [
+              0,
+              5500
+            ],
+            [
+              5500,
+              10207
+            ]
+          ],
+          "reading": "本轮实际输出阅读全文；15—19按字符0—5500、5500—末尾分批。"
+        },
+        {
+          "chapter": 17,
+          "sha256": "c5c10d7d331114cbee440acd29ba8895715e6cfba137262f6bb35f9f17cf030c",
+          "record_sha256": "1614f78b205ec487ba6a7f20bf8601bc98b0d7f6235511eb75086f752482c0f3",
+          "read_ranges": [
+            [
+              0,
+              5500
+            ],
+            [
+              5500,
+              10424
+            ]
+          ],
+          "reading": "本轮实际输出阅读全文；15—19按字符0—5500、5500—末尾分批。"
+        },
+        {
+          "chapter": 18,
+          "sha256": "60f45524ec0d5239a4dfcfb25af185f56beb0d2843230fe66da057711df2c1c2",
+          "record_sha256": "342c532858deadb81da7ea51aa26bd5120fad0fd9b0c0ac6fc85f4233619d014",
+          "read_ranges": [
+            [
+              0,
+              5500
+            ],
+            [
+              5500,
+              10081
+            ]
+          ],
+          "reading": "本轮实际输出阅读全文；15—19按字符0—5500、5500—末尾分批。"
+        },
+        {
+          "chapter": 19,
+          "sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
+          "record_sha256": "daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8",
+          "read_ranges": [
+            [
+              0,
+              5500
+            ],
+            [
+              5500,
+              10010
+            ]
+          ],
+          "reading": "本轮实际输出阅读全文；15—19按字符0—5500、5500—末尾分批。"
+        },
+        {
+          "chapter": 20,
+          "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+          "record_sha256": "23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049",
+          "read_ranges": [
+            [
+              0,
+              5500
+            ],
+            [
+              5500,
+              10507
+            ]
+          ],
+          "reading": "本轮完整8459初稿10411字符按0—5500/5500—末读完；同任务1轮局修全部diff/上下文实际核过，未改部分同一，当前8542/10507字符。自写记录44事实逐项引用核验，不把工具通过代文学判断。"
+        }
+      ]
     }
   ],
   "needs_revalidation": [],
@@ -759,9 +1111,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72.md",
-      "sha256": "33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72",
-      "reason": "CH019实看原铜旧殁不改已闭Q02，十月两铺4钱已付/风嘴3交付；只调未来20实际试修旬工与外庭、两端固定环按证验证和采用前阶段全文回看，21—22保廿四许约，期限不移。"
+      "path": "inputs/roadmap_73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f.md",
+      "sha256": "73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f",
+      "reason": "CH020生计阶段实得/N02有限固定声像验证且公共现场真实曝光，11—20采用前阶段全文回看完成；仅调整未来21—23旧损履约、公开端合作与有成本炼息成长，五期限不移。"
     }
   },
   "input_history": [
@@ -848,6 +1200,12 @@
       "path": "inputs/roadmap_33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72.md",
       "sha256": "33f66a2ea1d3f6114cab9234e2f58d984d0e907f99a3322494d4b8d71cdf2b72",
       "reason": "CH019实看原铜旧殁不改已闭Q02，十月两铺4钱已付/风嘴3交付；只调未来20实际试修旬工与外庭、两端固定环按证验证和采用前阶段全文回看，21—22保廿四许约，期限不移。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f.md",
+      "sha256": "73ad4c10c8530759df7166781fa96a3eb9533a39ad345d2198e806f16527763f",
+      "reason": "CH020生计阶段实得/N02有限固定声像验证且公共现场真实曝光，11—20采用前阶段全文回看完成；仅调整未来21—23旧损履约、公开端合作与有成本炼息成长，五期限不移。"
     }
   ],
   "tasks": {
@@ -1274,17 +1632,22 @@
       "task_id": "f9ad0395-c566-4976-834a-90678b042f9f",
       "chapter": 20,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "ac726b1c37e1b633c6e5b8e957be3fe16a0caec2b96d90904121d202c337debf",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+          "reason": "全文集中复读一轮局修：明确23晨双端触沿及岑右手倒水不断左触；消除请师代送的歧义、修薄扣动词；让环中少年实喊闻溪并补巡护转吴话的来源，明确戌初一刻结束；只认水滴声而不冒收桶声亲闻。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "ac726b1c37e1b633c6e5b8e957be3fe16a0caec2b96d90904121d202c337debf",
-      "candidate_path": "candidates/CH020_ac726b1c37e1b633c6e5b8e957be3fe16a0caec2b96d90904121d202c337debf.txt"
+      "candidate_sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+      "candidate_path": "candidates/CH020_73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8.txt"
     }
   },
   "completion": null,
@@ -1367,6 +1730,10 @@
       "19": {
         "text_sha256": "48243464491fe05555728fc3b4f977cc89d9c9b2510f32066e5115dd2c6f8a7e",
         "record_sha256": "daf658d0c541bc26f96f20b99a0a0ec523729e9fcae196d78be15876f71890a8"
+      },
+      "20": {
+        "text_sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+        "record_sha256": "23ff5158d723d371d63f2fad4ee622c9084845fa68367e472961873a5d22e049"
       }
     },
     "published": {},
@@ -1414,6 +1781,11 @@
       "19": {
         "path": "releases/CH019_4528198bdbfb6f6805138a22e562a9b0f5ab230124448e23808aefbef58a330a.json",
         "sha256": "4528198bdbfb6f6805138a22e562a9b0f5ab230124448e23808aefbef58a330a",
+        "used": true
+      },
+      "20": {
+        "path": "releases/CH020_8a290ff8a038f9fbf303ff732dfda3754560ce9b1a808ab40fab0da43a2face7.json",
+        "sha256": "8a290ff8a038f9fbf303ff732dfda3754560ce9b1a808ab40fab0da43a2face7",
         "used": true
       }
     },
@@ -1488,7 +1860,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 19
+        "last_reviewed_chapter": 20
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1504,7 +1876,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 19
+        "last_reviewed_chapter": 20
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1520,7 +1892,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 19
+        "last_reviewed_chapter": 20
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1536,7 +1908,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 19
+        "last_reviewed_chapter": 20
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -1708,7 +2080,7 @@
       },
       "Q01-local-livelihood": {
         "deadline_chapter": 20,
-        "status": "open",
+        "status": "closed",
         "history": [
           {
             "id": "Q01-local-livelihood",
@@ -1718,9 +2090,21 @@
             "source": "roadmap",
             "roadmap_sha256": "469a585b5dc429be2c994b70fd2f5755e96433d37d44ea7a9399543d26baa5ac",
             "chapter": 10
+          },
+          {
+            "id": "Q01-local-livelihood",
+            "action": "complete",
+            "deadline_chapter": 20,
+            "reason": "本日四轻件实交验付3、方有权落定六午后3钱夕食/材料/不来与换时至十月末，原自主灶签/19十月两铺实付款保持，立足阶段真实取得；不是永富/永久房产权或无限进井权。",
+            "evidence": {
+              "chapter": 20,
+              "sha256": "73b96c09d46cd29990d5f761bf6b69bfe5f8882ae5626e0b1a60e01c53893dd8",
+              "quote": "每旬三、五、六、八、九、十，各一个午后。"
+            },
+            "chapter": 20
           }
         ],
-        "last_reviewed_chapter": 19
+        "last_reviewed_chapter": 20
       },
       "Q01-next-safety-report": {
         "deadline_chapter": 11,
@@ -1795,7 +2179,7 @@
         ],
         "deadline_chapter": 22,
         "status": "open",
-        "last_reviewed_chapter": 19
+        "last_reviewed_chapter": 20
       }
     },
     "incidents": {},
