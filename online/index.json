@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-23T04:02:39+00:00",
+    "generated_at": "2026-10-23T04:17:50+00:00",
     "state_revision": 38,
-    "workflow_revision": 63,
-    "state_sha256": "2b58371ea1dc8b09bfb3a237fdd6f236c515baa469a5ab961964d11eb65825ab",
-    "workflow_sha256": "42c46633fa356dc65a22cce93f24e9c60c97de8a40155490631c934be677af3f",
+    "workflow_revision": 64,
+    "state_sha256": "f1bddc07f6990846ba6601a044e009392ac9f436e51cb042d9ceb319db1b1aad",
+    "workflow_sha256": "52a76224a14ffb5db21409ef0e2bd41e4a3fb75f216fff564185a2dfaee783e9",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "WRITING",
-    "label": "撰写正文",
+    "phase": "REVIEWING",
+    "label": "检查本章",
     "chapter": 13,
-    "detail": "已从main恢复12章正式进度，继续第十三章《谁先摸过炉》；正在核对近三章、原料来源与初十二碗到期。",
-    "next_action": "完成8000—10000汉字完整候选、集中检查、记录与采用。",
-    "updated_at": "2026-10-23T04:02:38+00:00"
+    "detail": "第十三章完整初稿已登记，正在集中检查来源结论、剖查授权、旧碗折价与两岸晨后知情。",
+    "next_action": "完成章后事实及八项检查，必要时在同一任务局部修复后采用。",
+    "updated_at": "2026-10-23T04:17:50+00:00"
   },
   "chapters": [
     {
@@ -1151,12 +1151,6 @@
   },
   "history": [
     {
-      "at": "2026-10-22T20:01:31+00:00",
-      "phase": "REVIEWING",
-      "label": "检查本章",
-      "detail": "第十章《不能白收的东西》完整初稿已登记8127汉字；正在逐段全文检查旧雇结算、原铜收存与碗代存、A新修工现金和乔麦合作边界，随后实际全文回看首十章。"
-    },
-    {
       "at": "2026-10-22T20:08:32+00:00",
       "phase": "CHECKPOINT",
       "label": "阶段回看",
@@ -1239,6 +1233,12 @@
       "phase": "WRITING",
       "label": "撰写正文",
       "detail": "已从main恢复12章正式进度，继续第十三章《谁先摸过炉》；正在核对近三章、原料来源与初十二碗到期。"
+    },
+    {
+      "at": "2026-10-23T04:17:50+00:00",
+      "phase": "REVIEWING",
+      "label": "检查本章",
+      "detail": "第十三章完整初稿已登记，正在集中检查来源结论、剖查授权、旧碗折价与两岸晨后知情。"
     }
   ]
 }
