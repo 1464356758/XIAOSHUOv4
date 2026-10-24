@@ -11,11 +11,11 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-24T00:31:26+00:00",
+    "generated_at": "2026-10-24T00:32:35+00:00",
     "state_revision": 58,
-    "workflow_revision": 101,
+    "workflow_revision": 102,
     "state_sha256": "501a232a8dec14576d551d818cc5f560641afb1c306736b350138c37238350c3",
-    "workflow_sha256": "88bdd6c3d3bfd234a249478fbcfcb51bd9943d155d2c04bafacf7c1d39553bfd",
+    "workflow_sha256": "4dc4d24d97f38b8d8b65b816e4e6e8701713c329ecf7281d32b4025e4b561f98",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
@@ -37,12 +37,12 @@
     "release_check_required": true
   },
   "task": {
-    "phase": "SAVING",
-    "label": "保存进度",
+    "phase": "WAITING_NEXT",
+    "label": "等待下一章",
     "chapter": 22,
-    "detail": "第二十二章《先过这一格》8300汉字已实际八检查/同任务1修并采用冻结，48事实；累计22章183853，前21章及42raw SHA未变，正在同步与保存TXT。",
-    "next_action": "同批写回正文记录/release/仅未来V16/集中阅读检查/接管/流程索引并逐文件回读；保存TXT，成功后WAITING_NEXT停在23之前。",
-    "updated_at": "2026-10-24T00:31:26+00:00"
+    "detail": "第二十二章《先过这一格》8300汉字已审核定稿冻结、同步GitHub并逐项回读11份正式文件一致，TXT已保存；累计22章183853汉字。",
+    "next_action": "等待作者继续第二十三章S03；26晨实互报22窗后变化，落首日有价半班/守筛运行与材料小片对照，26午后井工照约；两日项24到期/25窗口全文回看，不重开许同约。",
+    "updated_at": "2026-10-24T00:32:35+00:00"
   },
   "chapters": [
     {
@@ -1271,12 +1271,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T16:32:58+00:00",
-      "phase": "WRITING",
-      "label": "撰写正文",
-      "detail": "已核对main十八章正式进度，开始第十九章《字还在》；核读16—18全文与现行V12，22晨互报后按午后原约提看乙二原铜。"
-    },
-    {
       "at": "2026-10-23T16:52:08+00:00",
       "phase": "REVIEWING",
       "label": "检查本章",
@@ -1359,6 +1353,12 @@
       "phase": "SAVING",
       "label": "保存进度",
       "detail": "第二十二章《先过这一格》8300汉字已实际八检查/同任务1修并采用冻结，48事实；累计22章183853，前21章及42raw SHA未变，正在同步与保存TXT。"
+    },
+    {
+      "at": "2026-10-24T00:32:35+00:00",
+      "phase": "WAITING_NEXT",
+      "label": "等待下一章",
+      "detail": "第二十二章《先过这一格》8300汉字已审核定稿冻结、同步GitHub并逐项回读11份正式文件一致，TXT已保存；累计22章183853汉字。"
     }
   ]
 }
