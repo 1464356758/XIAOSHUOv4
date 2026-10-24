@@ -2,7 +2,7 @@
   "schema_version": 2,
   "book_id": "f3626289-6903-436a-a009-eeee8a209510",
   "title": "我还没死，三千年后的盗墓贼先找上门了",
-  "revision": 56,
+  "revision": 58,
   "config": {
     "target_chapters": 100,
     "target_han": 900000,
@@ -209,6 +209,15 @@
       "record_path": "records/CH021_8be28993c7ab05cc2e74dd76f1481e69e45a5bcab034d1ad43539d8aabeebf89.json",
       "record_sha256": "8be28993c7ab05cc2e74dd76f1481e69e45a5bcab034d1ad43539d8aabeebf89",
       "han_count": 8273
+    },
+    "22": {
+      "title": "先过这一格",
+      "stage": "S03",
+      "text_path": "chapters/CH022_3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8.txt",
+      "text_sha256": "3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8",
+      "record_path": "records/CH022_4498d134cc9e607e7ed07818f9fdf0b315a3da4756e07a8860be4b0f6a7bdc01.json",
+      "record_sha256": "4498d134cc9e607e7ed07818f9fdf0b315a3da4756e07a8860be4b0f6a7bdc01",
+      "han_count": 8300
     }
   },
   "checkpoints": [
@@ -1120,9 +1129,9 @@
     },
     "roadmap": {
       "kind": "roadmap",
-      "path": "inputs/roadmap_de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019.md",
-      "sha256": "de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019",
-      "reason": "CH021本人24核问/实付49及实工续排已兑现旧损阶段、炼息三回与F两布失败有实际成本；仅滚动22—24筛片试做/局部供水结果与有成本成长，四原开放期限不移。"
+      "path": "inputs/roadmap_ee5a0889d44cc1beece2d7c72faa904cb6ebb9c28ede6de8805285171c3379e2.md",
+      "sha256": "ee5a0889d44cc1beece2d7c72faa904cb6ebb9c28ede6de8805285171c3379e2",
+      "reason": "CH022双完整匣实际八满桶两换/一片损与新付人时，岑同意后实见邵并主动公开报年；仅滚动23—25两日局部运行与材料对照/公开身份后果，新增两日项24期限，四原期限不移。"
     }
   },
   "input_history": [
@@ -1221,6 +1230,12 @@
       "path": "inputs/roadmap_de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019.md",
       "sha256": "de0de5c47b142454467491fae0ab91f73a0b025194406c5297cd241ab40cd019",
       "reason": "CH021本人24核问/实付49及实工续排已兑现旧损阶段、炼息三回与F两布失败有实际成本；仅滚动22—24筛片试做/局部供水结果与有成本成长，四原开放期限不移。"
+    },
+    {
+      "kind": "roadmap",
+      "path": "inputs/roadmap_ee5a0889d44cc1beece2d7c72faa904cb6ebb9c28ede6de8805285171c3379e2.md",
+      "sha256": "ee5a0889d44cc1beece2d7c72faa904cb6ebb9c28ede6de8805285171c3379e2",
+      "reason": "CH022双完整匣实际八满桶两换/一片损与新付人时，岑同意后实见邵并主动公开报年；仅滚动23—25两日局部运行与材料对照/公开身份后果，新增两日项24期限，四原期限不移。"
     }
   ],
   "tasks": {
@@ -1689,17 +1704,22 @@
       "task_id": "5b5cd63d-e7c9-4a98-865f-eb6ccccd4403",
       "chapter": 22,
       "mode": "write",
-      "phase": "candidate",
-      "repairs": 0,
+      "phase": "adopted",
+      "repairs": 1,
       "history": [
         {
           "sha256": "042ad1d5a94d4e81260e0595891be7da18526a8ec93538e66a2b12c5e47580ea",
           "reason": "初稿",
           "repairs": 0
+        },
+        {
+          "sha256": "3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8",
+          "reason": "全文集中检查：补F真收末流后本夜条/吴认、清水左指触N02；A带尺/右触左手依次放笔转片记避免第三只手；删A无源掌事任期判断；方未拆环语义改直述，八桶属今日非今夜，明确回东间禁宿；小水逐开与候桶人数/陶偏位措辞核清。",
+          "repairs": 1
         }
       ],
-      "candidate_sha256": "042ad1d5a94d4e81260e0595891be7da18526a8ec93538e66a2b12c5e47580ea",
-      "candidate_path": "candidates/CH022_042ad1d5a94d4e81260e0595891be7da18526a8ec93538e66a2b12c5e47580ea.txt"
+      "candidate_sha256": "3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8",
+      "candidate_path": "candidates/CH022_3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8.txt"
     }
   },
   "completion": null,
@@ -1790,6 +1810,10 @@
       "21": {
         "text_sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
         "record_sha256": "8be28993c7ab05cc2e74dd76f1481e69e45a5bcab034d1ad43539d8aabeebf89"
+      },
+      "22": {
+        "text_sha256": "3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8",
+        "record_sha256": "4498d134cc9e607e7ed07818f9fdf0b315a3da4756e07a8860be4b0f6a7bdc01"
       }
     },
     "published": {},
@@ -1847,6 +1871,11 @@
       "21": {
         "path": "releases/CH021_5fcd659621c38092aef3313a8f5bc449320cd2462e74923fe1fd56b19fbfc69a.json",
         "sha256": "5fcd659621c38092aef3313a8f5bc449320cd2462e74923fe1fd56b19fbfc69a",
+        "used": true
+      },
+      "22": {
+        "path": "releases/CH022_2978bdd984187b714969393d0d1c1218b6266536dbd97a481afa18a7f97544ec.json",
+        "sha256": "2978bdd984187b714969393d0d1c1218b6266536dbd97a481afa18a7f97544ec",
         "used": true
       }
     },
@@ -1921,7 +1950,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 21
+        "last_reviewed_chapter": 22
       },
       "Q05": {
         "deadline_chapter": 96,
@@ -1937,7 +1966,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 21
+        "last_reviewed_chapter": 22
       },
       "Q07": {
         "deadline_chapter": 80,
@@ -1953,7 +1982,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 21
+        "last_reviewed_chapter": 22
       },
       "Q09": {
         "deadline_chapter": 98,
@@ -1969,7 +1998,7 @@
             "chapter": 10
           }
         ],
-        "last_reviewed_chapter": 21
+        "last_reviewed_chapter": 22
       },
       "Q-Jo-charcoal": {
         "deadline_chapter": 20,
@@ -2253,6 +2282,25 @@
         "deadline_chapter": 22,
         "status": "closed",
         "last_reviewed_chapter": 21
+      },
+      "Q-screen-two-day": {
+        "history": [
+          {
+            "id": "Q-screen-two-day",
+            "action": "set",
+            "deadline_chapter": 24,
+            "reason": "25双匣8桶两换是已得局部结果，邵另排明起2日上槽短递半班/留筛人，26和27实际运行需24前给真实到位/工价与堵损结果或承担失败，不能只留一张新约也不许全灰/全城永久修好。",
+            "evidence": {
+              "chapter": 22,
+              "sha256": "3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8",
+              "quote": "先留两日，别往总省工上写。"
+            },
+            "chapter": 22
+          }
+        ],
+        "deadline_chapter": 24,
+        "status": "open",
+        "last_reviewed_chapter": 22
       }
     },
     "incidents": {},

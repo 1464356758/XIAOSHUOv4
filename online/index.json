@@ -11,38 +11,38 @@
   "source": {
     "repository_url": "https://github.com/1464356758/XIAOSHUOv4",
     "branch": "main",
-    "generated_at": "2026-10-24T00:19:17+00:00",
-    "state_revision": 56,
-    "workflow_revision": 100,
-    "state_sha256": "ad425202b619ab01e5a828a367a3c5fd6412b8eef5bd95b1195eb412cc163a3b",
-    "workflow_sha256": "04be974430221bf7d84a2a6b473dc6dadb48da97412f6c5efcc94a27a4092e36",
+    "generated_at": "2026-10-24T00:31:26+00:00",
+    "state_revision": 58,
+    "workflow_revision": 101,
+    "state_sha256": "501a232a8dec14576d551d818cc5f560641afb1c306736b350138c37238350c3",
+    "workflow_sha256": "88bdd6c3d3bfd234a249478fbcfcb51bd9943d155d2c04bafacf7c1d39553bfd",
     "manuscript_storage": "plain_files_v1",
     "requires_reader_key": false
   },
   "progress": {
     "target_chapters": 100,
-    "adopted_chapters": 21,
+    "adopted_chapters": 22,
     "target_han": 900000,
-    "actual_han": 175553,
+    "actual_han": 183853,
     "completed": false,
     "needs_revalidation": [],
     "reviewed_until": 20,
     "window_review_due": false,
     "unresolved_reviews": [],
     "serial_mode": true,
-    "frozen_chapters": 21,
+    "frozen_chapters": 22,
     "published_chapters": 0,
     "publication_status": "只统计真实回执；无回执不等于未发布",
     "open_incidents": 0,
     "release_check_required": true
   },
   "task": {
-    "phase": "REVIEWING",
-    "label": "检查本章",
+    "phase": "SAVING",
+    "label": "保存进度",
     "chapter": 22,
-    "detail": "第二十二章《先过这一格》完整初稿已登记；分格筛框当天实作/八满桶两次换水，岑实履25井工，首次当面见邵并主动报本地年，进入集中检查。",
-    "next_action": "全文复读/八检查，核两岸知情、固定环双水触与窗口、五片陶板一损四用/小试2钱/客炭归还和新工账，保留同任务最多3修，通过再采用。",
-    "updated_at": "2026-10-24T00:19:17+00:00"
+    "detail": "第二十二章《先过这一格》8300汉字已实际八检查/同任务1修并采用冻结，48事实；累计22章183853，前21章及42raw SHA未变，正在同步与保存TXT。",
+    "next_action": "同批写回正文记录/release/仅未来V16/集中阅读检查/接管/流程索引并逐文件回读；保存TXT，成功后WAITING_NEXT停在23之前。",
+    "updated_at": "2026-10-24T00:31:26+00:00"
   },
   "chapters": [
     {
@@ -292,6 +292,18 @@
       "han_count": 8273,
       "text_path": "book/chapters/CH021_d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652.txt",
       "sha256": "d8aa0a0b18d03f7cb9ea55bd1022361275bb585d1e57ac23501915eba3f63652",
+      "needs_revalidation": false,
+      "frozen": true,
+      "publication_status": "unreported",
+      "published_at": null
+    },
+    {
+      "number": 22,
+      "title": "先过这一格",
+      "stage": "S03",
+      "han_count": 8300,
+      "text_path": "book/chapters/CH022_3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8.txt",
+      "sha256": "3464f3f9edd25a836e1b8ad95085d41a079fcd9c848031f0b5ba8262b69ecbf8",
       "needs_revalidation": false,
       "frozen": true,
       "publication_status": "unreported",
@@ -1259,12 +1271,6 @@
   },
   "history": [
     {
-      "at": "2026-10-23T16:26:54+00:00",
-      "phase": "WAITING_NEXT",
-      "label": "等待下一章",
-      "detail": "第十八章《没有火的廿一》8200汉字已审核定稿冻结、同步并回读，TXT已保存；累计18章150507汉字。"
-    },
-    {
       "at": "2026-10-23T16:32:58+00:00",
       "phase": "WRITING",
       "label": "撰写正文",
@@ -1347,6 +1353,12 @@
       "phase": "REVIEWING",
       "label": "检查本章",
       "detail": "第二十二章《先过这一格》完整初稿已登记；分格筛框当天实作/八满桶两次换水，岑实履25井工，首次当面见邵并主动报本地年，进入集中检查。"
+    },
+    {
+      "at": "2026-10-24T00:31:26+00:00",
+      "phase": "SAVING",
+      "label": "保存进度",
+      "detail": "第二十二章《先过这一格》8300汉字已实际八检查/同任务1修并采用冻结，48事实；累计22章183853，前21章及42raw SHA未变，正在同步与保存TXT。"
     }
   ]
 }
